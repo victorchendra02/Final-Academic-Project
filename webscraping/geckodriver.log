@@ -1,0 +1,780 @@
+1689910234817	geckodriver	INFO	Listening on 127.0.0.1:54987
+1689910241945	geckodriver	INFO	Listening on 127.0.0.1:54994
+1689910346960	geckodriver	INFO	Listening on 127.0.0.1:55095
+1689910358240	geckodriver	INFO	Listening on 127.0.0.1:55102
+1689910454626	geckodriver	INFO	Listening on 127.0.0.1:55137
+1689910629233	geckodriver	INFO	Listening on 127.0.0.1:55169
+1689910716520	geckodriver	INFO	Listening on 127.0.0.1:55265
+1689910719563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilep8ujRM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1689910719834	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1689910719892	Marionette	INFO	Listening on port 55276
+Read port: 55276
+1689910720023	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1689910724275	Marionette	INFO	Stopped listening on port 55276
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1689912577785	geckodriver	INFO	Listening on 127.0.0.1:56136
+1689912667410	geckodriver	INFO	Listening on 127.0.0.1:56318
+1689912727183	geckodriver	INFO	Listening on 127.0.0.1:56330
+1689912818668	geckodriver	INFO	Listening on 127.0.0.1:56415
+1689912821731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileKmViw7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1689912821978	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1689912822034	Marionette	INFO	Listening on port 56426
+Read port: 56426
+1689912822195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1689912828823	Marionette	INFO	Stopped listening on port 56426
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1689912870720	geckodriver	INFO	Listening on 127.0.0.1:56463
+1689912873757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile58WniC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1689912874042	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1689912874116	Marionette	INFO	Listening on port 56473
+Read port: 56473
+1689912874311	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1689912876923	Marionette	INFO	Stopped listening on port 56473
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690160845309	geckodriver	INFO	Listening on 127.0.0.1:50351
+1690160848312	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--private" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileWBYmL8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690160848591	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690160848656	Marionette	INFO	Listening on port 50363
+Read port: 50363
+1690160848865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+1690160855869	Marionette	INFO	Stopped listening on port 50363
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690161364379	geckodriver	INFO	Listening on 127.0.0.1:50657
+1690161367436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--private" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile7S3cD7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690161367700	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690161367759	Marionette	INFO	Listening on port 50669
+Read port: 50669
+1690161367903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+1690163450290	geckodriver	INFO	Listening on 127.0.0.1:51076
+1690163453319	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--private" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileNEzigZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690163453580	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690163453647	Marionette	INFO	Listening on port 51088
+Read port: 51088
+1690163453806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:8589934593"
+console.error: "Unable to find target with innerWindowId:8589934593"
+console.error: "Unable to find target with innerWindowId:8589934593"
+console.error: "Unable to find target with innerWindowId:8589934593"
+console.error: "Unable to find target with innerWindowId:8589934593"
+1690166523255	geckodriver	INFO	Listening on 127.0.0.1:51567
+1690166526280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--private" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofiley7afma"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690166526542	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690166526602	Marionette	INFO	Listening on port 51577
+Read port: 51577
+1690166526771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2396))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2396))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2396))
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+1690169591250	geckodriver	INFO	Listening on 127.0.0.1:52407
+1690169594317	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--private" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilejO2hKL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690169594568	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690169594623	Marionette	INFO	Listening on port 52417
+Read port: 52417
+1690169594789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 707"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:707:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:560:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2141:33
+addAllSources@resource://devtools/server/actors/thread.js:1473:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 707, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 707: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1690184335701	geckodriver	INFO	Listening on 127.0.0.1:53851
+1690184338766	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileBmw9pe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690184339027	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690184339083	Marionette	INFO	Listening on port 53861
+Read port: 53861
+1690184339256	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690185487028	Marionette	INFO	Stopped listening on port 53861
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690185497820	geckodriver	INFO	Listening on 127.0.0.1:54010
+1690185500885	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileLW1KqG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690185501198	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690185501235	Marionette	INFO	Listening on port 54020
+Read port: 54020
+1690185501400	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+JavaScript error: https://artofproblemsolving.com/assets/vendor/jquery/3.6.0/jquery-migrate.min.js, line 2: ReferenceError: jQuery is not defined
+JavaScript error: https://artofproblemsolving.com/assets/js/aops-header.js?__v__=3821, line 33: ReferenceError: $ is not defined
+JavaScript error: https://artofproblemsolving.com/assets/vendor/common-combined-2.js, line 5: ReferenceError: jQuery is not defined
+JavaScript error: https://artofproblemsolving.com/assets/dist/latest/aops_core.js, line 2: ReferenceError: $ is not defined
+JavaScript error: https://artofproblemsolving.com/assets/js/infobar-events.js?__v__=3821, line 4: ReferenceError: $ is not defined
+JavaScript error: https://artofproblemsolving.com/assets/vendor/jqueryui/1.13.1/jquery-ui.min.js?__v__=3821, line 6: ReferenceError: jQuery is not defined
+JavaScript error: https://artofproblemsolving.com/assets/vendor/jquery.editable.js?__v__=3821, line 543: ReferenceError: jQuery is not defined
+JavaScript error: https://artofproblemsolving.com/assets/pythonbook/_static/aopsmods.js?__v__=3821, line 1777: ReferenceError: $ is not defined
+JavaScript error: https://artofproblemsolving.com/assets/dist/latest/cmty_core.js?__v__=3821, line 2: TypeError: AoPS.isUserLimited is not a function
+JavaScript error: https://artofproblemsolving.com/m/community/js/CommunityBase.js?v=58&__v__=3821, line 8: TypeError: AoPS.refreshOnBackButtonLoadWithOldData is not a function
+JavaScript error: https://artofproblemsolving.com/community/c13_contest_collections, line 600: ReferenceError: $ is not defined
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450950"
+console.error: "Unable to find target with innerWindowId:6442450950"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450955/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450955/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450955/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+console.error: "Unable to find target with innerWindowId:6442450951"
+console.error: "Unable to find target with innerWindowId:6442450951"
+console.error: "Unable to find target with innerWindowId:6442450951"
+Shutting down due to socket process crash.
+1690187302080	geckodriver	INFO	Listening on 127.0.0.1:54239
+1690187305107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileuIIHeR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690187305366	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690187305423	Marionette	INFO	Listening on port 54249
+Read port: 54249
+1690187305554	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450950"
+console.error: "Unable to find target with innerWindowId:6442450950"
+console.error: "Unable to find target with innerWindowId:6442450950"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1690192666512	Marionette	INFO	Stopped listening on port 54249
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690192678878	geckodriver	INFO	Listening on 127.0.0.1:54737
+1690192681918	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilekUCct9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690192682167	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690192682222	Marionette	INFO	Listening on port 54747
+Read port: 54747
+1690192682392	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+1690247414746	geckodriver	INFO	Listening on 127.0.0.1:50225
+1690247417799	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile6Q0YB8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690247418070	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690247418132	Marionette	INFO	Listening on port 50235
+Read port: 50235
+1690247418321	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450954/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450954/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450954/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+console.error: "Error when attaching target:" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450956/thread1, type isAttached failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nattachThread@resource://devtools/client/fronts/targets/target-mixin.js:447:49\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450961/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450961/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450961/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+console.error: "Error when attaching target:" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450963/thread1, type isAttached failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nattachThread@resource://devtools/client/fronts/targets/target-mixin.js:447:49\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: "Unable to find target with innerWindowId:6442450959"
+console.error: "Unable to find target with innerWindowId:6442450959"
+console.error: "Unable to find target with innerWindowId:6442450959"
+console.error: "Unable to find target with innerWindowId:6442450959"
+console.error: ({})
+console.error: ({})
+console.error: ({})
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1690250174991	Marionette	INFO	Stopped listening on port 50235
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690251305663	geckodriver	INFO	Listening on 127.0.0.1:50837
+1690251308727	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilesJ4MnZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690251308979	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690251309008	Marionette	INFO	Listening on port 50849
+Read port: 50849
+1690251309106	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Shutting down due to socket process crash.
+1690255970527	geckodriver	INFO	Listening on 127.0.0.1:51218
+1690255973593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilesspBQR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690255973875	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690255973936	Marionette	INFO	Listening on port 51229
+Read port: 51229
+1690255974127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 111))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1690257643498	geckodriver	INFO	Listening on 127.0.0.1:51484
+1690257646553	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile0OpXJz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690257646838	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690257646866	Marionette	INFO	Listening on port 51494
+Read port: 51494
+1690257646966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Shutting down due to socket process crash.
+1690345967404	geckodriver	INFO	Listening on 127.0.0.1:61075
+1690345970465	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilem7i5A1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690345970736	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690345970799	Marionette	INFO	Listening on port 61086
+Read port: 61086
+1690345970852	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690350082229	geckodriver	INFO	Listening on 127.0.0.1:61437
+1690350085266	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilepwa7DS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690350085518	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690350085575	Marionette	INFO	Listening on port 61447
+Read port: 61447
+1690350085777	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690350497643	geckodriver	INFO	Listening on 127.0.0.1:61577
+1690350500713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileS62qa0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690350500965	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690350501021	Marionette	INFO	Listening on port 61590
+Read port: 61590
+1690350501186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690359512347	geckodriver	INFO	Listening on 127.0.0.1:62244
+1690359515399	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileB8aFk9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690359515704	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690359515761	Marionette	INFO	Listening on port 62254
+Read port: 62254
+1690359515949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690359834778	geckodriver	INFO	Listening on 127.0.0.1:62402
+1690359837842	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileqIoVM1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690359838088	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690359838144	Marionette	INFO	Listening on port 62413
+Read port: 62413
+1690359838307	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690360131363	geckodriver	INFO	Listening on 127.0.0.1:62555
+1690360134389	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileWSBEfw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690360134644	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690360134677	Marionette	INFO	Listening on port 62565
+Read port: 62565
+1690360134774	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://artofproblemsolving.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://artofproblemsolving.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://artofproblemsolving.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://artofproblemsolving.com."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+Shutting down due to socket process crash.
+1690860684979	geckodriver	INFO	Listening on 127.0.0.1:55576
+1690860688039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileCccWra"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690860688341	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690860688404	Marionette	INFO	Listening on port 55586
+Read port: 55586
+1690860688604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690871630688	geckodriver	INFO	Listening on 127.0.0.1:55087
+1690871633686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileMwElY5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690871634010	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690871634073	Marionette	INFO	Listening on port 55098
+Read port: 55098
+1690871634351	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690872124589	geckodriver	INFO	Listening on 127.0.0.1:55232
+1690872127628	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilecFfh1e"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690872127896	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690872127955	Marionette	INFO	Listening on port 55242
+Read port: 55242
+1690872128096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+1690872285811	geckodriver	INFO	Listening on 127.0.0.1:55340
+1690872288856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile2bR9O6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690872289101	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690872289158	Marionette	INFO	Listening on port 55351
+Read port: 55351
+1690872289323	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+console.error: "Unable to find target with innerWindowId:6442450947"
+1690873335828	geckodriver	INFO	Listening on 127.0.0.1:55530
+1690873338878	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile9JDwjz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690873339132	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690873339160	Marionette	INFO	Listening on port 55540
+Read port: 55540
+1690873339260	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+Shutting down due to socket process crash.
+1690873837169	geckodriver	INFO	Listening on 127.0.0.1:55652
+1690873840197	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofile2BjJSv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690873840440	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690873840496	Marionette	INFO	Listening on port 55662
+Read port: 55662
+1690873840669	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 229))
+1690942715564	geckodriver	INFO	Listening on 127.0.0.1:50676
+1690942718630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileHuAb3Z"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690942718983	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690942719048	Marionette	INFO	Listening on port 50688
+Read port: 50688
+1690942719244	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1690942769007	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2152398850, errorCode: 5, reason: timeout
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1690945106688	Marionette	INFO	Stopped listening on port 50688
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690948079942	geckodriver	INFO	Listening on 127.0.0.1:51560
+1690948082998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilecFakpp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690948083347	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690948083414	Marionette	INFO	Listening on port 51571
+Read port: 51571
+1690948083607	RemoteAgent	WARN	TLS certificate errors will be ignored for this session

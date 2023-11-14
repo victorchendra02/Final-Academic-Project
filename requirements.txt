@@ -1,0 +1,11 @@
+requests==2.30.0
+selenium==3.141.0
+keyboard
+mouse
+beautifulsoup4
+webdriver-manager
+pyperclip
+pygame
+pandas
+numpy
+mysql-connector-python
