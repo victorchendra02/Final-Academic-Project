@@ -57,6 +57,6 @@ for i, contest_name in enumerate(list(data.keys())[1:]):
 
 # bcolors = TextStyle()
 df = df.iloc[1:]
-df.to_csv('./data/data.csv', index=False)
+df.to_csv('C:/wamp64/www/artofproblemsolving/data/data___.csv', index=False)
 # print(bcolors.okgreen("Saved as csv!"))
 print("Saved as csv!")
