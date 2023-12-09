@@ -1,77 +1,91 @@
+import pandas as pd
 import mysql.connector
 from time import sleep
-# from ..packages.textstyling import TextStyle
 
-
-host = "127.0.0.1"
-user = "root"
-password = ""
-database = "artofproblemsolving"
 
 class TextStyle:
-    __FAIL = "\033[91m"
-    __WARNING = "\033[93m"
+    FAIL = "\033[91m"
+    WARNING = "\033[93m"
     
-    __OKGREEN = "\033[92m"
-    __OKBLUE = "\033[94m"
-    __OKCYAN = "\033[96m"
+    OKGREEN = "\033[92m"
+    OKBLUE = "\033[94m"
+    OKCYAN = "\033[96m"
     
-    __HEADER = "\033[95m"
-    __BOLD = "\033[1m"
-    __UNDERLINE = "\033[4m"
+    HEADER = "\033[95m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
     
-    __ENDC = "\033[0m"
+    ENDC = "\033[0m"
     
     def fail(self, text: str) -> str:
-        return str(f"{self.__FAIL}{text}{self.__ENDC}")
+        return str(f"{self.FAIL}{text}{self.ENDC}")
     
     def warning(self, text: str) -> str:
-        return str(f"{self.__WARNING}{text}{self.__ENDC}")
+        return str(f"{self.WARNING}{text}{self.ENDC}")
     
     def okgreen(self, text: str) -> str:
-        return str(f"{self.__OKGREEN}{text}{self.__ENDC}")
+        return str(f"{self.OKGREEN}{text}{self.ENDC}")
     
     def okblue(self, text: str) -> str:
-        return str(f"{self.__OKBLUE}{text}{self.__ENDC}")
+        return str(f"{self.OKBLUE}{text}{self.ENDC}")
 
     def okcyan(self, text: str) -> str:
-        return str(f"{self.__OKCYAN}{text}{self.__ENDC}")
+        return str(f"{self.OKCYAN}{text}{self.ENDC}")
     
     def header(self, text: str) -> str:
-        return str(f"{self.__HEADER}{text}{self.__ENDC}")
+        return str(f"{self.HEADER}{text}{self.ENDC}")
 
     def bold(self, text: str) -> str:
-        return str(f"{self.__BOLD}{text}{self.__ENDC}")
+        return str(f"{self.BOLD}{text}{self.ENDC}")
 
     def underline(self, text: str) -> str:
-        return str(f"{self.__UNDERLINE}{text}{self.__ENDC}")
+        return str(f"{self.UNDERLINE}{text}{self.ENDC}")
     
     
-bcolors = TextStyle()
-
-def create_table(new_table_name: str):
-    """
-    This function will create new table 
-    BUT IF IT'S ALREADY EXIST,
-    the old record is not deleted.
-    
-    EVEN you change the table scenario
-    """    
-
-    print(bcolors.okblue("FUNCTION create_table()"))
-    try:
-        connection = mysql.connector.connect(
-            host=host,
-            user=user,
-            password=password,
-            database=database
+class MySQLDBManager:
+    # For `Wampserver64`
+    def __init__(self, host="127.0.0.1", user="root", password="", database="artofproblemsolving") -> None:
+        self.bcolors = TextStyle()
+        
+        self.host = host
+        self.user = user
+        self.password = password
+        self.database = database
+        
+        self.connection = mysql.connector.connect(
+            host=self.host,
+            user=self.user,
+            password=self.password
         )
-        if connection.is_connected():
-            print(bcolors.okgreen('Connected to MySQL'))
-            
-            cursor = connection.cursor()
-            query = f"""
-                CREATE TABLE IF NOT EXISTS {new_table_name} (
+        self.cursor = self.connection.cursor()
+        
+    def create_database(self, dbname):
+        print(self.bcolors.okblue(f"[FUNCTION CALLED] --> create_database()"))
+        try:
+            self.cursor.execute(f"CREATE DATABASE {dbname};")
+            print(
+                self.bcolors.okgreen(f'Database "{dbname}" created successfully.')
+            )
+        except mysql.connector.Error as err:
+            print(
+                self.bcolors.fail(f"Error: {err}")
+            )
+
+    def use_database(self, database_name):
+        print(self.bcolors.okblue(f"[FUNCTION CALLED] --> use_database()"))
+        try:
+            self.cursor.execute(f"USE {database_name}")
+            print(f"Using database '{database_name}'.")
+        except mysql.connector.Error as err:
+            print(
+                self.bcolors.fail(f"Error: {err}")
+            )
+
+    def create_table(self, table_name):
+        print(self.bcolors.okblue(f"[FUNCTION CALLED] --> create_table()"))
+        try:
+            create_table_query = f"""
+                CREATE TABLE IF NOT EXISTS {table_name} (
                     id_key INT AUTO_INCREMENT PRIMARY KEY,
                     no VARCHAR(255),
                     contest_category VARCHAR(255),
@@ -79,73 +93,138 @@ def create_table(new_table_name: str):
                     year VARCHAR(255),
                     link TEXT,
                     pdf TEXT,
-                    post_rendered TEXT,
-                    post_canonical TEXT,
+                    post_rendered TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+                    post_canonical TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                     label VARCHAR(255)
                 )
                 """
+            self.cursor.execute(create_table_query)
+            print(
+                self.bcolors.okgreen(f"Table '{table_name}' created successfully.")
+            )
+        except mysql.connector.Error as err:
+            print(
+                self.bcolors.fail(f"Error: {err}")
+            )
 
-            cursor.execute(query)
-            print(bcolors.okgreen(f"Table \"{new_table_name}\" created successfully"))
-            
-    except mysql.connector.Error as error:
-        print(f"{bcolors.fail('Error:')}\n{bcolors.fail(error)}")
-
-    finally:
-        if connection.is_connected():
-            cursor.close()
-            connection.close()
-            print(bcolors.warning("MySQL connection is closed") + "\n")
-
-
-def insert_into(table: str, data: dict):
-
-    print(bcolors.okblue("FUNCTION insert_into()"))
-    try:
-        connection = mysql.connector.connect(
-            host=host,
-            user=user,
-            password=password,
-            database=database
-        )
-        if connection.is_connected():
-            cursor = connection.cursor()
-            
+    def insert_into(self, tname, data_to_insert: tuple): 
+        try:
             query = f"""
-                INSERT INTO `{table}`
+                INSERT INTO `{tname}`
                     (id_key, no, contest_category, contest_name, year, link, pdf, post_rendered, post_canonical, label)
                 VALUES
                     (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """
-            
-            data_to_insert = (
-                data['id_key'],
-                data['no'],
-                data['contest_category'],
-                data['contest_name'],
-                data['year'],
-                data['link'],
-                data['pdf'],
-                data['post_rendered'],
-                data['post_canonical'],
-                data['label']
+            data = (
+                data_to_insert['id_key'],
+                data_to_insert['no'],
+                data_to_insert['contest_category'],
+                data_to_insert['contest_name'],
+                data_to_insert['year'],
+                data_to_insert['link'],
+                data_to_insert['pdf'],
+                data_to_insert['post_rendered'],
+                data_to_insert['post_canonical'],
+                data_to_insert['label']
             )
+            self.cursor.execute(query, data)
+            print(
+                self.bcolors.okgreen((data_to_insert["no"], data_to_insert["year"], data_to_insert["link"]))
+            )
+        except mysql.connector.Error as err:
+            print(
+                self.bcolors.warning((data_to_insert["no"], data_to_insert["year"], data_to_insert["link"]))
+            )
+            print(
+                self.bcolors.fail(f"Error: {err}")
+            )
+        
+    def close_connection(self):
+        print(self.bcolors.okblue(f"[FUNCTION CALLED] --> close_connection()"))
+        self.cursor.close()
+        self.connection.close()
+        print(
+            self.bcolors.warning("MySQL connection is closed")
+        )
+    
+    def initialize(self):
+        print(self.bcolors.okblue(f"[FUNCTION CALLED] --> initialize()"))
+        
+        self.create_database(self.database)
+        self.use_database(self.database)
+        self.create_table("imo")
+        
+        df = pd.read_csv('../data/data_post_canonical.csv')
+        num_rows = df.shape[0]
+        for i in range(num_rows):
+            data_to_insert = df.loc[i].to_dict()
+            if type(data_to_insert['label']) == float:
+                data_to_insert['label'] = None
 
-            cursor.execute(query, data_to_insert)
-            connection.commit()
+            self.insert_into("imo", data_to_insert)
+            # sleep(0.1)
+        
+        self.close_connection()
+
+
+# bcolors = TextStyle()
+# def insert_into(table: str, data: dict):
+
+#     print(bcolors.okblue("FUNCTION insert_into()"))
+#     try:
+#         connection = mysql.connector.connect(
+#             host=host,
+#             user=user,
+#             password=password,
+#             database=database
+#         )
+#         if connection.is_connected():
+#             cursor = connection.cursor()
             
-            print(bcolors.okgreen(f"Row inserted successfully (id_key={data['id_key']})"))
+#             query = f"""
+#                 INSERT INTO `{table}`
+#                     (id_key, no, contest_category, contest_name, year, link, pdf, post_rendered, post_canonical, label)
+#                 VALUES
+#                     (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+#             """
+            
+#             data_to_insert = (
+#                 data['id_key'],
+#                 data['no'],
+#                 data['contest_category'],
+#                 data['contest_name'],
+#                 data['year'],
+#                 data['link'],
+#                 data['pdf'],
+#                 data['post_rendered'],
+#                 data['post_canonical'],
+#                 data['label']
+#             )
 
-    except mysql.connector.Error as error:
-        print(f"{bcolors.fail('Error:')}\n{bcolors.fail(error)}")
+#             cursor.execute(query, data_to_insert)
+#             connection.commit()
+            
+#             print(bcolors.okgreen(f"Row inserted successfully (id_key={data['id_key']})"))
 
-    finally:
-        if connection.is_connected():
-            cursor.close()
-            connection.close()
-            print(bcolors.warning("MySQL connection is closed") + "\n")
+#     except mysql.connector.Error as error:
+#         print(f"{bcolors.fail('Error:')}\n{bcolors.fail(error)}")
 
+#     finally:
+#         if connection.is_connected():
+#             cursor.close()
+#             connection.close()
+#             print(bcolors.warning("MySQL connection is closed") + "\n")
+  
 
-def edit_row():
-    ...
+if __name__ == '__main__':
+    # conda activate artofproblemsolving
+    # cd dbmanagement
+    # python -u db.py
+    host = "127.0.0.1"
+    user = "root"
+    password = ""
+    database = "artofproblemsolving"
+    
+    db = MySQLDBManager(host, user, password, database)
+    db.initialize()
     
