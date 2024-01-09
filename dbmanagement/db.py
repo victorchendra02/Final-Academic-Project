@@ -138,6 +138,7 @@ class MySQLDBManager:
             print(
                 self.bcolors.fail(f"Error: {err}")
             )
+            sleep(2)
         
     def close_connection(self):
         print(self.bcolors.okblue(f"[FUNCTION CALLED] --> close_connection()"))
@@ -162,7 +163,7 @@ class MySQLDBManager:
                 data_to_insert['label'] = None
 
             self.insert_into("imo", data_to_insert)
-            sleep(0.01)
+            # sleep(0.01)
         
         self.close_connection()
 
