@@ -162,64 +162,18 @@ class MySQLDBManager:
                 data_to_insert['label'] = None
 
             self.insert_into("imo", data_to_insert)
-            # sleep(0.1)
+            sleep(0.01)
         
         self.close_connection()
 
 
-# bcolors = TextStyle()
-# def insert_into(table: str, data: dict):
-
-#     print(bcolors.okblue("FUNCTION insert_into()"))
-#     try:
-#         connection = mysql.connector.connect(
-#             host=host,
-#             user=user,
-#             password=password,
-#             database=database
-#         )
-#         if connection.is_connected():
-#             cursor = connection.cursor()
-            
-#             query = f"""
-#                 INSERT INTO `{table}`
-#                     (id_key, no, contest_category, contest_name, year, link, pdf, post_rendered, post_canonical, label)
-#                 VALUES
-#                     (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-#             """
-            
-#             data_to_insert = (
-#                 data['id_key'],
-#                 data['no'],
-#                 data['contest_category'],
-#                 data['contest_name'],
-#                 data['year'],
-#                 data['link'],
-#                 data['pdf'],
-#                 data['post_rendered'],
-#                 data['post_canonical'],
-#                 data['label']
-#             )
-
-#             cursor.execute(query, data_to_insert)
-#             connection.commit()
-            
-#             print(bcolors.okgreen(f"Row inserted successfully (id_key={data['id_key']})"))
-
-#     except mysql.connector.Error as error:
-#         print(f"{bcolors.fail('Error:')}\n{bcolors.fail(error)}")
-
-#     finally:
-#         if connection.is_connected():
-#             cursor.close()
-#             connection.close()
-#             print(bcolors.warning("MySQL connection is closed") + "\n")
-  
-
 if __name__ == '__main__':
+    # How to run:
+    # CTRL + SHIFT + C
     # conda activate artofproblemsolving
     # cd dbmanagement
     # python -u db.py
+    
     host = "127.0.0.1"
     user = "root"
     password = ""
