@@ -90,7 +90,7 @@
             </table>
             <br>
 
-            <input type="submit" class="btn btn-lg btn-dark px-5" value="Submit">
+            <input type="submit" class="btn btn-lg btn-dark px-5" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
         </form>
 
     </div>
