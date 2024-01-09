@@ -14,9 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $labels = $_POST['label'];
 
-    foreach ($labels as $key => $label) {
+    // Loop through each label and corresponding id_key
+    foreach ($labels as $id_key => $label) {
         // Update the label in the database
-        $id_key = $_POST['id_key'][$key];
         $sql = "UPDATE imo SET label='$label' WHERE id_key='$id_key'";
         $conn->query($sql);
     }

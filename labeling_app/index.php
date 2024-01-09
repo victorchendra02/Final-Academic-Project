@@ -71,7 +71,7 @@
                             echo "<td>" . $row['post_rendered'] . "</td>";
                             echo "<td>" . $row['year'] . "</td>";
                             echo "<td><a href='" . $row['link'] . "' target='_blank'>" . $row['link'] . "</a></td>";
-                            echo "<td><select class='p-1' name='label[]'>
+                            echo "<td><select class='p-1' name='label[" . $row['id_key'] . "]'>
                                         <option value='' selected disabled hidden></option>
                                         <option value='Algebra'>Algebra</option>
                                         <option value='Combinatorics'>Combinatorics</option>
