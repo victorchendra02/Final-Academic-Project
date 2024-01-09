@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ----------------- LOG ACTION -----------------
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
+        $logData['correspondent'][] = "";
         $logData['status'][] = "invalid input";
 
         // Write the updated log data to the JSON file
@@ -61,17 +62,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("si", $label, $id_key);
 
         // Loop through each label and corresponding id_key
+        $labeled_ids = array();
         foreach ($user_input as $id_key => $label) {
             // Update the label in the database using prepared statements
             $stmt->execute();
+
+            // Store the labeled id_key in the array
+            $labeled_ids[] = $id_key;
         }
 
+        // Concatenate the labeled id_keys into a string separated by "-"
+        $correspondent_str = implode("-", $labeled_ids);
+        
         // Close the prepared statement
         $stmt->close();
 
         // ----------------- LOG ACTION -----------------
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
+        $logData['correspondent'][] = $correspondent_str;
         $logData['status'][] = "submitted";
 
         // Write the updated log data to the JSON file
