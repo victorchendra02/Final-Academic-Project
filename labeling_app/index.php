@@ -103,7 +103,7 @@
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 7;";
+                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 12;";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
