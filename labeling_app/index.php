@@ -131,9 +131,15 @@
                     ?>
                 </tbody>
             </table>
+
+            <div class="text-end">
+                Thank you for your participation, sincerely Victor Chendra
+            </div>
             <br>
 
-            <input type="submit" class="btn btn-lg btn-dark px-5" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
+            <div class="text-end">
+                <input type="submit" class="btn btn-lg btn-dark px-5" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
+            </div>
         </form>
 
     </div>
