@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+// Check if the user has entered credentials
+if (!isset($_SESSION['valid_credential'])) {
+    header("Location: login_credential.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

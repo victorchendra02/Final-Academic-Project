@@ -1,3 +1,31 @@
+<?php
+session_start();
+
+if (isset($_SESSION['valid_credential'])) {
+    header("Location: index.php");
+    exit();
+}
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Validate the credential (you need to add your validation logic)
+//     $enteredCredential = $_POST['credentialInput'];
+
+//     // Add your credential validation logic here
+//     $isValidCredential = true; // Replace this with your validation logic
+
+//     if ($isValidCredential) {
+//         $_SESSION['valid_credential'] = true;
+//         header("Location: index.php");
+//         exit();
+//     } else {
+//         // Invalid credential, show an error message
+//         $_SESSION['invalid_credential'] = "Invalid credential. Please try again.";
+//         header("Location: login_credential.php");
+//         exit();
+//     }
+// }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +44,25 @@
 
 <body>
     <div class="container mt-5">
+        <!-- Display error messages if any -->
+        <?php if (isset($_SESSION['invalid_credential'])) : ?>
+            <div class="alert alert-danger" role="alert">
+                <?php echo $_SESSION['invalid_credential']; ?>
+            </div>
+            <?php unset($_SESSION['invalid_credential']); ?>
+        <?php endif; ?>
+
+        <?php if (isset($_SESSION['expired_credential'])) : ?>
+            <div class="alert alert-warning" role="alert">
+                <?php echo $_SESSION['expired_credential']; ?>
+            </div>
+            <?php unset($_SESSION['expired_credential']); ?>
+        <?php endif; ?>
+
         <form action="verify_credential.php" method="post">
             <div class="form-group">
-                <label for="input_text">Credential</label>
-                <input type="text" class="form-control" id="input_text" name="input_text" required>
+                <label>Credential</label>
+                <input type="text" class="form-control" id="credentialInput" name="credentialInput" required>
             </div>
             <button type="submit" class="btn btn-primary">Send →</button>
         </form>
@@ -27,16 +70,6 @@
 
     <!-- Add Bootstrap JS and Popper.js CDN links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script>
-        // Check if there is a value in localstorage named "credential"
-        const storedCredential = localStorage.getItem("credential");
-
-        // If the credential is present, redirect users to "index.php"
-        if (storedCredential) {
-            window.location.href = "index.php";
-        }
-    </script>
 
 </body>
 

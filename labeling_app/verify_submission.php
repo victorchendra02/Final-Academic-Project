@@ -22,6 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get user agent
     $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
+    // Get user credential
+    $credential_used = $_SESSION['credential_used'];
+
     // Read existing JSON file
     if (file_exists($jsonFile)) {
         $logData = json_decode(file_get_contents($jsonFile), true);
@@ -35,8 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
         $logData['useragent'][] = $userAgent;
+        $logData['credential'][] = $credential_used;
         $logData['correspondent'][] = "";
-        $logData['status'][] = "invalid input";
+        $logData['status'][] = "usernoinput";
 
         // Write the updated log data to the JSON file
         file_put_contents($jsonFile, json_encode($logData));
@@ -85,6 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
         $logData['useragent'][] = $userAgent;
+        $logData['credential'][] = $credential_used;
         $logData['correspondent'][] = $correspondent_str;
         $logData['status'][] = "submitted";
 
