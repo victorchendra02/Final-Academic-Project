@@ -22,10 +22,20 @@ if (isset($_SESSION['valid_credential'])) {
 
     <!-- web icon -->
     <link rel="icon" type="image/x-icon" href="resources/icons8-geometry-40.ico" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container mt-5">
+    <br><br><br><br><br>
+    <div class="text-center container px-4 mt-5">
         <!-- Display error messages if any -->
         <?php if (isset($_SESSION['invalid_credential'])) : ?>
             <div class="alert alert-danger" role="alert">
@@ -43,10 +53,11 @@ if (isset($_SESSION['valid_credential'])) {
 
         <form action="verify_credential.php" method="post">
             <div class="form-group">
-                <label>Credential</label>
-                <input type="text" class="form-control" id="credentialInput" name="credentialInput" required>
+                <h2>Credential</h2>
+                <input type="text" class="text-center form-control" id="credentialInput" name="credentialInput" required>
             </div>
-            <button type="submit" class="btn btn-primary">Send →</button>
+            <br><br>
+            <button type="submit" class="btn-lg btn btn-dark" style="width: 12rem;">Send →</button>
         </form>
     </div>
 
