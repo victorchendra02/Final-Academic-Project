@@ -22,6 +22,6 @@ CREATE TABLE IF NOT EXISTS `credential_table` (
 ```bash
 conda activate artofproblemsolving
 cd dbmanagement
-cd cred
+cd credential_table
 python -u insert_credential.py
 ```
