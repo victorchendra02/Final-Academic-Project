@@ -127,14 +127,14 @@ session_start();
             </table>
 
             <div class="text-center">
-                Thank you for your participation, sincerely Victor Chendra
+                Your submission is very helpful!
 
                 <br>
                 <br>
 
                 <!-- Button to trigger the modal -->
                 <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#confirmationModal" style="width: 20rem;">
-                    Submit
+                    Submit →
                 </button>
             </div>
         </form>
@@ -169,6 +169,27 @@ session_start();
 
     <!-- Add Bootstrap JS and Popper.js CDN links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+    <br><br><br>
+    <footer class="bg-dark text-white text-center p-5">
+        <h1 class="display-4">THANK YOU</h1>
+
+        <div class="container">
+            <p class="lead">
+                Created by Victor Chendra <br>
+                Student at Calvin Institute of Technology <br>
+                Majoring in IT & Big Data Analytics
+            </p>
+
+            <div class="mt-4">
+                <p class="mb-1">Contact:</p>
+                <a class="text-white" target="_blank" href="https://wa.me/+62895366517686">wa.me/+62895366517686</a> <br>
+                <a class="text-white" target="_blank" href="https://instagram.com/victorchendraa">instagram.com/victorchendraa</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
