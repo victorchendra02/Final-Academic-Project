@@ -103,7 +103,7 @@ if (!isset($_SESSION['valid_credential'])) {
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 10;";
+                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 20;";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
