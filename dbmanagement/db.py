@@ -44,7 +44,7 @@ class TextStyle:
     
 class MySQLDBManager:
     # For `Wampserver64`
-    def __init__(self, host="127.0.0.1", user="root", password="", database="artofproblemsolving") -> None:
+    def __init__(self, host="127.0.0.1", user="root", password="", database="aopsimol_artofproblemsolving") -> None:
         self.bcolors = TextStyle()
         
         self.host = host
@@ -178,7 +178,7 @@ if __name__ == '__main__':
     host = "127.0.0.1"
     user = "root"
     password = ""
-    database = "artofproblemsolving"
+    database = "aopsimol_artofproblemsolving"
     
     db = MySQLDBManager(host, user, password, database)
     db.initialize()
