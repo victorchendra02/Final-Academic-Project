@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +38,6 @@
     <div class="m-5">
         <!-- Alert for notification -->
         <?php
-        session_start();
 
         // Check for error message
         if (isset($_SESSION['emptyinput'])) {
