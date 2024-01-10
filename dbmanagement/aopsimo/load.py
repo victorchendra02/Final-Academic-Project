@@ -155,7 +155,7 @@ class MySQLDBManager:
         self.use_database(self.database)
         self.create_table("imo")
         
-        df = pd.read_csv('../data/data_post_canonical.csv')
+        df = pd.read_csv('../../data/data_post_canonical.csv')
         num_rows = df.shape[0]
         for i in range(num_rows):
             data_to_insert = df.loc[i].to_dict()
