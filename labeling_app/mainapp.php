@@ -68,7 +68,7 @@ session_start();
 
         <h1>IMO Classification</h1>
 
-        <form action="labeling.php" method="post" id="labelForm">
+        <form action="verify_submission.php" method="post" id="labelForm">
 
             <table class="table table-hover">
                 <thead>
