@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Input not null
     } else {
         $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $username = "root";  // aopsimol_root
+        $password = "";      // <aopsimol_root>
         $dbname = "aopsimol_artofproblemsolving";
 
         // Create database connection

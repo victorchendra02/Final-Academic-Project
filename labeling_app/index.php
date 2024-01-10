@@ -93,8 +93,8 @@
                     <?php
                     // Fetch data from your database and display rows
                     $servername = "localhost";
-                    $username = "root";
-                    $password = "";
+                    $username = "root";  // aopsimol_root
+                    $password = "";      // <aopsimol_root>
                     $dbname = "aopsimol_artofproblemsolving";
 
                     $conn = new mysqli($servername, $username, $password, $dbname);
