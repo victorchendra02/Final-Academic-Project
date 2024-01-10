@@ -2,6 +2,46 @@ import mysql.connector
 from mysql.connector import errorcode
 
 
+def create_database():
+    connection = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password=""
+    )
+
+    cursor = connection.cursor()
+    database_name = 'aopsimol_artofproblemsolving'
+
+    cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
+
+    cursor.close()
+    connection.close()
+    
+def create_table():
+    connection = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password=""
+    )
+
+    cursor = connection.cursor()
+
+    query = """
+        CREATE TABLE IF NOT EXISTS `credential_table` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `datetime` timestamp NULL DEFAULT NULL,
+        `credential` varchar(255) DEFAULT NULL,
+        `is_active` tinyint(1) DEFAULT NULL,
+        PRIMARY KEY (`id`),
+        UNIQUE KEY `credential` (`credential`)
+        );
+    """
+
+    cursor.execute(query)
+
+    cursor.close()
+    connection.close()
+
 def insert_row(credential, is_active):
     try:
         # Connect to the database
@@ -60,6 +100,8 @@ def read_txt(file_path):
 
 if __name__ == '__main__':
     credential_list = read_txt("credential_list.txt")
-
+    
+    create_database()
+    create_table()
     for cred in credential_list:
         insert_row(cred, 1)
