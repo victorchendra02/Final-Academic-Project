@@ -13,17 +13,8 @@
     <!-- web icon -->
     <link rel="icon" type="image/x-icon" href="resources/icons8-geometry-40.ico" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-    </style>
-
     <!-- style -->
-    <!-- <link rel="stylesheet" type=text/css href="resources/styles.css" /> -->
+    <link rel="stylesheet" type=text/css href="styles/style.css" />
 
 </head>
 
