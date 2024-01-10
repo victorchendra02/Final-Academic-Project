@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $jsonFile = 'log.json';
     $logData = [];
 
-    // Check for different client IP headers
+    // Get client IP headers
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
@@ -18,6 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $ipaddress = $_SERVER['REMOTE_ADDR'];
     }
+
+    // Get user agent
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
     // Read existing JSON file
     if (file_exists($jsonFile)) {
@@ -31,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ----------------- LOG ACTION -----------------
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
+        $logData['useragent'][] = $userAgent;
         $logData['correspondent'][] = "";
         $logData['status'][] = "invalid input";
 
@@ -80,6 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ----------------- LOG ACTION -----------------
         $logData['time'][] = date('Y-m-d H:i:s');
         $logData['ipaddress'][] = $ipaddress;
+        $logData['useragent'][] = $userAgent;
         $logData['correspondent'][] = $correspondent_str;
         $logData['status'][] = "submitted";
 
