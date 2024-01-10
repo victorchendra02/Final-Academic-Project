@@ -182,7 +182,7 @@ if (!isset($_SESSION['valid_credential'])) {
                 </div>
                 <div class="modal-body">
                     Sorry, but we're under maintenance :( <br>
-                    Try again or try to contact the person
+                    Try again or try to contact support.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
