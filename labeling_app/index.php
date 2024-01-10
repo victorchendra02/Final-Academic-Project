@@ -68,7 +68,7 @@ session_start();
 
         <h1>IMO Classification</h1>
 
-        <form action="labeling.php" method="post">
+        <form action="labeling.php" method="post" id="labelForm">
 
             <table class="table table-hover">
                 <thead>
@@ -78,7 +78,7 @@ session_start();
                         <th scope="col">Problem</th>
                         <th scope="col">Year</th>
                         <th scope="col">Link</th>
-                        <th scope="col" style="width: 170px;">Label</th>
+                        <th scope="col" style="width: 11rem;">Label</th>
                     </tr>
                 </thead>
 
@@ -108,7 +108,7 @@ session_start();
                             echo "<td>" . $row['post_rendered'] . "</td>";
                             echo "<td>" . $row['year'] . "</td>";
                             echo "<td><a href='" . $row['link'] . "' target='_blank'>" . $row['link'] . "</a></td>";
-                            echo "<td><select class='p-1' name='data_to_parse[" . $row['id_key'] . "]'>
+                            echo "<td><select class='form-select' name='data_to_parse[" . $row['id_key'] . "]' aria-label='Label selection'>
                                         <option value='' selected disabled hidden></option>
                                         <option value='Algebra'>Algebra</option>
                                         <option value='Combinatorics'>Combinatorics</option>
@@ -132,11 +132,40 @@ session_start();
                 <br>
                 <br>
 
-                <input type="submit" class="btn btn-lg btn-dark" style="width: 20rem;" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
+                <!-- Button to trigger the modal -->
+                <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#confirmationModal" style="width: 20rem;">
+                    Submit
+                </button>
             </div>
         </form>
 
     </div>
+
+    <!-- Bootstrap modal for confirmation -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to submit?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle the modal confirmation and form submission -->
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            document.getElementById('labelForm').submit();
+        });
+    </script>
 
     <!-- Add Bootstrap JS and Popper.js CDN links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
