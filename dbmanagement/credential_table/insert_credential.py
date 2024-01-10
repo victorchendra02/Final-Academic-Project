@@ -9,7 +9,7 @@ def insert_row(credential, is_active):
             host="127.0.0.1",
             user="root",
             password="",
-            database="aopsimol_credential"
+            database="aopsimol_artofproblemsolving"
         )
 
         # Create a cursor object to execute SQL queries
