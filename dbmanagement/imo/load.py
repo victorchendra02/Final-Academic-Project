@@ -62,7 +62,7 @@ class MySQLDBManager:
     def create_database(self, dbname):
         print(self.bcolors.okblue(f"[FUNCTION CALLED] --> create_database()"))
         try:
-            self.cursor.execute(f"CREATE DATABASE {dbname};")
+            self.cursor.execute(f"CREATE DATABASE IF NOT EXISTS {dbname};")
             print(
                 self.bcolors.okgreen(f'Database "{dbname}" created successfully.')
             )
