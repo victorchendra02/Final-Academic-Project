@@ -1,7 +1,8 @@
 # DBManagement:
 This is to INSERT ROW for credential
 
-Paste your list of credential in `credential_list.txt`, then execute `insert_credential.py`
+1. Create new table first named `credential_table`
+2. Paste your list of credential in `credential_list.txt`, then execute `insert_credential.py`
 
 
 ## How to run:
