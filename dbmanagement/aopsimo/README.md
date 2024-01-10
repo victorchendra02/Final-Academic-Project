@@ -9,5 +9,6 @@ This is to load from csv to database (MySQL) using PHPMyAdmin
 ```bash
 conda activate artofproblemsolving
 cd dbmanagement
-python -u db.py
+cd aopsimo
+python -u load.py
 ```
