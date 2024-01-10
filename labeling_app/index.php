@@ -73,10 +73,10 @@ if (!isset($_SESSION['valid_credential'])) {
         ?>
 
         <!-- FOR MAINTENANCE -->
-        <div class="text-center alert alert-primary" role="alert">
+        <!-- <div class="text-center alert alert-primary" role="alert">
             We're under maintenance 🔨 <br>
             Please wait ☺️
-        </div>
+        </div> -->
         <!-- FOR MAINTENANCE -->
 
         <h1>IMO Classification</h1>
