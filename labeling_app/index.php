@@ -97,7 +97,7 @@ session_start();
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 12;";
+                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 10;";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -126,13 +126,13 @@ session_start();
                 </tbody>
             </table>
 
-            <div class="text-end">
+            <div class="text-center">
                 Thank you for your participation, sincerely Victor Chendra
-            </div>
-            <br>
 
-            <div class="text-end">
-                <input type="submit" class="btn btn-lg btn-dark px-5" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
+                <br>
+                <br>
+
+                <input type="submit" class="btn btn-lg btn-dark" style="width: 20rem;" value="Submit" onclick="return confirm('Are you sure you want to submit?')">
             </div>
         </form>
 
