@@ -127,16 +127,20 @@ session_start();
             </table>
 
             <div class="text-center">
-                Your submission is very helpful!
-
-                <br>
+                <p class="p-3" style="background-color: #F8E559; border-radius: 10px;">
+                    <strong>NOTE:</strong> Please ensure that your inputs are correct before submitting. Submissions cannot be reversed. Thank you!
+                </p>
                 <br>
 
                 <!-- Button to trigger the modal -->
                 <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#confirmationModal" style="width: 20rem;">
                     Submit →
                 </button>
+
+                <br>
+                <p>Your submission is highly appreciated!</p>
             </div>
+
         </form>
 
     </div>
@@ -184,8 +188,8 @@ session_start();
 
             <div class="mt-4">
                 <p class="mb-1">Contact:</p>
-                <a class="text-white" target="_blank" href="https://wa.me/+62895366517686">wa.me/+62895366517686</a> <br>
-                <a class="text-white" target="_blank" href="https://instagram.com/victorchendraa">instagram.com/victorchendraa</a>
+                <a class="text-white" target="_blank" href="mailto:victorchendra02@gmail.com?subject=About%20IMO%20Classification%20App">victorchendra02@gmail.com</a> <br>
+                <a class="text-white" target="_blank" href="https://instagram.com/victorchendraa">instagram.com/victorchendraa</a> <br>
             </div>
         </div>
     </footer>
