@@ -72,6 +72,13 @@ if (!isset($_SESSION['valid_credential'])) {
         }
         ?>
 
+        <!-- FOR MAINTENANCE -->
+        <div class="text-center alert alert-primary" role="alert">
+            We're under maintenance 🔨 <br>
+            Please wait ☺️
+        </div>
+        <!-- FOR MAINTENANCE -->
+
         <h1>IMO Classification</h1>
 
         <form action="verify_submission.php" method="post" id="labelForm">
@@ -139,7 +146,9 @@ if (!isset($_SESSION['valid_credential'])) {
                 <br>
 
                 <!-- Button to trigger the modal -->
+                <!-- FOR MAINTENANCE -->
                 <!-- <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#confirmationModalUnderMaintenance" style="width: 20rem;"> -->
+                <!-- FOR MAINTENANCE -->
                 <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#confirmationModal" style="width: 20rem;">
                     Submit →
                 </button>
