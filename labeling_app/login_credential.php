@@ -1,29 +1,11 @@
 <?php
 session_start();
 
+// Redirect to index.php if the user is already authenticated
 if (isset($_SESSION['valid_credential'])) {
     header("Location: index.php");
     exit();
 }
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     // Validate the credential (you need to add your validation logic)
-//     $enteredCredential = $_POST['credentialInput'];
-
-//     // Add your credential validation logic here
-//     $isValidCredential = true; // Replace this with your validation logic
-
-//     if ($isValidCredential) {
-//         $_SESSION['valid_credential'] = true;
-//         header("Location: index.php");
-//         exit();
-//     } else {
-//         // Invalid credential, show an error message
-//         $_SESSION['invalid_credential'] = "Invalid credential. Please try again.";
-//         header("Location: login_credential.php");
-//         exit();
-//     }
-// }
 ?>
 
 <!DOCTYPE html>
