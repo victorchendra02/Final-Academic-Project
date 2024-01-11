@@ -42,6 +42,11 @@ if (!isset($_SESSION['valid_credential'])) {
     </svg>
 
     <div class="m-5">
+        <!-- END SESSION BUTTON -->
+        <form class="mb-2" action="end_session.php" method="post">
+            <button type="submit" class="btn btn-danger" name="end_session">End Session</button>
+        </form>
+
         <!-- Alert for notification -->
         <?php
 
