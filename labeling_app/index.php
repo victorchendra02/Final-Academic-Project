@@ -77,6 +77,7 @@ if (!isset($_SESSION['valid_credential'])) {
         }
         ?>
 
+        <!-- NOTIFICATION DO NOT REFRESH PAGE -->
         <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
             <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
                 <use xlink:href='#info-fill' />
