@@ -90,8 +90,8 @@ if (!isset($_SESSION['valid_credential'])) {
                         <th scope="col">No</th>
                         <th scope="col">Problem</th>
                         <th scope="col">Year</th>
-                        <th scope="col">Link</th>
-                        <th scope="col" style="width: 11rem;">Label</th>
+                        <th scope="col" style="width: 6rem;">Link</th>
+                        <th scope="col" style="width: 12rem;">Label</th>
                     </tr>
                 </thead>
 
@@ -127,10 +127,10 @@ if (!isset($_SESSION['valid_credential'])) {
                         foreach ($selectedRows as $row) {
                             echo "<tr>";
                             echo "<td>" . $row['id_key'] . "</td>";
-                            echo "<td>" . $row['no'] . "</td>";
+                            echo "<td class='text-danger'>" . $row['no'] . "</td>";
                             echo "<td>" . $row['post_rendered'] . "</td>";
-                            echo "<td>" . $row['year'] . "</td>";
-                            echo "<td><a href='" . $row['link'] . "' target='_blank'>" . $row['link'] . "</a></td>";
+                            echo "<td class='text-success' style='font-size: 14px;'>" . $row['year'] . "</td>";
+                            echo "<td><a href='" . $row['link'] . "' target='_blank'>check</a></td>";
                             echo "<td><select class='form-select' name='data_to_parse[" . $row['id_key'] . "]' aria-label='Label selection'>
                                         <option value='' selected disabled hidden></option>
                                         <option value='Algebra'>Algebra</option>
