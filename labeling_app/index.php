@@ -43,7 +43,7 @@ if (!isset($_SESSION['valid_credential'])) {
 
     <div class="m-5">
         <!-- END SESSION BUTTON -->
-        <form class="mb-2" action="end_session.php" method="post">
+        <form class="mb-3" action="end_session.php" method="post">
             <button type="submit" class="btn btn-danger" name="end_session">End Session</button>
         </form>
 
@@ -84,8 +84,18 @@ if (!isset($_SESSION['valid_credential'])) {
             </svg>
             <div>
                 <strong>NOTE:</strong> Do not refresh the page! <br>
-                Otherwise, labels that have been assigned (but not yet submitted) <strong>will not be saved</strong>,
-                and <strong>the data will be shuffled</strong>.
+                <strong>IF</strong> labels that have been assigned (but not yet submitted) <strong>will not be saved</strong>, and <strong>the data will be shuffled</strong>.
+            </div>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>
+
+        <!-- NOTIFICATION SAFE TO REFRESH -->
+        <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
+            <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
+                <use xlink:href='#info-fill' />
+            </svg>
+            <div>
+                <strong>NOTE:</strong> Refresh page if no data shown on table.
             </div>
             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
         </div>
