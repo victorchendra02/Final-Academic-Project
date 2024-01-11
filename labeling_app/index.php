@@ -72,6 +72,18 @@ if (!isset($_SESSION['valid_credential'])) {
         }
         ?>
 
+        <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
+            <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
+                <use xlink:href='#info-fill' />
+            </svg>
+            <div>
+                <strong>NOTE:</strong> Do not refresh the page! <br>
+                Otherwise, labels that have been assigned (but not yet submitted) <strong>will not be saved</strong>,
+                and <strong>the data will be shuffled</strong>.
+            </div>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>
+
         <!-- FOR MAINTENANCE -->
         <!-- <div class="text-center alert alert-primary" role="alert">
             We're under maintenance 🔨 <br>
