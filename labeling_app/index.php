@@ -96,7 +96,7 @@ if (!isset($_SESSION['valid_credential'])) {
                 </thead>
 
                 <tbody>
-                    <!-- Fetch and display data from your database -->
+                    <!-- Fetch and display shuffled data from your database where label is NULL -->
                     <?php
                     // Fetch data from your database and display rows
                     $servername = "localhost";
@@ -110,11 +110,21 @@ if (!isset($_SESSION['valid_credential'])) {
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL LIMIT 20;";
+                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
-                        while ($row = $result->fetch_assoc()) {
+                        // Fetch all rows into an associative array
+                        $rows = $result->fetch_all(MYSQLI_ASSOC);
+
+                        // Shuffle the array
+                        shuffle($rows);
+
+                        // Limit the array to the first 20 elements
+                        $selectedRows = array_slice($rows, 0, 20);
+
+                        // Process the selected rows and display them
+                        foreach ($selectedRows as $row) {
                             echo "<tr>";
                             echo "<td>" . $row['id_key'] . "</td>";
                             echo "<td>" . $row['no'] . "</td>";
