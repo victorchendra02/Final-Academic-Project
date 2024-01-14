@@ -7,6 +7,8 @@ if (!isset($_SESSION['valid_credential'])) {
     header("Location: login_credential.php");
     exit();
 }
+
+require "config.php";
 ?>
 
 <!DOCTYPE html>
