@@ -110,7 +110,16 @@ require "config.php";
         </div> -->
         <!-- FOR MAINTENANCE -->
 
-        <h1>IMO Classification</h1>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <!-- Heading -->
+            <h1 class="m-0">IMO Classification</h1>
+
+            <!-- END SESSION BUTTON -->
+            <form action="end_session.php" method="post">
+                <button type="submit" class="btn btn-danger" name="end_session" style="width: 150px; height: 100%;">End Session</button>
+            </form>
+        </div>
+
 
         <form action="verify_submission.php" method="post" id="labelForm">
 
