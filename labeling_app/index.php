@@ -44,7 +44,7 @@ require "config.php";
         </symbol>
     </svg>
 
-    <div class="m-5">
+    <div class="m-5 mt-4">
         <!-- Alert for notification -->
         <?php
         // Check for error message
@@ -115,6 +115,18 @@ require "config.php";
         </div> -->
         <!-- FOR MAINTENANCE -->
 
+        <!-- h1 & End session button -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Heading -->
+            <h1 class="m-0">IMO Classification</h1>
+
+            <!-- END SESSION BUTTON -->
+            <form action="end_session.php" method="post">
+                <button type="submit" class="btn btn-danger" name="end_session" style="width: 150px; height: 100%;">End Session</button>
+            </form>
+        </div>
+        <hr class="mb-4">
+
         <!-- Display Current Database Information -->
         <?php
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -154,17 +166,18 @@ require "config.php";
         ?>
 
         <!-- Display Current Database Information -->
-        <div class="container my-3">
+        <div class="container mb-4">
             <h2>Information</h2>
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-header">
                             Total
                         </div>
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $total; ?></h4>
+                            Data
                         </div>
                     </div>
 
@@ -172,22 +185,24 @@ require "config.php";
 
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="card text-center">
+                                <div class="card-header bg-success" style="color: #FFFFFF;">
                                     Labeled
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title"><?php echo $not_null_label; ?></h4>
+                                    Data
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="card text-center">
+                                <div class="card-header bg-danger" style="color: #FFFFFF;">
                                     Not labeled
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title"><?php echo $null_label; ?></h4>
+                                    Data
                                 </div>
                             </div>
                         </div>
@@ -195,36 +210,67 @@ require "config.php";
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            Counts by Label
+                    <div class="row" style="height: 100%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        Label
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><?php echo $algebra; ?></h4>
+                                        Algebra
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        Label
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><?php echo $combinatorics; ?></h4>
+                                        Combinatorics
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Algebra: <?php echo $algebra; ?></li>
-                                <li class="list-group-item">Combinatorics: <?php echo $combinatorics; ?></li>
-                                <li class="list-group-item">Geometry: <?php echo $geometry; ?></li>
-                                <li class="list-group-item">Number Theory: <?php echo $number_theory; ?></li>
-                            </ul>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <br>
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        Label
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><?php echo $geometry; ?></h4>
+                                        Geometry
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <br>
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        Label
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><?php echo $number_theory; ?></h4>
+                                        Number Theory
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- h1 & End session button -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <!-- Heading -->
-            <h1 class="m-0">IMO Classification</h1>
-
-            <!-- END SESSION BUTTON -->
-            <form action="end_session.php" method="post">
-                <button type="submit" class="btn btn-danger" name="end_session" style="width: 150px; height: 100%;">End Session</button>
-            </form>
-        </div>
-
         <!-- Progression bar -->
-        <div class="progress mb-3">
+        <div class="progress mb-4">
             <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: <?php echo ($not_null_label / $total) * 100; ?>%;" aria-valuenow="<?php echo $not_null_label; ?>" aria-valuemin="0" aria-valuemax="<?php echo $total; ?>">
                 <?php echo round(($not_null_label / $total) * 100, 1); ?>%
             </div>
