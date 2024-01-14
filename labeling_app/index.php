@@ -45,14 +45,8 @@ require "config.php";
     </svg>
 
     <div class="m-5">
-        <!-- END SESSION BUTTON -->
-        <form class="mb-3" action="end_session.php" method="post">
-            <button type="submit" class="btn btn-danger" name="end_session">End Session</button>
-        </form>
-
         <!-- Alert for notification -->
         <?php
-
         // Check for error message
         if (isset($_SESSION['emptyinput'])) {
             $message = $_SESSION['emptyinput'];
@@ -121,6 +115,104 @@ require "config.php";
         </div> -->
         <!-- FOR MAINTENANCE -->
 
+        <!-- Display Current Database Information -->
+        <?php
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $query = "SELECT 
+            COUNT(*) AS total,
+            SUM(CASE WHEN label='Algebra' THEN 1 ELSE 0 END) AS algebra_count,
+            SUM(CASE WHEN label='Combinatorics' THEN 1 ELSE 0 END) AS combinatorics_count,
+            SUM(CASE WHEN label='Geometry' THEN 1 ELSE 0 END) AS geometry_count,
+            SUM(CASE WHEN label='Number Theory' THEN 1 ELSE 0 END) AS number_theory_count,
+            SUM(CASE WHEN label IS NULL THEN 1 ELSE 0 END) AS null_label_count,
+            SUM(CASE WHEN label IS NOT NULL THEN 1 ELSE 0 END) AS not_null_label_count
+          FROM `imo`";
+
+        $result = $conn->query($query);
+
+        if ($result === false) {
+            // Handle the error, for example:
+            die("Error executing the query: " . $conn->error);
+        }
+
+        $row = $result->fetch_assoc();
+
+        $total = $row['total'];
+        $algebra = $row['algebra_count'];
+        $combinatorics = $row['combinatorics_count'];
+        $geometry = $row['geometry_count'];
+        $number_theory = $row['number_theory_count'];
+        $null_label = $row['null_label_count'];
+        $not_null_label = $row['not_null_label_count'];
+
+        $conn->close();
+        ?>
+
+        <!-- Display Current Database Information -->
+        <div class="container my-3">
+            <h2>Information</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Total
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $total; ?></h4>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Labeled
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><?php echo $not_null_label; ?></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Not labeled
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><?php echo $null_label; ?></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Counts by Label
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Algebra: <?php echo $algebra; ?></li>
+                                <li class="list-group-item">Combinatorics: <?php echo $combinatorics; ?></li>
+                                <li class="list-group-item">Geometry: <?php echo $geometry; ?></li>
+                                <li class="list-group-item">Number Theory: <?php echo $number_theory; ?></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- h1 & End session button -->
         <div class="d-flex justify-content-between align-items-center mb-3">
             <!-- Heading -->
             <h1 class="m-0">IMO Classification</h1>
@@ -156,7 +248,6 @@ require "config.php";
                     <!-- Fetch and display shuffled data from your database where label is NULL -->
                     <?php
                     // Fetch data from your database and display rows
-                    require "config.php";
 
                     $conn = new mysqli($servername, $username, $password, $dbname);
                     $conn->set_charset('utf8mb4'); // Set the character set to utf8mb4
