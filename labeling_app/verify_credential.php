@@ -5,10 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // User input from the form
     $enteredCredential = $_POST['credentialInput'];
 
-    $servername = "localhost";
-    $username = "root";  // aopsimol_root
-    $password = "";  // <aopsimol_root>
-    $dbname = "aopsimol_artofproblemsolving";
+    require "config.php";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 

@@ -52,10 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Input not null
     } else {
-        $servername = "localhost";
-        $username = "root";  // aopsimol_root
-        $password = "";      // <aopsimol_root>
-        $dbname = "aopsimol_artofproblemsolving";
+        require "config.php";
 
         // Create database connection
         $conn = new mysqli($servername, $username, $password, $dbname);

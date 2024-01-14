@@ -128,10 +128,7 @@ if (!isset($_SESSION['valid_credential'])) {
                     <!-- Fetch and display shuffled data from your database where label is NULL -->
                     <?php
                     // Fetch data from your database and display rows
-                    $servername = "localhost";
-                    $username = "root";  // aopsimol_root
-                    $password = "";      // <aopsimol_root>
-                    $dbname = "aopsimol_artofproblemsolving";
+                    require "config.php";
 
                     $conn = new mysqli($servername, $username, $password, $dbname);
                     $conn->set_charset('utf8mb4'); // Set the character set to utf8mb4
