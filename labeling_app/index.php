@@ -172,7 +172,7 @@ require "config.php";
             <div class="row">
                 <div class="col-md-6">
                     <div class="card text-center">
-                        <div class="card-header">
+                        <div class="card-header bg-info">
                             Total
                         </div>
                         <div class="card-body">
