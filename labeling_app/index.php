@@ -81,7 +81,7 @@ require "config.php";
         ?>
 
         <!-- NOTIFICATION DO NOT REFRESH PAGE -->
-        <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
+        <div class='alert alert-warning d-flex align-items-center alert-dismissible fade show' role='alert'>
             <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
                 <use xlink:href='#info-fill' />
             </svg>
@@ -93,12 +93,23 @@ require "config.php";
         </div>
 
         <!-- NOTIFICATION SAFE TO REFRESH -->
-        <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
+        <div class='alert alert-warning d-flex align-items-center alert-dismissible fade show' role='alert'>
             <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
                 <use xlink:href='#info-fill' />
             </svg>
             <div>
                 <strong>NOTE:</strong> Refresh page if no data shown on table.
+            </div>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>
+
+        <!-- NOTIFICATION YOU CAN LEAVE BLANK -->
+        <div class='alert alert-info d-flex align-items-center alert-dismissible fade show' role='alert'>
+            <svg class='bi flex-shrink-0 me-2' role='img' aria-label='Warning:' height='1em' width='1em'>
+                <use xlink:href='#info-fill' />
+            </svg>
+            <div>
+                <strong>NOTE:</strong> You can still submit and leave it blank if you're not sure (Only those that have been labeled will be submitted).
             </div>
             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
         </div>
