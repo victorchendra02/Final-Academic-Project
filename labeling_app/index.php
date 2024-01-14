@@ -131,6 +131,12 @@ require "config.php";
             </form>
         </div>
 
+        <!-- Progression bar -->
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: <?php echo ($not_null_label / $total) * 100; ?>%;" aria-valuenow="<?php echo $not_null_label; ?>" aria-valuemin="0" aria-valuemax="<?php echo $total; ?>">
+                <?php echo round(($not_null_label / $total) * 100, 1); ?>%
+            </div>
+        </div>
 
         <form action="verify_submission.php" method="post" id="labelForm">
 
