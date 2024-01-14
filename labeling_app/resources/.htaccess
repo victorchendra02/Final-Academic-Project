@@ -1,0 +1,18 @@
+# Enable mod_rewrite
+ReWriteEngine On
+
+# ReWriteCond = define rule condition
+# HTTP_REFERER = check from where the request originated
+# ! = exclude
+# ^ = start of string
+# [NC] = case insensitive search
+ReWriteECond %{HTTP_REFERER} !^https://aopsimolabelingproject.my.id/resources [NC]
+
+# \ = match any
+# . = ane character
+# () = pattern, group
+# $ = end of string
+
+# [F] = forbidden, 403
+# [L] = stop processing further rules
+ReWriteRule \.(ico|gif|jpg|jpeg|png)$ - [F,L]
