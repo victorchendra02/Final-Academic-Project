@@ -9,4 +9,6 @@ pygame
 pandas
 numpy
 seaborn
+scikit-learn==1.4.0
+# scikit-learn==1.2.2  # previous ver.
 mysql-connector-python
