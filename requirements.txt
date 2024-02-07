@@ -8,4 +8,5 @@ pyperclip
 pygame
 pandas
 numpy
+seaborn
 mysql-connector-python
