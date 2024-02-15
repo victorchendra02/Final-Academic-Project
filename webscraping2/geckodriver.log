@@ -227,3 +227,8 @@ Dynamically enable window occlusion 0
 Read port: 52865
 1707989879716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1707989909490	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 2560: TypeError: subject.QueryInterface is not a function
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1707990055535	Marionette	INFO	Stopped listening on port 52865
+Dynamically enable window occlusion 1
