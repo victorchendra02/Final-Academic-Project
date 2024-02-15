@@ -10,8 +10,12 @@ pandas
 numpy
 seaborn
 scikit-learn==1.4.0
+# scikit-learn==1.2.2  # previous ver.
+
 transformers
 tensorflow
+tensorflow-text
 keras
-# scikit-learn==1.2.2  # previous ver.
+pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+
 mysql-connector-python
