@@ -157,3 +157,43 @@ Dynamically enable window occlusion 0
 Read port: 50963
 1707978216590	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1707978246361	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1707983804245	geckodriver	INFO	Listening on 127.0.0.1:51921
+1707983807310	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileDLYFVl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707983807661	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707983807718	Marionette	INFO	Listening on port 51931
+Read port: 51931
+1707983807874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1707983837682	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1707983952011	geckodriver	INFO	Listening on 127.0.0.1:52010
+1707983955028	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileIJtAzz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707983955320	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707983955367	Marionette	INFO	Listening on port 52020
+Read port: 52020
+1707983955491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1707984634243	geckodriver	INFO	Listening on 127.0.0.1:52146
+1707984637290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileV3UIJJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707984637547	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707984637618	Marionette	INFO	Listening on port 52156
+Read port: 52156
+1707984637795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1707984667581	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1707987859271	geckodriver	INFO	Listening on 127.0.0.1:52458
+1707987862339	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileFuM9td"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707987862602	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707987862661	Marionette	INFO	Listening on port 52468
+Read port: 52468
+1707987862790	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1707987892635	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
