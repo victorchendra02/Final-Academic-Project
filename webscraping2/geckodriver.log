@@ -232,3 +232,103 @@ JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 25
 A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
 1707990055535	Marionette	INFO	Stopped listening on port 52865
 Dynamically enable window occlusion 1
+1708355802919	geckodriver	INFO	Listening on 127.0.0.1:52460
+1708355805974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofiler7rFDx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708355806371	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1708355806492	Marionette	INFO	Listening on port 52470
+Read port: 52470
+1708355806722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1708355836390	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1708398783740	geckodriver	INFO	Listening on 127.0.0.1:50141
+1708398786852	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileDvrMNp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708398787304	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1708398787416	Marionette	INFO	Listening on port 50151
+Read port: 50151
+1708398787728	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1708398817330	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1708399345618	geckodriver	INFO	Listening on 127.0.0.1:50387
+1708399348669	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileXTpyvL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708399349185	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1708399349286	Marionette	INFO	Listening on port 50397
+Read port: 50397
+1708399349529	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1708399379238	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1708399575627	geckodriver	INFO	Listening on 127.0.0.1:50508
+1708399578655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilegeqvTI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708399579105	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1708399579207	Marionette	INFO	Listening on port 50519
+Read port: 50519
+1708399579493	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1708399609274	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1708401024202	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/80ndnja80f2uvg4l8sj2su82m, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/5v7lpzb1fp10xxmwvevpgbj5h, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/80ndnja80f2uvg4l8sj2su82m, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/12jn8edunbj0jah6829kj7zs7, line 1: Script terminated by timeout at:
+Ji/<@https://static.licdn.com/aero-v1/sc/h/12jn8edunbj0jah6829kj7zs7:1:208585
+n@https://static.licdn.com/aero-v1/sc/h/12jn8edunbj0jah6829kj7zs7:1:208081
+
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/80ndnja80f2uvg4l8sj2su82m, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/gsi/button?logo_alignment=center&shape=pill&size=large&text=continue_with&theme=undefined&type=undefined&width=398&client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&iframe_id=gsi_27432_807643&as=nKCTzSKbZ%2FfpmE26xBjm1Q&hl=en_US, line 95: Script terminated by timeout at:
+_.Ld@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:95:165
+Zd@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:100:438
+_.N@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:130:43
+Mi@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:199:285
+Hi@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:200:246
+Ki@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:197:417
+Ji@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:197:22
+Di.prototype.I@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:196:130
+Di/<@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:190:387
+pc@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:62:102
+b@/_/gsi/_/js/k=gsi.gsi.en_US.jmcz_1uQBHM.O/am=ABLk/d=1/rs=AF0KOtWrKUXWKFsw5dFfN_TPsHYNr7Pw3g/m=credential_button_library:59:473
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1708401477660	Marionette	INFO	Stopped listening on port 50519
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1708414918689	geckodriver	INFO	Listening on 127.0.0.1:59952
+1708414921712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilezSTZDi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708414922408	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1708414922571	Marionette	INFO	Listening on port 59962
+Read port: 59962
+1708414922853	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1708414952436	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1708417077583	Marionette	INFO	Stopped listening on port 59962
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1709104664883	geckodriver	INFO	Listening on 127.0.0.1:51925
+1709104667977	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilewcq2ra"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1709104668519	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1709104668653	Marionette	INFO	Listening on port 51935
+Read port: 51935
+1709104668978	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1709104698549	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1709105482591	geckodriver	INFO	Listening on 127.0.0.1:52143
+1709105485626	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofilebiEntI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1709105486011	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1709105486116	Marionette	INFO	Listening on port 52154
+Read port: 52154
+1709105486361	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1709105516045	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
