@@ -332,3 +332,24 @@ Dynamically enable window occlusion 0
 Read port: 52154
 1709105486361	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1709105516045	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1709205405864	geckodriver	INFO	Listening on 127.0.0.1:54901
+1709205408927	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileQbgYCy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1709205409411	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1709205409510	Marionette	INFO	Listening on port 54911
+Read port: 54911
+1709205409782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1709205439451	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1709206106839	geckodriver	INFO	Listening on 127.0.0.1:55109
+1709206109905	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\victo\\AppData\\Local\\Temp\\rust_mozprofileNrgVvE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1709206110315	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1709206110413	Marionette	INFO	Listening on port 55119
+Read port: 55119
+1709206110736	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1709206140345	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
