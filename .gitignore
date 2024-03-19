@@ -1,0 +1,12 @@
+model_02/bert_tf/aclImdb
+model_02/bert_tf/post_canonical
+model_01/NB_89_accuracy
+model_01/SVC_91_accuracy
+
+model_02/bert_tf/imo.csv
+
+model_02/imo_combined.csv
+model_02/egmo_combined.csv
+model_02/preprocess.py
+
+.idea
