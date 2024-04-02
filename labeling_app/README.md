@@ -1,16 +1,3 @@
-# Activate Python Flask
-
-```
-labeling_app\pythonflask\env\Scripts\activate
-```
-
-# Go to directory
-
-```
-cd labeling_app
-```
-
-# Start streamlit
-```
-streamlit run labeling_app\main.py
-```
+![thumbnail 01](thumbnail_01.jpg)
+![thumbnail 02](thumbnail_02.jpg)
+![thumbnail 03](thumbnail_03.jpg)
