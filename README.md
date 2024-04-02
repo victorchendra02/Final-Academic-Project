@@ -16,34 +16,34 @@ pyperclip
 pygame
 ```
 
-## B. Env TensorFlow `aops_TF`:
+## B. Env TensorFlow `aops_tenflow`:
 
 Documentation:
 1. [Install TensorFlow](https://www.tensorflow.org/install/pip#windows-native_1)
 2. [Classify Text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
 
 ```bash
-conda create --name aops_TF python=3.10 anaconda -y
-conda activate aops_TF
+conda create --name aops_tenflow python=3.9.12 anaconda -y
+conda activate aops_tenflow
 
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
-pip install --upgrade pip
-pip install "tensorflow<2.11"
+python -m pip install "tensorflow<2.11"
 # Verify GPU:
 # If a list of GPU devices is returned, you've installed TensorFlow successfully.
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
-pip install "tf-models-official"
+pip install -U "tensorflow-text"
+pip install tf-models-official
 conda install transformers -y
 ```
 
-## C. Env PyTorch `aops_PT`:
+## C. Env PyTorch `aops_pytorch`:
 
 Documentation [Install PyTorch](https://pytorch.org/get-started/locally/)
 
 ```bash
-conda create --name aops_PT python=3.10 anaconda -y
-conda activate aops_PT
+conda create --name aops_pytorch python=3.9.12 anaconda -y
+conda activate aops_pytorch
 
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
 # Verify GPU:
@@ -53,11 +53,12 @@ python -c "import torch; print(torch.cuda.is_available())"
 conda install transformers -y
 ```
 
-## D. Env `aops_MATHBERT`:
+## D. Env `aops_mathbert`:
 
 ```bash
-conda create --name aops_MATHBERT python=3.10 anaconda -y
-conda activate aops_MATHBERT
+conda create --name aops_mathbert python=3.9.12 anaconda -y
+conda activate aops_mathbert
+
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
 pip install --upgrade pip
 pip install "tensorflow<2.11"
