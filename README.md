@@ -1,7 +1,7 @@
 ## A. Env `artofproblemsolving`
 
 ```bash
-conda create --name artofproblemsolving python=3.9.12 -y
+conda create --name artofproblemsolving python=3.9.12 anaconda -y
 ```
 
 ```bash
@@ -23,7 +23,7 @@ Documentation:
 2. [Classify Text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
 
 ```bash
-conda create --name aops_TF python=3.10 -y
+conda create --name aops_TF python=3.10 anaconda -y
 conda activate aops_TF
 
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
@@ -42,7 +42,7 @@ conda install transformers -y
 Documentation [Install PyTorch](https://pytorch.org/get-started/locally/)
 
 ```bash
-conda create --name aops_PT python=3.10 -y
+conda create --name aops_PT python=3.10 anaconda -y
 conda activate aops_PT
 
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
@@ -56,7 +56,7 @@ conda install transformers -y
 ## D. Env `aops_MATHBERT`:
 
 ```bash
-conda create --name aops_MATHBERT python=3.10 -y
+conda create --name aops_MATHBERT python=3.10 anaconda -y
 conda activate aops_MATHBERT
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
 pip install --upgrade pip
