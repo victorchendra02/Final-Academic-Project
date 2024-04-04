@@ -1,0 +1,1 @@
+Let AX,BY,CZ be three cevians concurrent at an interior point D of a triangle ABC. Prove that if two of the quadrangles DY AZ,DZBX,DXCY are circumscribable, so is the third.

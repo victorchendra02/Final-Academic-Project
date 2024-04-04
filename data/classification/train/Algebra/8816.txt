@@ -1,0 +1,1 @@
+Let n ge 2 and let x_1, x_2, ..., x_n be real numbers satisfying x_1 +x_2 +...+x_n ge 0 and x_1^2+x_2^2+...+x_n^2=1. Let M = max {x_1, x_2,... , x_n }. Show that M ge frac{1}{ sqrt{n(n-1)}} (1) .When does equality hold in (1)?

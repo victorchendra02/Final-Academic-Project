@@ -1,0 +1,1 @@
+A planar country has an odd number of cities separated by pairwise distinct distances. Some of these cities are connected by direct two-way flights. Each city is directly connected to exactly two ther cities, and the latter are located farthest from it. Prove that, using these flights, one may go from any city to any other city

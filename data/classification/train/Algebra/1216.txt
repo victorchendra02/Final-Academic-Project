@@ -1,0 +1,1 @@
+Let n be an integer, n geq 3. Let a_1, a_2, ldots, a_n be real numbers such that 2 leq a_i leq 3 for i = 1, 2, ldots, n. If s = a_1 + a_2 + ldots + a_n, prove that frac{a^2_1 + a^2_2 - a^2_3}{a_1 + a_2 - a_3} + frac{a^2_2 + a^2_3 - a^2_4}{a_2 + a_3 - a_4} + ldots + frac{a^2_n + a^2_1 - a^2_2}{a_n + a_1 - a_2} leq 2s - 2n.

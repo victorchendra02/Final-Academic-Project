@@ -1,0 +1,1 @@
+Given an equilateral triangle ABC, let M be an arbitrary point in space. ( text{a}) Prove that one can construct a triangle from the segments MA, MB, MC. ( text{b}) Suppose that P and Q are two points symmetric with respect to the center O of ABC. Prove that the two triangles constructed from the segments PA,PB,PC and QA,QB,QC are of equal area.

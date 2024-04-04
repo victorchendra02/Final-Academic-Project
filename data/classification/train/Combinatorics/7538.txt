@@ -1,0 +1,1 @@
+Decide if it is possible to consider 2011 points in a plane such that the distance between every two of these points is different from 1 and each unit circle centered at one of these points leaves exactly 1005 points outside the circle.

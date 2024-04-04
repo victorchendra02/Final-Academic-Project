@@ -1,0 +1,1 @@
+In each cell of the table 4 times 4, in which the lines are labeled with numbers 1,2,3,4, and columns with letters a,b,c,d, one number is written: 0 or 1 . Such a table is called valid if there are exactly two units in each of its rows and in each column. Determine the number of valid tables.

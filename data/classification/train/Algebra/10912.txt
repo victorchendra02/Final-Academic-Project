@@ -1,0 +1,1 @@
+Polynomial P(t) is such that for all real x, P( sin x) + P( cos x) = 1. What can be the degree of this polynomial?

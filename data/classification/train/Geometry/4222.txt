@@ -1,0 +1,1 @@
+Given an acute triangle ABC, let M be the midpoint of BC and H the orthocentre. Let Gamma be the circle with diameter HM, and let X,Y be distinct points on Gamma such that AX,AY are tangent to Gamma. Prove that BXYC is cyclic.

@@ -1,0 +1,1 @@
+Let n be a natural number. Solve in integers the equation x^n + y^n = (x - y)^{n+1}.

@@ -1,0 +1,1 @@
+Let a, b, c be natural numbers such that a+b+c = 2pq(p^{30}+q^{30}), p > q being two given positive integers. (a) Prove that k = a^3 + b^3 + c^3 is not a prime number. (b) Prove that if a cdot b cdot c is maximum, then 1984 divides k.

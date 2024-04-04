@@ -1,0 +1,1 @@
+Given are positive reals a, b, c, such that frac{1}{a}+ frac{1}{b}+ frac{1}{c}=3. Prove that frac{ sqrt{a+ frac{b}{c}}+ sqrt{b+ frac{c}{a}}+ sqrt{c+ frac{a}{b}}}{3} leq frac{a+b+c-1}{ sqrt{2}}. Albania

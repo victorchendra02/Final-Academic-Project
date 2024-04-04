@@ -1,0 +1,1 @@
+Show that (x + y + z) big( frac{1}{x}+ frac{1}{y}+ frac{1}{z} big) ge 4 big( frac{x}{xy+1}+ frac{y}{yz+1}+ frac{z}{zx+1} big)^2 , for all real positive numbers x, y and z.

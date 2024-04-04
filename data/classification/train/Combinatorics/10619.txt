@@ -1,0 +1,1 @@
+A graph contains p vertices numbered from 1 to p, and q edges numbered from p + 1 to p + q. It turned out that for each edge the sum of the numbers of its ends and of the edge itself equals the same number s. It is also known that the numbers of edges starting in all vertices are equal. Prove that s = dfrac{1}{2} (4p+q+3).

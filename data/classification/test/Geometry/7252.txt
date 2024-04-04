@@ -1,0 +1,1 @@
+In convex quadrilateral ABCD, the diagonals AC and BD meet at the point P. We know that angle DAC = 90^o and 2 angle ADB = angle ACB. If we have angle DBC + 2 angle ADC = 180^o prove that 2AP = BP. Proposed by Iman Maghsoudi

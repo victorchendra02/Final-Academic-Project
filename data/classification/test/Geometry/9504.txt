@@ -1,0 +1,1 @@
+A median , a bisector and an altitude of a certain triangle intersect at an inner point O . The segment of the bisector from the vertex to O is equal to the segment of the altitude from the vertex to O . Prove that the triangle is equilateral .

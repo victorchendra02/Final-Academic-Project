@@ -1,0 +1,1 @@
+Consider an n times{n} grid formed by n^2 unit squares. We define the centre of a unit square as the intersection of its diagonals. Find the smallest integer m such that, choosing any m unit squares in the grid, we always get four unit squares among them whose centres are vertices of a parallelogram.

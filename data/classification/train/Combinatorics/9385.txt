@@ -1,0 +1,1 @@
+Let a_1, a_2, ....., a_{2003} be sequence of reals number. Call a_k leading element, if at least one of expression a_k; a_k+a_{k+1}; a_k+a_{k+1}+a_{k+2}; ....; a_k+a{k+1}+a_{k+2}+....+a_{2003} is positive. Prove, that if exist at least one leading element, then sum of all leading's elements is positive. Official solution here

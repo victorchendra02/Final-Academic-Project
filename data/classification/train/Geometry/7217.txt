@@ -1,0 +1,1 @@
+A parallelogram ABCD is given (AB neq BC). Points E and G are chosen on the line overline{CD} such that overline{AC} is the angle bisector of both angles angle EAD and angle BAG. The line overline{BC} intersects overline{AE} and overline{AG} at F and H, respectively. Prove that the line overline{FG} passes through the midpoint of HE. Proposed by Mahdi Etesamifard

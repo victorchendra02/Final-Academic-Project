@@ -1,0 +1,1 @@
+If p, q and r are nonzero rational numbers such that sqrt[3]{pq^2}+ sqrt[3]{qr^2}+ sqrt[3]{rp^2} is a nonzero rational number, prove that frac{1}{ sqrt[3]{pq^2}}+ frac{1}{ sqrt[3]{qr^2}}+ frac{1}{ sqrt[3]{rp^2}} is also a rational number.

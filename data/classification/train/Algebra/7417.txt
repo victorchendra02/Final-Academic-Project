@@ -1,0 +1,1 @@
+Find all the pairs of integers (m, n) such that sqrt {n + sqrt {2016}} + sqrt {m- sqrt {2016}} in mathbb {Q}.

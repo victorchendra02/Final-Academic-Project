@@ -1,0 +1,1 @@
+In triangle ABC ,M,N,K are midpoints of sides BC,AC,AB,respectively.Construct two semicircles with diameter AB,AC outside of triangle ABC.MK,MN intersect with semicircles in X,Y.The tangents to semicircles at X,Y intersect at point Z.Prove that AZ perp BC.(Mehdi E'tesami Fard)

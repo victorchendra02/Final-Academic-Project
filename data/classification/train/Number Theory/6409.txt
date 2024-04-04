@@ -1,0 +1,1 @@
+Let a, b, c, m, n be positive integers. Consider the trinomial f (x) = ax^{2}+bx+c. Show that there exist n consecutive natural numbers a_{1}, a_{2}, . . . , a_{n} such that each of the numbers f (a_{1}), f (a_{2}), . . . , f (a_{n}) has at least m different prime factors.

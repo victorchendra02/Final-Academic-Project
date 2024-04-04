@@ -1,0 +1,1 @@
+Consider the sequence a_1, a_2, a_3, ... defined by a_1 = 9 and a_{n + 1} = frac{(n + 5)a_n + 22}{n + 3} for n ge 1. Find all natural numbers n for which a_n is a perfect square of an integer.

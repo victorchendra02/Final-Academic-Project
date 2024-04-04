@@ -1,0 +1,1 @@
+In square ABCD (labeled clockwise), let P be any point on BC and construct square APRS (labeled clockwise). Prove that line CR is tangent to the circumcircle of triangle ABC.

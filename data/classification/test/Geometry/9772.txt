@@ -1,0 +1,1 @@
+ABCD is parallelogram, M is the midpoint of side CD and H is the foot of the perpendicular from B to line AM. Prove that BCH is an isosceles triangle. (M Volchkevich)

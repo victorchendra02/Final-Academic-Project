@@ -1,0 +1,1 @@
+Let ABC be a right triangle in A , whose leg measures 1 cm. The bisector of the angle BAC cuts the hypotenuse in R, the perpendicular to AR on R , cuts the side AB at its midpoint. Find the measurement of the side AB .

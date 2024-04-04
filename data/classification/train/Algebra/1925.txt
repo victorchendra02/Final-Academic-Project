@@ -1,0 +1,1 @@
+Find digits x, y, z such that the equality sqrt{ underbrace{ overline{xx cdots x}}_{2n text{ times}}- underbrace{ overline{yy cdots y}}_{n text{ times}}}= underbrace{ overline{zz cdots z}}_{n text{ times}}holds for at least two values of n in mathbb N, and in that case find all n for which this equality is true.

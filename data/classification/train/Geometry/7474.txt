@@ -1,0 +1,1 @@
+Let ABCD be a quadrilateral whose diagonals are not perpendicular and whose sides AB and CD are not parallel.Let O be the intersection of its diagonals.Denote with H_1 and H_2 the orthocenters of triangles AOB and COD, respectively.If M and N are the midpoints of the segment lines AB and CD, respectively.Prove that the lines H_1H_2 and MN are parallel if and only if AC=BD.

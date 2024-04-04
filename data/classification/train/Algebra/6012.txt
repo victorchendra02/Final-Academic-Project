@@ -1,0 +1,1 @@
+Find all nondecreasing functions f: mathbb{R} longrightarrow mathbb{R} that verify the relation f left( f left( x^2 right) +y+f(y) right) =x^2+2f(y) , for any real numbers x,y.

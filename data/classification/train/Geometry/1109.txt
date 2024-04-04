@@ -1,0 +1,1 @@
+The point M is inside the convex quadrilateral ABCD, such that MA = MC, hspace{0,2cm} widehat{AMB} = widehat{MAD} + widehat{MCD} quad textnormal{and} quad widehat{CMD} = widehat{MCB} + widehat{MAB}. Prove that AB cdot CM = BC cdot MD and BM cdot AD = MA cdot CD.

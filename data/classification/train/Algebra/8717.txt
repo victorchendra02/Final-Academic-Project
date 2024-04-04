@@ -1,0 +1,1 @@
+Find all functions f : R- {-1 } to R such that f(x)f left( f left( frac{1 - y}{1 + y} right) right) = f left( frac{x + y}{xy + 1} right) for all x, y in R that satisfy (x + 1)(y + 1)(xy + 1) ne 0.

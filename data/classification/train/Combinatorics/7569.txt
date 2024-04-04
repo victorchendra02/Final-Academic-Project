@@ -1,0 +1,1 @@
+Five players (A,B,C,D,E) take part in a bridge tournament. Every two players must play (as partners) against every other two players. Any two given players can be partners not more than once per a day. What is the least number of days needed for this tournament?

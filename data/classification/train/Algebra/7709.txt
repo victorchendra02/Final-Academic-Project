@@ -1,0 +1,1 @@
+Find all the triples (x,y,z) of real numbers such that 2x sqrt{y-1}+2y sqrt{z-1}+2z sqrt{x-1} ge xy+yz+zx

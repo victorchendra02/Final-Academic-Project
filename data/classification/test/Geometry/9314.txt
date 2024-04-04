@@ -1,0 +1,1 @@
+In a triangle ABC, M is the midpoint of the AB. A point B_1 is marked on AC such that CB=CB_1. Circle omega and omega_1, the circumcircles of triangles ABC and BMB_1, respectively, intersect again at K. Let Q be the midpoint of the arc ACB on omega. Let B_1Q and BC intersect at E. Prove that KC bisects B_1E. M. Kungozhin

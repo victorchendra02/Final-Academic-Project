@@ -1,0 +1,1 @@
+Let A_1,A_2,...,A_{2002} be arbitrary points in the plane. Prove that for every circle of radius 1 and for every rectangle inscribed in this circle, there exist 3 vertices M,N,P of the rectangle such that MA_1 + MA_2 + cdots + MA_{2002} + NA_1 + NA_2 + cdots + NA_{2002} + PA_1 + PA_2 + cdots + PA_{2002} ge 6006.

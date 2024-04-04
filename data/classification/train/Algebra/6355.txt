@@ -1,0 +1,1 @@
+Let a,b,c,d be real numbers, such that a^2 le 1, a^2 + b^2 le 5, a^2 + b^2 + c^2 le 14, a^2 + b^2 + c^2 + d^2 le 30. Prove that a + b + c + d le 10.

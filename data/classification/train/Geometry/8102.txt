@@ -1,0 +1,1 @@
+On the sides AB, BC and CA of a triangle ABC are located the points P, Q and R respectively, such that BQ = 2QC, CR = 2RA and angle PRQ = 90^o. Show that angle APR = angle RPQ.

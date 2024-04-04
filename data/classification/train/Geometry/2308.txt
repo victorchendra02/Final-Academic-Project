@@ -1,0 +1,1 @@
+If in a convex quadrilateral ABCD, E and F are the midpoints of the sides BC and DA respectively. Show that the sum of the areas of the triangles EDA and FBC is equal to the area of the quadrangle.

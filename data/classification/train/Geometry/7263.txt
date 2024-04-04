@@ -1,0 +1,1 @@
+In the regular pentagon ABCDE, the perpendicular at C to CD meets AB at F. Prove that AE+AF=BE. Proposed by Alireza Cheraghi

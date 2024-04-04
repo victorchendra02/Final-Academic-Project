@@ -1,0 +1,1 @@
+If n ge 2 is an integer, prove the equality prod_{k=1}^n tan frac{ pi}{3} left(1+ frac{3^k}{3^n-1} right)= prod_{k=1}^n cot frac{ pi}{3} left(1- frac{3^k}{3^n-1} right)

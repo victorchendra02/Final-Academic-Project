@@ -1,0 +1,1 @@
+Find all positive integes n such that n! mid prod_{ p<q le n, p,q, , text{primes}} (p+q)

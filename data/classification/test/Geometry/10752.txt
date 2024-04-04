@@ -1,0 +1,1 @@
+Radius of the circle omega_A with centre at vertex A of a triangle triangle{ABC} is equal to the radius of the excircle tangent to BC. The circles omega_B and omega_C are defined similarly. Prove that if two of these circles are tangent then every two of them are tangent to each other. (L. Emelyanov)

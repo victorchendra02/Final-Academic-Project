@@ -1,0 +1,1 @@
+In a parallelogram ABCD, let M be the point on the BC side such that MC = 2BM and let N be the point of side CD such that NC = 2DN. If the distance from point B to the line AM is 3, calculate the distance from point N to the line AM.

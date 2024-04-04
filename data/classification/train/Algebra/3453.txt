@@ -1,0 +1,1 @@
+Prove the identity sum limits_{k=0}^n binom{n}{k} left( tan frac{x}{2} right)^{2k} left(1+ frac{2^k}{ left(1- tan^2 frac{x}{2} right)^k} right)= sec^{2n} frac{x}{2}+ sec^n xfor any natural number n and any angle x.

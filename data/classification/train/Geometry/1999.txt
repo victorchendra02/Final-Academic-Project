@@ -1,0 +1,1 @@
+Consider an isosceles triangle. let R be the radius of its circumscribed circle and r be the radius of its inscribed circle. Prove that the distance d between the centers of these two circle is d= sqrt{R(R-2r)}

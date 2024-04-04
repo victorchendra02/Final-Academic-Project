@@ -1,0 +1,1 @@
+Find all nondecreasing functions f: mathbb{R} rightarrow mathbb{R} such that (i) f(0) = 0, f(1) = 1; (ii) f(a) + f(b) = f(a)f(b) + f(a + b - ab) for all real numbers a, b such that a < 1 < b. Proposed by A. Di Pisquale & D. Matthews, Australia

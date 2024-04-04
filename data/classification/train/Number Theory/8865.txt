@@ -1,0 +1,1 @@
+Find all integers m and n such that frac{m^2+n}{n^2-m} and frac{n^2+m}{m^2-n} are both integers.

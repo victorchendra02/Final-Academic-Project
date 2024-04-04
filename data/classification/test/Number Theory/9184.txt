@@ -1,0 +1,1 @@
+A number of 17 workers stand in a row. Every contiguous group of at least 2 workers is a textit{brigade}. The chief wants to assign each brigade a leader (which is a member of the brigade) so that each workers number of assignments is divisible by 4. Prove that the number of such ways to assign the leaders is divisible by 17. Mikhail Antipov, Russia

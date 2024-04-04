@@ -1,0 +1,1 @@
+For a fixed triangle ABC we choose a point M on the ray CA (after A), a point N on the ray AB (after B) and a point P on the ray BC (after C) in a way such that AM -BC = BN- AC = CP AB. Prove that the angles of triangle MNP do not depend on the choice of M, N, P .

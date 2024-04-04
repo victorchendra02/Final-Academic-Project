@@ -1,0 +1,1 @@
+Let n,k be positive integers such that n is not divisible by 3 and k geq n. Prove that there exists a positive integer m which is divisible by n and the sum of its digits in decimal representation is k.

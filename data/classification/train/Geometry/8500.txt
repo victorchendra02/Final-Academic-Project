@@ -1,0 +1,1 @@
+In a triangle ABC, the altitude from A meets the circumcircle again at T . Let O be the circumcenter. The lines OA and OT intersect the side BC at Q and M, respectively. Prove that frac{S_{AQC}}{S_{CMT}} = biggl( frac{ sin B}{ cos C} biggr)^2 .

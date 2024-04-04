@@ -1,0 +1,1 @@
+From a square board 11 squares long and 11 squares wide, the central square is removed. Prove that the remaining 120 squares cannot be covered by 15 strips each 8 units long and one unit wide.

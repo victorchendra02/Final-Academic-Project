@@ -1,0 +1,1 @@
+According to the figure, three equilateral triangles with side lengths a,b,c have one common vertex and do not have any other common point. The lengths x, y, and z are defined as in the figure. Prove that 3(x+y+z)>2(a+b+c). Proposed by Mahdi Etesamifard

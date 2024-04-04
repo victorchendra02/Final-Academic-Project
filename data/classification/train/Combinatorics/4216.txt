@@ -1,0 +1,1 @@
+Determine the largest natural number N having the following property: every 5 times 5 array consisting of pairwise distinct natural numbers from 1 to 25 contains a 2 times 2 subarray of numbers whose sum is, at least, N. Demetres Christofides and Silouan Brazitikos

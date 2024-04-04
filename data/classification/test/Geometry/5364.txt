@@ -1,0 +1,1 @@
+ABC is a right-angled triangle, with angle ABC = 90^{ circ}. B' is the reflection of B over AC. M is the midpoint of AC. We choose D on overrightarrow{BM}, such that BD = AC. Prove that B'C is the angle bisector of angle MB'D. NOTE: An important condition not mentioned in the original problem is AB<BC. Otherwise, angle MB'D is not defined or B'C is the external bisector.

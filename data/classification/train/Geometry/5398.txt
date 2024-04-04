@@ -1,0 +1,1 @@
+In a scalene triangle ABC, D is the foot of the altitude through A, E is the intersection of AC with the bisector of angle ABC and F is a point on AB. Let O the circumcenter of ABC and X=AD cap BE, Y=BE cap CF, Z=CF cap AD. If XYZ is an equilateral triangle, prove that one of the triangles OXY, OYZ, OZX must be equilateral.

@@ -1,0 +1,1 @@
+Consider the triangle ABC with angle A= 90^{ circ} and angle B not= angle C. A circle mathcal{C}(O,R) passes through B and C and intersects the sides AB and AC at D and E, respectively. Let S be the foot of the perpendicular from A to BC and let K be the intersection point of AS with the segment DE. If M is the midpoint of BC, prove that AKOM is a parallelogram.

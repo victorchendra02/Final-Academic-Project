@@ -1,0 +1,1 @@
+(POL 3) Given a polynomial f(x) with integer coefficients whose value is divisible by 3 for three integers k, k + 1, and k + 2. Prove that f(m) is divisible by 3 for all integers m.

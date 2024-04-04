@@ -1,0 +1,1 @@
+Let n geqslant 3 be an integer, and let x_1,x_2, ldots,x_n be real numbers in the interval [0,1]. Let s=x_1+x_2+ ldots+x_n, and assume that s geqslant 3. Prove that there exist integers i and j with 1 leqslant i<j leqslant n such that 2^{j-i}x_ix_j>2^{s-3}.

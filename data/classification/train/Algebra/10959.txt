@@ -1,0 +1,1 @@
+Find a continuous function f(x) satisfying the identity f(x)-f(ax)=x^n-x^m, where n,m in N , 0<a<1

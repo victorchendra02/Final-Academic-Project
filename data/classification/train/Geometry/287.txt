@@ -1,0 +1,1 @@
+Let A be a fixed point in the interior of a circle omega with center O and radius r, where 0<OA<r. Draw two perpendicular chords BC,DE such that they pass through A. For which position of these cords does BC+DE maximize?

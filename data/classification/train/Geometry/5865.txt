@@ -1,0 +1,1 @@
+Let ABC be an acute triangle with the perimeter of 2s. We are given three pairwise disjoint circles with pairwise disjoint interiors with the centers A, B, and C, respectively. Prove that there exists a circle with the radius of s which contains all the three circles. Proposed by Josef Tkadlec, Czechia

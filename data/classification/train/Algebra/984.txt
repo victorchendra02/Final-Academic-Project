@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R} to mathbb{R} satisfying the equation f(x^2+y^2+2f(xy)) = (f(x+y))^2. for all x,y in mathbb{R}.

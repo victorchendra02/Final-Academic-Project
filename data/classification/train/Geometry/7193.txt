@@ -1,0 +1,1 @@
+Let O be the circumcenter of triangle ABC. Arbitrary points M and N lie on the sides AC and BC, respectively. Points P and Q lie in the same half-plane as point C with respect to the line MN, and satisfy triangle CMN sim triangle PAN sim triangle QMB (in this exact order). Prove that OP=OQ. Proposed by Medeubek Kungozhin, Kazakhstan

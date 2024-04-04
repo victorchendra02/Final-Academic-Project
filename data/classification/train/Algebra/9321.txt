@@ -1,0 +1,1 @@
+Let a_1, a_2, ldots, a_ {99} be positive real numbers such that ia_j + ja_i ge i + j for all 1 le i <j le 99. Prove , that (a_1 + 1) (a_2 + 2) ldots (a_ {99} +99) ge 100! .

@@ -1,0 +1,1 @@
+Find all positive integers a, b, c, and p, where p is a prime number, such that 73p^2 + 6 = 9a^2 + 17b^2 + 17c^2.

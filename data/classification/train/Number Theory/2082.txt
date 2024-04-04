@@ -1,0 +1,1 @@
+For any positive integer n consider all representations n = a_1 + cdots+ a_k, where a_1 > a_2 > cdots > a_k > 0 are integers such that for all i in {1, 2, cdots , k - 1 }, the number a_i is divisible by a_{i+1}. Find the longest such representation of the number 1992.

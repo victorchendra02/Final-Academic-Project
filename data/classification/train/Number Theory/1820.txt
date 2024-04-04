@@ -1,0 +1,1 @@
+Which natural numbers can be expressed as the difference of squares of two integers?

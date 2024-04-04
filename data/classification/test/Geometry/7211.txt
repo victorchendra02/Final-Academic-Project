@@ -1,0 +1,1 @@
+Acute-angled triangle ABC with circumcircle omega is given. Let D be the midpoint of AC, E be the foot of altitude from A to BC, and F be the intersection point of AB and DE. Point H lies on the arc BC of omega (the one that does not contain A) such that angle BHE= angle ABC. Prove that angle BHF=90^ circ.

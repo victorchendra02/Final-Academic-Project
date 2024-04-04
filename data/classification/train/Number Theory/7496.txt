@@ -1,0 +1,1 @@
+A rectangle in xy Cartesian System is called latticed if all it's vertices have integer coordinates. a) Find a latticed rectangle of area 2013, whose sides are not parallel to the axes. b) Show that if a latticed rectangle has area 2011, then their sides are parallel to the axes.

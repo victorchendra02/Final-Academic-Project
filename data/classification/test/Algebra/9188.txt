@@ -1,0 +1,1 @@
+Prove that for all sufficiently large positive integers d{}, at least 99 % of the polynomials of the form sum_{i leqslant d} sum_{j leqslant d} pm x^iy^jare irreducible over the integers.

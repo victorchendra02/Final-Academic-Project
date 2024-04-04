@@ -1,0 +1,1 @@
+(a) Prove that p^2 + q^2 + 1 > p(q + 1) for any real numbers p, q, . (b) Determine the largest real constant b such that the inequality p^2 + q^2 + 1 ge bp(q + 1) holds for all real numbers p, q (c) Determine the largest real constant c such that the inequality p^2 + q^2 + 1 ge cp(q + 1) holds for all integers p, q.

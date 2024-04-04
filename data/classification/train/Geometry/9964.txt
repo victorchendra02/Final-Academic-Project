@@ -1,0 +1,1 @@
+M and N are the midpoints of sides BC and AD, respectively, of a square ABCD. K is an arbitrary point on the extension of the diagonal AC beyond A. The segment KM intersects the side AB at some point L. Prove that angle KNA = angle LNA. (5 points)

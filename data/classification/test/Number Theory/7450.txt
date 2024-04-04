@@ -1,0 +1,1 @@
+Check if there exists positive integers a, b and prime number p such that a^3-b^3=4p^2

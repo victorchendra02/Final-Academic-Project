@@ -1,0 +1,1 @@
+A trapezoid ABCD is given where AB and CD are parallel. Let M be the midpoint of the segment AB. Point N is located on the segment CD such that angle ADN = frac{1}{2} angle MNC and angle BCN = frac{1}{2} angle MND. Prove that N is the midpoint of the segment CD. Proposed by Alireza Dadgarnia

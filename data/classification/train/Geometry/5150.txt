@@ -1,0 +1,1 @@
+A cyclic quadrilateral ABXC has circumcentre O. Let D be a point on line BX such that AD = BD. Let E be a point on line CX such that AE = CE. Prove that the circumcentre of triangle triangle DEX lies on the perpendicular bisector of OA.

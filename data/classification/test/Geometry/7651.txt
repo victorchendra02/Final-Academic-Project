@@ -1,0 +1,1 @@
+Let ABCD be an isosceles trapezoid with AB=AD=BC, AB//CD, AB>CD. Let E= AC cap BD and N symmetric to B wrt AC. Prove that the quadrilateral ANDE is cyclic.

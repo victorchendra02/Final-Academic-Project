@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R} rightarrow mathbb{R} such that f(x^2 + y) ge ( frac{1}{x} + 1)f(y)holds for all x in mathbb{R} setminus {0 } and all y in mathbb{R}.

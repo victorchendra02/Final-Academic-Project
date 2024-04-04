@@ -1,0 +1,1 @@
+In the plane of a triangle ABC, in its exterior, we draw the triangles ABR, BCP, CAQ so that angle PBC = angle CAQ = 45^{ circ}, angle BCP = angle QCA = 30^{ circ}, angle ABR = angle RAB = 15^{ circ}. Prove that a.) angle QRP = 90 ,^{ circ}, and b.) QR = RP.

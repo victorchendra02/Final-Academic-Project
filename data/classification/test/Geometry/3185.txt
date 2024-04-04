@@ -1,0 +1,1 @@
+Given a ball K. Find the locus of the vertices A of all parallelograms ABCD such that AC leq BD, and the diagonal BD lies completely inside the ball K.

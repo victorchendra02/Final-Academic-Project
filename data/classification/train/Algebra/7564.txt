@@ -1,0 +1,1 @@
+boxed{A2} Find the maximum value of z+x if x,y,z are satisfying the given conditions.x^2+y^2=4 z^2+t^2=9 xt+yz geq 6

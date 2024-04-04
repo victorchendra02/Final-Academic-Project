@@ -1,0 +1,1 @@
+Let E, F be two distinct points inside a parallelogram ABCD . Determine the maximum possible number of triangles having the same area with three vertices from points A, B, C, D, E, F.

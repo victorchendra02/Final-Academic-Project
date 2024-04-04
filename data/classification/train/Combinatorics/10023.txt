@@ -1,0 +1,1 @@
+Pete has n^3 white cubes of the size 1 times1 times1. He wants to construct a n times n times n cube with all its faces being completely white. Find the minimal number of the faces of small cubes that Basil must paint (in black colour) in order to prevent Pete from fulfilling his task. Consider the cases: a) n = 3; (3 points) b) n = 1000. (3 points)

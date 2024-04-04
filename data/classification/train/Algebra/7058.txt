@@ -1,0 +1,1 @@
+Non-zero polynomials P(x), Q(x), and R(x) with real coefficients satisfy the identities P(x) + Q(x) + R(x) = P(Q(x)) + Q(R(x)) + R(P(x)) = 0. Prove that the degrees of the three polynomials are all even.

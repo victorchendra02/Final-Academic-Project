@@ -1,0 +1,1 @@
+Let P be an interior point of the parallelogram ABCD. Prove that angle APB+ angle CPD = 180^ circ if and only if angle PDC = angle PBC.

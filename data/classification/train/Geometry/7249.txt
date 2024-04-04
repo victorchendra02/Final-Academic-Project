@@ -1,0 +1,1 @@
+There are two circles with centers O_1,O_2 lie inside of circle omega and are tangent to it. Chord AB of omega is tangent to these two circles such that they lie on opposite sides of this chord. Prove that angle O_1AO_2 + angle O_1BO_2 > 90^ circ. Proposed by Iman Maghsoudi

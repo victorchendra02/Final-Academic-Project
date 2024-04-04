@@ -1,0 +1,1 @@
+Two isosceles trapezoids are inscribed in a circle in such a way that each side of each trapezoid is parallel to a certain side of the other trapezoid . Prove that the diagonals of one trapezoid are equal to the diagonals of the other.

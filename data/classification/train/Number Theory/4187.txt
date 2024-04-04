@@ -1,0 +1,1 @@
+Let n be a positive integer. Determine, in terms of n, the greatest integer which divides every number of the form p + 1, where p equiv 2 mod 3 is a prime number which does not divide n.

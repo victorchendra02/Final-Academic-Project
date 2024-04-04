@@ -1,0 +1,1 @@
+A black unit equilateral triangle is drawn on the plane. How can we place nine tiles, each a unit equilateral triangle, on the plane so that they do not overlap, and each tile covers at least one interior point of the black triangle? (Folklore)

@@ -1,0 +1,1 @@
+Prove that there exists a positive integer n such that in the decimal representation of each of the numbers sqrt{n}, sqrt[3]{n},..., sqrt[10]{n} digits 2015 stand immediately after the decimal point. A.Golovanov

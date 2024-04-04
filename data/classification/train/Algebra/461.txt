@@ -1,0 +1,1 @@
+For each integer n ge 1, compute the smallest possible value of sum_{k=1}^{n} left lfloor frac{a_k}{k} right rfloorover all permutations (a_1, dots,a_n) of {1, dots,n }. Proposed by Shahjalal Shohag, Bangladesh

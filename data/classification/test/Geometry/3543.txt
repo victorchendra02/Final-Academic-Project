@@ -1,0 +1,1 @@
+Let ABCD be a parallelogram. Let W, X, Y, and Z be points on sides AB, BC, CD, and DA, respectively, such that the incenters of triangles AWZ, BXW, CYX, and DZY form a parallelogram. Prove that WXYZ is a parallelogram.

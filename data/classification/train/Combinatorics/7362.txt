@@ -1,0 +1,1 @@
+We have a group of n kids. For each pair of kids, at least one has sent a message to the other one. For each kid A, among the kids to whom A has sent a message, exactly 25 % have sent a message to A. How many possible two-digit values of n are there? Proposed by Bulgaria

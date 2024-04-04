@@ -1,0 +1,1 @@
+Find all perfect squares n such that if the positive integer a ge 15 is some divisor n then a+15 is a prime power. Proposed by Saudi Arabia

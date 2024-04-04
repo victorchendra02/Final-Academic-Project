@@ -1,0 +1,1 @@
+Tita the Frog sits on the number line. She is initially on the integer number k>1. If she is sitting on the number n, she hops to the number f(n)+g(n), where f(n) and g(n) are, respectively, the biggest and smallest positive prime numbers that divide n. Find all values of k such that Tita can hop to infinitely many distinct integers.

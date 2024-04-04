@@ -1,0 +1,1 @@
+Five distinct points A, B, C, D and E lie in this order on a circle of radius r and satisfy AC = BD = CE = r. Prove that the orthocentres of the triangles ACD, BCD and BCE are the vertices of a right-angled triangle.

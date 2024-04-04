@@ -1,0 +1,1 @@
+Let AB be the diameter of a circle with a center O and radius 1. Let C and D be two points on the circle such that AC and BD intersect at a point Q situated inside of the circle, and angle AQB= 2 angle COD. Let P be a point that intersects the tangents to the circle that pass through the points C and D. Determine the length of segment OP.

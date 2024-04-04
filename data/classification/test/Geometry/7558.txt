@@ -1,0 +1,1 @@
+Let ABC be acute-angled triangle . A circle omega_1(O_1,R_1) passes through points B and C and meets the sides AB and AC at points D and E ,respectively . Let omega_2(O_2,R_2) be the circumcircle of triangle ADE . Prove that O_1O_2 is equal to the circumradius of triangle ABC .

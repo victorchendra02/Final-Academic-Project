@@ -1,0 +1,1 @@
+Construct the midpoint of a segment using an unmarked ruler and a trisector that marks in a segment the two points that divide the segment in three equal parts.

@@ -1,0 +1,1 @@
+Let ABC be a right-angled triangle with hypotenuse AB. Denote by D the foot of the altitude from C. Let Q, R, and P be the midpoints of the segments AD, BD, and CD, respectively. Prove that angle AP B + angle QCR = 180^o. Czech Republic

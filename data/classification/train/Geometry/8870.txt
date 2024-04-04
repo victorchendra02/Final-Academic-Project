@@ -1,0 +1,1 @@
+Let ABC be a triangle, and D, E, F points on the segments BC, CA, and AB respectively such that frac{BD}{DC} = frac{CE}{EA} = frac{AF}{FB}. Show that if the centres of the circumscribed circles of the triangles DEF and ABC coincide, then ABC is an equilateral triangle.

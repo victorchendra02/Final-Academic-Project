@@ -1,0 +1,1 @@
+Given a parallelogram ABCD. The line perpendicular to AC passing through C and the line perpendicular to BD passing through A intersect at point P. The circle centered at point P and radius PC intersects the line BC at point X, (X ne C) and the line DC at point Y , (Y ne C). Prove that the line AX passes through the point Y .

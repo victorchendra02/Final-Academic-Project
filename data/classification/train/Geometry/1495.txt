@@ -1,0 +1,1 @@
+A circle whose center is on the side ED of the cyclic quadrilateral BCDE touches the other three sides. Prove that EB+CD = ED.

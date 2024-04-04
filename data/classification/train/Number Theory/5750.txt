@@ -1,0 +1,1 @@
+Find all pairs of positive integers a, b such that sqrt{a+2 sqrt{b}}= sqrt{a-2 sqrt{b}}+ sqrt{b} .

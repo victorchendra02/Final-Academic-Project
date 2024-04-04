@@ -1,0 +1,1 @@
+Let ABCD be a convex quadrilateral such that your diagonals AC and BD are perpendiculars. Let P be the intersection of AC and BD, let M a midpoint of AB. Prove that the quadrilateral ABCD is cyclic, if and only if, the lines PM and DC are perpendiculars.

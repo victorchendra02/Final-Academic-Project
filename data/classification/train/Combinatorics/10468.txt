@@ -1,0 +1,1 @@
+In each cell, a strip of length 100 is worth a chip. You can change any 2 neighboring chips and pay 1 rouble, and you can also swap any 2 chips for free, between which there are exactly 4 chips. For what is the smallest amount of rubles you can rearrange chips in reverse order?

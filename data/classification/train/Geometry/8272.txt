@@ -1,0 +1,1 @@
+In a triangle ABC, right in A and isosceles, let D be a point on the side AC (A ne D ne C) and E be the point on the extension of BA such that the triangle ADE is isosceles. Let P be the midpoint of segment BD, R be the midpoint of the segment CE and Q the intersection point of ED and BC. Prove that the quadrilateral ARQP is a square

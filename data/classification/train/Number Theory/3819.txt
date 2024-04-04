@@ -1,0 +1,1 @@
+Prove there are no such integers k, m which satisfy k ge 0, m ge 0 and k!+48=48(k+1)^m .

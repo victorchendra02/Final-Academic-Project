@@ -1,0 +1,1 @@
+In an infinite sequence { alpha }, { alpha^2 }, { alpha^3 }, cdots there are finitely many distinct values. Show that alpha is an integer. ( {x } denotes the fractional part of x.) (Golovanov A.S.)

@@ -1,0 +1,1 @@
+100 couples are invited to a traditional Modolvan dance. The 200 people stand in a line, and then in a textit{step}, (not necessarily adjacent) many swap positions. Find the least C such that whatever the initial order, they can arrive at an ordering where everyone is dancing next to their partner in at most C steps.

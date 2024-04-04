@@ -1,0 +1,1 @@
+For every positive integer m prove the inquility | { sqrt{m} } - frac{1}{2}| geq frac{1}{8( sqrt m+1)} (The integer part [x] of the number x is the largest integer not exceeding x. The fractional part of the number x is a number {x } such that [x]+ {x }=x.) A. Golovanov

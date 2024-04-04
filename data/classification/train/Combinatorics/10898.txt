@@ -1,0 +1,1 @@
+Is it possible to colour all positive real numbers by 10 colours so that every two numbers with decimal representations differing in one place only are of different colours? (We suppose that there is no place in a decimal representations such that all digits starting from that place are 9's.) Proposed by A. Golovanov

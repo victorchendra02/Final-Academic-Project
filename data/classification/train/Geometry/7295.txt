@@ -1,0 +1,1 @@
+Given a circle and Points P,B,A on it.Point Q is Interior of this circle such that: 1) angle PAQ=90. 2)PQ=BQ. Prove that angle AQB - angle PQA= stackrel{ frown}{AB}. proposed by Davoud Vakili, Iran.

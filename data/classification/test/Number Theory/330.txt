@@ -1,0 +1,1 @@
+Prove that for any n natural, the number sum limits_{k=0}^{n} binom{2n+1}{2k+1} 2^{3k} cannot be divided by 5.

@@ -1,0 +1,1 @@
+In a group of n people, each one had a different ball. They performed a sequence of swaps, in each swap, two people swapped the ball they had at that moment. Each pair of people performed at least one swap. In the end each person had the ball he/she had at the start. Find the least possible number of swaps, if: a) n = 5, b) n = 6.

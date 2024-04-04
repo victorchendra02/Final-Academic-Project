@@ -1,0 +1,1 @@
+Ten square cardboards of 3 centimeters on a side are cut by a line, as indicated in the figure. After the cuts, there are 20 pieces: 10 triangles and 10 trapezoids. Assemble a square that uses all 20 pieces without overlaps or gaps. https://cdn.artofproblemsolving.com/attachments/7/9/ec2242cca617305b02eef7a5409e6a6b482d66.gif

@@ -1,0 +1,1 @@
+All the angles of the hexagon ABCDEF are equal. Prove that AB-DE=EF-BC=CD-FA

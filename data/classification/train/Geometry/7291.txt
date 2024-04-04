@@ -1,0 +1,1 @@
+Let ABC be a triangle with angle A = 60^o. The points M,N,K lie on BC,AC,AB respectively such that BK = KM = MN = NC. If AN = 2AK, find the values of angle B and angle C. by Mahdi Etesami Fard

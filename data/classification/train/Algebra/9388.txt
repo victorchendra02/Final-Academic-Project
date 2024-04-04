@@ -1,0 +1,1 @@
+Find sum_{k in A} frac{1}{k-1} where A= { m^n : m,n in mathbb{Z} m,n geq 2 } . Problem was post earlier here , but solution not gives and olympiad doesn't indicate, so I post it again :blush: Official solution here

@@ -1,0 +1,1 @@
+Consider a convex pentagon ABCDE and a variable point X on its side CD. Suppose that points K, L lie on the segment AX such that AB = BK and AE = EL and that the circumcircles of triangles CXK and DXL intersect for the second time at Y . As X varies, prove that all such lines XY pass through a fixed point, or they are all parallel. Proposed by Josef Tkadlec - Czech Republic

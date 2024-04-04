@@ -1,0 +1,1 @@
+Determine the natural numbers m,n such as 85^m-n^4=4

@@ -1,0 +1,1 @@
+For each positive integer k, let S(k) the sum of digits of k in decimal system. Show that there is an integer k, with no 9 in it's decimal representation, such that: S(2^{24^{2017}}k)=S(k)

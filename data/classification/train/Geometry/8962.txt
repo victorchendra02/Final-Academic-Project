@@ -1,0 +1,1 @@
+Let triangle{ABC} be an acute angled triangle. The circle with diameter AB intersects the sides AC and BC at points E and F respectively. The tangents drawn to the circle through E and F intersect at P. Show that P lies on the altitude through the vertex C.

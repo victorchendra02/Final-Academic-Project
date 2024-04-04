@@ -1,0 +1,1 @@
+Find the greatest positive integer x such that 23^{6+x} divides 2000!

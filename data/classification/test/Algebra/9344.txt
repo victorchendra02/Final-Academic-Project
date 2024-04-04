@@ -1,0 +1,1 @@
+Find all f:N rightarrow N, such that forall m,n in N 2f(mn) geq f(m^2+n^2)-f(m)^2-f(n)^2 geq 2f(m)f(n)

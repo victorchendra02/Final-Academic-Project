@@ -1,0 +1,1 @@
+Let a, b, c be positive real numbers such that a + b + c + ab + bc + ca + abc = 7. Prove that sqrt{a^2 + b^2 + 2 }+ sqrt{b^2 + c^2 + 2 }+ sqrt{c^2 + a^2 + 2 } ge 6 .

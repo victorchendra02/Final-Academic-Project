@@ -1,0 +1,1 @@
+Around the triangle ABC the circle is circumscribed, and at the vertex {C} tangent {t} to this circle is drawn. The line {p}, which is parallel to this tangent intersects the lines {BC} and {AC} at the points {D} and {E}, respectively. Prove that the points A,B,D,E belong to the same circle. (Montenegro)

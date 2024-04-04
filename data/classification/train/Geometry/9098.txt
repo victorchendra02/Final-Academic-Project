@@ -1,0 +1,1 @@
+Let P be a point inside triangle ABC and let R denote the circumradius of triangle ABC. Prove that frac{PA}{AB cdot AC}+ frac{PB}{BC cdot BA}+ frac{PC}{CA cdot CB} ge frac{1}{R}.

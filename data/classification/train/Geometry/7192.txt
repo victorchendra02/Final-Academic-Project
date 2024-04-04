@@ -1,0 +1,1 @@
+Two circles omega_1 and omega_2 with equal radius intersect at two points E and X. Arbitrary points C, D lie on omega_1, omega_2. Parallel lines to XC, XD from E intersect omega_2, omega_1 at A, B, respectively. Suppose that CD intersect omega_1, omega_2 again at P, Q, respectively. Prove that ABPQ is cyclic. Proposed by Ali Zamani

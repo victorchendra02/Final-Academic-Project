@@ -1,0 +1,1 @@
+Let ABCD be a trapezoid with AB parallel CD. Its diagonals intersect at a point P. The line passing through P parallel to AB intersects AD and BC at Q and R, respectively. Exterior angle bisectors of angles DBA, DCA intersect at X. Let S be the foot of X onto BC. Prove that if quadrilaterals ABPQ, CDQP are circumcribed, then PR=PS. Proposed by Dominik Burek, Poland

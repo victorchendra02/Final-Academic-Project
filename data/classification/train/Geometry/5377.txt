@@ -1,0 +1,1 @@
+Let ABC be a triangle such that AC=2AB. Let D be the point of intersection of the angle bisector of the angle CAB with BC. Let F be the point of intersection of the line parallel to AB passing through C with the perpendicular line to AD passing through A. Prove that FD passes through the midpoint of AC.

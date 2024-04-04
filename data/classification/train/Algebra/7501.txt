@@ -1,0 +1,1 @@
+Let a , b , c be positive real numbers such that a+b+c=a^2+b^2+c^2 . Prove that : frac{a^2}{a^2+ab}+ frac{b^2}{b^2+bc}+ frac{c^2}{c^2+ca} geq frac{a+b+c}{2}

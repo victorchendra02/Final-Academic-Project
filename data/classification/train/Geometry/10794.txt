@@ -1,0 +1,1 @@
+In a convex hexagon AC'BA'CB', every two opposite sides are equal. Let A_1 denote the point of intersection of BC with the perpendicular bisector of AA'. Define B_1 and C_1 similarly. Prove that A_1, B_1, and C_1 are collinear.

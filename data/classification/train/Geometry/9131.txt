@@ -1,0 +1,1 @@
+Let ABC be a scalene acute triangle whose orthocenter is H. M is the midpoint of segment BC. N is the point where the segment AM intersects the circle determined by B, C, and H. Show that lines HN and AM are perpendicular.

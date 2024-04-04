@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R} to mathbb{R} such that f(xy) = yf(x) + x + f(f(y) - f(x)) for all x,y in mathbb{R}.

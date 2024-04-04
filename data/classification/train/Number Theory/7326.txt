@@ -1,0 +1,1 @@
+Find all pairs of integers (x, y) such that x^2 + 5y^2 = 2021y.

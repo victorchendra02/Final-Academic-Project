@@ -1,0 +1,1 @@
+Let ABCD be a parallelogram. P in (CD), Q in (AB), M= AP cap DQ, N=BP cap CQ, K=MN cap AD, L= MN cap BC. Prove that BL=DK.

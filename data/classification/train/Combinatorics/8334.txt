@@ -1,0 +1,1 @@
+You have a 10 times 10 grid. A "move" on the grid consists of moving 7 squares to the right and 3 squares down. In case of exiting by a line, it continues at the beginning (left) of the same line and in case of ending a column, it continues at the beginning of the same column (above). Where should we start so that after 1996 moves we end up in a corner?

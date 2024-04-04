@@ -1,0 +1,1 @@
+On side AB of triangle ABC a point P is taken such that AP = 2PB. It is known that CP = 2PQ where Q is the midpoint of AC. Prove that ABC is a right triangle.

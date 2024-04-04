@@ -1,0 +1,1 @@
+Let n > 2. Show that there is a set of 2^{n-1} points in the plane, no three collinear such that no 2n form a convex 2n-gon.

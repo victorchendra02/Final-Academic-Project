@@ -1,0 +1,1 @@
+Let P(x) be the real polynomial function, P(x) = ax^3 + bx^2 + cx + d. Prove that if |P(x)| leq 1 for all x such that |x| leq 1, then |a| + |b| + |c| + |d| leq 7.

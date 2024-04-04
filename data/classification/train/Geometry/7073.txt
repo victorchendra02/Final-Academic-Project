@@ -1,0 +1,1 @@
+In a scalene triangle ABC I is the incentr and CN is the bisector of angle C. The line CN meets the circumcircle of ABC again at M. The line l is parallel to AB and touches the incircle of ABC. The point R on l is such. That CI bot IR. The circumcircle of MNR meets the line IR again at S. Prpve that AS=BS.

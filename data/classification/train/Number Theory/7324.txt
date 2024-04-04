@@ -1,0 +1,1 @@
+For any set A = {x_1, x_2, x_3, x_4, x_5 } of five distinct positive integers denote by S_A the sum of its elements, and denote by T_A the number of triples (i, j, k) with 1 le i < j < k le 5 for which x_i + x_j + x_k divides S_A. Find the largest possible value of T_A.

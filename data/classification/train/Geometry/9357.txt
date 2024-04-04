@@ -1,0 +1,1 @@
+In a convex quadrilateral it is known ABCD that angle ADB + angle ACB = angle CAB + angle DBA = 30^{ circ} and AD = BC. Prove that from the lengths DB, CA and DC, you can make a right triangle.

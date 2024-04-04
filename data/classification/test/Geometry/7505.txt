@@ -1,0 +1,1 @@
+Let ABC be an isosceles triangle with AB=AC . Let also omega be a circle of center K tangent to the line AC at C which intersects the segment BC again at H . Prove that HK bot AB .

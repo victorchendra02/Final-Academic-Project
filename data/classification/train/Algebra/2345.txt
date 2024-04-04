@@ -1,0 +1,1 @@
+Find a necessary and sufficient condition on the natural number n for the equation x^n + (2 + x)^n + (2 - x)^n = 0 to have a integral root.

@@ -1,0 +1,1 @@
+Let K and N > K be fixed positive integers. Let n be a positive integer and let a_1, a_2, ..., a_n be distinct integers. Suppose that whenever m_1, m_2, ..., m_n are integers, not all equal to 0, such that mid{m_i} mid le K for each i, then the sum sum_{i = 1}^{n} m_ia_iis not divisible by N. What is the largest possible value of n? Proposed by Ilija Jovcevski, North Macedonia

@@ -1,0 +1,1 @@
+Let a,b,c,d be positive real numbers such that abcd=1. Prove that frac{1+ab}{1+a} + frac{1+bc}{1+b} + frac{1+cd}{1+c} + frac{1+da}{1+d} geq 4 . Proposed by A. Khrabrov

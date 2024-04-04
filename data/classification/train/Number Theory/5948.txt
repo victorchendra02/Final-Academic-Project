@@ -1,0 +1,1 @@
+Show that for each natural number k there exist only finitely many triples (p, q, r) of distinct primes for which p divides qr-k, q divides pr-k, and r divides pq - k.

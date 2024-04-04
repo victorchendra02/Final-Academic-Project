@@ -1,0 +1,1 @@
+boxed{ text{A2}} Find the maximum value of | sqrt{x^2+4x+8}- sqrt{x^2+8x+17}| where x is a real number.

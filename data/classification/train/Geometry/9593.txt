@@ -1,0 +1,1 @@
+We are given triangle ABC. Two lines, symmetric with AC, relative to lines AB and BC are drawn, and meet at K . Prove that the line BK passes through the centre of the circumscribed circle of triangle ABC. (V.Y. Protasov)

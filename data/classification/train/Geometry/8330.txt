@@ -1,0 +1,1 @@
+Let ABCD be a rectangle. A line r moves parallel to AB and intersects diagonal AC , forming two triangles opposite the vertex, inside the rectangle. Prove that the sum of the areas of these triangles is minimal when r passes through the midpoint of segment AD .

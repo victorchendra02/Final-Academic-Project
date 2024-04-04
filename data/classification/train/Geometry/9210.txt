@@ -1,0 +1,1 @@
+Let BM be a median in an acute-angled triangle ABC. A point K is chosen on the line through C tangent to the circumcircle of vartriangle BMC so that angle KBC = 90^ circ. The segments AK and BM meet at J. Prove that the circumcenter of triangle BJK lies on the line AC. Aleksandr Kuznetsov, Russia

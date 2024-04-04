@@ -1,0 +1,1 @@
+2021 points on the plane in the convex position, no three collinear and no four concyclic, are given. Prove that there exist two of them such that every circle passing through these two points contains at least 673 of the other points in its interior. (A finite set of points on the plane are in convex position if the points are the vertices of a convex polygon.)

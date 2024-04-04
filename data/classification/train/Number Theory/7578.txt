@@ -1,0 +1,1 @@
+A group of n > 1 pirates of different age owned total of 2009 coins. Initially each pirate (except the youngest one) had one coin more than the next younger. a) Find all possible values of n. b) Every day a pirate was chosen. The chosen pirate gave a coin to each of the other pirates. If n = 7, find the largest possible number of coins a pirate can have after several days.

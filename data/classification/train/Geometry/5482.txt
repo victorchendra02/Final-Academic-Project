@@ -1,0 +1,1 @@
+Let ABC be a triangle and I its incenter. The lines BI and CI intersect the circumcircle of ABC again at M and N, respectively. Let C_1 and C_2 be the circumferences of diameters NI and MI, respectively. The circle C_1 intersects AB at P and Q, and the circle C_2 intersects AC at R and S. Show that P, Q, R and S are concyclic.

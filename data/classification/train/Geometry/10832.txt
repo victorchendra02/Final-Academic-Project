@@ -1,0 +1,1 @@
+Point I_1 is the reflection of incentre I of triangle ABC across the side BC. The circumcircle of BCI_1 intersects the line II_1 again at point P. It is known that P lies outside the incircle of the triangle ABC. Two tangents drawn from P to the latter circle touch it at points X and Y. Prove that the line XY contains a medial line of the triangle ABC. Author: L. Emelyanov

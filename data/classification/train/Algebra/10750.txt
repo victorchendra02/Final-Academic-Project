@@ -1,0 +1,1 @@
+Positive numbers a, b, c satisfy dfrac{1}{a}+ dfrac{1}{b}+ dfrac{1}{c}=3. Prove the inequality dfrac{1}{ sqrt{a^3+1}}+ dfrac{1}{ sqrt{b^3+1}}+ dfrac{1}{ sqrt{c^3+1}} le dfrac{3}{ sqrt{2}}. (N. Alexandrov)

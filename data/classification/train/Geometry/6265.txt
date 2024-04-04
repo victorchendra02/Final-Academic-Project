@@ -1,0 +1,1 @@
+The altitudes BB_1 and CC_1, are drawn in an acute triangle ABC. Let X and Y be the points, which are symmetrical to the points B_1 and C_1, with respect to the midpoints of the sides AB and AC of the triangle ABC respectively. Let's denote with Z the point of intersection of the lines BC and XY. Prove that the line ZA is tangent to the circumscribed circle of the triangle AXY .

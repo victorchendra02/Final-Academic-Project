@@ -1,0 +1,1 @@
+In acute-angled triangle ABC, BH is the altitude of the vertex B. The points D and E are midpoints of AB and AC respectively. Suppose that F be the reflection of H with respect to ED. Prove that the line BF passes through circumcenter of ABC. by Davood Vakili

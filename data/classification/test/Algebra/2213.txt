@@ -1,0 +1,1 @@
+The sequences a_0, a_1, ldots and b_0, b_1, ldots are defined for n = 0, 1, 2, ldots by the equalities a_0 = frac { sqrt {2}}{2}, quad a_{n + 1} = frac { sqrt {2}}{2} cdot sqrt {1 - sqrt {1 - a^2_n}} and b_0 = 1, quad b_{n + 1} = frac { sqrt {1 + b^2_n} - 1}{b_n} Prove the inequalities for every n = 0, 1, 2, ldots 2^{n + 2} a_n < pi < 2^{n + 2} b_n.

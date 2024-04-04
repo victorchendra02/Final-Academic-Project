@@ -1,0 +1,1 @@
+Given a triangle ABC with incenter I. The incircle of triangle ABC is tangent to BC at D. Let P and Q be points on the side BC such that angle PAB = angle BCA and angle QAC = angle ABC, respectively. Let K and L be the incenter of triangles ABP and ACQ, respectively. Prove that AD is the Euler line of triangle IKL. Proposed by Le Viet An, Vietnam

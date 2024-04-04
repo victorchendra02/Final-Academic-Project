@@ -1,0 +1,1 @@
+There are given 1000 integers a_1,... , a_{1000}. Their squares a^2_1, . . . , a^2_{1000} are written in a circle. It so happened that the sum of any 41 consecutive numbers on this circle is a multiple of 41^2. Is it necessarily true that every integer a_1,... , a_{1000} is a multiple of 41? (Boris Frenkin)

@@ -1,0 +1,1 @@
+Integers x,y,z,t satisfy x^2+y^2=z^2+t^2andxy=2zt prove that xyzt=0 Proposed by M. Abduvaliev

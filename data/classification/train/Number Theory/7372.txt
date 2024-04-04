@@ -1,0 +1,1 @@
+Find all triples (p, q, r) of prime numbers such that all of the following numbers are integers frac{p^2 + 2q}{q+r}, frac{q^2+9r}{r+p}, frac{r^2+3p}{p+q} Proposed by Tajikistan

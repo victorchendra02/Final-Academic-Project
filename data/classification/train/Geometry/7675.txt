@@ -1,0 +1,1 @@
+Let ABC be a triangle with centroid G and A_1,B_1,C_1 midpoints of the sides BC,CA,AB. A paralel through A_1 to BB_1 intersects B_1C_1 at F. Prove that triangles ABC and FA_1A are similar if and only if quadrilateral AB_1GC_1 is cyclic.

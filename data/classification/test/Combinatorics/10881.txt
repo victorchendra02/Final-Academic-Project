@@ -1,0 +1,1 @@
+A rectangular table with 2001 rows and 2002 columns is partitioned into 1 times 2 rectangles. It is known that any other partition of the table into 1 times 2 rectangles contains a rectangle belonging to the original partition. Prove that the original partition contains two successive columns covered by 2001 horizontal rectangles. Proposed by S. Volchenkov

@@ -1,0 +1,1 @@
+Let ABCDEF be a regular hexagon and M in (DE), N in(CD) such that m ( widehat {AMN}) = 90^ circ and AN = CM sqrt {2}. Find the value of frac{DM}{ME}.

@@ -1,0 +1,1 @@
+In an acute triangle ABC, the points H, G, and M are located on BC in such a way that AH, AG, and AM are the height, angle bisector, and median of the triangle, respectively. It is known that HG=GM, AB=10, and AC=14. Find the area of triangle ABC.

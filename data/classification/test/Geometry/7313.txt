@@ -1,0 +1,1 @@
+Two points X, Y lie on the arc BC of the circumcircle of triangle ABC (this arc does not contain A) such that angle BAX = angle CAY . Let M denotes the midpoint of the chord AX . Show that BM +CM > AY . by Mahan Tajrobekar

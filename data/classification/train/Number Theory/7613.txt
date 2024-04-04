@@ -1,0 +1,1 @@
+Let a, b, c, d, e, f are nonzero digits such that the natural numbers overline{abc}, overline{def} and overline{abcdef } are squares. a) Prove that overline{abcdef} can be represented in two different ways as a sum of three squares of natural numbers. b) Give an example of such a number.

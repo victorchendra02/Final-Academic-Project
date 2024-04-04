@@ -1,0 +1,1 @@
+Two congruent equilateral triangles ABC and A'B'C' in the plane are given. Show that the midpoints of the segments AA',BB', CC' either are collinear or form an equilateral triangle.

@@ -1,0 +1,1 @@
+A convex hexagon ABCDEF is such that AB=BC quad CD=DE quad EF=FA and angle ABC=2 angle AEC quad angle CDE=2 angle CAE quad angle EFA=2 angle ACE Show that AD, CF and EB are concurrent.

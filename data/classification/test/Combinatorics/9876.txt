@@ -1,0 +1,1 @@
+There's a large pile of cards. On each card a number from 1,2, ldots n is written. It is known that sum of all numbers on all of the cards is equal to k cdot n! for some k. Prove that it is possible to arrange cards into k stacks so that sum of numbers written on the cards in each stack is equal to n!.

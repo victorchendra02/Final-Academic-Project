@@ -1,0 +1,1 @@
+Let ABC be a triangle with AB = AC. Let H be the orthocenter of ABC. Point E is the midpoint of AC and point D lies on the side BC such that 3CD = BC. Prove that BE perp HD. Proposed by Tran Quang Hung - Vietnam

@@ -1,0 +1,1 @@
+The numbers 1, 2, 3, ldots are arranged in a spiral in the vertices of an infinite square grid (see figure). Then in the centre of each square the sum of the numbers in its vertices is placed. Prove that for each positive integer n the centres of the squares contain infinitely many multiples of n.

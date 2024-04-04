@@ -1,0 +1,1 @@
+Determine all triples (m , n , p) satisfying : n^{2p}=m^2+n^2+p+1 where m and n are integers and p is a prime number.

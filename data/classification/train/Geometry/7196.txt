@@ -1,0 +1,1 @@
+Four points A, B, C and D lie on a circle omega such that AB=BC=CD. The tangent line to omega at point C intersects the tangent line to omega at A and the line AD at K and L. The circle omega and the circumcircle of triangle KLA intersect again at M. Prove that MA=ML. Proposed by Mahdi Etesamifard

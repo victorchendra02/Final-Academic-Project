@@ -1,0 +1,1 @@
+Points K, L on sides AC, CB respectively of a triangle ABC are the points of contact of the excircles with the corresponding sides . Prove that the straight line through the midpoints of KL and AB (a) divides the perimeter of triangle ABC in half, (b) is parallel to the bisector of angle ACB. ( L Emelianov)

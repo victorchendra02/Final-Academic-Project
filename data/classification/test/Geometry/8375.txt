@@ -1,0 +1,1 @@
+Let ABCD be a rhombus of sides AB = BC = CD= DA = 13. On the side AB construct the rhombus BAFC outside ABCD and such that the side AF is parallel to the diagonal BD of ABCD. If the area of BAFE is equal to 65, calculate the area of ABCD.

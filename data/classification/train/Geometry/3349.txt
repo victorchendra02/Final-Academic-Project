@@ -1,0 +1,1 @@
+(BEL 2) (a) Find the equations of regular hyperbolas passing through the points A( alpha, 0), B( beta, 0), and C(0, gamma). (b) Prove that all such hyperbolas pass through the orthocenter H of the triangle ABC. (c) Find the locus of the centers of these hyperbolas. (d) Check whether this locus coincides with the nine-point circle of the triangle ABC.
