@@ -1,5 +1,5 @@
 <template>
     <p>
-        About
+        Random
     </p>
 </template>

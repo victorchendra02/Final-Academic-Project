@@ -1,5 +1,5 @@
 <template>
     <p>
-        About
+        Question Bank
     </p>
 </template>

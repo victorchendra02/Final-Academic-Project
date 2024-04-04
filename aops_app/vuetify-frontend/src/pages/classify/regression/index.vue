@@ -1,5 +1,5 @@
 <template>
     <p>
-        About
+        Regression
     </p>
 </template>
