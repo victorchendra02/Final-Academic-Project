@@ -1,1 +1,0 @@
-Prove that frac{a^3}{a^2+ab+b^2}+ frac{b^3}{b^2+bc+c^2}+ frac{c^3}{c^2+ca+a^2} geq frac{a+b+c}{3}for positive reals a,b,c (S Tokarev)

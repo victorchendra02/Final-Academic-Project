@@ -1,1 +1,0 @@
-Let AD be the internal angle bisector of triangle ABC. The incircles of triangles ABC and ACD touch each other externally. Prove that angle ABC > 120^{ circ}. (Recall that the incircle of a triangle is a circle inside the triangle that is tangent to its three sides.) Proposed by Volodymyr Brayman (Ukraine)

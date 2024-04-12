@@ -1,1 +1,0 @@
-The inscribed circle of triangle ABC touches BC, AC and AB at D,E and F respectively. Denote the perpendicular foots from F, E to BC by K, L respectively. Let the second intersection of these perpendiculars with the incircle be M, N respectively. Show that frac{{{S}_{ triangle BMD}}}{{{S}_{ triangle CND}}}= frac{DK}{DL} by Mahdi Etesami Fard

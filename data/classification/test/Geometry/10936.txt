@@ -1,1 +1,0 @@
-Given the pyramid ABCD. Let O be the midpoint of edge AC. Given that DO is the height of the pyramid, AB=BC=2DO and the angle ABC is right. Cut this pyramid into 8 equal and similar to it pyramids.

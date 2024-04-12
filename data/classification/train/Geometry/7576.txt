@@ -1,1 +1,0 @@
-Let {A, B, C} and {O} be four points in plane, such that angle ABC>{{90}^{{}^ circ }} and {OA=OB=OC}.Define the point {D in AB} and the line {l} such that {D in l, AC perp DC} and {l perp AO}. Line {l} cuts {AC}at {E} and circumcircle of {ABC} at {F}. Prove that the circumcircles of triangles {BEF}and {CFD}are tangent at {F}.

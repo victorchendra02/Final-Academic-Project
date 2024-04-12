@@ -1,1 +1,0 @@
-Let I and O be the incenter and the circumcenter of a triangle ABC, respectively, and let s_a be the exterior bisector of angle angle BAC. The line through I perpendicular to IO meets the lines BC and s_a at points P and Q, respectively. Prove that IQ = 2IP.

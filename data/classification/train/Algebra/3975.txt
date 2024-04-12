@@ -1,1 +1,0 @@
-Determine all functions f:(0; infty) to mathbb{R} that satisfy f(x+y)=f(x^2+y^2) quad forall x,y in (0; infty)

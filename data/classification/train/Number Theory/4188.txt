@@ -1,1 +1,0 @@
-Can every positive rational number q be written as frac{a^{2021} + b^{2023}}{c^{2022} + d^{2024}},where a, b, c, d are all positive integers? Proposed by Dominic Yeo, UK

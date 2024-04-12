@@ -1,1 +1,0 @@
-(a) Prove that frac{1}{n+1} cdot binom{2n}{n} is an integer for n geq 0. (b) Given a positive integer k, determine the smallest integer C_k with the property that frac{C_k}{n+k+1} cdot binom{2n}{n} is an integer for all n geq k.

@@ -1,1 +1,0 @@
-Consider ABC an acute-angled triangle with AB ne AC. Denote by M the midpoint of BC, by D, E the feet of the altitudes from B, C respectively and let P be the intersection point of the lines DE and BC. The perpendicular from M to AC meets the perpendicular from C to BC at point R. Prove that lines PR and AM are perpendicular.

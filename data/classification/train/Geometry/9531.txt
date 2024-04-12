@@ -1,1 +1,0 @@
-Through vertices A and B of triangle ABC are constructed two lines which divide the triangle into four regions (three triangles and one quadrilateral). It is known that three of them have equal area. Prove that one of these three regions is the quadrilateral . (G . Galperin , A . Savin, Moscow)

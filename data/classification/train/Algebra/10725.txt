@@ -1,1 +1,0 @@
-Non-negative numbers a, b, c satisfy a^2+b^2+c^2 geq 3. Prove the inequality (a+b+c)^3 geq 9(ab+bc+ca).

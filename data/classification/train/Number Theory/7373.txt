@@ -1,1 +1,0 @@
-Find all prime numbers p and nonnegative integers x neq y such that x^4- y^4=p(x^3-y^3). Proposed by Bulgaria

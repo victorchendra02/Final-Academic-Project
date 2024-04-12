@@ -1,1 +1,0 @@
-Determine all functions f : mathbb{R}^2 to mathbb {R} for which f(A)+f(B)+f(C)+f(D)=0,whenever A,B,C,D are the vertices of a square with side-length one. Ilir Snopce

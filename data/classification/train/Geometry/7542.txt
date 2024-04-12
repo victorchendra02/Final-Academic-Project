@@ -1,1 +1,0 @@
-Point {D} lies on the side {BC} of vartriangle ABC. The circumcenters of vartriangle ADC and vartriangle BAD are {O_1} and {O_2}, respectively and {O_1O_2 parallel AB}. The orthocenter of vartriangle ADCis {H} and {AH=O_1O_2}. Find the angles of vartriangle ABC if 2m left( angle C right)=3m left( angle B right).

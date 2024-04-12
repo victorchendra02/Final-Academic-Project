@@ -1,1 +1,0 @@
-Determine all polynomials f with integer coefficients such that f(p) is a divisor of 2^p-2 for every odd prime p. Proposed by Italy

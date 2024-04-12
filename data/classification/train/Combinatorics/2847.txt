@@ -1,1 +1,0 @@
-Let mathfrak F be the family of all k-element subsets of the set {1, 2, ldots, 2k + 1 }. Prove that there exists a bijective function f : mathfrak F to mathfrak F such that for every A in mathfrak F, the sets A and f(A) are disjoint.

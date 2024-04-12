@@ -1,1 +1,0 @@
-Points K and L are chosen on the sides AB and AC of an equilateral triangle ABC such that BK = AL. Segments BL and CK intersect at P. Determine the ratio frac{AK}{KB} for which the segments AP and CK are perpendicular.

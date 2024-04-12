@@ -1,1 +1,0 @@
-Let a, b, c, d be the lengths of the sides of a quadrilateral circumscribed about a circle and let S be its area. Prove that S leq sqrt{abcd} and find conditions for equality.

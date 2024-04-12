@@ -1,1 +1,0 @@
-Let ABC be an isosceles triangle (AB = AC) with its circumcenter O. Point N is the midpoint of the segment BC and point M is the reflection of the point N with respect to the side AC. Suppose that T is a point so that ANBT is a rectangle. Prove that angle OMT = frac{1}{2} angle BAC. Proposed by Ali Zamani

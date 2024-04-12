@@ -1,1 +1,0 @@
-boxed{A1} Find all ordered triplets of (x,y,z) real numbers that satisfy the following system of equation x^3= frac{z}{y}- frac {2y}{z} y^3= frac{x}{z}- frac{2z}{x} z^3= frac{y}{x}- frac{2x}{y}

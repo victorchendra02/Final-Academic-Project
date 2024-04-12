@@ -1,1 +1,0 @@
-Determine all finite nonempty sets S of positive integers satisfying {i+j over (i,j)} qquad mbox{is an element of S for all i,j in S}, where (i,j) is the greatest common divisor of i and j.

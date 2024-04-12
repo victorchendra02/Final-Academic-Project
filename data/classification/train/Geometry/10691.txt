@@ -1,1 +1,0 @@
-A circle touches the side AB of the triangle ABC at A, touches the side BC at P and intersects the side AC at Q. The line symmetrical to PQ with respect to AC meets the line AP at X. Prove that PC=CX. Proposed by S. Berlov

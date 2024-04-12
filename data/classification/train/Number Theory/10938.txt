@@ -1,1 +1,0 @@
-Solve in natural numbers the system of equations 3x^2+6y^2+5z^2=1997 and 3x+6y+5z=161 .

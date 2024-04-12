@@ -1,1 +1,0 @@
-Consider a triangle ABC with AB=AC, and D the foot of the altitude from the vertex A. The point E lies on the side AB such that angle ACE= angle ECB=18^{ circ}. If AD=3, find the length of the segment CE.

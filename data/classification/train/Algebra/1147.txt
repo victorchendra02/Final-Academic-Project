@@ -1,1 +1,0 @@
-Let r_{1},r_{2}, ldots ,r_{n} be real numbers greater than or equal to 1. Prove that frac{1}{r_{1} + 1} + frac{1}{r_{2} + 1} + cdots + frac{1}{r_{n}+1} geq frac{n}{ sqrt[n]{r_{1}r_{2} cdots r_{n}}+1}.

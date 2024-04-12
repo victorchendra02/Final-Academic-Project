@@ -1,1 +1,0 @@
-We say that a sequence a_1,a_2, cdots is expansive if for all positive integers j, ; i<j implies |a_i-a_j| ge tfrac 1j. Find all positive real numbers C for which one can find an expansive sequence in the interval [0,C].

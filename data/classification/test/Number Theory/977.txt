@@ -1,1 +1,0 @@
-Given an integer {n>1}, denote by P_{n} the product of all positive integers x less than n and such that n divides {x^2-1}. For each {n>1}, find the remainder of P_{n} on division by n. Proposed by John Murray, Ireland

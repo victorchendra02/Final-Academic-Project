@@ -1,1 +1,0 @@
-Let f(k) be the number of integers n satisfying the following conditions: (i) 0 leq n < 10^k so n has exactly k digits (in decimal notation), with leading zeroes allowed; (ii) the digits of n can be permuted in such a way that they yield an integer divisible by 11. Prove that f(2m) = 10f(2m-1) for every positive integer m. Proposed by Dirk Laurie, South Africa

@@ -1,1 +1,0 @@
-Solve in N a^2 = 2^b3^c + 1.

@@ -1,1 +1,0 @@
-a) In how many ways can we read the word SARAJEVO from the table below, if it is allowed to jump from cell to an adjacent cell (by vertex or a side) cell? b) After the letter in one cell was deleted, only 525 ways to read the word SARAJEVO remained. Find all possible positions of that cell.

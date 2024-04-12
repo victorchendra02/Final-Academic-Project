@@ -1,1 +1,0 @@
-On the plane circles k and ell are intersected at points C and D, where circle k passes through the center L of circle ell. The straight line passing through point D intersects circles k and ell for the second time at points A and B respectively in such a way that D is the interior point of segment AB. Show that AB = AC.

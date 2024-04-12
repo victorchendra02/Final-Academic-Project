@@ -1,1 +1,0 @@
-In a convex quadrilateral ABCD, let M, N, P, and Q be the midpoints of AB, BC, CD, and DA respectively. If MP and NQ divide ABCD in four quadrilaterals with the same area, prove that ABCD is a parallelogram.

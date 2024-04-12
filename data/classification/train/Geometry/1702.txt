@@ -1,1 +1,0 @@
-Given a circle K, find the locus of vertices A of parallelograms ABCD with diagonals AC leq BD, such that BD is inside K.

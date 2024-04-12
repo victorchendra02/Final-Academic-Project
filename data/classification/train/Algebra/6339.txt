@@ -1,1 +1,0 @@
-Prove that if a, b, c are positive real numbers, then the least possible value of 6a^3 + 9b^3 + 32c^3 + frac{1}{4abc} is 6. For which values of a, b and c is equality attained?

@@ -1,1 +1,0 @@
-Let a_1, ldots, a_n be n positive numbers and 0 < q < 1. Determine n positive numbers b_1, ldots, b_n so that: a.) a_{k} < b_{k} for all k = 1, ldots, n, b.) q < frac{b_{k+1}}{b_{k}} < frac{1}{q} for all k = 1, ldots, n-1, c.) sum limits^n_{k=1} b_k < frac{1+q}{1-q} cdot sum limits^n_{k=1} a_k.

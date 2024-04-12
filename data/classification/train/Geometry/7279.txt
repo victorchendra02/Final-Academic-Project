@@ -1,1 +1,0 @@
-Let ABCD be a convex quadrilateral with these properties: angle ADC = 135^o and angle ADB - angle ABD = 2 angle DAB = 4 angle CBD. If BC = sqrt2 CD , prove that AB = BC + AD. by Mahdi Etesami Fard

@@ -1,1 +1,0 @@
-Define the sequence {a_n } in the following manner: a_1=1 a_2=3 a_{n+2}=2a_{n+1}a_{n}+1 ; for all n geq1 Prove that the largest power of 2 that divides a_{4006}-a_{4005} is 2^{2003}.

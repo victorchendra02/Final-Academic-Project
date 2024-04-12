@@ -1,1 +1,0 @@
-Find all positive integers n such that the number A_n = frac{ 2^{4n+2}+1}{65} is a) an integer, b) a prime.

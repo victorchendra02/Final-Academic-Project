@@ -1,1 +1,0 @@
-Find all positive integers (a,b,c) such that ab-c, quad bc-a, quad ca-bare all powers of 2. Proposed by Serbia

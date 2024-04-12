@@ -1,1 +1,0 @@
-Inside of a square whose side length is 1 there are a few circles such that the sum of their circumferences is equal to 10. Show that there exists a line that meets at least four of these circles.

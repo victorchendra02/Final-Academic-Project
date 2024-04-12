@@ -1,1 +1,0 @@
-The sum of four real numbers is 9 and the sum of their squares is 21. Prove that these numbers can be denoted by a, b, c, d so that ab-cd ge 2 holds.

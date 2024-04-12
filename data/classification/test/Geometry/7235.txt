@@ -1,1 +1,0 @@
-For a convex polygon (i.e. all angles less than 180^ circ) call a diagonal bisector if its bisects both area and perimeter of the polygon. What is the maximum number of bisector diagonals for a convex pentagon? Proposed by Morteza Saghafian

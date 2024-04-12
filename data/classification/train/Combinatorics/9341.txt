@@ -1,1 +1,0 @@
-What is the maximum number of coins can be arranged in cells of the table n times n (each cell is not more of the one coin) so that any coin was not simultaneously below and to the right than any other?

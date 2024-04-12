@@ -1,1 +1,0 @@
-Let Gamma be the circumcircle of triangle ABC. Let D be a point on the side BC. The tangent to Gamma at A intersects the parallel line to BA through D at point E. The segment CE intersects Gamma again at F. Suppose B, D, F, E are concyclic. Prove that AC, BF, DE are concurrent.

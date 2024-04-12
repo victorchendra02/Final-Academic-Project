@@ -1,1 +1,0 @@
-Determine all sequences a_0 , a_1 , a_2 , ldots of positive integers with a_0 ge 2015 such that for all integers n ge 1: (i) a_{n+2} is divisible by a_n ; (ii) |s_{n+1} - (n + 1)a_n | = 1, where s_{n+1} = a_{n+1} - a_n + a_{n-1} - cdots + (-1)^{n+1} a_0 . Proposed by Pakawut Jiradilok and Warut Suksompong, Thailand

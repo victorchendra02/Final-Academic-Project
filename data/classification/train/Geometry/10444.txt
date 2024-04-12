@@ -1,1 +1,0 @@
-The distances from a certain point inside a regular hexagon to three of its consecutive vertices are equal to 1, 1 and 2, respectively. Determine the length of this hexagon's side. (Mikhail Evdokimov)

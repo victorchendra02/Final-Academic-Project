@@ -1,1 +1,0 @@
-Determine all integers a, b, c satisfying identities: a + b + c = 15 (a - 3)^3 + (b - 5)^3 + (c -7)^3 = 540

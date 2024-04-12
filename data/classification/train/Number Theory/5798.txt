@@ -1,1 +1,0 @@
-Determine all natural numbers n> 1 with the property: For each divisor d> 1 of number n, then d - 1 is a divisor of n - 1.

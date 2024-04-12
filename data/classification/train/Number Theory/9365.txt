@@ -1,1 +1,0 @@
-Suppose a,c,d in N and d|a^2b+c and d geq a+c Prove that d geq a+ sqrt[2b] {a}

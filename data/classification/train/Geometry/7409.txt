@@ -1,1 +1,0 @@
-A point P lies in the interior of the triangle ABC. The lines AP, BP, and CP intersect BC, CA, and AB at points D, E, and F, respectively. Prove that if two of the quadrilaterals ABDE, BCEF, CAFD, AEPF, BFPD, and CDPE are concyclic, then all six are concyclic.

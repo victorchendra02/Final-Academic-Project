@@ -1,1 +1,0 @@
-There is a set of control weights, each of them weighs a non-integer number of grams. Any integer weight from 1 g to 40 g can be balanced by some of these weights (the control weights are on one balance pan, and the measured weight on the other pan).What is the least possible number of the control weights? (Alexandr Shapovalov)

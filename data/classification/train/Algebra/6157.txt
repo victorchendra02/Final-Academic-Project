@@ -1,1 +1,0 @@
-Determine all functions f: mathbb R rightarrow mathbb R satisfying the condition f(y^2+2xf(y)+f(x)^2)=(y+f(x))(x+f(y)) for all real numbers x and y.

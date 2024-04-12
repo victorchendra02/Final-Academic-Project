@@ -1,1 +1,0 @@
-Determine the range of w(w + x)(w + y)(w + z), where x, y, z, and w are real numbers such that x + y + z + w = x^7 + y^7 + z^7 + w^7 = 0.

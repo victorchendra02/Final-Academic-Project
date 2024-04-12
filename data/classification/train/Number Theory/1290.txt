@@ -1,1 +1,0 @@
-Show that for any finite set S of distinct positive integers, we can find a set T S such that every member of T divides the sum of all the members of T. Original Statement: A finite set of (distinct) positive integers is called a DS-set if each of the integers divides the sum of them all. Prove that every finite set of positive integers is a subset of some DS-set.

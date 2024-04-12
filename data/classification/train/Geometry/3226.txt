@@ -1,1 +1,0 @@
-On a chessboard (8 times 8 squares with sides of length 1) two diagonally opposite corner squares are taken away. Can the board now be covered with nonoverlapping rectangles with sides of lengths 1 and 2?

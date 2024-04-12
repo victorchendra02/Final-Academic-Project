@@ -1,1 +1,0 @@
-Real numbers a and b satisfy a^3+b^3-6ab=-11. Prove that - frac{7}{3}<a+b<-2. Proposed by Serbia

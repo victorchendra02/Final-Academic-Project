@@ -1,1 +1,0 @@
-Prove that the sequence of the first digits of the numbers in the form 2^n+3^n is nonperiodic.

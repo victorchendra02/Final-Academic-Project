@@ -1,1 +1,0 @@
-Points K, L, M, N lie on the sides AB, BC, CD, DA of a square ABCD, respectively, such that the area of KLMN is equal to one half of the area of ABCD. Prove that some diagonal of KLMN is parallel to some side of ABCD. Proposed by Josef Tkadlec - Czech Republic

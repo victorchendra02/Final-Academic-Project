@@ -1,1 +1,0 @@
-The perpendicular projection of a triangular pyramid on some plane has the largest possible area. Prove that this plane is parallel to either a face or two opposite edges of the pyramid.

@@ -1,1 +1,0 @@
-A triangle with sides a, b, c is folded along a line ell so that a vertex C is on side c. Find the segments on which point C divides c, given that the angles adjacent to ell are equal. (2 points)

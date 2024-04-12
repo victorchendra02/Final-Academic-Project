@@ -1,1 +1,0 @@
-Given a sphere K, determine the set of all points A that are vertices of some parallelograms ABCD that satisfy AC le BD and whose entire diagonal BD is contained in K.

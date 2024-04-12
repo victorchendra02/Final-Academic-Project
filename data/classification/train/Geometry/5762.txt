@@ -1,1 +1,0 @@
-A convex hexagon ABCDEF is given whose sides AB and DE are parallel. Each of the diagonals AD, BE, CF divides this hexagon into two quadrilaterals of equal perimeters. Show that these three diagonals intersect at one point.

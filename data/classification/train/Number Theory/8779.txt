@@ -1,1 +1,0 @@
-The Fibonacci sequence is defined by f_1 = 0, f_2 = 1, and f_{n+2} = f_{n+1}+f_n for n ge 1. Prove that there is a strictly increasing arithmetic progression whose no term is in the Fibonacci sequence.

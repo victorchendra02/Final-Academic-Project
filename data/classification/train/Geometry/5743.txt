@@ -1,1 +1,0 @@
-A regular heptagon ABCDEFG is given. The lines AB and CE intersect at P. Find the measure of the angle angle PDG.

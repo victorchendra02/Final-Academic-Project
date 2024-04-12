@@ -1,1 +1,0 @@
-16 chess players held a tournament among themselves: every two chess players played exactly one game. For victory in the party was given 1 point, for a draw 0.5 points, for defeat 0 points. It turned out that exactly 15 chess players shared the first place. How many points could the sixteenth chess player score?

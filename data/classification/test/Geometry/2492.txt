@@ -1,1 +1,0 @@
-A line parallel to the side BC of a triangle ABC meets AB in F and AC in E. Prove that the circles on BE and CF as diameters intersect in a point lying on the altitude of the triangle ABC dropped from A to BC.

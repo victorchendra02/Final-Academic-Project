@@ -1,1 +1,0 @@
-Determine all pairs (a,b) of positive integers, each integer having two decimal digits, such that 100a+b and 201a+b are both perfect squares.

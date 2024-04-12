@@ -1,1 +1,0 @@
-Let ABC be an isosceles triangle with AB=AC. On the extension of the side {CA} we consider the point {D} such that {AD<AC}. The perpendicular bisector of the segment {BD} meets the internal and the external bisectors of the angle angle BAC at the points {E}and {Z}, respectively. Prove that the points {A, E, D, Z} are concyclic.

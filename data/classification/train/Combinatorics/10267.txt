@@ -1,1 +1,0 @@
-From the 9 times 9 chessboard, all 16 unit squares whose row numbers and column numbers are both even have been removed. Disect the punctured board into rectangular pieces, with as few of them being unit squares as possible.

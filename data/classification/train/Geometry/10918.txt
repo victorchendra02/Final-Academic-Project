@@ -1,1 +1,0 @@
-Let O be the center of the circle circumscribed around the the triangle ABC. The centers of the circles circumscribed around the squares OAB,OBC,OCA lie at the vertices of a regular triangle. Prove that the triangle ABC is right.

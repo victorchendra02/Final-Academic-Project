@@ -1,1 +1,0 @@
-On the plane, n points are given (n>2). No three of them are collinear. Through each two of them the line is drawn, and among the other given points, the one nearest to this line is marked (in each case this point occurred to be unique). What is the maximal possible number of marked points for each given n? Proposed by Boris Frenkin (Russia)

@@ -1,1 +1,0 @@
-Integers 1,2, ...,2n are arbitrarily assigned to boxes labeled with numbers 1, 2,..., 2n. Now, we add the number assigned to the box to the number on the box label. Show that two such sums give the same remainder modulo 2n.

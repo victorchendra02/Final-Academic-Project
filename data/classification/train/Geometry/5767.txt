@@ -1,1 +1,0 @@
-Given a right triangle ABC with the hypotenuse AB. Let K be any interior point of triangle ABC and points L, M are symmetric of point K wrt lines BC, AC respectively. Specify all possible values for S_{ABLM} / S_{ABC}, where S_{XY ... Z} indicates the area of the polygon XY...Z .

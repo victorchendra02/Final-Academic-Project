@@ -1,1 +1,0 @@
-Let I be the incenter and AB the shortest side of the triangle ABC. The circle centered at I passing through C intersects the ray AB in P and the ray BA in Q. Let D be the point of tangency of the A-excircle of the triangle ABC with the side BC. Let E be the reflection of C with respect to the point D. Prove that PE perp CQ.

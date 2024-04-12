@@ -1,1 +1,0 @@
-Find all positive integers a, b, c such that ab + 1, bc + 1, and ca + 1 are all equal to factorials of some positive integers. Proposed by Nikola Velov, Macedonia

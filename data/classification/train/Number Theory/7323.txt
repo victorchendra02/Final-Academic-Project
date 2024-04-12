@@ -1,1 +1,0 @@
-The real numbers x, y and z are such that x^2 + y^2 + z^2 = 1. a) Determine the smallest and the largest possible values of xy + yz - xz. b) Prove that there does not exist a triple (x, y, z) of rational numbers, which attains any of the two values in a).

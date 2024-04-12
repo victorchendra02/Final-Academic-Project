@@ -1,1 +1,0 @@
-If a,b,c are positive real numbers prove that: frac{a}{b}+ sqrt{ frac{b}{c}}+ sqrt[3]{ frac{c}{a}}>2.

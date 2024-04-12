@@ -1,1 +1,0 @@
-Let n geq 2 be natural number. Prove, that (1^{n-1}+2^{n-1}+....+(n-1)^{n-1})+1 divided by n iff for any prime divisor p of n p| frac{n}{p}-1 and (p-1)| frac{n}{p}-1.

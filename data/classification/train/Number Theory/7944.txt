@@ -1,1 +1,0 @@
-Consider the following sequence: a_1 = 1, a_2 = 2, a_3 = 3, and a_{n+3} = frac{a_{n+1}^2 + a_{n+2}^2 - 2}{a_n}for all integers n ge 1. Prove that every term of the sequence is a positive integer.

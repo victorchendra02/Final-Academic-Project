@@ -1,1 +1,0 @@
-Let M{} be the midpoint of the side BC of the triangle ABC. The circle omega passes through A{}, touches the line BC at M{}, intersects the side AB at the point D{} and the side AC at the point E{}. Let X{} and Y{} be the midpoints of BE and CD respectively. Prove that the circumcircle of the triangle MXY touches omega. Alexey Doledenok

@@ -1,1 +1,0 @@
-On a chessboard a square is chosen . The sum of the squares of distances from its centre to the centre of all black squares is designated by a and to the centre of all white squares by b. Prove that a = b. (A. Andj ans, Riga)

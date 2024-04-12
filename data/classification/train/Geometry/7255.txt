@@ -1,1 +1,0 @@
-Suppose that ABCD is a parallelogram such that angle DAC = 90^o. Let H be the foot of perpendicular from A to DC, also let P be a point along the line AC such that the line PD is tangent to the circumcircle of the triangle ABD. Prove that angle PBA = angle DBH. Proposed by Iman Maghsoudi

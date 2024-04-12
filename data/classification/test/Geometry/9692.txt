@@ -1,1 +1,0 @@
-A circle with center O is inscribed in an angle. Let A be the reflection of O across one side of the angle. Tangents to the circle from A intersect the other side of the angle at points B and C. Prove that the circumcenter of triangle ABC lies on the bisector of the original angle. (I.Sharygin)

@@ -1,1 +1,0 @@
-In how many ways can we place the numbers from 1 to 100 in a 2 times 50 rectangle (divided into 100 unit squares) so that any two consecutive numbers are always placed in squares with a common side?

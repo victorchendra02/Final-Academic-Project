@@ -1,1 +1,0 @@
-Point P lies inside a triangle ABC. Let D,E and F be reflections of the point P in the lines BC,CA and AB, respectively. Prove that if the triangle DEF is equilateral, then the lines AD,BE and CF intersect in a common point.

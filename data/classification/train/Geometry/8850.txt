@@ -1,1 +1,0 @@
-In a triangle ABC with AB<AC, D is a point on segment AC such that BD = CD. A line parallel to BD meets segment BC at E and line AB at F. Point G is the intersection of AE and BD. Show that angle BCG = angle BCF. (Cote dIvoire)

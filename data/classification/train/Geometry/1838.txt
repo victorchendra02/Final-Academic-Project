@@ -1,1 +1,0 @@
-Let ABC be an arbitrary triangle and M a point inside it. Let d_a, d_b, d_c be the distances from M to sides BC,CA,AB; a, b, c the lengths of the sides respectively, and S the area of the triangle ABC. Prove the inequality abd_ad_b + bcd_bd_c + cad_cd_a leq frac{4S^2}{3}. Prove that the left-hand side attains its maximum when M is the centroid of the triangle.

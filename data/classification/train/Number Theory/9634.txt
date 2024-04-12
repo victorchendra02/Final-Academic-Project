@@ -1,1 +1,0 @@
-Prove that if k is an even positive integer then it is possible to write the integers from 1 to k-1 in such an order that the sum of no set of successive numbers is divisible by k .

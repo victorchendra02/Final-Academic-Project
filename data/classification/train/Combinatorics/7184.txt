@@ -1,1 +1,0 @@
-Consider a triangular grid of equilateral triangles with unit sides. Assume that mathcal{P} is a non-self-intersecting polygon with perimeter 1399 and sides from the grid. Prove that mathcal{P} has either an internal or an external 120-degree angle. Proposed by Seyed Hessam Firouzi

@@ -1,1 +1,0 @@
-A circle C with center O on base BC of an isosceles triangle ABC is tangent to the equal sides AB,AC. If point P on AB and point Q on AC are selected such that PB times CQ = ( frac{BC}{2})^2, prove that line segment PQ is tangent to circle C, and prove the converse.

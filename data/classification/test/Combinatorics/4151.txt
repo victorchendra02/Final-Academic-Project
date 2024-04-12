@@ -1,1 +1,0 @@
-Alice is drawing a shape on a piece of paper. She starts by placing her pencil at the origin, and then draws line segments of length one, alternating between vertical and horizontal segments. Eventually, her pencil returns to the origin, forming a closed, non-self-intersecting shape. Show that the area of this shape is even if and only if its perimeter is a multiple of eight.

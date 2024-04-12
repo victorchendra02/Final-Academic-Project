@@ -1,1 +1,0 @@
-Two players play alternatively on an infinite square grid. The first player puts an X in an empty cell and the second player puts an O in an empty cell. The first player wins if he gets 11 adjacent X's in a line - horizontally, vertically or diagonally. Show that the second player can always prevent the first player from winning.

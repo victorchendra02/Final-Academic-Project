@@ -1,1 +1,0 @@
-Find all polynomials P in mathbb{R}[x] such that for all r in mathbb{Q},there exist d in mathbb{Q} such that P(d)=r

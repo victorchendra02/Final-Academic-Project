@@ -1,1 +1,0 @@
-Find all positive integers x, y, z such that 45^x-6^y=2019^z Proposed by Dorlir Ahmeti, Albania

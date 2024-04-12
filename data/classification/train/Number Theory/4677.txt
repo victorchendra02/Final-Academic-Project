@@ -1,1 +1,0 @@
-Find all pairs (x,y) of integers such that y^3-1=x^4+x^2.

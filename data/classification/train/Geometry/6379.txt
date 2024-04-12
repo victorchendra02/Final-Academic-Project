@@ -1,1 +1,0 @@
-Points A_{1}, B_{1}, C_{1} are given inside an equilateral triangle ABC such that widehat{B_{1}AB}= widehat{A1BA}= 15^{0}, widehat{C_{1}BC}= widehat{B_{1}CB}= 20^{0}, widehat{A_{1}CA}= widehat{C_{1}AC}= 25^{0}. Find the angles of triangle A_{1}B_{1}C_{1}.

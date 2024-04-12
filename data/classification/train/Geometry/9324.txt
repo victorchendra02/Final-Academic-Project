@@ -1,1 +1,0 @@
-In an acute-angled triangle ABC on the sides AB, BC, AC the points H, L, K so that CH perp AB, HL parallel AC, HK parallel BC. Let P and Q feet of altitudes of a triangle HBL, drawn from the vertices H and B respectively. Prove that the feet of the altitudes of the triangle AKH, drawn from the vertices A and H lie on the line PQ.

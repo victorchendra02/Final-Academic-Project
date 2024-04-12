@@ -1,1 +1,0 @@
-Determine all prime numbers p_1, p_2,..., p_{12}, p_{13}, p_1 le p_2 le ... le p_{12} le p_{13}, such that p_1^2+ p_2^2+ ... + p_{12}^2 = p_{13}^2 and one of them is equal to 2p_1 + p_9.

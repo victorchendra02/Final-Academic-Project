@@ -1,1 +1,0 @@
-There is a row of 100 cells each containing a token. For 1 dollar it is allowed to interchange two neighbouring tokens. Also it is allowed to interchange with no charge any two tokens such that there are exactly 3 tokens between them. What is the minimum price for arranging all the tokens in the reverse order? (Egor Bakaev)

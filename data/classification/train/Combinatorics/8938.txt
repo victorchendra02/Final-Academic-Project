@@ -1,1 +1,0 @@
-In how many ways can the integers from 1 to 2006 be divided into three non-empty disjoint sets so that none of these sets contains a pair of consecutive integers?

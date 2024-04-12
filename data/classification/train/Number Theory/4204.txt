@@ -1,1 +1,0 @@
-Let a_1=2 and, for every positive integer n, let a_{n+1} be the smallest integer strictly greater than a_n that has more positive divisors than a_n. Prove that 2a_{n+1}=3a_n only for finitely many indicies n. Proposed by Ilija Jovcevski, North Macedonia

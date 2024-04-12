@@ -1,1 +1,0 @@
-Parallelogram {ABCD} is given with {AC>BD}, and {O} intersection point of {AC} and {BD}. Circle with center at {O}and radius {OA} intersects extensions of {AD}and {AB}at points {G} and {L}, respectively. Let {Z} be intersection point of lines {BD}and {GL}. Prove that angle ZCA={{90}^{{}^ circ }}.

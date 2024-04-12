@@ -1,1 +1,0 @@
-Let triangle ABC be triangle with incenter I and circumcircle Gamma. Let M=BI cap Gamma and N=CI cap Gamma, the line parallel to MN through I cuts AB, AC in P and Q. Prove that the circumradius of odot (BNP) and odot (CMQ) are equal.

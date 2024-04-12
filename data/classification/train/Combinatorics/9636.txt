@@ -1,1 +1,0 @@
-(a) Prove that if 3n stars are placed in 3n cells of a 2n times 2n array, then it is possible to remove n rows and n columns in such away that all stars will be removed . (b) Prove that it is possible to place 3n + 1 stars in the cells of a 2n times 2n array in such a way that after removing any n rows and n columns at least one star remains. (K . P. Kohas, Leningrad)

@@ -1,1 +1,0 @@
-Let n (n ge 1) be an integer. Consider the equation 2 cdot lfloor{ frac{1}{2x}} rfloor - n + 1 = (n + 1)(1 - nx), where x is the unknown real variable. (a) Solve the equation for n = 8. (b) Prove that there exists an integer n for which the equation has at least 2021 solutions. (For any real number y by lfloor{y} rfloor we denote the largest integer m such that m le y.)

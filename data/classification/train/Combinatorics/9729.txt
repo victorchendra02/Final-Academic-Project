@@ -1,1 +1,0 @@
-A rook is allowed to move one cell either horizontally or vertically. After 64 moves the rook visited all cells of the 8 times 8 chessboard and returned back to the initial cell. Prove that the number of moves in the vertical direction and the number of moves in the horizontal direction cannot be equal. (A Shapovalov, R Sadykov)

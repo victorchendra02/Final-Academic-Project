@@ -1,1 +1,0 @@
-Find all pairs (a,b) of positive integers such that a^3 is multiple of b^2 and b-1 is multiple of a-1.

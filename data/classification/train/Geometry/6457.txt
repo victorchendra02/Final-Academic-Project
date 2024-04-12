@@ -1,1 +1,0 @@
-Let ABC be a triangle where angle ACB=90^{ circ}. Let D be the midpoint of BC and let E, and F be points on AC such that CF=FE=EA. The altitude from C to the hypotenuse AB is CG, and the circumcentre of triangle AEG is H. Prove that the triangles ABC and HDF are similar.

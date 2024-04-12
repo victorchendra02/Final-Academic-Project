@@ -1,1 +1,0 @@
-Consider in the interior of an equilateral triangle ABC points D, E and F such that D belongs to segment BE, E belongs to segment CF and F to segment AD. If AD=BE = CF then DEF is equilateral.

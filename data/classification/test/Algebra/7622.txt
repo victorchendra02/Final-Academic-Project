@@ -1,1 +1,0 @@
-The real numbers x,y,z, m, n are positive, such that m + n ge 2. Prove that x sqrt{yz(x + my)(x + nz)} + y sqrt{xz(y + mx)(y + nz)} + z sqrt{xy(z + mx)(x + ny) } le frac{3(m + n)}{8} (x + y)(y + z)(z + x)

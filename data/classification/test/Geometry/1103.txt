@@ -1,1 +1,0 @@
-Let ABC be a triangle and M be an interior point. Prove that min {MA,MB,MC }+MA+MB+MC<AB+AC+BC.

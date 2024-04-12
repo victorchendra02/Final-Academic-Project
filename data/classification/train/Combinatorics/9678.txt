@@ -1,1 +1,0 @@
-A chess king tours an entire 8 times 8 chess board, visiting each square exactly once and returning at last to his starting position. Prove that he made an even number of diagonal moves. (V Proizvolov)

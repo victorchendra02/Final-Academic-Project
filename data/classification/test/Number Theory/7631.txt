@@ -1,1 +1,0 @@
-Prove that the equation x^{2006} - 4y^{2006} -2006 = 4y^{2007} + 2007y has no solution in the set of the positive integers.

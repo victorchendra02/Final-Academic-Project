@@ -1,1 +1,0 @@
-Find the smallest value that the expression takes x^4 + y^4 - x^2y - xy^2, for positive numbers x and y satisfying x + y le 1.

@@ -1,1 +1,0 @@
-Let n be a positive integer that is not a perfect cube. Define real numbers a,b,c by a= root3 of n kern1.5pt, qquad b={1 over a-[a]} kern1pt, qquad c={1 over b-[b]} kern1.5pt, where [x] denotes the integer part of x. Prove that there are infinitely many such integers n with the property that there exist integers r,s,t, not all zero, such that ra+sb+tc=0.

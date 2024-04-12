@@ -1,1 +1,0 @@
-Let ABC be an equilateral triangle and let P be a point in its interior. Let the lines AP, BP, CP meet the sides BC, CA, AB at the points A_1, B_1, C_1, respectively. Prove that A_1B_1 cdot B_1C_1 cdot C_1A_1 ge A_1B cdot B_1C cdot C_1A.

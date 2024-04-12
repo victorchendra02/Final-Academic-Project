@@ -1,1 +1,0 @@
-A natural number is written in each square of an m times n chess board. The allowed move is to add an integer k to each of two adjacent numbers in such a way that non-negative numbers are obtained. (Two squares are adjacent if they have a common side.) Find a necessary and sufficient condition for it to be possible for all the numbers to be zero after finitely many operations.

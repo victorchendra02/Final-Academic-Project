@@ -1,1 +1,0 @@
-Find all positive integers k for which the following assertion holds: If F(x) is polynomial with integer coefficients ehich satisfies 0 leq F(c) leq k for all c in {0,1, cdots,k+1 }, then F(0)= F(1) = cdots =F(k+1).

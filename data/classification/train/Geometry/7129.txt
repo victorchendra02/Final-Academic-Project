@@ -1,1 +1,0 @@
-Diagonals of a cyclic quadrilateral ABCD intersect at point K. The midpoints of diagonals AC and BD are M and N, respectively. The circumscribed circles ADM and BCM intersect at points M and L. Prove that the points K ,L ,M, and N lie on a circle. (all points are supposed to be different.)

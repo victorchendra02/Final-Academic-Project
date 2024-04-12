@@ -1,1 +1,0 @@
-A regular n-gon A_1A_2A_3 cdots A_k cdots A_n inscribed in a circle of radius R is given. If S is a point on the circle, calculate T = sum^n_{k=1} SA^2_k.

@@ -1,1 +1,0 @@
-Let ABC be a triangle, H its orthocenter, O its circumcenter, and R its circumradius. Let D be the reflection of the point A across the line BC, let E be the reflection of the point B across the line CA, and let F be the reflection of the point C across the line AB. Prove that the points D, E and F are collinear if and only if OH=2R.

@@ -1,1 +1,0 @@
-Let there be an incircle of triangle ABC, and 3 circles each inscribed between incircle and angles of ABC. Let r, r_1, r_2, r_3 be radii of these circles (r_1, r_2, r_3 < r). Prove that r_1+r_2+r_3 geq r

@@ -1,1 +1,0 @@
-Let ABC be an equilateral triangle of center O, and M in BC. Let K,L be projections of M onto the sides AB and AC respectively. Prove that line OM passes through the midpoint of the segment KL.

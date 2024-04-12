@@ -1,1 +1,0 @@
-On a connected graph G, one may perform the following operations: choose a vertice v, and add a vertice v' such that v' is connected to v and all of its neighbours choose a vertice v with odd degree and delete it Show that for any connected graph G, we may perform a finite number of operations such that the resulting graph is a clique. Proposed by idonthaveanaopsaccount

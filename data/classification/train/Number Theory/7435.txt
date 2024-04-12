@@ -1,1 +1,0 @@
-Determine all four-digit numbers overline{abcd} such that (a + b)(a + c)(a + d)(b + c)(b + d)(c + d) = overline{abcd} :

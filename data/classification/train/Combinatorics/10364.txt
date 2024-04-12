@@ -1,1 +1,0 @@
-A math teacher chose 10 consequtive numbers and submitted them to Pete and Basil. Each boy should split these numbers in pairs and calculate the sum of products of numbers in pairs. Prove that the boys can pair the numbers differently so that the resulting sums are equal.

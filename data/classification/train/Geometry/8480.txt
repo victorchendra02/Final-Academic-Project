@@ -1,1 +1,0 @@
-Let ABC be a triangle with 90^ circ ne angle A ne 135^ circ. Let D and E be external points to the triangle ABC such that DAB and EAC are isoscele triangles with right angles at D and E. Let F = BE cap CD, and let M and N be the midpoints of BC and DE, respectively. Prove that, if three of the points A, F, M, N are collinear, then all four are collinear.

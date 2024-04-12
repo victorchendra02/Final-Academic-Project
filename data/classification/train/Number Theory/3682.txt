@@ -1,1 +1,0 @@
-Let a_1, a_2, ldots, a_n be a sequence of integers with values between 2 and 1995 such that: (i) Any two of the a_i's are relatively prime, (ii) Each a_i is either a prime or a product of primes. Determine the smallest possible values of n to make sure that the sequence will contain a prime number.

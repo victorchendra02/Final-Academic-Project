@@ -1,1 +1,0 @@
-Prove that sqrt{x-1}+ sqrt{2x+9}+ sqrt{19-3x}<9 for all real x for which the left-hand side is well defined.

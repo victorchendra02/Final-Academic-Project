@@ -1,1 +1,0 @@
-Find all of the positive real numbers like x,y,z, such that : 1.) x + y + z = a + b + c 2.) 4xyz = a^2x + b^2y + c^2z + abc Proposed to Gazeta Matematica in the 80s by VASILE CIRTOAJE and then by Titu Andreescu to IMO 1995.

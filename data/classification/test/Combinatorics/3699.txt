@@ -1,1 +1,0 @@
-Determine all pairs (h,s) of positive integers with the following property: If one draws h horizontal lines and another s lines which satisfy (i) they are not horizontal, (ii) no two of them are parallel, (iii) no three of the h + s lines are concurrent, then the number of regions formed by these h + s lines is 1992.

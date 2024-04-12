@@ -1,1 +1,0 @@
-Let A_1A_2A_3A_4A_5A_6 be a hexagon inscribed into a circle with center O. Consider the circular arc with endpoints A_1,A_6 not containing A_2. For any point M of that arc denote by h_i the distance from M to the line A_iA_{i+1} (1 leq i leq 5). Construct M such that the sum h_1 + cdots + h_5 is maximal.

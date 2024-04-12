@@ -1,1 +1,0 @@
-Prove that for each positive integer k there exists a number base b along with k triples of Fibonacci numbers (F_u,F_v,F_w) such that when they are written in base b, their concatenation is also a Fibonacci number written in base b. (Fibonacci numbers are defined by F_1 = F_2 = 1 and F_{n+2} = F_{n+1} + F_n for all positive integers n.) Proposed by Serbia

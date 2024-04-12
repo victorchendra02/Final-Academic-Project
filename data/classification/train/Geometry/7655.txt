@@ -1,1 +1,0 @@
-Let C_1,C_2 be two circles intersecting at points A,P with centers O,K respectively. Let B,C be the symmetric of A wrt O,K in circles C_1,C_2 respectively. A random line passing through A intersects circles C_1,C_2 at D,E respectively. Prove that the center of circumcircle of triangle DEP lies on the circumcircle of triangle OKP.

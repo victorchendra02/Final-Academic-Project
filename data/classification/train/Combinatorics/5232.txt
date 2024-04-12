@@ -1,1 +1,0 @@
-A square grid 2n times 2n is constructed of matches (each match is a segment of length 1). By one move Peter can choose a vertex which (at this moment) is the endpoint of 3 or 4 matches and delete two matches whose union is a segment of length 2. Find the least possible number of matches that could remain after a number of Peter's moves.

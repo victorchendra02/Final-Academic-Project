@@ -1,1 +1,0 @@
-let a le b le c le d show that: ab^3+bc^3+cd^3+da^3 ge a^2b^2+b^2c^2+c^2d^2+d^2a^2

@@ -1,1 +1,0 @@
-In the isosceles triangle ABC (AB=AC), let l be a line parallel to BC through A. Let D be an arbitrary point on l. Let E,F be the feet of perpendiculars through A to BD,CD respectively. Suppose that P,Q are the images of E,F on l. Prove that AP+AQ le AB Proposed by Morteza Saghafian

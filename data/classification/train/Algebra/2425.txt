@@ -1,1 +1,0 @@
-Given n real numbers 0 < t_1 leq t_2 leq cdots leq t_n < 1, prove that (1-t_n^2) left( frac{t_1}{(1-t_1^2)^2}+ frac{t_2}{(1-t_2^3)^2}+ cdots + frac{t_n}{(1-t_n^{n+1})^2} right) < 1.

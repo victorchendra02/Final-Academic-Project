@@ -1,1 +1,0 @@
-Given a convex pentagon ABCDE such that AE is parallel to CD and AB=BC. Angle bisectors of angles A and C intersect at K. Prove that BK and AE are parallel.

@@ -1,1 +1,0 @@
-Let a quadratic polynomial g(x) = ax^2 + bx + c be given and an integer n ge 1. Prove that there exists at most one polynomial f(x) of nth degree such that f(g(x)) = g(f(x)).

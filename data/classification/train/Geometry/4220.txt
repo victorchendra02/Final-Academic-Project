@@ -1,1 +1,0 @@
-Let be a triangle triangle ABC with m( angle ABC) = 75^{ circ} and m( angle ACB) = 45^{ circ}. The angle bisector of angle CAB intersects CB at point D. We consider the point E in (AB), such that DE = DC. Let P be the intersection of lines AD and CE. Prove that P is the midpoint of segment AD.

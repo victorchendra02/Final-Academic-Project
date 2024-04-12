@@ -1,1 +1,0 @@
-There is a triangle ABC. Its circumcircle and its circumcentre are given. Show how the orthocentre of ABC may be constructed using only a straightedge (unmarked ruler). [The straightedge and paper may be assumed large enough for the construction to be completed]

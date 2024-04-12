@@ -1,1 +1,0 @@
-Two points A and B and line ell are fixed in the plane so that ell is not perpendicular to AB and does not intersect the segment AB. We consider all circles with a centre O not lying on ell, passing through A and B and meeting ell at some points C and D. Prove that all the circumcircles of triangles OCD touch a fixed circle.

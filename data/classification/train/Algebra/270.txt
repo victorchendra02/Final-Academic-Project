@@ -1,1 +1,0 @@
-Given a sequence {a_n } of real numbers such that |a_{k+m} - a_k - a_m| leq 1 for all positive integers k and m, prove that, for all positive integers p and q, | frac{a_p}{p} - frac{a_q}{q}| < frac{1}{p} + frac{1}{q}.

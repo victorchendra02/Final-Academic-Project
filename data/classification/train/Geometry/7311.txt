@@ -1,1 +1,0 @@
-Each of Mahdi and Morteza has drawn an inscribed 93-gon. Denote the first one by A_1A_2...A_{93} and the second by B_1B_2...B_{93}. It is known that A_iA_{i+1} // B_iB_{i+1} for 1 le i le 93 (A_{93} = A_1, B_{93} = B_1). Show that frac{A_iA_{i+1} }{ B_iB_{i+1}} is a constant number independent of i. by Morteza Saghafian

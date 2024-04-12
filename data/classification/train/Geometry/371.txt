@@ -1,1 +1,0 @@
-Prove that a tetrahedron with just one edge length greater than 1 has volume at most frac{1}{8}.

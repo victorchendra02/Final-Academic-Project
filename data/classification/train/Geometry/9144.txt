@@ -1,1 +1,0 @@
-Consider a prism, not necessarily right, whose base is a rhombus ABCD with side AB = 5 and diagonal AC = 8. A sphere of radius r is tangent to the plane ABCD at C and tangent to the edges AA_1 , BB _1 and DD_ 1 of the prism. Calculate r .

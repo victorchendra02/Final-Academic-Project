@@ -1,1 +1,0 @@
-Do there exist 6 circles in the plane such that every circle passes through centers of exactly 3 other circles? by Morteza Saghafian

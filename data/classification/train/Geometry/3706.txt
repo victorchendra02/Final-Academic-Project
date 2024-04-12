@@ -1,1 +1,0 @@
-Given triangle ABC, let D, E, F be the midpoints of BC, AC, AB respectively and let G be the centroid of the triangle. For each value of angle BAC, how many non-similar triangles are there in which AEGF is a cyclic quadrilateral?

@@ -1,1 +1,0 @@
-Find all positive integers N such that an N times N board can be tiled using tiles of size 5 times 5 or 1 times 3. Note: The tiles must completely cover all the board, with no overlappings.

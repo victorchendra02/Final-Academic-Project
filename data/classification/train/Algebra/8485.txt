@@ -1,1 +1,0 @@
-Let n be a positive integer. Calculate the sum sum_{k=1}^n { sum_{1 le i_1 < ldots < i_k le n}^{}{ frac {2^k}{(i_1 + 1)(i_2 + 1) ldots (i_k + 1)}}}

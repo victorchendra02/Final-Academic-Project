@@ -1,1 +1,0 @@
-Three equal circles have a common point M and intersect in pairs at points A, B, C. Prove that that M is the orthocenter of triangle ABC.

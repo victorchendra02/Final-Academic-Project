@@ -1,1 +1,0 @@
-Through the endpoints A and B of a diameter AB of a given circle, the tangents ell and m have been drawn. Let C ne A be a point on ell and let q_1,q_2 be two rays from C. Ray q_i cuts the circle in D_i and E_i with D_i between C and E_i, i = 1,2. Rays AD_1,AD_2,AE_1,AE_2 meet m in the respective points M_1,M_2,N_1,N_2. Prove that M_1M_2 = N_1N_2.

@@ -1,1 +1,0 @@
-Let ABC be a triangle, I its incenter, omega its incircle, P a point such that PI perp BC and PA parallel BC, Q in (AB), R in (AC) such that QR parallel BC and QR tangent to omega. Show that angle QPB = angle CPR.

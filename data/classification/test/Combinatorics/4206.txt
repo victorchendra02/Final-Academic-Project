@@ -1,1 +1,0 @@
-Let s geq 2 and n geq k geq 2 be integes, and let A be a subset of {1, 2, . . . , n }^k of size at least 2sk^2n^{k-2} such that any two members of A share some entry. Prove that there are an integer p leq k and s+2 members A_1, A_2, . . . , A_{s+2} of A such that A_i and A_j share the p-th entry alone, whenever i and j are distinct. Miroslav Marinov, Bulgaria

@@ -1,1 +1,0 @@
-Let f be a function from the real numbers to the real numbers such that f(1) = 1, f(a+b) = f(a)+f(b) for all a, b, and f(x)f left( frac{1}{x} right) = 1 for all x neq 0. Prove that f(x) = x for all real numbers x.

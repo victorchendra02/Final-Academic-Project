@@ -1,1 +1,0 @@
-Each of the sides AB and CD of a convex quadrilateral ABCD is divided into three equal parts, |AE| = |EF| = |F B| , |DP| = |P Q| = |QC|. The diagonals of AEPD and FBCQ intersect at M and N, respectively. Prove that the sum of the areas of vartriangle AMD and vartriangle BNC is equal to the sum of the areas of vartriangle EPM and vartriangle FNQ.

@@ -1,1 +1,0 @@
-In a triangle ABC let A_1 be the midpoint of side BC. Draw circles with centers A, A1 and radii AA_1, BC respectively and let A'A'' be their common chord. Similarly denote the segments B'B'' and C'C''. Show that lines A'A'', B'B''' and C'C'' are concurrent.

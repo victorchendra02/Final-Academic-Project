@@ -1,1 +1,0 @@
-Let a, b and n be positive integers with a>b such that all of the following hold: i. a^{2021} divides n, ii. b^{2021} divides n, iii. 2022 divides a-b. Prove that there is a subset T of the set of positive divisors of the number n such that the sum of the elements of T is divisible by 2022 but not divisible by 2022^2. Proposed by Silouanos Brazitikos, Greece

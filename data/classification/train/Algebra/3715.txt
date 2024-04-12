@@ -1,1 +1,0 @@
-Determine all functions f from the reals to the reals for which (1) f(x) is strictly increasing and (2) f(x) + g(x) = 2x for all real x, where g(x) is the composition inverse function to f(x). (Note: f and g are said to be composition inverses if f(g(x)) = x and g(f(x)) = x for all real x.)

@@ -1,1 +1,0 @@
-We have four wooden triangles with sides 3, 4, 5 centimeters. How many convex polygons can we make by all of these triangles? (Just draw the polygons without any proof) A convex polygon is a polygon which all of it's angles are less than 180^o and there isn't any hole in it. For example: //cdn.artofproblemsolving.com/images/7/5/4/7545261bf092f2c843dcb006847dda80e25acedc.png

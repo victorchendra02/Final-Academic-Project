@@ -1,1 +1,0 @@
-For positive numbers a, b, c define A = frac{(a + b + c)}{3}, G = sqrt[3]{abc}, H = frac{3}{(a^{-1} + b^{-1} + c^{-1})}. Prove that left( frac AG right)^3 geq frac 14 + frac 34 cdot frac AH.

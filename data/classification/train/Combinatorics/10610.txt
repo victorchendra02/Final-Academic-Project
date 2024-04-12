@@ -1,1 +1,0 @@
-Is it possible to arrange 36 distinct numbers in the cells of a 6 times 6 table, so that in each 1 times 5 rectangle (both vertical and horizontal) the sum of the numbers equals 2022 or 2023?

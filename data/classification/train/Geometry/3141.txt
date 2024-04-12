@@ -1,1 +1,0 @@
-A circle K with radius r, a point D on K, and a convex angle with vertex S and rays a and b are given in the plane. Construct a parallelogram ABCD such that A and B lie on a and b respectively, SA+SB=r, and C lies on K.

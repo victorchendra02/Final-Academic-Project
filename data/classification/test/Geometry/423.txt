@@ -1,1 +1,0 @@
-Construct a right triangle with given hypotenuse c such that the median drawn to the hypotenuse is the geometric mean of the two legs of the triangle.

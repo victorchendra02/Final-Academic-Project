@@ -1,1 +1,0 @@
-The incircle of triangle triangle ABC touches the sides BC, CA, AB at D, E, F respectively. X is a point inside triangle of triangle ABC such that the incircle of triangle triangle XBC touches BC at D, and touches CX and XB at Y and Z respectively. Show that E, F, Z, Y are concyclic.

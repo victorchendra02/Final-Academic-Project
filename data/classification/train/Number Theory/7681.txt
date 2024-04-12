@@ -1,1 +1,0 @@
-Find the positive integers n that are not divisible by 3 if the number 2^{n^2-10}+2133 is a perfect cube. NoteThe wording of this problem is perhaps not the best English. As far as I am aware, just solve the diophantine equation x^3=2^{n^2-10}+2133 where x,n in mathbb{N} and 3 nmid n.

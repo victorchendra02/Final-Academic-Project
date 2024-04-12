@@ -1,1 +1,0 @@
-boxed{ text{N4}} Find all primes p,q such that 2p^3-q^2=2(p+q)^2.

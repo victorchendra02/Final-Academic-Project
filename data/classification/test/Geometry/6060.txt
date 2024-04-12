@@ -1,1 +1,0 @@
-Given six points on a circle, A, a, B, b, C, c, show that the Pascal lines of the hexagrams AaBbCc, AbBcCa, AcBaCb are concurrent.

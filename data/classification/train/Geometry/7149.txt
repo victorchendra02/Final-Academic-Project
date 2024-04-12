@@ -1,1 +1,0 @@
-Let ABCD be a convex quadrilateral, with angle BAC= angle DAC and M a point inside such that angle MBA= angle MCD and angle MBC= angle MDC. Show that the angle angle ADC is equal to angle BMC or angle AMB.

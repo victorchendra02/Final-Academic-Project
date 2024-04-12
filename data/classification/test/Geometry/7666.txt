@@ -1,1 +1,0 @@
-Let ABC be an isosceles triangle with AB = AC. A semi-circle of diameter [EF] with E, F in [BC], is tangent to the sides AB,AC in M, N respectively and AE intersects the semicircle at P. Prove that PF passes through the midpoint of [MN].

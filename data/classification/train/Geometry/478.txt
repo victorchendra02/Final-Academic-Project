@@ -1,1 +1,0 @@
-Let ABCD be a quadrilateral inscribed in a circle Omega. Let the tangent to Omega at D meet rays BA and BC at E and F, respectively. A point T is chosen inside triangle ABC so that overline{TE} parallel overline{CD} and overline{TF} parallel overline{AD}. Let K ne D be a point on segment DF satisfying TD=TK. Prove that lines AC,DT, and BK are concurrent.

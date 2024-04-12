@@ -1,1 +1,0 @@
-Let n be a positive integer. Given is a subset A of {0,1,...,5^n } with 4n+2 elements. Prove that there exist three elements a<b<c from A such that c+2a>3b. Proposed by Dominik Burek and Tomasz Ciesla, Poland

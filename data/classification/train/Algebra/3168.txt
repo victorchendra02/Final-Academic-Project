@@ -1,1 +1,0 @@
-Let n be a positive integer, n geq 2, and consider the polynomial equation x^n - x^{n-2} - x + 2 = 0. For each n, determine all complex numbers x that satisfy the equation and have modulus |x| = 1.

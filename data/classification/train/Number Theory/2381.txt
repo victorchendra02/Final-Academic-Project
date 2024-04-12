@@ -1,1 +1,0 @@
-Find all positive integers x such that the product of all digits of x is given by x^2 - 10 cdot x - 22.

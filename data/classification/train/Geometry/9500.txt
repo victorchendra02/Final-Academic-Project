@@ -1,1 +1,0 @@
-In vartriangle ABC, angle ABC = angle ACB = 40^o . BD bisects angle ABC , with D located on AC. Prove that BD + DA = BC.

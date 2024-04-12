@@ -1,1 +1,0 @@
-Find all functions f : R rightarrow R such that f ( f (x)+y) = f (x^2 -y)+4 f (x)y for all x,y in R .

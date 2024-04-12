@@ -1,1 +1,0 @@
-Assume A,B,C are three collinear points that B in [AC]. Suppose AA' and BB' are to parrallel lines that A', B' and C are not collinear. Suppose O_1 is circumcenter of circle passing through A, A' and C. Also O_2 is circumcenter of circle passing through B, B' and C. If area of A'CB' is equal to area of O_1CO_2, then find all possible values for angle CAA'

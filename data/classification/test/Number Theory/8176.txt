@@ -1,1 +1,0 @@
-We call S (n) the sum of the digits of the integer n. For example, S (327)=3+2+7=12. Find the value of A=S(1)-S(2)+S(3)-S(4)+...+S(2011)-S(2012).(A has 2012 terms).

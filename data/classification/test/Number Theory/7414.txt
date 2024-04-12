@@ -1,1 +1,0 @@
-Find all positive integers n such that there exists a prime number p, such that p^n-(p-1)^n is a power of 3. Note. A power of 3 is a number of the form 3^a where a is a positive integer.

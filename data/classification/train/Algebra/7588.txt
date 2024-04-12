@@ -1,1 +1,0 @@
-Let a, b and c be positive real numbers such that abc = 1. Prove the inequality Big(ab + bc + frac{1}{ca} Big) Big(bc + ca + frac{1}{ab} Big) Big(ca + ab + frac{1}{bc} Big) ge (1 + 2a)(1 + 2b)(1 + 2c).

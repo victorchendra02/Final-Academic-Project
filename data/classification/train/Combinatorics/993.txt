@@ -1,1 +1,0 @@
-For a finite graph G, let f(G) be the number of triangles and g(G) the number of tetrahedra formed by edges of G. Find the least constant c such that g(G)^3 le c cdot f(G)^4 for every graph G. Proposed by Marcin Kuczma, Poland

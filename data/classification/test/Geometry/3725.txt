@@ -1,1 +1,0 @@
-Let ABCDS be a (not neccessarily straight) pyramid with a rectangular base ABCD and acute triangular faces ABS,BCS,CDS,DAS. We consider all cuboids which are inscribed inside the pyramid with its base being in the plane ABCD and its upper vertexes are in the triangular faces (one in each). Find the locus of the midpoints of these cuboids.

@@ -1,1 +1,0 @@
-Let ABC be an acute triangle with AB< AC. Denote by P and Q points on the segment BC such that angle BAP = angle CAQ < frac{ angle BAC}{2}. B_1 is a point on segment AC. BB_1 intersects AP and AQ at P_1 and Q_1, respectively. The angle bisectors of angle BAC and angle CBB_1 intersect at M. If PQ_1 perp AC and QP_1 perp AB, prove that AQ_1MPB is cyclic.

@@ -1,1 +1,0 @@
-Two circles omega_1, omega_2 intersect at A,B. An arbitrary line through B meets omega_1, omega_2 at C,D respectively. The points E,F are chosen on omega_1, omega_2 respectively so that CE=CB, BD=DF. Suppose that BF meets omega_1 at P, and BE meets omega_2 at Q. Prove that A,P,Q are collinear. Proposed by Iman Maghsoudi

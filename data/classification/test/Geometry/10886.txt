@@ -1,1 +1,0 @@
-Points on the sides BC , CA and AB of the triangle ABC are respectively A_1 , B_1 and C_1 such that AC_1: C_1B = BA_1: A_1C = CB_1: B_1A = 2: 1 . Prove that if triangle A_1B_1C_1 is equilateral, then triangle ABC is also equilateral.

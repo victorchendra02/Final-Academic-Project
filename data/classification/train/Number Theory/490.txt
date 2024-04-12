@@ -1,1 +1,0 @@
-Find all positive integers n for which there exists a polynomial P(x) in mathbb{Z}[x] such that for every positive integer m geq 1, the numbers P^m(1), ldots, P^m(n) leave exactly lceil n/2^m rceil distinct remainders when divided by n. (Here, P^m means P applied m times.) Proposed by Carl Schildkraut, USA

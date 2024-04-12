@@ -1,1 +1,0 @@
-In a trapezoid ABCD with AB // CD, the diagonals AC and BD intersect at point E. Let F and G be the orthocenters of the triangles EBC and EAD. Prove that the midpoint of GF lies on the perpendicular from E to AB. Austrian-Polish 1997 2013 Rioplatense L1 P2

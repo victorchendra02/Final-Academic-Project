@@ -1,1 +1,0 @@
-find all primes p, for which exist natural numbers, such that p=m^2+n^2 and p|(m^3+n^3-4).

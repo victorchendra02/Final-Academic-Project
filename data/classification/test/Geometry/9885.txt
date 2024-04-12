@@ -1,1 +1,0 @@
-Triangle ABC is given. Prove that frac{R}{r} > frac{a}{h}, where R is the radius of the circumscribed circle, r is the radius of the inscribed circle, a is the length of the longest side, h is the length of the shortest altitude.

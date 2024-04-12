@@ -1,1 +1,0 @@
-Let G, H be the centroid and orthocentre of vartriangle ABC which has an obtuse angle at angle B. Let omega be the circle with diameter AG. omega intersects odot(ABC) again at L ne A. The tangent to omega at L intersects odot(ABC) at K ne L. Given that AG = GH, prove angle HKG = 90^o . Sam Bealing, United Kingdom

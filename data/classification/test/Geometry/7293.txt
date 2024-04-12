@@ -1,1 +1,0 @@
-In rectangle ABCD, the points M,N,P,Q lie on AB,BC,CD,DA respectively such that the area of triangles AQM,BMN,CNP,DPQ are equal. Prove that the quadrilateral MNPQ is parallelogram. by Mahdi Etesami Fard
