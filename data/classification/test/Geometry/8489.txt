@@ -1,0 +1,1 @@
+In the triangle ABC, the angle alpha = angle BAC and the side a = BC are given. Assume that a = sqrt{rR}, where r is the inradius and R the circumradius. Compute all possible lengths of sides AB and AC.

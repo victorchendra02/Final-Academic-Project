@@ -1,0 +1,1 @@
+textbf{Problem C.1} There are two piles of coins, each containing 2010 pieces. Two players A and B play a game taking turns (A plays first). At each turn, the player on play has to take one or more coins from one pile or exactly one coin from each pile. Whoever takes the last coin is the winner. Which player will win if they both play in the best possible way?

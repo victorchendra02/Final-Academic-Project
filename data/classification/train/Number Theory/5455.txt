@@ -1,0 +1,1 @@
+Find a set of infinite positive integers S such that for every n ge 1 and whichever n distinct elements x_1,x_2, cdots, x_n of S, the number x_1+x_2+ cdots +x_n is not a perfect square.

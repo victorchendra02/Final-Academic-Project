@@ -1,0 +1,1 @@
+Let ABC be an acute-angled triangle with circumcircle omega , and let O , H be the triangle's circumcenter and orthocenter respectively . Let also A^{'} be the point where the angle bisector of the angle BAC meets omega . If A^{'}H=AH , then find the measure of the angle BAC.

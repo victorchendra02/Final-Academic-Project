@@ -1,0 +1,1 @@
+A point X is marked on the base BC of an isosceles triangle ABC, and points P and Q are marked on the sides AB and AC so that APXQ is a parallelogram. Prove that the point Y symmetrical to X with respect to line PQ lies on the circumcircle of the triangle ABC. (5 points)

@@ -1,0 +1,1 @@
+Find all four-digit numbers such that when decomposed into prime factors, each number has the sum of its prime factors equal to the sum of the exponents.

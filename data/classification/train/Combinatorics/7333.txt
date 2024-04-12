@@ -1,0 +1,1 @@
+Let M be a subset of the set of 2021 integers {1, 2, 3, ..., 2021 } such that for any three elements (not necessarily distinct) a, b, c of M we have |a + b - c | > 10. Determine the largest possible number of elements of M.

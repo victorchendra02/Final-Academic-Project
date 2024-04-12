@@ -1,0 +1,1 @@
+In a right triangle rectangle ABC such that AB = AC, M is the midpoint of BC. Let P be a point on the perpendicular bisector of AC, lying in the semi-plane determined by BC that does not contain A. Lines CP and AM intersect at Q. Calculate the angles that form the lines AP and BQ.

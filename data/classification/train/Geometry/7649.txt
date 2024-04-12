@@ -1,0 +1,1 @@
+Let A_1 and B_1 be internal points lying on the sides BC and AC of the triangle ABC respectively and segments AA_1 and BB_1 meet at O. The areas of the triangles AOB_1,AOB and BOA_1 are distinct prime numbers and the area of the quadrilateral A_1OB_1C is an integer. Find the least possible value of the area of the triangle ABC, and argue the existence of such a triangle.

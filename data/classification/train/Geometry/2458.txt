@@ -1,0 +1,1 @@
+Through a point P within a triangle ABC the lines l, m, and n perpendicular respectively to AP,BP,CP are drawn. Prove that if l intersects the line BC in Q, m intersects AC in R, and n intersects AB in S, then the points Q, R, and S are collinear.

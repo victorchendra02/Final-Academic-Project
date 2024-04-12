@@ -1,0 +1,1 @@
+Prove that, abc1 and a,b,c>0 frac{1}{a}+ frac{1}{b}+ frac{1}{c} geq 1+ frac{6}{a+b+c}

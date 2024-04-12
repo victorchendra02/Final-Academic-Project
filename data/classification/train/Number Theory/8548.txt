@@ -1,0 +1,1 @@
+Find all pairs (n, p) of positive integers such that p is prime and 1 + 2 + cdots + n = 3 cdot (1^2 + 2^2 + cdot + p^2).

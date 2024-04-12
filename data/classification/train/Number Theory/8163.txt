@@ -1,0 +1,1 @@
+Is it possible to write 100 odd numbers on a line such that the sum of any 5 consecutive numbers is a square number and the sum of any 9 consecutive numbers is also a square number?

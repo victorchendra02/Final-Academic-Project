@@ -1,0 +1,1 @@
+Consider all tetrahedra ABCD in which the sum of the areas of the faces ABD, ACD, BCD does not exceed 1. Among such tetrahedra, find those with the maximum volume.

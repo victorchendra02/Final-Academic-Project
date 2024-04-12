@@ -1,0 +1,1 @@
+Find all the pairs positive integers (x, y) such that frac{1}{x}+ frac{1}{y}+ frac{1}{[x, y]}+ frac{1}{(x, y)}= frac{1}{2} , where (x, y) is the greatest common divisor of x, y and [x, y] is the least common multiple of x, y.

@@ -1,0 +1,1 @@
+Let g(x) = ax^2 + bx + c a quadratic function with real coefficients such that the equation g(g(x)) = x has four distinct real roots. Prove that there isn't a function f: R--R such that f(f(x)) = g(x) for all x real

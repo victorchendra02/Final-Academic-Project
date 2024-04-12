@@ -1,0 +1,1 @@
+Find the integer solutions of the equation left[ sqrt{2m} right] = left[ n(2+ sqrt 2) right]

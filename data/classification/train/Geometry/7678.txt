@@ -1,0 +1,1 @@
+Let ABC be an isosceles triangle with AB=AC and angle A=20^ circ. On the side AC consider point D such that AD=BC. Find angle BDC.

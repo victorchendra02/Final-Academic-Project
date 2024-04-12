@@ -1,0 +1,1 @@
+Let ABC be an acute-angled triangle with A=60^{ circ}. Let E,F be the feet of altitudes through B,C respectively. Prove that CE-BF= tfrac{3}{2}(AC-AB) Proposed by Fatemeh Sajadi

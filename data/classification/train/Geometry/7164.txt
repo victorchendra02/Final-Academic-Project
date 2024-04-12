@@ -1,0 +1,1 @@
+Let the circle (I; r) be inscribed in the triangle ABC. Let D be the point of contact of this circle with BC. Let E and F be the midpoints of BC and AD, respectively. Prove that the three points I, E, F are collinear.

@@ -1,0 +1,1 @@
+Let {ABC} be a triangle with m left( angle B right)=m left( angle C right)={{40}^{{}^ circ }} Line bisector of { angle{B}} intersects {AC} at point {D}. Prove that BD+DA=BC.

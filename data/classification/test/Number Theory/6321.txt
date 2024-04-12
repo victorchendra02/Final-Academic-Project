@@ -1,0 +1,1 @@
+1 - Prove that 55 < (1+ sqrt{3})^4 < 56 . 2 - Find the largest power of 2 that divides lceil(1+ sqrt{3})^{2n} rceil for the positive integer n

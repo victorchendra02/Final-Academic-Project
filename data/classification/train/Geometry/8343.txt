@@ -1,0 +1,1 @@
+Consider a pyramid whose base is an equilateral triangle BCD and whose other faces are triangles isosceles, right at the common vertex A. An ant leaves the vertex B arrives at a point P of the CD edge, from there goes to a point Q of the edge AC and returns to point B. If the path you made is minimal, how much is the angle PQA ?

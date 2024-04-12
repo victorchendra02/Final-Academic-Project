@@ -1,0 +1,1 @@
+Let O be a point inside the parallelogram ABCD such that angle AOB + angle COD = angle BOC + angle AOD. Prove that there exists a circle k tangent to the circumscribed circles of the triangles vartriangle AOB, vartriangle BOC, vartriangle COD and vartriangle DOA.

@@ -1,0 +1,1 @@
+In a mathematical contest, some of the competitors are friends and friendship is mutual. Prove that there is a subset M of the competitors such that each element of M has at most three friends in M and such that each competitor who is not in M, has at least four friends in M.

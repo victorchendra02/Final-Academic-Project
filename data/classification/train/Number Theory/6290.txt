@@ -1,0 +1,1 @@
+find all the integer n geq1 such that lfloor sqrt{n} rfloor mid n

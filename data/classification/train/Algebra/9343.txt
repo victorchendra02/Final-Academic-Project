@@ -1,0 +1,1 @@
+a,b,c ge 0, a^3+b^3+c^3+abc=4 Prove that a^3b+b^3c+c^3b le 3

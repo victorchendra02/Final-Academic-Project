@@ -1,0 +1,1 @@
+Find all solutions in positive integers to: begin{cases} x_1^4 + 14x_1x_2 + 1 = y_1^4 x_2^4 + 14x_2x_3 + 1 = y_2^4 ... x_n^4 + 14x_nx_1 + 1 = y_n^4 end{cases}

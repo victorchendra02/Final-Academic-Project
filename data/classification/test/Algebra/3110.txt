@@ -1,0 +1,1 @@
+We consider the infinite chessboard covering the whole plane. In every field of the chessboard there is a nonnegative real number. Every number is the arithmetic mean of the numbers in the four adjacent fields of the chessboard. Prove that the numbers occurring in the fields of the chessboard are all equal.

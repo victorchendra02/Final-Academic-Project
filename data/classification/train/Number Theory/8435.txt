@@ -1,0 +1,1 @@
+Determine all integers m ge2 for which there exists an integer n ge1 with gcd(m,n)=d and gcd(m,4n+1)=1. Proposed by Gerhard Woeginger, Austria

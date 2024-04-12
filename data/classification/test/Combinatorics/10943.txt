@@ -1,0 +1,1 @@
+It is known that every student of the class for Sunday once visited the rink, and every boy met there with every girl. Prove that there was a point in time when all the boys, or all the girls of the class were simultaneously on the rink.

@@ -1,0 +1,1 @@
+Quadrilateral ABCD with perpendicular diagonals is inscribed in a circle with centre O. The tangents to this circle at A and C together with line BD form the triangle Delta. Prove that the circumcircles of BOD and Delta are tangent. Additional information for Junior LeagueShow that this point lies belongs to omega, the circumcircle of OAC Proposed by A. Kuznetsov

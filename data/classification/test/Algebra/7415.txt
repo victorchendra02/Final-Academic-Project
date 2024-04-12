@@ -1,0 +1,1 @@
+Let a, b, c be positive real numbers such that abc = 8. Prove that frac{ab + 4}{a + 2}+ frac{bc + 4}{b + 2}+ frac{ca + 4}{c + 2} ge 6.

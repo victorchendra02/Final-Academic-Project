@@ -1,0 +1,1 @@
+Determine all pairs (m,n) of natural numbers for which m^2=nk+2 where k= overline{n1}. EDIT. It has been discovered the correct statement is with k= overline{1n}.

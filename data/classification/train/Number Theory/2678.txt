@@ -1,0 +1,1 @@
+Prove: (a) There are infinitely many triples of positive integers m, n, p such that 4mn - m- n = p^2 - 1. (b) There are no positive integers m, n, p such that 4mn - m- n = p^2.

@@ -1,0 +1,1 @@
+Given are two polyominos, the first one is an L-shape consisting of three squares, the other one contains at least two squares. Prove that if n and m are coprime then at most one of the n times n and m times m boards can be tiled by translated copies of the two polyominos. Proposed by: Andras Imolay, David Matolcsi, Adam Schweitzer and Kristof Szabo, Budapest

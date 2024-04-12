@@ -1,0 +1,1 @@
+Find all pairs (a, b) of positive integers such that a le b and gcd(x, a) gcd(x, b) = gcd(x, 20) gcd(x, 22) holds for every positive integer x.

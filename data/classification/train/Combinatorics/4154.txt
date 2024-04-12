@@ -1,0 +1,1 @@
+Given is a cube of side length 2021. In how many different ways is it possible to add somewhere on the boundary of this cube a 1 times 1 times 1 cube in such a way that the new shape can be filled in with 1 times 1 times k shapes, for some natural number k, k geq 2?

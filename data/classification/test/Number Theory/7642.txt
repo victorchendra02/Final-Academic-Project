@@ -1,0 +1,1 @@
+Prove that there do not exist natural numbers n ge 10 having all digits different from zero, and such that all numbers which are obtained by permutations of its digits are perfect squares.

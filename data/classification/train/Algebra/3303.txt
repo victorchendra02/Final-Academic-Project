@@ -1,0 +1,1 @@
+Let alpha + beta + gamma = pi. Prove that sum_{cyc}{ sin 2 alpha} = 2 cdot left( sum_{cyc}{ sin alpha} right) cdot left( sum_{cyc}{ cos alpha} right)- 2 sum_{cyc}{ sin alpha}.

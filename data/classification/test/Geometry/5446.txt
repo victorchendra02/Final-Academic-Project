@@ -1,0 +1,1 @@
+S is a circle with AB a diameter and t is the tangent line to S at B. Consider the two points C and D on t such that B is between C and D. Suppose E and F are the intersections of S with AC and AD and G and H are the intersections of S with CF and DE. Show that AH=AG.

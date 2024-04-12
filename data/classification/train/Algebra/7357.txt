@@ -1,0 +1,1 @@
+Let a, b, c be positive real numbers. Prove the inequality (a^2+ac+c^2) left( frac{1}{a+b+c}+ frac{1}{a+c} right)+b^2 left( frac{1}{b+c}+ frac{1}{a+b} right)>a+b+c. Proposed by Tajikistan

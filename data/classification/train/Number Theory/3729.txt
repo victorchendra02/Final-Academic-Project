@@ -1,0 +1,1 @@
+Determine the smallest natural number a geq 2 for which there exists a prime number p and a natural number b geq 2 such that frac{a^p - a}{p}=b^2.

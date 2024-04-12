@@ -1,0 +1,1 @@
+Consider triangles ABC in space. (a) What condition must the angles angle A, angle B , angle C of triangle ABC fulfill in order that there is a point P in space such that angle APB, angle BPC, angle CPA are right angles? (b) Let d be the longest of the edges PA,PB,PC and let h be the longest altitude of triangle ABC. Show that frac{1}{3} sqrt6 h le d le h.

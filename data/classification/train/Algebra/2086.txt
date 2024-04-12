@@ -1,0 +1,1 @@
+Show that the numbers tan left( frac{r pi }{15} right), where r is a positive integer less than 15 and relatively prime to 15, satisfy x^8 - 92x^6 + 134x^4 - 28x^2 + 1 = 0.

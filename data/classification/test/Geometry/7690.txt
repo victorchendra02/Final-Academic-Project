@@ -1,0 +1,1 @@
+A triangle ABC is inscribed in the circle mathcal{C}(O,R). Let alpha <1 be the ratio of the radii of the circles tangent to mathcal{C}, and both of the rays (AB and (AC. The numbers beta <1 and gamma <1 are defined analogously. Prove that alpha + beta + gamma =1.

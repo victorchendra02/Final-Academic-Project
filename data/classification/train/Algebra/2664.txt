@@ -1,0 +1,1 @@
+Determine all functions f : mathbb R to mathbb R satisfying the following two conditions: (a) f(x + y) + f(x - y) = 2f(x)f(y) for all x, y in mathbb R, and (b) lim_{x to infty} f(x) = 0.

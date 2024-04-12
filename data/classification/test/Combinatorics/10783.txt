@@ -1,0 +1,1 @@
+How many ways are there to remove an 11 times11 square from a 2011 times2011 square so that the remaining part can be tiled with dominoes (1 times 2 rectangles)?

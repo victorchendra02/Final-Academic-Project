@@ -1,0 +1,1 @@
+Let a,b and c be real numbers such that | (a-b) (b-c) (c-a) | = 1. Find the smallest value of the expression | a | + | b | + | c |. (K.Satylhanov )

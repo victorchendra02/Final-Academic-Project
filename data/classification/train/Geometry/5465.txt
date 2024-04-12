@@ -1,0 +1,1 @@
+Let ABCDE be a convex pentagon. If P, Q, R and S are the respective centroids of the triangles ABE, BCE, CDE and DAE, show that PQRS is a parallelogram and its area is 2/9 of that of ABCD.

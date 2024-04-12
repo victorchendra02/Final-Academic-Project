@@ -1,0 +1,1 @@
+Let ABC be a triangle, and I its incenter. Consider a circle which lies inside the circumcircle of triangle ABC and touches it, and which also touches the sides CA and BC of triangle ABC at the points D and E, respectively. Show that the point I is the midpoint of the segment DE.

@@ -1,0 +1,1 @@
+Let ABC be a triangle. On the sides BC, CA, AB of the triangle, construct outwardly three squares with centres O_a, O_b, O_c respectively. Let omega be the circumcircle of vartriangle O_aO_bO_c. Given that A lies on omega, prove that the centre of omega lies on the perimeter of vartriangle ABC. Sam Bealing, United Kingdom

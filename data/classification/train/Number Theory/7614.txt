@@ -1,0 +1,1 @@
+Let p be a prime number. Find all positive integers a and b such that: frac{4a + p}{b}+ frac{4b + p}{a} and frac{a^2}{b}+ frac{b^2}{a} are integers.

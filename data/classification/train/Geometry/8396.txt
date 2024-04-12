@@ -1,0 +1,1 @@
+Let ABCD be a rectangle of sides AB = 4 and BC = 3. The perpendicular on the diagonal BD drawn from A cuts BD at point H. We call M the midpoint of BH and N the midpoint of CD. Calculate the measure of the segment MN.

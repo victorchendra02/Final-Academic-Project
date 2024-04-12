@@ -1,0 +1,1 @@
+Let ABCDEFGHI be a regular polygon of 9 sides. The segments AE and DF intersect at P. Prove that PG and AF are perpendicular.

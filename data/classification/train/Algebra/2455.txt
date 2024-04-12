@@ -1,0 +1,1 @@
+Let theta_1, theta_2, cdots, theta_n be n real numbers such that sin theta_1+ sin theta_2+ cdots+ sin theta_n=0. Prove that | sin theta_1+2 sin theta_2+ cdots +n sin theta_n| leq left[ frac{n^2}{4} right]

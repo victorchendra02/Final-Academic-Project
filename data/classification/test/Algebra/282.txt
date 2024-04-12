@@ -1,0 +1,1 @@
+Prove that is x,y are non negative integers then 5x ge 7y if and only if there exist non-negative integers (a,b,c,d) such that left { begin{array}{l}x=a+2b+3c+7d qquad y=b+2c+5d qquad end{array} right.

@@ -1,0 +1,1 @@
+Let ABC be an acute-angled triangle in which BC<AB and BC<CA. Let point P lie on segment AB and point Q lie on segment AC such that P neq B, Q neq C and BQ = BC = CP. Let T be the circumcenter of triangle APQ, H the orthocenter of triangle ABC, and S the point of intersection of the lines BQ and CP. Prove that T, H, and S are collinear.

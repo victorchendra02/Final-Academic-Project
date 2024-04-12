@@ -1,0 +1,1 @@
+Let E_1, E_2, and E_3 be three mutually intersecting ellipses, all in the same plane. Their foci are respectively F_2, F_3; F_3, F_1; and F_1, F_2. The three foci are not on a straight line. Prove that the common chords of each pair of ellipses are concurrent.

@@ -1,0 +1,1 @@
+Let d(n) denote the number of positive divisors of n and let e(n)= left[2000 over n right] for positive integer n. Prove that d(1)+d(2)+ dots+d(2000)=e(1)+e(2)+ dots+e(2000).

@@ -1,0 +1,1 @@
+Given the side a and the corresponding altitude h_a of a triangle ABC, find a relation between a and h_a such that it is possible to construct, with straightedge and compass, triangle ABC such that the altitudes of ABC form a right triangle admitting h_a as hypotenuse.

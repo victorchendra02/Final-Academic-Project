@@ -1,0 +1,1 @@
+Are there any positive integers m and n satisfying the equation m^3 = 9n^4 + 170n^2 + 289 ?

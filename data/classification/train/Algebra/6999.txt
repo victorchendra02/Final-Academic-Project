@@ -1,0 +1,1 @@
+Six real numbers x_1<x_2<x_3<x_4<x_5<x_6 are given. For each triplet of distinct numbers of those six Vitya calculated their sum. It turned out that the 20 sums are pairwise distinct; denote those sums by s_1<s_2<s_3< cdots<s_{19}<s_{20}.It is known that x_2+x_3+x_4=s_{11}, x_2+x_3+x_6=s_{15} and x_1+x_2+x_6=s_{m}. Find all possible values of m.

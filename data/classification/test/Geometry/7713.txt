@@ -1,0 +1,1 @@
+Let ABC be a triangle and let a,b,c be the lengths of the sides BC, CA, AB respectively. Consider a triangle DEF with the side lengths EF= sqrt{au}, FD= sqrt{bu}, DE= sqrt{cu}. Prove that angle A > angle B > angle C implies angle A > angle D > angle E > angle F > angle C.

@@ -1,0 +1,1 @@
+In triangle ABC, AH is an altitude (H is on BC) and BE is a bisector (E is on AC) . We are given that angle BEA equals 45^o .Prove that angle EHC equals 45^o . (I. Sharygin , Moscow)

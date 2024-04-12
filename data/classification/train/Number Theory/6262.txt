@@ -1,0 +1,1 @@
+For every positive integer n, s(n) denotes the sum of the digits in the decimal representation of n. Prove that for every integer n ge 5, we have S(1)S(3)...S(2n-1) ge S(2)S(4)...S(2n)

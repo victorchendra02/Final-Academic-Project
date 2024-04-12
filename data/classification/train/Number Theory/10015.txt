@@ -1,0 +1,1 @@
+Is there exist some positive integer n, such that the first decimal of 2^n (from left to the right) is 5 while the first decimal of 5^n is 2? (5 points)

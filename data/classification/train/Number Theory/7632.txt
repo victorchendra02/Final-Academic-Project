@@ -1,0 +1,1 @@
+Let n > 1 be a positive integer and p a prime number such that n | (p - 1) and p | (n^6 - 1). Prove that at least one of the numbers p- n and p + n is a perfect square.

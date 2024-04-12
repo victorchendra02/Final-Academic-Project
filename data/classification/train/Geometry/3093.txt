@@ -1,0 +1,1 @@
+Let ABC and A'B'C' be any two coplanar triangles. Let L be a point such that AL || BC, A'L || B'C' , and M,N similarly defined. The line BC meets B'C' at P, and similarly defined are Q and R. Prove that PL, QM, RN are concurrent.

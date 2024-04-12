@@ -1,0 +1,1 @@
+Find the number of solutions in positive integers of the equation lfloor frac{x}{2} rfloor = lfloor frac{x}{11} rfloor +1 where lfloor A rfloor denotes the integer part of the number A, e.g. lfloor 2.031 rfloor = 2, lfloor 2 rfloor = 2, etc.

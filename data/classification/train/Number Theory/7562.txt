@@ -1,0 +1,1 @@
+Find n such that 36^n-6 is the product of three consecutive natural numbers

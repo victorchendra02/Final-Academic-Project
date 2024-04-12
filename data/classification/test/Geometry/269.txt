@@ -1,0 +1,1 @@
+Let A_1A_2A_3 be a triangle and, for 1 leq i leq 3, let B_i be an interior point of edge opposite A_i. Prove that the perpendicular bisectors of A_iB_i for 1 leq i leq 3 are not concurrent.

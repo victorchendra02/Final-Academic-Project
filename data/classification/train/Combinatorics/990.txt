@@ -1,0 +1,1 @@
+A and B play a game, given an integer N, A writes down 1 first, then every player sees the last number written and if it is n then in his turn he writes n+1 or 2n, but his number cannot be bigger than N. The player who writes N wins. For which values of N does B win? Proposed by A. Slinko & S. Marshall, New Zealand

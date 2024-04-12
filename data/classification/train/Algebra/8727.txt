@@ -1,0 +1,1 @@
+Let a, b, alpha, beta be real numbers such that 0 leq a, b leq 1, and 0 leq alpha, beta leq frac{ pi}{2}. Show that if ab cos( alpha - beta) leq sqrt{(1-a^2)(1-b^2)}, then a cos alpha + b sin beta leq 1 + ab sin( beta - alpha).

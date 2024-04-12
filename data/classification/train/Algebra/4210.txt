@@ -1,0 +1,1 @@
+Let a_0 be an arbitrary positive integer. Consider the infinite sequence (a_n)_{n geq 1}, defined inductively as follows: given a_0, a_1, ..., a_{n-1} define the term a_n as the smallest positive integer such that a_0+a_1+...+a_n is divisible by n. Prove that there exist a positive integer a positive integer M such that a_{n+1}=a_n for all n geq M.

@@ -1,0 +1,1 @@
+Positive integers a, b, c satisfying the equality a^2 + b^2 = c^2. Show that the number frac12(c - a) (c - b) is square of an integer.

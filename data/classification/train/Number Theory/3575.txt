@@ -1,0 +1,1 @@
+Let n be a positive integer. A pair of n-tuples (a_1, cdots{}, a_n) and (b_1, cdots{}, b_n) with integer entries is called an exquisite pair if |a_1b_1+ cdots{}+a_nb_n| le 1.Determine the maximum number of distinct n-tuples with integer entries such that any two of them form an exquisite pair. Pakawut Jiradilok and Warut Suksompong, Thailand

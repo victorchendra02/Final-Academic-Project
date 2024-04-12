@@ -1,0 +1,1 @@
+Is it possible to select 100 points on a circle so that there are exactly 1000 right triangles with the vertices at selected points? Sergey Dvoryaninov

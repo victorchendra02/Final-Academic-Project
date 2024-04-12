@@ -1,0 +1,1 @@
+Let omega be the incircle of triangle ABC touches BC at point K . Draw a circle passing through points B and C , and touching omega at the point S . Prove that S K passes through the center of the exscribed circle of triangle A B C , tangent to side B C .

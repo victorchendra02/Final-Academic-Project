@@ -1,0 +1,1 @@
+Let G be the centroid of a triangle triangle ABC and let AG, BG, CG meet its circumcircle at P, Q, R respectively. Let AD, BE, CF be the altitudes of the triangle. Prove that the radical center of circles (DQR),(EPR),(FPQ) lies on Euler Line of triangle ABC. Proposed by Ivan Chai, Malaysia.

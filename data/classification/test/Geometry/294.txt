@@ -1,0 +1,1 @@
+Let ABCDEFGH be the rectangular parallelepiped where ABCD and EFGH are squares and the edges AE,BF,CG,DH are all perpendicular to the squares. Prove that if the 12 edges of the parallelepiped have integer lengths, the internal diagonal AG and the face diagonal AF cannot both have integer length.

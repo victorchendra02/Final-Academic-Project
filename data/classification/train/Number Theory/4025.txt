@@ -1,0 +1,1 @@
+Determine all positive integers x, y and z such that x^5 + 4^y = 2013^z. (Serbia)

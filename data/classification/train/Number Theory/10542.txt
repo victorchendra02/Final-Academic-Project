@@ -1,0 +1,1 @@
+For which n{} is it possible that a product of n{} consecutive positive integers is equal to a sum of n{} consecutive (not necessarily the same) positive integers? Boris Frenkin

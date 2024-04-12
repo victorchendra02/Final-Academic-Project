@@ -1,0 +1,1 @@
+Two triangles ABC, ABC have the same orthocenter H and the same circumcircle with center O. Letting PQR be the triangle formed by AA, BB, CC, prove that the circumcenter of PQR lies on OH.

@@ -1,0 +1,1 @@
+Let a , b , c be positive real numbers such that abc=1 . Show that : frac{1}{a^3+bc}+ frac{1}{b^3+ca}+ frac{1}{c^3+ab} leq frac{ left (ab+bc+ca right )^2 }{6}

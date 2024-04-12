@@ -1,0 +1,1 @@
+In a triangle ABC we have angle C = angle A + 90^o. The point D on the continuation of BC is given such that AC = AD. A point E in the side of BC in which A doesnt lie is chosen such that angle EBC = angle A, angle EDC = frac{1}{2} angle A . Prove that angle CED = angle ABC. by Morteza Saghafian

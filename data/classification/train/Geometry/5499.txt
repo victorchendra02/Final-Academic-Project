@@ -1,0 +1,1 @@
+Let ABCD be a convex quadrilateral, where R and S are points in DC and AB, respectively, such that AD=RC and BC=SA. Let P, Q and M be the midpoints of RD, BS and CA, respectively. If angle MPC + angle MQA = 90, prove that ABCD is cyclic.

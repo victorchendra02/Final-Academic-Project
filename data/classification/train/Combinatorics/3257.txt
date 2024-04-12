@@ -1,0 +1,1 @@
+We are given an n times n board, where n is an odd number. In each cell of the board either +1 or -1 is written. Let a_k and b_k denote them products of numbers in the k^{th} row and in the k^{th} column respectively. Prove that the sum a_1 +a_2 + cdots+a_n +b_1 +b_2 + cdots+b_n cannot be equal to zero.

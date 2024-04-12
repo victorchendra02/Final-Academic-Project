@@ -1,0 +1,1 @@
+Given a strictly increasing infinite sequence of natural numbers a_1, a_2, a_3, ldots . It is known that a_n leq n + 2020 and the number n ^ 3 a_n - 1 is divisible by a_ {n + 1} for all natural numbers n . Prove that a_n = n for all natural numbers n .

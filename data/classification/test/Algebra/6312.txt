@@ -1,0 +1,1 @@
+Let (a_i)_{i in mathbb{N}} be a sequence with a_1= frac{3}2 such that a_{n+1}=1+ frac{n}{a_n}Find n such that 2020 le a_n <2021

@@ -1,0 +1,1 @@
+Determine all functions f from the set of non-negative integers to itself such that f(a + b) = f(a) + f(b) + f(c) + f(d), whenever a, b, c, d, are non-negative integers satisfying 2ab = c^2 + d^2.

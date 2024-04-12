@@ -1,0 +1,1 @@
+Observe that the fraction frac{1}{7}=0,142857 is a pure periodical decimal with period 6=7-1,and in one period one has 142+857=999.For n=1,2, dots find a sufficient and necessary condition that the fraction frac{1}{2n+1} has the same properties as above and find two such fractions other than frac{1}{7}.

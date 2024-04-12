@@ -1,0 +1,1 @@
+(a) Find the rearrangement {a_1, dots , a_n } of {1, 2, dots, n } that maximizes a_1a_2 + a_2a_3 + cdots + a_na_1 = Q. (b) Find the rearrangement that minimizes Q.

@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R} rightarrow mathbb{R} such that f(xy) = f(x)f(y) + f(f(x + y))holds for all x, y in mathbb{R}.

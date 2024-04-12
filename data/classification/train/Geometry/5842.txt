@@ -1,0 +1,1 @@
+Let ABC be a triangle with AB < AC and circumcenter O. The angle bisector of angle BAC meets the side BC at D. The line through D perpendicular to BC meets the segment AO at X. Furthermore, let Y be the midpoint of segment AD. Prove that points B, C, X, Y are concyclic.

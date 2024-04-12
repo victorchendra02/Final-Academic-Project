@@ -1,0 +1,1 @@
+Let P_n (n=3,4,5,6,7) be the set of positive integers n^k+n^l+n^m, where k,l,m are positive integers. Find n such that: i) In the set P_n there are infinitely many squares. ii) In the set P_n there are no squares.

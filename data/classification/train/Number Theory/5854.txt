@@ -1,0 +1,1 @@
+Let n be a positive integer and let d(n) denote the number of ordered pairs of positive integers (x,y) such that (x+1)^2-xy(2x-xy+2y)+(y+1)^2=n. Find the smallest positive integer n satisfying d(n) = 61. (Patrik Bak, Slovakia)

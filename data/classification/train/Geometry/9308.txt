@@ -1,0 +1,1 @@
+Convex quadrilateral ABCD is inscribed in circle w.Rays AB and DC intersect at K. L is chosen on the diagonal BD so that angle BAC= angle DAL. M is chosen on the segment KL so that CM mid mid BD. Prove that line BM touches w. (Kungozhin M.)

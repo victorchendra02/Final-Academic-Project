@@ -1,0 +1,1 @@
+For a given positive integer n determine the maximum value of the function f (x) = frac{x + x^2 +...+ x^{2n-1}}{(1 + x^n)^2} over all x ge 0 and find all positive x for which the maximum is attained.

@@ -1,0 +1,1 @@
+Let A be a subset of the set {1, 2, ldots,2006 }, consisting of 1004 elements. Prove that there exist 3 distinct numbers a,b,c in A such that gcd(a,b): a) divides c b) doesn't divide c

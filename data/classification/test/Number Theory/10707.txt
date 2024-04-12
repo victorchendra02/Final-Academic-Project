@@ -1,0 +1,1 @@
+Let sigma(n) denote the sum of positive divisors of a number n . A positive integer N=2^rb is given,where r and b are positive integers and b is odd. It is known that sigma(N)=2N-1. Prove that b and sigma (b) are coprime. Tuymaada Q6 Juniors

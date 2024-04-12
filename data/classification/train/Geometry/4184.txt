@@ -1,0 +1,1 @@
+Let ABC be a scalene triangle and let I be its incenter. The projections of I on BC, CA, and AB are D, E and F respectively. Let K be the reflection of D over the line AI, and let L be the second point of intersection of the circumcircles of the triangles BFK and CEK. If frac{1}{3} BC = AC - AB, prove that DE = 2KL.

@@ -1,0 +1,1 @@
+Given is a segment AB. Three points X, Y, Z are picked in the space so that ABX is an equilateral triangle and ABYZ is a square. Prove that the orthocenters of all triangles XYZ obtained in this way belong to a fixed circle. Alexandr Matveev

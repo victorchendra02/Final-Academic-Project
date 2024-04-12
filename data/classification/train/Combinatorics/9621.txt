@@ -1,0 +1,1 @@
+A page of an exercise book is painted with 23 colours, arranged in squares. A pair of colours is called good if there are neighbouring squares painted with these colours. What is the minimum number of good pairs?

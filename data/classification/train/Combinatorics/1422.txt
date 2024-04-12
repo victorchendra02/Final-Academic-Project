@@ -1,0 +1,1 @@
+Forty-nine students solve a set of 3 problems. The score for each problem is a whole number of points from 0 to 7. Prove that there exist two students A and B such that, for each problem, A will score at least as many points as B.

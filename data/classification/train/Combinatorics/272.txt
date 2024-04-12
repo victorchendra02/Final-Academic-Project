@@ -1,0 +1,1 @@
+Let S be a set of 1980 points in the plane such that the distance between every pair of them is at least 1. Prove that S has a subset of 220 points such that the distance between every pair of them is at least sqrt{3}.

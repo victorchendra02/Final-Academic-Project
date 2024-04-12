@@ -1,0 +1,1 @@
+Let n > 3 be a positive integer. Find all integers k such that 1 le k le n and for which the following property holds: If x_1, . . . , x_n are n real numbers such that x_i + x_{i + 1} + ... + x_{i + k - 1} = 0 for all integers i > 1 (indexes are taken modulo n), then x_1 = . . . = x_n = 0. Proposed by Vincent Juge and Theo Lenoir, France

@@ -1,0 +1,1 @@
+In parallelogram ABCD with acute angle A a point N is chosen on the segment AD, and a point M on the segment CN so that AB = BM = CM. Point K is the reflection of N in line MD. The line MK meets the segment AD at point L. Let P be the common point of the circumcircles of AMD and CNK such that A and P share the same side of the line MK. Prove that angle CPM = angle DPL.

@@ -1,0 +1,1 @@
+Find the locus of points M inside the rhombus ABCD such that the sum of angles AMB and CMD equals 180^o .

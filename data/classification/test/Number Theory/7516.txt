@@ -1,0 +1,1 @@
+Decipher the equality : ( overline{VER}- overline{IA})=G^{R^E} ( overline {GRE}+ overline{ECE}) assuming that the number overline {GREECE} has a maximum value .Each letter corresponds to a unique digit from 0 to 9 and different letters correspond to different digits . It's also supposed that all the letters G ,E ,V and I are different from 0.

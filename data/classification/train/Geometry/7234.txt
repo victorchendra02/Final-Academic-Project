@@ -1,0 +1,1 @@
+Quadrilateral ABCD is given such that angle DAC = angle CAB = 60^ circ,and AB = BD - AC.Lines AB and CD intersect each other at point E. Prove that angle ADB = 2 angle BEC. Proposed by Iman Maghsoudi

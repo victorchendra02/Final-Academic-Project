@@ -1,0 +1,1 @@
+Prove that the sum of the squares of the distances from a point P to the vertices of a triangle ABC is minimum when P is the centroid of the triangle.

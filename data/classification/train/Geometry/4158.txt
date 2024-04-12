@@ -1,0 +1,1 @@
+Let ABC be a triangle and let the tangent at B{} to its circumcircle meet the internal bisector of the angle A{} at P{}. The line through P{} parallel to AC meets AB at Q{}. Assume that Q{} lies in the interior of segment AB and let the line through Q{} parallel to BC meet AC at X{} and PC at Y{}. Prove that PX is tangent to the circumcircle of the triangle XYC.

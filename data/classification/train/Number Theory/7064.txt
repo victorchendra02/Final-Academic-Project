@@ -1,0 +1,1 @@
+Prove that there exists a positive integer n, such that the remainder of 3^n when divided by 2^n is greater than 10^{2021} .

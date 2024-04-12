@@ -1,0 +1,1 @@
+Find all functions f: mathbb{Q} rightarrow mathbb{R} such that f(x)^2-f(y)^2=f(x+y) cdot f(x-y), for all x,y in mathbb{Q}. Proposed by Portugal.

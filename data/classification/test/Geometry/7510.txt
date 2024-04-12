@@ -1,0 +1,1 @@
+Let MNPQ be a square of side length 1 , and A , B , C , D points on the sides MN , NP , PQ and QM respectively such that AC cdot BD= frac{5}{4}. Can the set {AB , BC , CD , DA } be partitioned into two subsets S_1 and S_2 of two elements each , so that each one has the sum of his elements a positive integer?

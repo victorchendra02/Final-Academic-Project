@@ -1,0 +1,1 @@
+Determine all positive roots of the equation x^x = frac{1}{ sqrt{2}}.

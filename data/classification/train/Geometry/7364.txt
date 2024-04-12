@@ -1,0 +1,1 @@
+Let ABC be a right-angled triangle with angle A = 90^{ circ} and angle B = 30^{ circ}. The perpendicular at the midpoint M of BC meets the bisector BK of the angle B at the point E. The perpendicular bisector of EK meets AB at D. Prove that KD is perpendicular to DE. Proposed by Greece

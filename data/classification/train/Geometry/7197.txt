@@ -1,0 +1,1 @@
+We are given an acute triangle ABC with AB neq AC. Let D be a point of BC such that DA is tangent to the circumcircle of ABC. Let E and F be the circumcenters of triangles ABD and ACD, respectively, and let M be the midpoints EF. Prove that the line tangent to the circumcircle of AMD through D is also tangent to the circumcircle of ABC. Proposed by Patrik Bak, Slovakia

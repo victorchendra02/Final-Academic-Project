@@ -1,0 +1,1 @@
+Let omega be the circumcircle of triangle ABC with AC > AB. Let X be a point on AC and Y be a point on the circle omega, such that CX = CY = AB. (The points A and Y lie on different sides of the line BC). The line XY intersects omega for the second time in point P. Show that PB = PC. by Iman Maghsoudi

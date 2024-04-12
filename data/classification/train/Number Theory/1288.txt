@@ -1,0 +1,1 @@
+A natural number n is said to have the property P, if, for all a, n^2 divides a^n - 1 whenever n divides a^n - 1. a.) Show that every prime number n has property P. b.) Show that there are infinitely many composite numbers n that possess property P.

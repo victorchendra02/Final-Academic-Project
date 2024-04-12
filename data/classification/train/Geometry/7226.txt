@@ -1,0 +1,1 @@
+Let M,N,P be midpoints of BC,AC and AB of triangle triangle ABC respectively. E and F are two points on the segment overline{BC} so that angle NEC = frac{1}{2} angle AMB and angle PFB = frac{1}{2} angle AMC. Prove that AE=AF. Proposed by Alireza Dadgarnia

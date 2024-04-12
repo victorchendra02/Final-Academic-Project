@@ -1,0 +1,1 @@
+Let O be the center of the concentric circles C_1,C_2 of radii 3 and 5 respectively. Let A in C_1, B in C_2 and C point so that triangle ABC is equilateral. Find the maximum length of [OC] .

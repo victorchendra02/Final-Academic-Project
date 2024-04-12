@@ -1,0 +1,1 @@
+Two circles, omega_1 and omega_2, centred at O_1 and O_2, respectively, meet at points A and B. A line through B meets omega_1 again at C, and omega_2 again at D. The tangents to omega_1 and omega_2 at C and D, respectively, meet at E, and the line AE meets the circle omega through A, O_1, O_2 again at F. Prove that the length of the segment EF is equal to the diameter of omega.

@@ -1,0 +1,1 @@
+The side lengths of a parallelogram are a, b and diagonals have lengths x and y. Knowing that ab = frac{xy}{2}, show that left( a,b right)= left( frac{x}{ sqrt{2}}, frac{y}{ sqrt{2}} right) or left( a,b right)= left( frac{y}{ sqrt{2}}, frac{x}{ sqrt{2}} right).

@@ -1,0 +1,1 @@
+There are a lot of different real numbers written on the board. It turned out that for each two numbers written, their product was also written. What is the largest possible number of numbers written on the board?

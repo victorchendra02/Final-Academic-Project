@@ -1,0 +1,1 @@
+Let (a_n), n = 0, 1, . . ., be a sequence of real numbers such that a_0 = 0 and a^3_{n+1} = frac{1}{2} a^2_n -1, n= 0, 1, cdots Prove that there exists a positive number q, q < 1, such that for all n = 1, 2, ldots , |a_{n+1} - a_n| leq q|a_n - a_{n-1}|, and give one such q explicitly.

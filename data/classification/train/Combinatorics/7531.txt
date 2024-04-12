@@ -1,0 +1,1 @@
+Can we divide an equilateral triangle vartriangle ABC into 2011 small triangles using 122 straight lines? (there should be 2011 triangles that are not themselves divided into smaller parts and there should be no polygons which are not triangles)

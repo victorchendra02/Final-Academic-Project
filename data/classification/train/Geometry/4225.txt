@@ -1,0 +1,1 @@
+Let AD, BE, and CF denote the altitudes of triangle vartriangle ABC. Points E' and F' are the reflections of E and F over AD, respectively. The lines BF' and CE' intersect at X, while the lines BE' and CF' intersect at the point Y. Prove that if H is the orthocenter of vartriangle ABC, then the lines AX, YH, and BC are concurrent.

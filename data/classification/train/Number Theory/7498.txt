@@ -1,0 +1,1 @@
+Solve in integers the system of equations: x^2-y^2=z3xy+(x-y)z=z^2

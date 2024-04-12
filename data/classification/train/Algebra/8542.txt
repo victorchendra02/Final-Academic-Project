@@ -1,0 +1,1 @@
+Determine all functions f: mathbb{R} to mathbb{R} such that the inequality f(x^2)-f(y^2) le (f(x)+y)(x-f(y)) holds for all real numbers x and y.

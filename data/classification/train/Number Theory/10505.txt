@@ -1,0 +1,1 @@
+There were n{} positive integers. For each pair of those integers Boris wrote their arithmetic mean onto a blackboard and their geometric mean onto a whiteboard. It so happened that for each pair at least one of those means was integer. Prove that on at least one of the boards all the numbers are integer. Boris Frenkin

@@ -1,0 +1,1 @@
+What is the least number of rooks that can be placed on a standard 8 times 8 chessboard so that all the white squares are attacked? (A rook also attacks the square it is on, in addition to every other square in the same row or column.)

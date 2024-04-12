@@ -1,0 +1,1 @@
+A number of n lamps (n ge 3) are put at n vertices of a regular n-gon. Initially, all the lamps are off. In each step. Lisa will choose three lamps that are located at three vertices of an isosceles triangle and change their states (from off to on and vice versa). Her aim is to turn on all the lamps. At least how many steps are required to do so?

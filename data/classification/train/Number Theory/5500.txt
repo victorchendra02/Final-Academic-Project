@@ -1,0 +1,1 @@
+Prove that every positive integer can be formed by the sums of powers of 3, 4 and 7, where do not appear two powers of the same number and with the same exponent. Example: 2= 7^0 + 7^0 and 22=3^2 + 3^2+4^1 are not valid representations, but 2=3^0+7^0 and 22=3^2+3^0+4^1+4^0+7^1 are valid representations.

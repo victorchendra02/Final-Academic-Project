@@ -1,0 +1,1 @@
+Prove that for all positive integers n and all positive reals a,b,c the following inequality holds: frac{a^{n+1}}{a^{n}+a^{n-1}b+ ldots+b^{n}}+ frac{b^{n+1}}{b^{n}+b^{n-1}c+ ldots+c^{n}}+ frac{c^{n+1}}{c^{n}+c^{n-1}a+ ldots+a^{n}} ge frac{a+b+c}{n+1}

@@ -1,0 +1,1 @@
+Find all functions f colon mathbb{R} to mathbb{R} such that (x-y) bigl(f(x)+f(y) bigr) leqslant f bigl(x^2-y^2 bigr) for all x,y in mathbb{R}.

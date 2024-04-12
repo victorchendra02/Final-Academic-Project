@@ -1,0 +1,1 @@
+We are given an acute triangle ABC. Let D be the point on its circumcircle such that AD is a diameter. Suppose that points K and L lie on segments AB and AC, respectively, and that DK and DL are tangent to circle AKL. Show that line KL passes through the orthocenter of triangle ABC.

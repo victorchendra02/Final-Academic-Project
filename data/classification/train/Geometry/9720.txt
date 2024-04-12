@@ -1,0 +1,1 @@
+ABC is a right-angled triangle. A square ABDE is constructed on the opposite side of the hypothenuse AB from C. The bisector of angle C cuts DE at F. If AC = 1 and BC = 3, compute frac{DF}{EF}. (A Blinkov)

@@ -1,0 +1,1 @@
+Let n geq 5 be a given integer. Determine the greatest integer k for which there exists a polygon with n vertices (convex or not, with non-selfintersecting boundary) having k internal right angles. Proposed by Juozas Juvencijus Macys, Lithuania

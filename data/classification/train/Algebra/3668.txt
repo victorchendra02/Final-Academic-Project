@@ -1,0 +1,1 @@
+Let a, b, c be positive real numbers. Prove that biggl(1+ frac{a}{b} biggr) biggl(1+ frac{b}{c} biggr) biggl(1+ frac{c}{a} biggr) ge 2 biggl(1+ frac{a+b+c}{ sqrt[3]{abc}} biggr).

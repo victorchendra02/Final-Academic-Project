@@ -1,0 +1,1 @@
+In a cyclic quadrilateral ABCD with AB=AD points M,N lie on the sides BC and CD respectively so that MN=BM+DN . Lines AM and AN meet the circumcircle of ABCD again at points P and Q respectively. Prove that the orthocenter of the triangle APQ lies on the segment MN .

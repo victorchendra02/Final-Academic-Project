@@ -1,0 +1,1 @@
+A treasure is buried under a square of an 8 times 8 board. Under each other square is a message which indicates the minimum number of steps needed to reach the square with the treasure. Each step takes one from a square to another square sharing a common side. What is the minmum number of squares we must dig up in order to bring up the treasure for sure?

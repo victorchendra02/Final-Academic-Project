@@ -1,0 +1,1 @@
+Let f: mathbb{R}^{2} to mathbb{R}^{+}such that for every rectangle A B C D one has f(A)+f(C)=f(B)+f(D). Let K L M N be a quadrangle in the plane such that f(K)+f(M)=f(L)+f(N), for each such function. Prove that K L M N is a rectangle. Proposed by Navid.

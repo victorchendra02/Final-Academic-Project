@@ -1,0 +1,1 @@
+Find all integers n geqslant 0 such that 20n+2 divides 2023n+210.

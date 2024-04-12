@@ -1,0 +1,1 @@
+Let P be an interior point of the isosceles triangle ABC with hat{A} = 90^{ circ}. If widehat{PAB} + widehat{PBC} + widehat{PCA} = 90^{ circ},prove that AP perp BC. Proposed by Mehmet Akif Yldz, Turkey

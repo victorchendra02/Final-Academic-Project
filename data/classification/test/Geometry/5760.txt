@@ -1,0 +1,1 @@
+Given is a cyclic quadrilateral ABCD. Points K, L, M, N lying on sides AB, BC, CD, DA, respectively, satisfy angle ADK= angle BCK, angle BAL= angle CDL, angle CBM = angle DAM, angle DCN = angle ABN. Prove that lines KM and LN are perpendicular.

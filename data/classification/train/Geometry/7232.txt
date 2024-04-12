@@ -1,0 +1,1 @@
+As shown in the figure, there are two rectangles ABCD and PQRD with the same area, and with parallel corresponding edges. Let points N, M and T be the midpoints of segments QR, PC and AB, respectively. Prove that points N,M and T lie on the same line. http://s4.picofile.com/file/8372959484/E02.png Proposed by Morteza Saghafian

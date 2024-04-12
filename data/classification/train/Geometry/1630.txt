@@ -1,0 +1,1 @@
+Two identically oriented equilateral triangles, ABC with center S and A'B'C, are given in the plane. We also have A' neq S and B' neq S. If M is the midpoint of A'B and N the midpoint of AB', prove that the triangles SB'M and SA'N are similar.

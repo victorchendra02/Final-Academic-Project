@@ -1,0 +1,1 @@
+Let w, x, y, z are non-negative reals such that wx + xy + yz + zw = 1. Show that frac {w^3}{x + y + z} + frac {x^3}{w + y + z} + frac {y^3}{w + x + z} + frac {z^3}{w + x + y} geq frac {1}{3}.

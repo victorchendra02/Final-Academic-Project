@@ -1,0 +1,1 @@
+Let f_1(x) = x^3+a_1x^2+b_1x+c_1 = 0 be an equation with three positive roots alpha> beta> gamma > 0. From the equation f_1(x) = 0, one constructs the equation f_2(x) = x^3 +a_2x^2 +b_2x+c_2 = x(x+b_1)^2 -(a_1x+c_1)^2 = 0. Continuing this process, we get equations f_3, cdots, f_n. Prove that lim_{n to infty} sqrt[2^{n-1}]{-a_n} = alpha

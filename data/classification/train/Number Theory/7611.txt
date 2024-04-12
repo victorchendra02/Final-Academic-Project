@@ -1,0 +1,1 @@
+Let f : N to R be a function, satisfying the following condition: for every integer n > 1, there exists a prime divisor p of n such that f(n) = f big( frac{n}{p} big)-f(p). If f(2^{2007}) + f(3^{2008}) + f(5^{2009}) = 2006, determine the value of f(2007^2) + f(2008^3) + f(2009^5)

@@ -1,0 +1,1 @@
+A 2 times 2 times 12 box fixed in space is to be filled with twenty-four 1 times 1 times 2 bricks. In how many ways can this be done?

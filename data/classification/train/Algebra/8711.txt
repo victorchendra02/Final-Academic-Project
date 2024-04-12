@@ -1,0 +1,1 @@
+Find all functions f:R->R satisfying that for every x (real number): f(x)(1+|f(x)|) geq x geq f(x(1+|x|))

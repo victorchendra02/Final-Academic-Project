@@ -1,0 +1,1 @@
+Two perpendicular chords of a circle, AM, BN , which intersect at point K, define on the circle four arcs with pairwise different length, with AB being the smallest of them. We draw the chords AD, BC with AD // BC and C, D different from N, M . If L is the intersection point of DN, M C and T the intersection point of DC, KL, prove that angle KTC = angle KNL.

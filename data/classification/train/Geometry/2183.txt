@@ -1,0 +1,1 @@
+Point D is on the hypotenuse BC of right-angled triangle ABC. The inradii of triangles ADB and ADC are equal. Prove that S_{ABC} = AD^2, where S is the area function.

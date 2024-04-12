@@ -1,0 +1,1 @@
+For a positive integer n we define f (n) = max X_1^{X_2^{...^{X_k}}} where the maximum is taken over all possible decompositions of natural numbers n = X_1X_2...X_k. Determine f(n).

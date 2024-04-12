@@ -1,0 +1,1 @@
+Positive integers a<b are given. Prove that among every b consecutive positive integers there are two numbers whose product is divisible by ab.

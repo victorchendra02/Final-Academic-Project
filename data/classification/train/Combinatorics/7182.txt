@@ -1,0 +1,1 @@
+Given a graph with 99 vertices and degrees in {81,82, dots,90 }, prove that there exist 10 vertices of this graph with equal degrees and a common neighbour. Proposed by Alireza Alipour

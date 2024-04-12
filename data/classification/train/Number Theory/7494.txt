@@ -1,0 +1,1 @@
+Solve in integers 20^x+13^y=2013^z.

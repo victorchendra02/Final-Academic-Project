@@ -1,0 +1,1 @@
+In triangle ABC with incenter I, line AI intersects the circumcircle of ABC at S ne A. Let the reflection of I with respect to BC be J, and suppose that line SJ intersects the circumcircle of ABC for the second time at point P ne S. Show that AI=PI. Jozsef Meszaros

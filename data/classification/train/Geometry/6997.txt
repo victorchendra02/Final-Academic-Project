@@ -1,0 +1,1 @@
+Points P and Q are chosen on the side BC of triangle ABC so that P lies between B and Q. The rays AP and AQ divide the angle BAC into three equal parts. It is known that the triangle APQ is acute-angled. Denote by B_1,P_1,Q_1,C_1 the projections of points B,P,Q,C onto the lines AP,AQ,AP,AQ, respectively. Prove that lines B_1P_1 and C_1Q_1 meet on line BC.

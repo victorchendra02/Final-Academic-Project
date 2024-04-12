@@ -1,0 +1,1 @@
+Find all a , b , c in mathbb{N} for which 1997^a+15^b=2012^c

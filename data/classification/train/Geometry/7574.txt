@@ -1,0 +1,1 @@
+Parallelogram {ABCD}with obtuse angle angle ABC is given. After rotation of the triangle {ACD} around the vertex {C}, we get a triangle {CD'A'}, such that points B,C and {D'}are collinear. Extensions of median of triangle {CD'A'} that passes through {D'}intersects the straight line {BD} at point {P}. Prove that {PC}is the bisector of the angle angle BP{D}'.

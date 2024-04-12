@@ -1,0 +1,1 @@
+Determine all positive integers n such that n^2/ (n - 1)!

@@ -1,0 +1,1 @@
+Find a pair of 2 six-digit numbers such that, if they are written down side by side to form a twelve-digit number , this number is divisible by the product of the two original numbers. Find all such pairs of six-digit numbers. ( M . N . Gusarov, Leningrad)

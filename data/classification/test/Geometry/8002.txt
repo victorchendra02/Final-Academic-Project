@@ -1,0 +1,1 @@
+Let ABC be a triangle with AC ne BC. In triangle ABC, let G be the centroid, I the incenter and O Its circumcenter. Prove that IG is parallel to AB if, and only if, CI is perpendicular on IO.

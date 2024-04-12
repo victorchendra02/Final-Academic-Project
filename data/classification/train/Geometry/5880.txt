@@ -1,0 +1,1 @@
+Let ABC be an acute-angled triangle with AB < AC. Tangent to its circumcircle Omega at A intersects the line BC at D. Let G be the centroid of triangle ABC and let AG meet Omega again at H neq A. Suppose the line DG intersects the lines AB and AC at E and F, respectively. Prove that angle EHG = angle GHF.(Slovakia)

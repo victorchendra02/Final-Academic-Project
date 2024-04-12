@@ -1,0 +1,1 @@
+The vertices of a connected graph cannot be coloured with less than n+1 colours (so that adjacent vertices have different colours). Prove that dfrac{n(n-1)}{2} edges can be removed from the graph so that it remains connected. V. Dolnikov EDIT. It is confirmed by the official solution that the graph is tacitly assumed to be finite.

@@ -1,0 +1,1 @@
+Let ABCD be a trapezoid inscribed in a circle mathcal{C} with AB parallel CD, AB=2CD. Let {Q }=AD cap BC and let P be the intersection of tangents to mathcal{C} at B and D. Calculate the area of the quadrilateral ABPQ in terms of the area of the triangle PDQ.

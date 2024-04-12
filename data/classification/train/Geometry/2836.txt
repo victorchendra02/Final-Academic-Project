@@ -1,0 +1,1 @@
+Let ABC be a triangle, and let P be a point inside it such that angle PAC = angle PBC. The perpendiculars from P to BC and CA meet these lines at L and M, respectively, and D is the midpoint of AB. Prove that DL = DM.

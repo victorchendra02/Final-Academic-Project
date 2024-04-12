@@ -1,0 +1,1 @@
+If a, b ,c are three positive real numbers such that ab+bc+ca = 1, prove that sqrt[3]{ frac{1}{a} + 6b} + sqrt[3]{ frac{1}{b} + 6c} + sqrt[3]{ frac{1}{c} + 6a } leq frac{1}{abc}.

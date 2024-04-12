@@ -1,0 +1,1 @@
+Suppose that a, b, c > 0 such that abc = 1. Prove that frac{ab}{ab + a^5 + b^5} + frac{bc}{bc + b^5 + c^5} + frac{ca}{ca + c^5 + a^5} leq 1.

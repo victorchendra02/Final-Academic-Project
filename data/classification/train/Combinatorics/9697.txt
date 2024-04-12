@@ -1,0 +1,1 @@
+A "labyrinth" is an 8 times 8 chessboard with walls between some neighboring squares. If a rook can traverse the entire board without jumping over the walls, the labyrinth is "good" ; otherwise it is "bad" . Are there more good labyrinths or bad labyrinths? (A Shapovalov)

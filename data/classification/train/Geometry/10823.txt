@@ -1,0 +1,1 @@
+A triangle ABC is given. Let B_1 be the reflection of B across the line AC, C_1 the reflection of C across the line AB, and O_1 the reflection of the circumcentre of ABC across the line BC. Prove that the circumcentre of AB_1C_1 lies on the line AO_1. Proposed by A. Akopyan

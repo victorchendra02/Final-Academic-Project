@@ -1,0 +1,1 @@
+Determine every prime numbers p and q , p le q for which pq | (5^p - 2^ p )(7^q -2 ^q )

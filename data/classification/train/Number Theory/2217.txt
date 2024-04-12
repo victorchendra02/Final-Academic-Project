@@ -1,0 +1,1 @@
+Let m be a positive integer and define f(m) to be the number of factors of 2 in m! (that is, the greatest positive integer k such that 2^k|m!). Prove that there are infinitely many positive integers m such that m - f(m) = 1989.

@@ -1,0 +1,1 @@
+boxed{ text{A4}} Let x,y be positive reals satisfying the condition x^3+y^3 leq x^2+y^2.Find the maximum value of xy.

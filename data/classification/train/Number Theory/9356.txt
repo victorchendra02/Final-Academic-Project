@@ -1,0 +1,1 @@
+Prove that there are infinitely many primes representable in the form m^2+mn+n^2 for some integers m,n .

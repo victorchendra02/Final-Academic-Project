@@ -1,0 +1,1 @@
+If a , b are integers and s=a^3+b^3-60ab(a+b) geq 2012 , find the least possible value of s.

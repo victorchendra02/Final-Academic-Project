@@ -1,0 +1,1 @@
+Find all positive integers n for which the following statement holds: For any two polynomials P(x) and Q(x) of degree n there exist monomials ax^k and bx^{ell}, 0 le k, ell le n, such that the graphs of P(x) + ax^k and Q(x) + bx^{ell} have no common points.

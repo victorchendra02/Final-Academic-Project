@@ -1,0 +1,1 @@
+Let Gamma be the circumcircle of an acute triangle ABC. The perpendicular to AB from C meets AB at D and Gamma again at E. The bisector of angle C meets AB at F and Gamma again at G. The line GD meets Gamma again at H and the line HF meets Gamma again at I. Prove that AI = EB.

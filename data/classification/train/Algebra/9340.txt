@@ -1,0 +1,1 @@
+Given positive real numbers a,b,c,d such that frac{a}{b}+ frac{b}{c}+ frac{c}{d}+ frac{d}{a}=6 quad text{and} quad frac{b}{a}+ frac{c}{b}+ frac{d}{c}+ frac{a}{d}=36. Prove the inequality {{a}^{2}}+{{b}^{2}}+{{c}^{2}}+{{d}^{2}}>ab+ac+ad+bc+bd+cd.

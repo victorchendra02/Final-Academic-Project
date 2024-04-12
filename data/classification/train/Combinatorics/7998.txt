@@ -1,0 +1,1 @@
+In how many ways can we fill the cells of a 4 times4 grid such that each cell contains exactly one positive integer and the product of the numbers in each row and each column is 2020?

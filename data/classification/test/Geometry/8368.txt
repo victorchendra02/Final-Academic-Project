@@ -1,0 +1,1 @@
+A closed container in the shape of a rectangular parallelepiped contains 1 liter of water. If the container rests horizontally on three different sides, the water level is 2 cm, 4 cm and 5 cm. Calculate the volume of the parallelepiped.

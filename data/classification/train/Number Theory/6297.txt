@@ -1,0 +1,1 @@
+find all positive integer a geq 2 and b geq2 such that a is even and all the digits of a^b+1 are equals.
