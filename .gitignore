@@ -1,9 +1,12 @@
 .idea
 models/utils/__pycache__
 utils/__pycache__
+webscraping2/utils/__pycache__
 
 aops_app/flask-backend/env
 aops_app/flask-backend/package/__pycache__
 
 
 models/saved_models
+# data/classification/train
+# data/classification/test

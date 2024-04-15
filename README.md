@@ -62,6 +62,7 @@ conda activate aops_mathbert
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
 pip install --upgrade pip
 pip install "tensorflow<2.11"
+pip install tf-models-official
 
 conda install pytorch torchvision torchaudio cpuonly -c pytorch -y
 
