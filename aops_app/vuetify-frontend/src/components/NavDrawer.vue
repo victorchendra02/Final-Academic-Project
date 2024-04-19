@@ -14,8 +14,8 @@
                     <v-list-item v-bind="props" prepend-icon="mdi-account-circle" title="Classify"></v-list-item>
                 </template>
 
-                <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Classification" value="classification"
-                    to="/classify/classification"></v-list-item>
+                <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Classification"
+                    value="classification" to="/classify/classification"></v-list-item>
                 <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Regression" value="regression"
                     to="/classify/regression"></v-list-item>
             </v-list-group>
@@ -25,12 +25,18 @@
                 to="/about"></v-list-item>
         </v-list>
 
-        <template v-slot:append>
+        <!-- <template v-slot:append>
             <div class="pa-2">
                 <v-btn block prepend-icon="mdi-account">
                     Admin
                 </v-btn>
             </div>
+
+        </template> -->
+        <template v-slot:append>
+            <VList density="comfortable" nav>
+                <VListItem to='/' prepend-icon="mdi-account" title="Admin"></VListItem>
+            </VList>
         </template>
 
     </v-navigation-drawer>
