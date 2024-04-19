@@ -90,7 +90,7 @@ class MySQLDBManager:
                     no VARCHAR(255),
                     contest_category VARCHAR(255),
                     contest_name VARCHAR(255),
-                    year VARCHAR(255),
+                    year INT,
                     link TEXT,
                     pdf TEXT,
                     post_rendered TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
@@ -173,14 +173,15 @@ if __name__ == '__main__':
     # CTRL + SHIFT + C
     # conda activate artofproblemsolving
     # cd dbmanagement
-    # python -u db.py
+    # cd imo
+    # python -u load.py
     
     host = "127.0.0.1"
     user = "root"
     password = ""
     database = "aopsimol_artofproblemsolving"
     
-    path = '../../data/data_post_canonical.csv'
+    path = '../../data/classification/imo.csv'
     db = MySQLDBManager(host, user, password, database)
     db.initialize(path)
     
