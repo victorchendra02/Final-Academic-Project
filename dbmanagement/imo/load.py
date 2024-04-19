@@ -148,14 +148,14 @@ class MySQLDBManager:
             self.bcolors.warning("MySQL connection is closed")
         )
     
-    def initialize(self):
+    def initialize(self, path: str):
         print(self.bcolors.okblue(f"[FUNCTION CALLED] --> initialize()"))
         
         self.create_database(self.database)
         self.use_database(self.database)
         self.create_table("imo")
         
-        df = pd.read_csv('../../data/data_post_canonical.csv')
+        df = pd.read_csv(path)
         num_rows = df.shape[0]
         for i in range(num_rows):
             data_to_insert = df.loc[i].to_dict()
@@ -180,6 +180,7 @@ if __name__ == '__main__':
     password = ""
     database = "aopsimol_artofproblemsolving"
     
+    path = '../../data/data_post_canonical.csv'
     db = MySQLDBManager(host, user, password, database)
-    db.initialize()
+    db.initialize(path)
     
