@@ -38,12 +38,11 @@ def save_pkl(obj: any, name: str):
     try:
         with open(name, 'wb') as file:
             pickle.dump(obj, file)
+            print(f"Saved: \"{name}\"")
     except (OSError, IOError) as e:
         raise ValueError(f"Failed to save pickle file: {e}") from e
     except pickle.PickleError as e:
         raise pickle.PickleError(f"Pickling error: {e}") from e
-
-    print(f"Saved: \"{name}\"")
 
 
 def load_pkl(name: str):
