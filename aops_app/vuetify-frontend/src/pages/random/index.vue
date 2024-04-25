@@ -1,21 +1,24 @@
 <template>
     <div class="d-flex justify-center">
-        <div class="pt-6" style="width: 88%">
+        <div class="pt-6" style="width: 82%">
             <!-- header -->
             <div class="pb-3">
-                <h1 class="text-center">Random problem</h1>
+                <h1 class="text-center">
+                    Random problem
+                    <v-icon icon="mdi mdi-dice-multiple"></v-icon>
+                </h1>
             </div>
 
             <!-- Form -->
             <div class="py-5">
                 <div class="d-flex justify-space-between">
                     <!-- LabelInput -->
-                    <div style="width: 800px">
+                    <div style="width: 700px">
                         <v-select
                             label="Label"
                             hint="Pick your desire label"
-                            v-model="value_for_labels"
-                            :items="array_of_labels"
+                            v-model="this.selected_labels"
+                            :items="this.array_of_labels"
                             variant="outlined"
                             density="compact"
                             clearable
@@ -36,20 +39,20 @@
                             :hideInput="false"
                             :inset="false"
                             :min="1"
-                            :max="10"
-                            :model-value="1"
+                            :max=this.max_n_input
+                            v-model="this.n"
                             persistent-hint
                         ></v-number-input>
                     </div>
 
                     <!-- ButtonGo -->
-                    <div style="width: 210px">
+                    <div style="width: 200px">
                         <v-btn
                             block
-                            append-icon="$vuetify"
+                            append-icon="mdi mdi-dice-multiple"
                             variant="flat"
                             color="indigo-darken-3"
-                            @click="this.go()"
+                            @click="this.go_button()"
                         >
                             Go
                         </v-btn>
@@ -59,63 +62,77 @@
 
             <!-- horizontal line -->
             <hr class="mb-2 mt-0" />
-            <h3 class="mb-2">Result for</h3>
+            <h3 class="mb-2" v-if="this.result_for">Result for:</h3>
 
             <!-- Main content -->
             <div>
                 <v-card
-                    v-for="i in array_result"
-                    class="mb-1"
+                    v-for="(item, index) in this.result"
+                    class="mb-2"
                     color="surface-variant"
                     variant="outlined"
-                    :title="this.label"
                     elevation="1"
                 >
+                    <template v-slot:title>
+                        {{ index + 1 }} | {{ item.label }}
+                    </template>
                     <template v-slot:subtitle>
-                        No. {{ this.no }} | {{ this.contest_name }} |
-                        {{ this.year }} |
+                        No. {{ item.no }} | {{ item.contest_name }} |
+                        {{ item.year }} |
                         <a
-                            :href="this.link"
+                            :href="item.link"
                             target="_blank"
                             rel="noopener noreferrer"
                             >Source</a
                         >
                     </template>
                     <template v-slot:text>
-                        Let $ a$ and $ b$ be non-negative integers such that $
-                        ab \geq c^2,$ where $ c$ is an integer. Prove that there
-                        is a number $ n$ and integers $ x_1, x_2, \ldots, x_n,
-                        y_1, y_2, \ldots, y_n$ such that \[ \sum^n_{i=1} x^2_i =
-                        a, \sum^n_{i=1} y^2_i = b, \text{ and } \sum^n_{i=1}
-                        x_iy_i = c.\]
+                        <div v-html="item.post_rendered"></div>
                     </template>
                 </v-card>
             </div>
         </div>
     </div>
 
-    <br /><br /><br /><br /><br /><br />
+    <!-- snackbar invalid n -->
+    <v-snackbar v-model="this.invalid_n">
+        Please input "number of sample" that in range of 1
+        <span class="mdi mdi-greater-than-or-equal"></span> n
+        <span class="mdi mdi-greater-than-or-equal"></span> {{ this.max_n_input }}
+
+        <template v-slot:actions>
+            <v-btn
+                color="pink"
+                variant="text"
+                append-icon="mdi mdi-close"
+                @click="this.invalid_n = false"
+            >
+                Dismiss
+            </v-btn>
+        </template>
+    </v-snackbar>
+
+    <!-- snackbar invalid label -->
+    <v-snackbar v-model="this.invalid_label">
+        Please select at least 1 label
+
+        <template v-slot:actions>
+            <v-btn
+                color="pink"
+                variant="text"
+                append-icon="mdi mdi-close"
+                @click="this.invalid_label = false"
+            >
+                Dismiss
+            </v-btn>
+        </template>
+    </v-snackbar>
+
+    <br /><br /><br /><br /><br />
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const array_of_contest_names = ref([
-    "(None)",
-    "IMO",
-    "APMO",
-    "EGMO",
-    "Benelux",
-]);
-const array_of_labels = ref([
-    "Algebra",
-    "Geometry",
-    "Combinatorics",
-    "Number Theory",
-]);
-
-const value_for_contest_name = ref([]);
-const value_for_labels = ref([]);
+console.log("Start");
 </script>
 
 <script>
@@ -124,26 +141,44 @@ import { VNumberInput } from "vuetify/lib/labs/components.mjs";
 
 export default {
     data: () => ({
+        array_of_labels: [
+            "Algebra",
+            "Geometry",
+            "Combinatorics",
+            "Number Theory",
+        ],
+        max_n_input: 50,
+
+        selected_labels: [],
         n: null,
-        no: "4",
-        year: "2020",
-        label: "Geometry",
-        contest_name: "imo shortlist",
-        link: "https://www.google.com",
-        array_result: [1, 2, 3, 4],
+
+        result: [],
+
+        invalid_n: false,
+        invalid_label: false,
+        result_for: false,
     }),
     methods: {
-        async get_random_data(n, contest_name, year, label) {
+        async get_random_data(n_, label_) {
             try {
                 const response = await axios.get(
-                    `http://127.0.0.1:5000/random?n=${n}&contest_name=${contest_name}&year=${year}&label=${label}`
+                    `http://127.0.0.1:5000/random?label=${label_}&n=${n_}`
                 );
-                this.array_result = response.data;
+                this.result = response.data;
+                this.result_for = true;
             } catch (error) {
                 console.log(error.message);
             }
         },
-        go_button() {},
+        go_button() {
+            if (this.selected_labels.length == 0) {
+                this.invalid_label = true;
+            } else if (this.n <= 0 || this.n > this.max_n_input) {
+                this.invalid_n = true;
+            } else {
+                this.get_random_data(this.n, this.selected_labels);
+            }
+        },
     },
     created() {},
 };

@@ -1,15 +1,18 @@
 <template>
     <div class="d-flex justify-center">
-        <div class="pt-6" style="width: 88%">
-            <h1 class="pb-3 text-center">Classification</h1>
+        <div class="pt-6" style="width: 82%">
+            <h1 class="mb-1 text-center">
+                Classification <span class="mdi mdi-family-tree"></span>
+            </h1>
 
-            <!-- Button -->
-            <div class="mb-2">
+            <!-- Button generate example -->
+            <div class="mb-1 d-flex justify-end">
                 <v-btn
                     size="small"
                     density="default"
                     variant="text"
                     color="indigo-darken-3"
+                    append-icon="mdi mdi-dice-multiple-outline"
                     @click="this.generate_example()"
                 >
                     Generate example
@@ -17,35 +20,30 @@
             </div>
 
             <!-- TextArea -->
-            <div class="mb-2">
+            <div>
                 <v-textarea
                     label="Enter math problem to classify"
-                    :model-value="this.example_random_problem"
+                    v-model="this.generated_example_problem"
                     name="Classification"
                     variant="outlined"
                     clear-icon="mdi-close-circle"
+                    rows="6"
                     clearable
-                    auto-grow
+                    no-resize
                 >
                 </v-textarea>
             </div>
 
-            <!-- Button -->
-            <div class="mb-5 d-flex justify-center">
+            <!-- Button classify -->
+            <div class="d-flex justify-center">
                 <v-btn
-                    append-icon="$vuetify"
+                    append-icon="mdi-arrow-right"
                     variant="flat"
                     color="indigo-darken-3"
-                    @click="this.classify(this.example_random_problem)"
+                    @click="this.classify(this.generated_example_problem)"
                 >
-                    Classify problem
+                    Classify
                 </v-btn>
-            </div>
-
-            <!-- TextResult -->
-            <div class="text-center">
-                <h1>Result:</h1>
-                <h2>{{ this.classify_result }}</h2>
             </div>
 
             <br /><br /><br />
@@ -59,7 +57,7 @@ import axios from "axios";
 export default {
     data: () => ({
         text_area: null,
-        example_random_problem: null,
+        generated_example_problem: null,
         classify_result: null,
     }),
     methods: {
@@ -68,7 +66,7 @@ export default {
                 const response = await axios.get(
                     "http://127.0.0.1:5000/classify/classification/generate_example"
                 );
-                this.example_random_problem = response.data.post_canonical;
+                this.generated_example_problem = response.data.post_canonical;
             } catch (error) {
                 console.log("Error on API Calling");
                 console.log(error.message);

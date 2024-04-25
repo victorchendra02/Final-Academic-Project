@@ -3,20 +3,20 @@
         <v-list density="compact" nav>
             <v-list-item color="primary" prepend-icon="mdi-home" title="Home" value="home" to="/"></v-list-item>
 
-            <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Question Bank" value="questionbank"
+            <v-list-item color="primary" prepend-icon="mdi-bank" title="Question Bank" value="questionbank"
                 to="/questionbank"></v-list-item>
 
-            <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Random" value="random_menu"
+            <v-list-item color="primary" prepend-icon="mdi-dice-multiple" title="Random" value="random_menu"
                 to="/random"></v-list-item>
 
             <v-list-group value="Classify">
                 <template v-slot:activator="{ props }">
-                    <v-list-item v-bind="props" prepend-icon="mdi-account-circle" title="Classify"></v-list-item>
+                    <v-list-item v-bind="props" prepend-icon="mdi-shape" title="Classify"></v-list-item>
                 </template>
 
-                <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Classification"
+                <v-list-item color="primary" prepend-icon="mdi-family-tree" title="Classification"
                     value="classification" to="/classify/classification"></v-list-item>
-                <v-list-item color="primary" prepend-icon="mdi-account-multiple" title="Regression" value="regression"
+                <v-list-item color="primary" prepend-icon="mdi-chart-line" title="Regression" value="regression"
                     to="/classify/regression"></v-list-item>
             </v-list-group>
 
