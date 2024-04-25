@@ -1,6 +1,7 @@
 import pandas as pd
 import tensorflow as tf
 
+
 def load_and_prepare_dataset(path: str, seed: int, batch_size: int, AUTOTUNE=tf.data.AUTOTUNE) -> tuple[tf.data.Dataset]:
     df_train = pd.read_csv(f"{path}train.csv")
     df_test = pd.read_csv(f"{path}test.csv")
