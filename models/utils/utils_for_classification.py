@@ -34,7 +34,7 @@ def classification_evaluation(y_actual: list, y_pred: list):
     from sklearn.metrics import precision_score
     from sklearn.metrics import recall_score
     from sklearn.metrics import f1_score
-    from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+    from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
     l = np.array(["Algebra", "Geometry", "Combinatorics", "Number Theory"])
     
@@ -62,3 +62,6 @@ def classification_evaluation(y_actual: list, y_pred: list):
 
     heatmap.plot()
     plt.show()
+    
+    print(classification_report(y_actual, y_pred, digits=4))
+    
