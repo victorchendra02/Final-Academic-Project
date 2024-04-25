@@ -9,7 +9,7 @@ def create_folder(path):
         os.makedirs(path)
         print(f"Folder --> '{path}' created")
     except FileExistsError:
-        print(f"Already exist --> '{path}'")
+        print(f"Already exist --> '{path}' NOT CREATED")
 
 
 def save_pkl(obj: any, name: str):
