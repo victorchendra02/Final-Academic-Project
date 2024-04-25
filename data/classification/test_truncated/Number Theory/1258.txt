@@ -1,0 +1,1 @@
+A wobbly number is a positive integer whose digits are alternately zero and non-zero with the last digit non-zero (for example, 201). Find all positive integers which do not divide any wobbly number.

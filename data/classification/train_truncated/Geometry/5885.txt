@@ -1,0 +1,1 @@
+Let ABC be an acute triangle, which is not equilateral. Denote by O and H its circumcenter and orthocenter, respectively. The circle k passes through B and touches the line AC at A. The circle l with center on the ray BH touhes the line AB at A. The circles k and l meet in X (X ne A). Show that angle HXO=180^ circ- angle BAC. Proposed by Josef Tkadlec

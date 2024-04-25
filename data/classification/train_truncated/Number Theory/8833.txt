@@ -1,0 +1,1 @@
+Let f(x) be a polynomial with integer coefficients. We assume that there exists a positive integer k and k consecutive integers n, n+1, ... , n+k -1 so that none of the numbers f(n), f(n+ 1),... , f(n + k - 1) is divisible by k. Show that the zeroes of f(x) are not integers.

@@ -1,0 +1,1 @@
+The Fibonacci numbers are defined by F_0 = 1, F_1 = 1, F_{n+2} = F_{n+1} + F_n. The positive integers A, B are such that A^{19} divides B^{93} and B^{19} divides A^{93}. Show that if h < k are consecutive Fibonacci numbers then (AB)^h divides (A^4 + B^8)^k

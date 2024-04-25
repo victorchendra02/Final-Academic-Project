@@ -1,0 +1,1 @@
+Let x_k= frac{k(k+1)}{2} for all integers k ge 1. Prove that for any integer n ge 10, between the numbers A=x_1+x_2 + ldots + x_{n-1} and B=A+x_n there is at least one square.

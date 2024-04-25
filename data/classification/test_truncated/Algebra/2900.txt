@@ -1,0 +1,1 @@
+Find the real values of p for which the equation sqrt{2p+ 1 - x^2} + sqrt{3x + p + 4} = sqrt{x^2 + 9x+ 3p + 9} in x has exactly two real distinct roots.( sqrt t means the positive square root of t).

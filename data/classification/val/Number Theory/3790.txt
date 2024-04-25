@@ -1,0 +1,1 @@
+A sequence of integers (a_n) satisfies a_{n+1} = a_n^3 + 1999 for n = 1,2,.... Prove that there exists at most one n for which a_n is a perfect square.

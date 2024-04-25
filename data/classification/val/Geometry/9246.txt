@@ -1,0 +1,1 @@
+Let ABCD be a convex quadrilateral and let P and Q be variable points inside this quadrilateral so that angle APB= angle CPD= angle AQB= angle CQD. Prove that the lines PQ obtained in this way all pass through a fixed point , or they are all parallel.

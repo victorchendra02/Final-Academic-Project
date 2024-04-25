@@ -1,0 +1,1 @@
+Let { bf R} denote the set of all real numbers. Find all functions f from { bf R} to { bf R} satisfying: (i) there are only finitely many s in { bf R} such that f(s)=0, and (ii) f(x^4+y)=x^3f(x)+f(f(y)) for all x,y in { bf R}.

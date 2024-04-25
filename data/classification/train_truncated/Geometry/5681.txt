@@ -1,0 +1,1 @@
+Prove that a line that divides a triangle into two polygons of equal area and equal perimeter passes through the center of the circle inscribed in the triangle. Prove an analogous property for a polygon that has an inscribed circle.

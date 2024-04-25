@@ -1,0 +1,1 @@
+Determine the polynomials P of two variables so that: a.) for any real numbers t,x,y we have P(tx,ty) = t^n P(x,y) where n is a positive integer, the same for all t,x,y; b.) for any real numbers a,b,c we have P(a + b,c) + P(b + c,a) + P(c + a,b) = 0; c.) P(1,0) =1.

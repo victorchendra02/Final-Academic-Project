@@ -1,0 +1,1 @@
+Let ABC be an acute triangle with AC>AB, Let DEF be the intouch triangle with D in (BC),E in (AC),F in (AB),, let G be the intersecttion of the perpendicular from D to EF with AB, and X=(ABC) cap (AEF). Prove that B,D,G and X are concylic

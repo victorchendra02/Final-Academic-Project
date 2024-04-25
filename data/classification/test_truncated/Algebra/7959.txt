@@ -1,0 +1,1 @@
+Let f: mathbb{R} rightarrow mathbb{R} be a continuous function such that the limit g(x)= lim_{h rightarrow 0}{ frac{f(x+h)-2f(x)+f(x-h)}{h^2}}exists for all real x. Prove that g(x) is constant if and only if f(x) is a polynomial function whose degree is at most 2.

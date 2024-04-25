@@ -1,0 +1,1 @@
+Let ABCDE be a convex pentagon such that AB = BC = CD and angle BDE = angle EAC = 30 ^{ circ}. Find the possible values of angle BEC. Proposed by Josef Tkadlec (Czech Republic)

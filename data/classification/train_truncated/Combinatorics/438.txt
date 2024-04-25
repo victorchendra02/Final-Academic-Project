@@ -1,0 +1,1 @@
+Let m,n geqslant 2 be integers, let X be a set with n elements, and let X_1,X_2, ldots,X_m be pairwise distinct non-empty, not necessary disjoint subset of X. A function f colon X to {1,2, ldots,n+1 } is called nice if there exists an index k such that sum_{x in X_k} f(x)> sum_{x in X_i} f(x) quad text{for all } i ne k.Prove that the number of nice functions is at least n^n.

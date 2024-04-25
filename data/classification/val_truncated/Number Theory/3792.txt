@@ -1,0 +1,1 @@
+Find all pairs (x,y) of positive integers such that x^{x+y} =y^{y-x}.

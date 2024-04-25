@@ -1,0 +1,1 @@
+Consider a sequence of polynomials P_0(x), P_1(x), P_2(x), ldots, P_n(x), ldots, where P_0(x) = 2, P_1(x) = x and for every n geq 1 the following equality holds: P_{n+1}(x) + P_{n-1}(x) = xP_n(x). Prove that there exist three real numbers a, b, c such that for all n geq 1, (x^2 - 4)[P_n^2(x) - 4] = [aP_{n+1}(x) + bP_n(x) + cP_{n-1}(x)]^2.

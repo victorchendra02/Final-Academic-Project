@@ -1,0 +1,1 @@
+Find all pairs of (a, n) natural numbers such that varphi (a ^ n + n) = 2 ^ n. ( varphi (n) is the Euler function, that is, the number of integers from 1 up to n , relative prime to n )

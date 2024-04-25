@@ -1,0 +1,1 @@
+Given an acute triangle ABC, let P be an arbitrary point on segment BC. A line passing through P and perpendicular to AC intersects AB at P_b. A line passing through P and perpendicular to AB intersects AC at P_c. Prove that the circumcircle of triangle AP_bP_c passes through a fixed point other than A when P varies on segment BC. Proposed by ltf0501

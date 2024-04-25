@@ -1,0 +1,1 @@
+Find the largest positive integer n for which the inequality frac{a+b+c}{abc+1}+ sqrt[n]{abc} leq frac{5}{2} holds true for all a, b, c in [0,1]. Here we make the convention sqrt[1]{abc}=abc.

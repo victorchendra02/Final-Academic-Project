@@ -1,0 +1,1 @@
+Let a, b, c be the sides of a triangle, and S its area. Prove: a^{2} + b^{2} + c^{2} geq 4S sqrt {3} In what case does equality hold?

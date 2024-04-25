@@ -1,0 +1,1 @@
+Let K, L, M and N be the midpoints of the sides AB, BC, CD and DA of a cyclic quadrilateral ABCD. Let P be the point of intersection of AC and BD. Prove that the circumradii of triangles PKL, PLM, PMN and PNK are equal to one another.

@@ -1,0 +1,1 @@
+Let ABC be a triangle inscribed on a circle with center O. Let D and E be points on the sides AB and BC,respectively, such that AD = DE = EC. Let X be the intersection of the angle bisectors of angle ADE and angle DEC. If X neq O, show that, the lines OX and DE are perpendicular.

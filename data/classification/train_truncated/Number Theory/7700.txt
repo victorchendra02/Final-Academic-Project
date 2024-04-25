@@ -1,0 +1,1 @@
+Find all the pairs of positive integers (m,n) such that the numbers A=n^2+2mn+3m^2+3n, B=2n^2+3mn+m^2, C=3n^2+mn+2m^2 are consecutive in some order.

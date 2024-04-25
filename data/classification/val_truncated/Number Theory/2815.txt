@@ -1,0 +1,1 @@
+Given any two real numbers alpha and beta , 0 leq alpha < beta leq 1, prove that there exists a natural number m such that alpha < frac{ phi(m)}{m} < beta.

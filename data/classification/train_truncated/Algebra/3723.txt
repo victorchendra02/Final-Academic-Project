@@ -1,0 +1,1 @@
+Let A subset {x|0 le x<1 } with the following properties: 1. A has at least 4 members. 2. For all pairwise different a,b,c,d in A, ab+cd in A holds. Prove: A has infinetly many members.

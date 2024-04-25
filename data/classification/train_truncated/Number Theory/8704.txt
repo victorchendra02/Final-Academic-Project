@@ -1,0 +1,1 @@
+Find all functions f: mathbb{N}_0 to mathbb{Z} such that f(k)-f(l) mid k^2-l^2for all integers k, l geq 0.

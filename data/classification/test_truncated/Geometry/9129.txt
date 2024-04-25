@@ -1,0 +1,1 @@
+Let ABC be a triangle with AB < AC, let L be midpoint of arc BC(the point A is not in this arc) of the circumcircle w(ABC). Let E be a point in AC where AE = frac{AB + AC}{2}, the line EL intersects w in P. If M and N are the midpoints of AB and BC, respectively, prove that AL, BP and MN are concurrents

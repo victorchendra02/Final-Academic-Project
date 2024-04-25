@@ -1,0 +1,1 @@
+Two players take turns entering a symbol in an empty cell of a 1 times n chessboard, where n is an integer greater than 1. Aaron always enters the symbol X and Betty always enters the symbol O. Two identical symbols may not occupy adjacent cells. A player without a move loses the game. If Aaron goes first, which player has a winning strategy?

@@ -1,0 +1,1 @@
+Let n ge 3 be a natural number. A set of real numbers {x_1,x_2, ldots,x_n } is called summable if sum_{i=1}^n frac{1}{x_i}=1. Prove that for every n ge 3 there always exists a summable set which consists of n elements such that the biggest element is: a) bigger than 2^{2n-2} b) smaller than n^2

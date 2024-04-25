@@ -1,0 +1,1 @@
+The degrees of polynomials P and Q with real coefficients do not exceed n. These polynomials satisfy the identity P(x) x^{n + 1} + Q(x) (x+1)^{n + 1} = 1. Determine all possible values of Q left( - frac{1}{2} right).

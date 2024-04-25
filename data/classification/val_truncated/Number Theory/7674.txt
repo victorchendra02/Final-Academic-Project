@@ -1,0 +1,1 @@
+Consider integers a_i,i= overline{1,2002} such that a_1^{ - 3} + a_2^{ - 3} + ldots + a_{2002}^{ - 3} = frac {1}{2} Prove that at least 3 of the numbers are equal.

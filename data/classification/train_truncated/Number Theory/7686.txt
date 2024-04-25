@@ -1,0 +1,1 @@
+Find all integers x and y such that x^3 pm y^3 =2001p, where p is prime.

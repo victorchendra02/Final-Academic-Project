@@ -1,0 +1,1 @@
+Let a_1,a_2,a_3, ldots and b_1,b_2,b_3, ldots be positive integers such that a_{n+2} = a_n + a_{n+1} and b_{n+2} = b_n + b_{n+1} for all n ge 1. Assume that a_n divides b_n for infinitely many values of n. Prove that there exists an integer c such that b_n = c a_n for all n ge 1.

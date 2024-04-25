@@ -1,0 +1,1 @@
+Two acute triangles ABC and A_1B_1C_1 are such that B_1 and C_1 lie on BC, and A_1 lies inside the triangle ABC. Let S and S_1 be the areas of those triangles respectively. Prove that frac{S}{AB + AC}> frac{S_1}{A_1B_1 + A_1C_1} (Nairi Sedrakyan, Ilya Bogdanov)

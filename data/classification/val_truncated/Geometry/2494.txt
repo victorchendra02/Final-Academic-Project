@@ -1,0 +1,1 @@
+Let ABC and DEF be acute-angled triangles. Write d = EF, e = FD, f = DE. Show that there exists a point P in the interior of ABC for which the value of the expression X=d cdot AP +e cdot BP +f cdot CP attains a minimum.

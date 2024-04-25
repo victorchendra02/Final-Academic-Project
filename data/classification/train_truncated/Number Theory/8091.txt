@@ -1,0 +1,1 @@
+a) Determine if there are positive integers a, b and c, not necessarily distinct, such that a+b+c=2020 and 2^a+2^b+2^c it's a perfect square. b) Determine if there are positive integers a, b and c, not necessarily distinct, such that a+b+c=2020 and 3^a+3^b+3^c it's a perfect square.

@@ -1,0 +1,1 @@
+Let ABC be an acute scalene triangle with circumcircle omega. Let P and Q be interior points of the sides AB and AC, respectively, such that PQ is parallel to BC. Let L be a point on omega such that AL is parallel to BC. The segments BQ and CP intersect at S. The line LS intersects omega at K. Prove that angle BKP = angle CKQ. Proposed by Ervin Macic, Bosnia and Herzegovina

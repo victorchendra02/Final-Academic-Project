@@ -1,0 +1,1 @@
+Let a,b,c be positive real numbers, such that (ab)^2 + (bc)^2 + (ca)^2 = 3. Prove that (a^2 - a + 1)(b^2 - b + 1)(c^2 - c + 1) ge 1. Proposed by Florin Stanescu (wer), Romania

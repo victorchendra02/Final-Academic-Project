@@ -1,0 +1,1 @@
+Find all completely multipiclative functions f: mathbb{Z} rightarrow mathbb{Z}_{ geqslant 0} such that for any a,b in mathbb{Z} and b neq 0, there exist integers q,r such that a=bq+rand f(r)<f(b) Proposed by Navid Safaei

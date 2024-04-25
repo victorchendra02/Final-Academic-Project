@@ -1,0 +1,1 @@
+In ABC with angle C = 60^{ circ}, prove that frac{c}{a} + frac{c}{b} ge2.

@@ -1,0 +1,1 @@
+A board n times n (n ge 3) is divided into n^2 unit squares. Integers from O to n included, are written down: one integer in each unit square, in such a way that the sums of integers in each 2 times 2 square of the board are different. Find all n for which such boards exist.

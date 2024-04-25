@@ -1,0 +1,1 @@
+Construct triangle ABC, given h_a, h_b (the altitudes from A and B), and m_a, the median from vertex A.

@@ -1,0 +1,1 @@
+Find the greatest exponent k for which 2001^{k} divides 2000^{2001^{2002}}+2002^{2001^{2000}}.

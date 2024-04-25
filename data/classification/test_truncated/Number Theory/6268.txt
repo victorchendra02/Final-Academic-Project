@@ -1,0 +1,1 @@
+Let n be a given positive integer. Prove that there is no positive divisor d of 2n^2 such that d^2n^2+d^3 is a square of an integer.

@@ -1,0 +1,1 @@
+Given a square ABCD with side 1, and a square inside ABCD with side x, find (in terms of x) the radio r of the circle tangent to two sides of ABCD and touches the square with side x. (See picture).

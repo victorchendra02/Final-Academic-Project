@@ -1,0 +1,1 @@
+Find all (m,n) in mathbb{Z}^2 that we can color each unit square of m times n with the colors black and white that for each unit square number of unit squares that have the same color with it and have at least one common vertex (including itself) is even.

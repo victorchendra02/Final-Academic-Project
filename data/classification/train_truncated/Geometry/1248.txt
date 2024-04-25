@@ -1,0 +1,1 @@
+ABCD is a quadrilateral with BC parallel to AD. M is the midpoint of CD, P is the midpoint of MA and Q is the midpoint of MB. The lines DP and CQ meet at N. Prove that N is inside the quadrilateral ABCD.

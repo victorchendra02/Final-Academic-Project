@@ -1,0 +1,1 @@
+Prove the inequalities frac{u}{v} le frac{ sin u}{ sin v} le frac{ pi}{2} times frac{u}{v}, text{ for }0 le u < v le frac{ pi}{2}

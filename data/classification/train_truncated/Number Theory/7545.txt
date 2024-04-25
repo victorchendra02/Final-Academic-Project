@@ -1,0 +1,1 @@
+Solve in positive integers the equation 1005^x + 2011^y = 1006^z.

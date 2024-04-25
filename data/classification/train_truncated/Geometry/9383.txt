@@ -1,0 +1,1 @@
+In-circle of ABC with center I touch AB and AC at P and Q respectively. BI and CI intersect PQ at K and L respectively. Prove, that circumcircle of ILK touch incircle of ABC iff |AB|+|AC|=3|BC|.

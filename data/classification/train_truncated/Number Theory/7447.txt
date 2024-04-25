@@ -1,0 +1,1 @@
+A positive integer is called a repunit, if it is written only by ones. The repunit with n digits will be denoted as underbrace{{11 cdots1}}_{n} . Prove that: ) the repunit underbrace{{11 cdots1}}_{n}is divisible by 37 if and only if n is divisible by 3 b) there exists a positive integer k such that the repunit underbrace{{11 cdots1}}_{n} is divisible by 41 if n is divisible by k

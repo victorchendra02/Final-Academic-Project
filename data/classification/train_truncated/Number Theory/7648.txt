@@ -1,0 +1,1 @@
+Let n ge 5 be a positive integer. Prove that the set {1,2, ldots,n } can be partitioned into two non-zero subsets S_n and P_n such that the sum of elements in S_n is equal to the product of elements in P_n.

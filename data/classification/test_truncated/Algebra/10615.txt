@@ -1,0 +1,1 @@
+Prove that for a, b, c in [0;1], (1-a)(1+ab)(1+ac)(1-abc) leq (1+a)(1-ab)(1-ac)(1+abc).

@@ -1,0 +1,1 @@
+Find the least positive integer such that the sum of its digits is 2011 and the product of its digits is a power of 6.

@@ -1,0 +1,1 @@
+A sequence a_1, a_2, a_3, ldots of positive integers satisfies a_1 > 5 and a_{n+1} = 5 + 6 + cdots + a_n for all positive integers n. Determine all prime numbers p such that, regardless of the value of a_1, this sequence must contain a multiple of p.

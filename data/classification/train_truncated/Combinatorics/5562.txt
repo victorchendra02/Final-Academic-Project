@@ -1,0 +1,1 @@
+What is the largest number of cells that can be colored in a 7 times7 table in such a way that any 2 times2 subtable has at most 2 colored cells?

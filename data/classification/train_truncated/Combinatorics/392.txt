@@ -1,0 +1,1 @@
+Supppose five points in a plane are situated so that no two of the straight lines joining them are parallel, perpendicular, or coincident. From each point perpendiculars are drawn to all the lines joining the other four points. Determine the maxium number of intersections that these perpendiculars can have.

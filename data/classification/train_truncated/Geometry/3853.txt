@@ -1,0 +1,1 @@
+Given a circle k with center M and radius r, let AB be a fixed diameter of k and let K be a fixed point on the segment AM. Denote by t the tangent of k at A. For any chord CD through K other than AB, denote by P and Q the intersection points of BC and BD with t, respectively. Prove that AP cdot AQ does not depend on CD.

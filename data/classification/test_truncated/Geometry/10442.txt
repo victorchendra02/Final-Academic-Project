@@ -1,0 +1,1 @@
+Given is a isosceles triangle ABC so that AB=BC. Point K is in ABC, so that CK=AB=BC and <KAC=30.Find <AKB=?

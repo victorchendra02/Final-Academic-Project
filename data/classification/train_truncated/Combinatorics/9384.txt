@@ -1,0 +1,1 @@
+Natural n geq 2 is given. Group of people calls n-compact, if for any men from group, we can found n people (without he), each two of there are familiar. Find maximum N such that for any n-compact group, consisting N people contains subgroup from n+1 people, each of two of there are familiar.

@@ -1,0 +1,1 @@
+Every point of a plane is colored red or blue, not all with the same color. Can this be done in such a way that, on every circumference of radius 1, (a) there is exactly one blue point; (b) there are exactly two blue points?

@@ -1,0 +1,1 @@
+Find all functions f : mathbb{R} to mathbb{R} such that f(0) neq 0 and f(f(x)) + f(f(y)) = f(x + y)f(xy),for all x, y in mathbb{R}.

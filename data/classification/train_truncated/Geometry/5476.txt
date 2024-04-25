@@ -1,0 +1,1 @@
+Given is a triangle ABC with incircle omega, tangent to BC, CA, AB at D, E, F. The perpendicular from B to BC meets EF at M, and the perpendicular from C to BC meets EF at N. Let DM and DN meet omega at P and Q. Prove that DP=DQ.

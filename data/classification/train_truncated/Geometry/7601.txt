@@ -1,0 +1,1 @@
+Let ABC be an isosceles triangle with AC = BC. The point D lies on the side AB such that the semicircle with diameter BD and center O is tangent to the side AC in the point P and intersects the side BC at the point Q. The radius OP intersects the chord DQ at the point E such that 5 cdot PE = 3 cdot DE. Find the ratio frac{AB}{BC} .

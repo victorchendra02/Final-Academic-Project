@@ -1,0 +1,1 @@
+Find the largest integer n such that n is divisible by all positive integers less than sqrt[3]{n}.

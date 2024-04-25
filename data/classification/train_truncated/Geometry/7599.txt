@@ -1,0 +1,1 @@
+Is it possible to cover a given square with a few congruent right-angled triangles with acute angle equal to {{30}^{o}}? (The triangles may not overlap and may not exceed the margins of the square.)

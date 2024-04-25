@@ -1,0 +1,1 @@
+Lucia multiplies some positive one-digit numbers (not necessarily distinct) and obtains a number n greater than 10. Then, she multiplies all the digits of n and obtains an odd number. Find all possible values of the units digit of n. textit{Proposed by Pablo Serrano, Ecuador}

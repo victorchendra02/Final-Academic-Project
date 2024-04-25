@@ -1,0 +1,1 @@
+Consider a matrix of size n times n whose entries are real numbers of absolute value not exceeding 1. The sum of all entries of the matrix is 0. Let n be an even positive integer. Determine the least number C such that every such matrix necessarily has a row or a column with the sum of its entries not exceeding C in absolute value. Proposed by Marcin Kuczma, Poland

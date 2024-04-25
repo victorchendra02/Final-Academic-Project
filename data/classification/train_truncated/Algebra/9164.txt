@@ -1,0 +1,1 @@
+x and y are real numbers such that 6 -x, 3 + y^2, 11 + x, 14 - y^2 are greater than zero. Find the maximum of the function f(x,y) = sqrt{(6 -x)(3 + y^2)} + sqrt{(11 + x)(14 - y^2)}.

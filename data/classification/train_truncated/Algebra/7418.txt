@@ -1,0 +1,1 @@
+If the non-negative reals x,y,z satisfy x^2+y^2+z^2=x+y+z. Prove that displaystyle frac{x+1}{ sqrt{x^5+x+1}}+ frac{y+1}{ sqrt{y^5+y+1}}+ frac{z+1}{ sqrt{z^5+z+1}} geq 3.When does the equality occur? Proposed by Dorlir Ahmeti, Albania

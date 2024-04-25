@@ -1,0 +1,1 @@
+Let ABC be a triangle. Find all the triangles XYZ with vertices inside triangle ABC such that XY,YZ,ZX and six non-intersecting segments from the following AX, AY, AZ, BX, BY, BZ, CX, CY, CZ divide the triangle ABC into seven regions with equal areas.

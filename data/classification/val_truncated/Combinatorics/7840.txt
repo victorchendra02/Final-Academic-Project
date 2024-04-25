@@ -1,0 +1,1 @@
+n people live in a town, and they are members of some clubs (residents can be members of more than one club). No matter how we choose some (but at least one) clubs, there is a resident of the town who is the member of an odd number of the chosen clubs. Prove that the number of clubs is at most n. Proposed by Domotor Palvolgyi, Budapest

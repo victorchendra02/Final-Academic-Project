@@ -1,0 +1,1 @@
+Let a and b be positive integers with a>1 and b>2. Prove that a^b+1 ge b(a+1) and determine when there is inequality.

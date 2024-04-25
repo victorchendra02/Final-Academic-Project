@@ -1,0 +1,1 @@
+Let f: Bbb{R} rightarrow Bbb{R} be a function such that (i) For all x,y in Bbb{R}, f(x)+f(y)+1 geq f(x+y) geq f(x)+f(y) (ii) For all x in [0,1), f(0) geq f(x), (iii) -f(-1) = f(1) = 1. Find all such functions f.

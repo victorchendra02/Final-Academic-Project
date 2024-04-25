@@ -1,0 +1,1 @@
+Let P be a point inside a tetrahedron ABCD and let S_A,S_B,S_C,S_D be the centroids (i.e. centers of gravity) of the tetrahedra PBCD,PCDA,PDAB,PABC. Show that the volume of the tetrahedron S_AS_BS_CS_D equals 1/64 the volume of ABCD.

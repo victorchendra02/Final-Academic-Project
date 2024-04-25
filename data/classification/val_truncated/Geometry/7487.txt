@@ -1,0 +1,1 @@
+Let {AB} be a diameter of a circle { omega} and center {O} , {OC} a radius of { omega} perpendicular to AB,{M} be a point of the segment left( OC right) . Let {N} be the second intersection point of line {AM} with { omega} and {P} the intersection point of the tangents of { omega} at points {N} and {B.} Prove that points {M,O,P,N} are cocyclic. (Albania)

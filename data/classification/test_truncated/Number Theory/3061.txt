@@ -1,0 +1,1 @@
+Evaluate S= sum_{k=1}^n k(k+1) ldots (k+p), where n and p are positive integers.

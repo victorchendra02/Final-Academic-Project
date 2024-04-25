@@ -1,0 +1,1 @@
+Prove that the equation 4x^3-3x+1=2y^2 has at least 31 solutions in positive integers x and y with x leq 2005.

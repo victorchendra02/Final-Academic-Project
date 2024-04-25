@@ -1,0 +1,1 @@
+Determine the smallest positive integer k{} satisfying the following condition: For any configuration of chess queens on a 100 times 100 chequered board, the queens can be coloured one of k colours so that no two queens of the same colour attack each other. Russia, Sergei Avgustinovich and Dmitry Khramtsov

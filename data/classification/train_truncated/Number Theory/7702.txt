@@ -1,0 +1,1 @@
+Find all the triples (x,y,z) of positive integers such that xy+yz+zx-xyz=2.

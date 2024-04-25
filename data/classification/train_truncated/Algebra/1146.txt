@@ -1,0 +1,1 @@
+Let a_{1},a_{2}, ldots ,a_{n} be positive real numbers such that a_{1}+a_{2}+ cdots +a_{n}<1. Prove that frac{a_{1} a_{2} cdots a_{n} left[ 1 - (a_{1} + a_{2} + cdots + a_{n}) right] }{(a_{1} + a_{2} + cdots + a_{n})( 1 - a_{1})(1 - a_{2}) cdots (1 - a_{n})} leq frac{1}{ n^{n+1}}.

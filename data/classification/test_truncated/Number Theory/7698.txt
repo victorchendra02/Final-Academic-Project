@@ -1,0 +1,1 @@
+Find all pairs of integers (m,n) such that the numbers A=n^2+2mn+3m^2+2, B=2n^2+3mn+m^2+2, C=3n^2+mn+2m^2+1 have a common divisor greater than 1.

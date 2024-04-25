@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R} rightarrow mathbb{R} such that for any real number x the equalities are true: f left(x+1 right)=1+f(x) and f left(x^4-x^2 right)=f^4(x)-f^2(x). source

@@ -1,0 +1,1 @@
+There is a square ABCD in the plane with |AB|=a. Determine the smallest possible radius value of three equal circles to cover a given square.

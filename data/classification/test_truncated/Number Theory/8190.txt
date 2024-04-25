@@ -1,0 +1,1 @@
+Determine the smallest positive integer that has all its digits equal to 4, and is a multiple of 169.

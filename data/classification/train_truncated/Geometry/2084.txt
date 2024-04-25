@@ -1,0 +1,1 @@
+A circle of radius rho is tangent to the sides AB and AC of the triangle ABC, and its center K is at a distance p from BC. (a) Prove that a(p - rho) = 2s(r - rho), where r is the inradius and 2s the perimeter of ABC. (b) Prove that if the circle intersect BC at D and E, then DE= frac{4 sqrt{rr_1( rho-r)(r_1- rho)}}{r_1-r} where r_1 is the exradius corresponding to the vertex A.

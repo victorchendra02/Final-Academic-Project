@@ -1,0 +1,1 @@
+Let ABC be an acute triangle such that AB not=AC.Let M be the midpoint BC,H the orthocenter of triangle ABC,O_1 the midpoint of AH and O_2 the circumcenter of triangle BCH. Prove that O_1AMO_2 is a parallelogram.

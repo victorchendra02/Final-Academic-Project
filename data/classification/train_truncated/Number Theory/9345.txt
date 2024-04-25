@@ -1,0 +1,1 @@
+Determine all pairs of positive integers m, n, satisfying the equality (2^{m}+1;2^n+1)=2^{(m;n)}+1 , where (a;b) is the greatest common divisor

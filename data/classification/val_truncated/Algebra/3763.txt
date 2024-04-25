@@ -1,0 +1,1 @@
+Determine the number of real solutions of the system left { begin{aligned} cos x_{1}&= x_{2} & cdots cos x_{n-1}&= x_{n} cos x_{n}&= x_{1} end{aligned} right.

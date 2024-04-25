@@ -1,0 +1,1 @@
+Find the maximum number of natural numbers x_1,x_2, ... , x_m satisfying the conditions: a) No x_i - x_j , 1 le i < j le m is divisible by 11, and b) The sum x_2x_3 ...x_m + x_1x_3 ... x_m + cdot cdot cdot + x_1x_2... x_{m-1} is divisible by 11.

@@ -1,0 +1,1 @@
+Let us say that the pair (m, n) of two positive different integers m and n is nice if mn and (m + 1)(n + 1) are perfect squares. Prove that for each positive integer m there exists at least one n > m such that the pair (m, n) is nice. (Yury Markelov)

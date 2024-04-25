@@ -1,0 +1,1 @@
+If permutations of the numbers 2, 3,4,..., 102 are denoted by a_i,a_2, a_3,...,a_{101}, find all such permutations in which a_k is divisible by k for all k.

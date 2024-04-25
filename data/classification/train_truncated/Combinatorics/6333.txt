@@ -1,0 +1,1 @@
+The numbers from 1 to 64 must be written on the small squares of a chessboard, with a different number in each small square. Consider the 112 numbers you can make by adding the numbers in two small squares which have a common edge. Is it possible to write the numbers in the squares so that these 112 sums are all different?

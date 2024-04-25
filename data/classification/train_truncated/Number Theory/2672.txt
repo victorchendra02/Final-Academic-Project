@@ -1,0 +1,1 @@
+Prove that for any natural number n, the number dbinom{2n}{n} divides the least common multiple of the numbers 1, 2, cdots, 2n -1, 2n.

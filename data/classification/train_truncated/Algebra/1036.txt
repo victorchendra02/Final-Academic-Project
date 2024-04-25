@@ -1,0 +1,1 @@
+Let a_1,a_2, ldots be an infinite sequence of real numbers, for which there exists a real number c with 0 leq a_i leq c for all i, such that left lvert a_i-a_j right rvert geq frac{1}{i+j} quad text{for all }i, j text{ with } i neq j. Prove that c geq1.

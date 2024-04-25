@@ -1,0 +1,1 @@
+A quadrilateral ABCD is inscribed in a circle of center O. It is known that the diagonals AC and BD are perpendicular. On each side we build semicircles, externally, as shown in the figure. a) Show that the triangles AOB and COD have the equal areas. b) If AC=8 cm and BD= 6 cm, determine the area of the shaded region.

@@ -1,0 +1,1 @@
+Given a prime p, prove that the sum sum_{k=1}^{ lfloor frac{q}{p} rfloor}{k^{p-1}} is not divisible by q for all but finitely many primes q.

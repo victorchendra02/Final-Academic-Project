@@ -1,0 +1,1 @@
+Let a_1, a_2, ldots , a_n, ldots be a sequence of real numbers such that 0 leq a_n leq 1 and a_n - 2a_{n+1} + a_{n+2} geq 0 for n = 1, 2, 3, ldots. Prove that 0 leq (n + 1)(a_n - a_{n+1}) leq 2 qquad text{ for } n = 1, 2, 3, ldots

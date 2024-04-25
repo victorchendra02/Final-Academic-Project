@@ -1,0 +1,1 @@
+Let x,y,a,b be positive real numbers such that x not= y, x not= 2y, y not= 2x, a not=3b and frac{2x-y}{2y-x}= frac{a+3b}{a-3b}. Prove that frac{x^2+y^2}{x^2-y^2} ge 1.

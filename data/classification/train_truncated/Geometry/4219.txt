@@ -1,0 +1,1 @@
+Let ABCD be a square of center O and let M be the symmetric of the point B with respect to point A. Let E be the intersection of CM and BD, and let S be the intersection of MO and AE. Show that SO is the angle bisector of angle ESB.

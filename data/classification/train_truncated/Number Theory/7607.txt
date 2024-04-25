@@ -1,0 +1,1 @@
+Let n ge 2 be a fixed positive integer. An integer will be called "n-free" if it is not a multiple of an n-th power of a prime. Let M be an infinite set of rational numbers, such that the product of every n elements of M is an n-free integer. Prove that M contains only integers.

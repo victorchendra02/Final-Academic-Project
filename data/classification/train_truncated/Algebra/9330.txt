@@ -1,0 +1,1 @@
+Prove that among any 42 numbers from the interval [1,10^6], you can choose four numbers so that for any permutation (a, b, c, d) of these numbers, the inequality 25 (ab + cd) (ad + bc) ge 16 (ac + bd)^ 2holds.

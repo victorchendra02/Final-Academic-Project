@@ -1,0 +1,1 @@
+Determine the biggest possible value of m for which the equation 2005x + 2007y = m has unique solution in natural numbers.

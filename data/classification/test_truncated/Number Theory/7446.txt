@@ -1,0 +1,1 @@
+What is the greatest number of integers that can be selected from a set of 2015 consecutive numbers so that no sum of any two selected numbers is divisible by their difference?

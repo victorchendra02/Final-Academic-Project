@@ -1,0 +1,1 @@
+Sines of three acute angles form an arithmetic progression, while the cosines of these angles form a geometric progression. Prove that all three angles are equal.

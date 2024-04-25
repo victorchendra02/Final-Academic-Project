@@ -1,0 +1,1 @@
+For positive a,b,c, such that abc=1 prove the inequality: 4( sqrt[3]{ frac{a}{b}}+ sqrt[3]{ frac{b}{c}}+ sqrt[3]{ frac{c}{a}}) leq 3(2+a+b+c+ frac{1}{a}+ frac{1}{b}+ frac{1}{c})^{ frac{2}{3}}.

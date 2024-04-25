@@ -1,0 +1,1 @@
+Determine all real numbers x which satisfy the inequality: sqrt{3-x}- sqrt{x+1}> dfrac{1}{2}

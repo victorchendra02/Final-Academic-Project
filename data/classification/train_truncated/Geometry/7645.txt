@@ -1,0 +1,1 @@
+Circles mathcal{C}_1 and mathcal{C}_2 intersect at A and B. Let M in AB. A line through M (different from AB) cuts circles mathcal{C}_1 and mathcal{C}_2 at Z,D,E,C respectively such that D,E in ZC. Perpendiculars at B to the lines EB,ZB and AD respectively cut circle mathcal{C}_2 in F,K and N. Prove that KF=NC.

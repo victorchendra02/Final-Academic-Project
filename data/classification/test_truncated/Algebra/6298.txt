@@ -1,0 +1,1 @@
+Let R and S be the numbers defined by R = dfrac{1}{2} times dfrac{3}{4} times dfrac{5}{6} times cdots times dfrac{223}{224} text{ and } S = dfrac{2}{3} times dfrac{4}{5} times dfrac{6}{7} times cdots times dfrac{224}{225}.Prove that R < dfrac{1}{15} < S.

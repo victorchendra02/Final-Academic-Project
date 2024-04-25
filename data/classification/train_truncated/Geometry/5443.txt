@@ -1,0 +1,1 @@
+Let ABCD be a trapezium such that AB||CD and AB+CD=AD. Let P be the point on AD such that AP=AB and PD=CD. a) Prove that angle BPC=90^{ circ}. b) Q is the midpoint of BC and R is the point of intersection between the line AD and the circle passing through the points B,A and Q. Show that the points B,P,R and C are concyclic.

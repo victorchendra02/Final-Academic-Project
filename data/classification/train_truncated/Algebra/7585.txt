@@ -1,0 +1,1 @@
+Find all triples (x,y,z) of real numbers that satisfy the system begin{cases} x + y + z = 2008 x^2 + y^2 + z^2 = 6024^2 frac{1}{x}+ frac{1}{y}+ frac{1}{z}= frac{1}{2008} end{cases}

@@ -1,0 +1,1 @@
+Three nonzero real numbers are given. If they are written in any order as coefficients of a quadratic trinomial, then each of these trinomials has a real root. Does it follow that each of these trinomials has a positive root?

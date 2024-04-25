@@ -1,0 +1,1 @@
+Let {ABC} be an acute angled triangle whose shortest side is {BC}. Consider a variable point {P} on the side {BC}, and let {D} and {E} be points on {AB} and {AC}, respectively, such that {BD=BP} and {CP=CE}. Prove that, as {P} traces {BC}, the circumcircle of the triangle {ADE} passes through a fixed point.

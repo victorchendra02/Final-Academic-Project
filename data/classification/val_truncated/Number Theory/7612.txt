@@ -1,0 +1,1 @@
+Determine the minimum value of prime p> 3 for which there is no natural number n> 0 such that 2^n+3^n equiv 0 pmod{p} .

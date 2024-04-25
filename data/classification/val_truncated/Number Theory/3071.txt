@@ -1,0 +1,1 @@
+Find all pairs of integers a and b for which 7a+14b=5a^2+5ab+5b^2

@@ -1,0 +1,1 @@
+For each positive integer n,denote by S(n) the sum of all digits in decimal representation of n. Find all positive integers n,such that n=2S(n)^3+8.

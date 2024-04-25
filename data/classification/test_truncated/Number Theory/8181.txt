@@ -1,0 +1,1 @@
+We say that a four-digit number overline{abcd} (a ne 0) is pora if the following terms are true : bullet a ge b bullet ab - cd = cd -ba. For example, 2011 is pora because 20-11 = 11-02 Find all the numbers around.

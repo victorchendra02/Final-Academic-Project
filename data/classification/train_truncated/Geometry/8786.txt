@@ -1,0 +1,1 @@
+The trapezium {ABCD}, where {AB} and {CD} are parallel and {AD < CD}, is inscribed in the circle {c}. Let {DP} be a chord of the circle, parallel to {AC}. Assume that the tangent to {c} at {D} meets the line {AB} at {E} and that {PB} and {DC} meet at {Q}. Show that {EQ = AC}.

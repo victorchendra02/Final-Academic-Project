@@ -1,0 +1,1 @@
+Find all integer n such that the equation 2x^2 + 5xy + 2y^2 = n has integer solution for x and y.

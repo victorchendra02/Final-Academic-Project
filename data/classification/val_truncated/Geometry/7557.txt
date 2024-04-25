@@ -1,0 +1,1 @@
+textbf{Problem G1} Consider a triangle ABC with angle ACB=90^{ circ}. Let F be the foot of the altitude from C. Circle omega touches the line segment FB at point P, the altitude CF at point Q and the circumcircle of ABC at point R. Prove that points A, Q, R are collinear and AP = AC.

@@ -1,0 +1,1 @@
+Let ABCD be a convex quadrilateral and draw regular triangles ABM, CDP, BCN, ADQ, the first two outward and the other two inward. Prove that MN = AC. What can be said about the quadrilateral MNPQ?

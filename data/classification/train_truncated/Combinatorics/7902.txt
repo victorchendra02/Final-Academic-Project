@@ -1,0 +1,1 @@
+We colored the n^2 unit squares of an n times n square lattice such that in each 2 times 2 square, at least two of the four unit squares have the same color. What is the largest number of colors we could have used? Based on a problem of the Durer Competition

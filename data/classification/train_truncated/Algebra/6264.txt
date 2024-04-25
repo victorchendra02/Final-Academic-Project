@@ -1,0 +1,1 @@
+Let N is the set of all positive integers. Determine all mappings f: N- {1 } to N such that for every n ne m the following equation is true f(n)f(m)=f left((nm)^{2021} right)

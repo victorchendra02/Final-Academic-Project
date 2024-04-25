@@ -1,0 +1,1 @@
+Let ABC be an acute-angled triangle, and let AA_1, BB_1, CC_1 be its altitudes. Points A', B', C' are chosen on the segments AA_1, BB_1, CC_1, respectively, so that angle BA'C = angle AC'B = angle CB'A = 90^{o}. Let segments AC' and CA' intersect at B; points A are defined similarly. Prove that hexagon $A'B is circumscribed.

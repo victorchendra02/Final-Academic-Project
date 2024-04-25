@@ -1,0 +1,1 @@
+Prove that a < b implies that a^3 - 3a leq b^3 - 3b + 4. When does equality occur?

@@ -1,0 +1,1 @@
+Prove that there exist infinitely many positive integers n such that the number frac{1^2+2^2+ cdots+n^2}{n} is a perfect square. Obviously, 1 is the least integer having this property. Find the next two least integers having this property.

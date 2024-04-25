@@ -1,0 +1,1 @@
+In the figure below, we know that AB = CD and BC = 2AD. Prove that <BAD = 30^o. //cdn.artofproblemsolving.com/images/d/d/4/dd4b270f8196cb680016b69bfae8112ab98ea492.png

@@ -1,0 +1,1 @@
+Given 100 coplanar points, no three collinear, prove that at most 70 % of the triangles formed by the points have all angles acute.

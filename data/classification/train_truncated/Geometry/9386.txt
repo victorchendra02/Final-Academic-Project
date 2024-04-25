@@ -1,0 +1,1 @@
+Let s= frac{AB+BC+AC}{2} be half-perimeter of triangle ABC. Let L and Nbe a point's on ray's AB and CB, for which AL=CN=s. Let K is point, symmetric of point B by circumcenter of ABC. Prove, that perpendicular from K to NL passes through incenter of ABC. Solution for problem here

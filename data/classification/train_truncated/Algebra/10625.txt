@@ -1,0 +1,1 @@
+Prove that for every positive integer n geq 2, frac{ sum_{1 leq i leq n} sqrt[3]{ frac{i}{n+1}}}{n} leq frac{ sum_{1 leq i leq n-1} sqrt[3]{ frac{i}{n}}}{n-1}.

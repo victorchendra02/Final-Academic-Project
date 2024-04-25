@@ -1,0 +1,1 @@
+Each edge of a complete graph with 101 vertices is marked with 1 or -1. It is known that absolute value of the sum of numbers on all the edges is less than 150. Prove that the graph contains a path visiting each vertex exactly once such that the sum of numbers on all edges of this path is zero. (Y. Caro, A. Hansberg, J. Lauri, C. Zarb)

@@ -1,0 +1,1 @@
+A polynomial is good if it has integer coefficients, it is monic, all its roots are distinct, and there exists a disk with radius 0.99 on the complex plane that contains all the roots. Prove that there is no good polynomial for a sufficient large degree. Proposed by Rodrigo Sanches Angelo (rsa365), Brazil.

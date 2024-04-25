@@ -1,0 +1,1 @@
+Let N = 2010!+1. Prove that a) N is not divisible by 4021; b) N is not divisible by 2027,2029,2039; c) N has a prime divisor greater than 2050.

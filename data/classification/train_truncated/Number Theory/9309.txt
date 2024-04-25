@@ -1,0 +1,1 @@
+Distinct positive integers A and B are given. Prove that there exist infinitely many positive integers that can be represented both as x_{1}^2+Ay_{1}^2 for some positive coprime integers x_{1} and y_{1}, and as x_{2}^2+By_{2}^2 for some positive coprime integers x_{2} and y_{2}. (Golovanov A.S.)

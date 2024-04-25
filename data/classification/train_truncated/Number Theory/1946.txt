@@ -1,0 +1,1 @@
+Find all pairs of positive integers left( x; ;y right) satisfying the equation 2^{x}=3^{y}+5.

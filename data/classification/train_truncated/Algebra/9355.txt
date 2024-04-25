@@ -1,0 +1,1 @@
+For all a,b,c in R^+ such that a+b+c=1 and ( frac{1}{(a+b)^2}+ frac{1}{(b+c)^2}+ frac{1}{(c+a)^2} )(a-bc)(b-ac)(c-ab) le M cdot abc.Find min M.

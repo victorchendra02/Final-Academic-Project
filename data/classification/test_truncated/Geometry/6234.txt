@@ -1,0 +1,1 @@
+Circles k_1 and k_2 intersect in points A and B, such that k_1 passes through the center O of the circle k_2. The line p intersects k_1 in points K and O and k_2 in points L and M, such that the point L is between K and O. The point P is orthogonal projection of the point L to the line AB. Prove that the line KP is parallel to the M-median of the triangle ABM. Matko Ljulj

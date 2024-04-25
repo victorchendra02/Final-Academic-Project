@@ -1,0 +1,1 @@
+In a right-angled triangle ABC ( angle A = 90^o), the perpendicular bisector of BC intersects the line AC in K and the perpendicular bisector of BK intersects the line AB in L. If the line CL be the internal bisector of angle C, find all possible values for angles B and C. by Mahdi Etesami Fard

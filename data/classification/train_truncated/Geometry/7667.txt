@@ -1,0 +1,1 @@
+Parallels to the sides of a triangle passing through an interior point divide the inside of a triangle into 6 parts with the marked areas as in the figure. Show that frac{a}{ alpha}+ frac{b}{ beta}+ frac{c}{ gamma} ge frac{3}{2} https://cdn.artofproblemsolving.com/attachments/a/a/b0a85df58f2994b0975b654df0c342d8dc4d34.png

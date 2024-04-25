@@ -1,0 +1,1 @@
+Let mathbb{N} denote the set of all positive integers. Find all functions f: mathbb{N} to mathbb{N} such that x^2-y^2+2y(f(x)+f(y))is a square of an integer for all positive integers x and y.

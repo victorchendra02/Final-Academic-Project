@@ -1,0 +1,1 @@
+A triangle (ABC) and a point D in its plane satisfy the relations frac{BC}{AD}= frac{CA}{BD}= frac{AB}{CD}= sqrt{3}. Prove that (ABC) is equilateral and D is its center.

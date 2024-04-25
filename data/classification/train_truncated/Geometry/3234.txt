@@ -1,0 +1,1 @@
+Let ABCD be a convex quadrilateral whose diagonals AC and BD intersect at point O. Let a line through O intersect segment AB at M and segment CD at N. Prove that the segment MN is not longer than at least one of the segments AC and BD.

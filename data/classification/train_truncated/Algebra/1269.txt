@@ -1,0 +1,1 @@
+Solve the following system of equations, in which a is a given number satisfying |a| > 1: begin{matrix} x_{1}^2 = ax_2 + 1 x_{2}^2 = ax_3 + 1 ldots x_{999}^2 = ax_{1000} + 1 x_{1000}^2 = ax_1 + 1 end{matrix}

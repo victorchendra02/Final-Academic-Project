@@ -1,0 +1,1 @@
+(HUN 4)IMO2 If a_1, a_2, . . . , a_n are real constants, and if y = cos(a_1 + x) +2 cos(a_2+x)+ cdots+ n cos(a_n + x) has two zeros x_1 and x_2 whose difference is not a multiple of pi, prove that y = 0.

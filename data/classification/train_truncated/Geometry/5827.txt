@@ -1,0 +1,1 @@
+Point P lies inside the triangle ABC. Points K, L, M are symmetrics of point P wrt the midpoints of the sides BC, CA, AB. Prove that the straight AK, BL, CM intersect at one point.

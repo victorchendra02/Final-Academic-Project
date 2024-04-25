@@ -1,0 +1,1 @@
+Define the product P_n=1! cdot 2! cdot 3! cdots (n-1)! cdot n! a) Find all positive integers m, such that frac {P_{2020}}{m!} is a perfect square. b) Prove that there are infinite many value(s) of n, such that frac {P_{n}}{m!} is a perfect square, for at least two positive integers m.

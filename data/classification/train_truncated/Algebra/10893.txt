@@ -1,0 +1,1 @@
+Do there exist quadratic trinomials P, Q, R such that for every integers x and y an integer z exists satisfying P(x)+Q(y)=R(z)? Proposed by A. Golovanov

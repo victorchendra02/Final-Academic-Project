@@ -1,0 +1,1 @@
+Determine the greatest number, who is the product of some positive integers, and the sum of these numbers is 1976.

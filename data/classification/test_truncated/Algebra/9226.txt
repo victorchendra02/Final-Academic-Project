@@ -1,0 +1,1 @@
+Let m and n be integers greater than 2, and let A and B be non-constant polynomials with complex coefficients, at least one of which has a degree greater than 1. Prove that if the degree of the polynomial A^m-B^n is less than min(m,n), then A^m=B^n. Proposed by Tobi Moektijono, Indonesia

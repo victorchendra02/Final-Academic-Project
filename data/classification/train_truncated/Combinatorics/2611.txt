@@ -1,0 +1,1 @@
+Suppose that 1985 points are given inside a unit cube. Show that one can always choose 32 of them in such a way that every (possibly degenerate) closed polygon with these points as vertices has a total length of less than 8 sqrt 3.

@@ -1,0 +1,1 @@
+A subset A of the natural numbers mathbb{N} = {0, 1, 2, dots } is called good if every integer n>0 has at most one prime divisor p such that n-p in A. (a) Show that the set S = {0, 1, 4, 9, dots } of perfect squares is good. (b) Find an infinite good set disjoint from S. (Two sets are disjoint if they have no common elements.)

@@ -1,0 +1,1 @@
+Let ABCD be a cyclic quadrilateral in which internal angle bisectors angle ABC and angle ADC intersect on diagonal AC. Let M be the midpoint of AC. Line parallel to BC which passes through D cuts BM at E and circle ABCD in F (F neq D ). Prove that BCEF is parallelogram Proposed by Steve Dinh

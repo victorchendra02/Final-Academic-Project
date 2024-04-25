@@ -1,0 +1,1 @@
+A triangle ABC has sides BC = a, CA = b, AB = c with a < b < c and area S. Determine the largest number u and the least number v such that, for every point P inside triangle ABC, the inequality u le PD + PE + PF le v holds, where D,E, F are the intersection points of AP,BP,CP with the opposite sides.

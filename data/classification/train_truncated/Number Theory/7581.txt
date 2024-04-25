@@ -1,0 +1,1 @@
+Show that there are infinitely many positive integers c, such that the following equations both have solutions in positive integers: (x^2 - c)(y^2 -c) = z^2 -c and (x^2 + c)(y^2 - c) = z^2 - c.

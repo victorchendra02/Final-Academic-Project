@@ -1,0 +1,1 @@
+A sequence a_0,a_1,a_2, cdots satisfies the conditions a_0 = 0 , a_{n-1}^2 - a_{n-1} = a_n^2 + a_n 1) determine the two possible values of a_1 . then determine all possible values of a_2 . 2)for each n, prove that a_{n+1}=a_n+1 or a_{n+1} = -a_n 3)Describe the possible values of a_{1435} 4)Prove that the values that you got in (3) are correct

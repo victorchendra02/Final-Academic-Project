@@ -1,0 +1,1 @@
+Inside right angle XAY, where A is the vertex, is a semicircle Gamma whose center lies on AX and that is tangent to AY at the point A. Describe a ruler-and-compass construction for the tangent to Gamma such that the triangle enclosed by the tangent and angle XAY has minimum area.

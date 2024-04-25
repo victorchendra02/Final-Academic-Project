@@ -1,0 +1,1 @@
+Found all functions f: mathbb{R} to mathbb{R}, such that for any x,y in mathbb{R}, f(x^2+xy+f(y))=f^2(x)+xf(y)+y.

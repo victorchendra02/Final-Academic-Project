@@ -1,0 +1,1 @@
+How many positive integer solutions does the equation have left lfloor frac{x}{10} right rfloor= left lfloor frac{x}{11} right rfloor + 1?( lfloor x rfloor denotes the integer part of x, for example lfloor 2 rfloor = 2, lfloor pi rfloor = 3, lfloor sqrt2 rfloor =1)

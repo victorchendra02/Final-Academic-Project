@@ -1,0 +1,1 @@
+Prove that for every composite number n>4, numbers kn divides (n-1)! for every integer k such that 1 le k le lfloor sqrt{n-1} rfloor.

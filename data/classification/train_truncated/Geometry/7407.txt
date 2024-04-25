@@ -1,0 +1,1 @@
+Consider triangle ABC such that AB le AC. Point D on the arc BC of thecircumcirle of ABC not containing point A and point E on side BC are such that angle BAD = angle CAE < frac12 angle BAC . Let S be the midpoint of segment AD. If angle ADE = angle ABC - angle ACB prove that angle BSC = 2 angle BAC .

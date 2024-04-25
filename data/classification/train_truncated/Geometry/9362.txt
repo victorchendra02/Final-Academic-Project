@@ -1,0 +1,1 @@
+Bisectors of triangle ABC of an angles A and C intersect with BC and AB at points A1 and C1 respectively. Lines AA1 and CC1 intersect circumcircle of triangle ABC at points A2 and C2 respectively. K is intersection point of C1A2 and A1C2. I is incenter of ABC. Prove that the line KI divides AC into two equal parts.

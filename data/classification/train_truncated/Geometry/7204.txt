@@ -1,0 +1,1 @@
+In isosceles trapezoid ABCD (AB parallel CD) points E and F lie on the segment CD in such a way that D, E, F and C are in that order and DE = CF. Let X and Y be the reflection of E and C with respect to AD and AF. Prove that circumcircles of triangles ADF and BXY are concentric. Proposed by Iman Maghsoudi - Iran

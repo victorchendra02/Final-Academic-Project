@@ -1,0 +1,1 @@
+Given a natural number n, find all polynomials P(x) of degree less than n satisfying the following condition sum^n_{i=0} P(i) cdot (-1)^i cdot binom{n}{i} = 0.

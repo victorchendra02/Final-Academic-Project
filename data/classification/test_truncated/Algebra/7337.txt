@@ -1,0 +1,1 @@
+Find all triples of positive real numbers (a, b, c) so that the expression M = frac{(a + b)(b + c)(a + b + c)}{abc} gets its least value.

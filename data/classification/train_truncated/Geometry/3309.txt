@@ -1,0 +1,1 @@
+Let M be an interior point of the tetrahedron ABCD. Prove that begin{array}{c} stackrel{ longrightarrow }{MA} text{vol}(MBCD) + stackrel{ longrightarrow }{MB} text{vol}(MACD) + stackrel{ longrightarrow }{MC} text{vol}(MABD) + stackrel{ longrightarrow }{MD} text{vol}(MABC) = 0 end{array} ( text{vol}(PQRS) denotes the volume of the tetrahedron PQRS).

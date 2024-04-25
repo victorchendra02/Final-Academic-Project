@@ -1,0 +1,1 @@
+Find the maximum number of different integers that can be selected from the set {1,2,...,2013 } so that no two exist that their difference equals to 17.

@@ -1,0 +1,1 @@
+Find all functions f: mathbb{R}^{+} rightarrow mathbb{R} and g: mathbb{R}^{+} rightarrow mathbb{R} such that f(x^2 + y^2) = g(xy)holds for all x, y in mathbb{R}^{+}.

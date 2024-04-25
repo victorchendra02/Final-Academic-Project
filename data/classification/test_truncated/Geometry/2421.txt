@@ -1,0 +1,1 @@
+In a Cartesian coordinate system, the circle C_1 has center O_1(-2, 0) and radius 3. Denote the point (1, 0) by A and the origin by O.Prove that there is a constant c > 0 such that for every X that is exterior to C1, OX- 1 geq c min {AX,AX^2 }. Find the largest possible c.
