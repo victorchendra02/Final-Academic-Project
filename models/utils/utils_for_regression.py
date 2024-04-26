@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import tensorflow as tf
 
 
@@ -26,3 +27,15 @@ def load_and_prepare_dataset(path: str, seed: int, batch_size: int, AUTOTUNE=tf.
     test_ds = test_ds.batch(batch_size).prefetch(buffer_size=AUTOTUNE)
     
     return train_ds, val_ds, test_ds
+
+
+def calculate_descriptive_statistics(array) -> dict:
+    mean = np.mean(array)
+    variance = np.var(array)
+    std = np.std(array)
+    
+    return {
+        'mean': mean,
+        'variance': variance,
+        'std': std
+    }
