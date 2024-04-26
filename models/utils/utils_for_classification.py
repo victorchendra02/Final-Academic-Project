@@ -2,12 +2,12 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
+
+LABELS = ["Algebra", "Geometry", "Combinatorics", "Number Theory"]
+LABELS_INDICES = [0, 1, 2, 3]
+LABELS_DICT = {label: index for label, index in zip(LABELS, LABELS_INDICES)}
 
 def load_text_dataset_from_directory(root_dir: str) -> tuple[list, list]:
     X = []
@@ -30,15 +30,12 @@ def load_text_dataset_from_directory(root_dir: str) -> tuple[list, list]:
         print(f' - Label "{label}" {len(files)} files')
         counter += len(files)
     print(f"Total {counter} files")
-    print()
     return X, y
 
 
-def classification_evaluation(y_actual: list, y_pred: list, label: list=["Algebra", "Geometry", "Combinatorics", "Number Theory"]):
-    l = np.array(label)
-    
-    cm = confusion_matrix(y_actual, y_pred, labels=l)
-    heatmap = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=l)
+def classification_evaluation(y_actual: list, y_pred: list, label: list=LABELS):
+    cm = confusion_matrix(y_actual, y_pred, labels=label)
+    heatmap = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=label)
 
     print(classification_report(y_actual, y_pred, digits=4))
     return heatmap, classification_report(y_actual, y_pred, digits=4, output_dict=True)
