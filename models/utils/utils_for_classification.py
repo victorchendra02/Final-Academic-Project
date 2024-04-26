@@ -39,11 +39,7 @@ def classification_evaluation(y_actual: list, y_pred: list, label: list=["Algebr
     
     cm = confusion_matrix(y_actual, y_pred, labels=l)
     heatmap = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=l)
-    labels = np.unique(y_actual)
 
-    heatmap.plot()
-    plt.show()
-    
-    report  = classification_report(y_actual, y_pred, digits=4, output_dict=True)
-    return report
+    print(classification_report(y_actual, y_pred, digits=4))
+    return heatmap, classification_report(y_actual, y_pred, digits=4, output_dict=True)
     
