@@ -39,7 +39,7 @@
                             :hideInput="false"
                             :inset="false"
                             :min="1"
-                            :max=this.max_n_input
+                            :max="this.max_n_input"
                             v-model="this.n"
                             persistent-hint
                         ></v-number-input>
@@ -53,6 +53,7 @@
                             variant="flat"
                             color="indigo-darken-3"
                             @click="this.go_button()"
+                            :loading="this.loading"
                         >
                             Go
                         </v-btn>
@@ -98,11 +99,12 @@
     <v-snackbar v-model="this.invalid_n">
         Please input "number of sample" that in range of 1
         <span class="mdi mdi-greater-than-or-equal"></span> n
-        <span class="mdi mdi-greater-than-or-equal"></span> {{ this.max_n_input }}
+        <span class="mdi mdi-greater-than-or-equal"></span>
+        {{ this.max_n_input }}
 
         <template v-slot:actions>
             <v-btn
-                color="pink"
+                color="red-darken-2"
                 variant="text"
                 append-icon="mdi mdi-close"
                 @click="this.invalid_n = false"
@@ -118,7 +120,7 @@
 
         <template v-slot:actions>
             <v-btn
-                color="pink"
+                color="red-darken-2"
                 variant="text"
                 append-icon="mdi mdi-close"
                 @click="this.invalid_label = false"
@@ -157,17 +159,22 @@ export default {
         invalid_n: false,
         invalid_label: false,
         result_for: false,
+
+        loading: false,
     }),
     methods: {
         async get_random_data(n_, label_) {
+            this.loading = true;
             try {
                 const response = await axios.get(
-                    `http://127.0.0.1:5000/random?label=${label_}&n=${n_}`
+                    `random?label=${label_}&n=${n_}`
                 );
                 this.result = response.data;
                 this.result_for = true;
             } catch (error) {
                 console.log(error.message);
+            } finally {
+                this.loading = false;
             }
         },
         go_button() {

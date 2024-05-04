@@ -1,3 +1,3 @@
 <template>
-    <v-app-bar title="Final Project Application"></v-app-bar>
+    <v-app-bar title="International Mathematical Problems"></v-app-bar>
 </template>

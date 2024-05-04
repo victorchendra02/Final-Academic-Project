@@ -1,5 +1,3 @@
-<template>
-    <HelloWorld />
-</template>
+<template></template>
 
 <script setup></script>

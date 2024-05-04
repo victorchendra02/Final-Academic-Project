@@ -1,5 +1,9 @@
 <template>
-    <p>
-        Question Bank
-    </p>
+    <div class="d-flex justify-center">
+        <div class="pt-6" style="width: 82%">
+            <h1 class="text-center">Question Bank</h1>
+        </div>
+    </div>
 </template>
+
+<script></script>
