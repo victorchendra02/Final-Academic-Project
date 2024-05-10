@@ -1,3 +1,7 @@
 <template>
-    <v-app-bar title="International Mathematical Problems"></v-app-bar>
+    <v-app-bar density="comfortable">
+        <template v-slot:title>
+            (<span class="mdi mdi-function-variant"></span>) International Mathematics Collections
+        </template>
+    </v-app-bar>
 </template>

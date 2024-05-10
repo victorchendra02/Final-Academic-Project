@@ -48,12 +48,14 @@
                 </v-btn>
             </div>
 
+            <p class="text-center">{{ this.text_area }}</p>
+
             <!-- Classification Result -->
             <div v-if="this.classify_result">
                 <!-- Clear button -->
                 <div class="d-flex justify-end">
                     <v-btn
-                        color="grey-darken-3"
+                        color="red"
                         append-icon="mdi-trash-can-outline"
                         elevation="0"
                         variant="outlined"
@@ -210,7 +212,7 @@ export default {
                 this.loading2 = false;
             }
         },
-        
+
         clear_button() {
             this.classify_result = null;
         },

@@ -1,6 +1,7 @@
 import random
 import numpy as np
 
+# flask
 from flask_cors import CORS
 from flask import (Flask, jsonify, request)
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -8,12 +9,18 @@ from flask_jwt_extended import create_access_token
 from flask_jwt_extended import get_jwt_identity
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
-from flask_sqlalchemy import SQLAlchemy
 
+# time - date
 from datetime import timedelta
+from utils import get_current_date
+from utils import get_current_datetime
 
+# database
+from flask_sqlalchemy import SQLAlchemy
 import sql_executer
-from utils import load_pkl, get_current_time
+
+# utils
+from utils import load_pkl
 from http_status_code import *
 
 """
@@ -23,8 +30,9 @@ Admin
     2. jacobjeshurunwarouw, jacobpassword, Jacob Jeshurun Warouw
 """
 TOKEN_LIFETIME = timedelta(minutes=60)
+HOME_DATA_LIFETIME = timedelta(days=1)
 DATABASE_NAME = "aopsimol_artofproblemsolving"
-SECRET_KEY = "e23d7c4c7d545bff40817a7c28351544e14397aa6c72096a1405474c97dfd39ac11bdd31a6b25a31"
+SECRET_KEY = "SMxfWjTMu1bRLS67GseJiGWLuIogM3oVTQ"
 BLACKLIST_TOKEN = set()
 
 
@@ -49,13 +57,102 @@ MNBmodel = load_pkl("../../../models/saved_models/classification/MultinomialNB/m
 
 
 # -------------------- Home --------------------
+@app.route("/home/home_data", methods=['GET'])
 def api_for_home_page():
-    ...
+    def _insert_home_data(current_date):
+        new_expire_date = current_date + HOME_DATA_LIFETIME
+        
+        algebra_problem = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label="Algebra", random=True, limit=1)
+        combin_problem = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label="Combinatorics", random=True, limit=1)
+        geomet_problem = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label="Geometry", random=True, limit=1)
+        nt_problem = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label="Number Theory", random=True, limit=1)
 
+        current_date_str = current_date.strftime('%Y%m%d')
+        temps = [f"A{current_date_str}", f"C{current_date_str}", f"G{current_date_str}", f"NT{current_date_str}"]
+        problems_combined = [algebra_problem[0], combin_problem[0], geomet_problem[0], nt_problem[0]]
+
+        for i in range(4):
+            data = {
+                'id_home_data': temps[i],
+                'id_key': problems_combined[i]['id_key'],
+                'no': problems_combined[i]['no'],
+                'contest_category': problems_combined[i]['contest_category'],
+                'contest_name': problems_combined[i]['contest_name'],
+                'year': problems_combined[i]['year'],
+                'link': problems_combined[i]['link'],
+                'pdf': problems_combined[i]['pdf'],
+                'post_rendered': problems_combined[i]['post_rendered'],
+                'post_canonical': problems_combined[i]['post_canonical'],
+                'label': problems_combined[i]['label'],
+                'day_created': current_date.strftime("%A"),
+                'created_at': current_date,
+                'expire_day': new_expire_date.strftime("%A"),
+                'expire_on': new_expire_date,
+            }
+            status1 = sql_executer.INSERT_ROW_TO_TABLE_HOME_DATA(db, data)
+            if status1 == False:
+                status2 = sql_executer.DELETE_ALL_FROM_HOME_DATA(db)
+                if status2 == False:
+                    return "ERROR_WHILE_INSERT_AND_DELETE"
+                return "ERROR_WHILE_INSERT"
+            
+        return "SUCCESS"
+
+    current_date = get_current_date()
+    current_table_home_data = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
+    
+    if len(current_table_home_data) != 4:
+        print("=> current_table_home_data == != 4")
+
+        if len(current_table_home_data) != 0:
+            print("=> current_table_home_data != 0")
+            stat = sql_executer.DELETE_ALL_FROM_HOME_DATA(db)
+            if stat == False:
+                return jsonify({"mgs": "Something is wrong. Back-end Error. Trying to clear table `home_data`"}), HTTP_500_INTERNAL_SERVER_ERROR
+        
+        status2 = _insert_home_data(current_date)
+        if status2 == "SUCCESS":
+            new_home_data = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
+            return jsonify(new_home_data), HTTP_200_OK
+        
+        if status2 == "ERROR_WHILE_INSERT":
+            return jsonify({"msg": status2}), HTTP_409_CONFLICT
+            
+        if status2 == "ERROR_WHILE_INSERT_AND_DELETE":
+            return jsonify({"msg": status2}), HTTP_409_CONFLICT
+        
+        print("Very strange error occur!")
+        return jsonify({"msg": "If this error occur, this is very strange"}), HTTP_406_NOT_ACCEPTABLE
+    
+    # Item has expire
+    if current_date >= current_table_home_data[0]['expire_on']:
+        print("Item has Expired")
+        status1 = sql_executer.DELETE_ALL_FROM_HOME_DATA(db)
+        if status1 == False:
+            return jsonify({"mgs": "Something is wrong. Back-end Error. Trying to clear table `home_data`"}), HTTP_500_INTERNAL_SERVER_ERROR
+
+        status2 = _insert_home_data(current_date)
+        if status2 == "SUCCESS":
+            new_home_data = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
+            return jsonify(new_home_data), HTTP_200_OK
+        
+        if status2 == "ERROR_WHILE_INSERT":
+            return jsonify({"msg": status2}), HTTP_409_CONFLICT
+            
+        if status2 == "ERROR_WHILE_INSERT_AND_DELETE":
+            return jsonify({"msg": status2}), HTTP_409_CONFLICT
+        
+    # Item not yet expire
+    else:
+        print("Item not yet Expire")
+        return jsonify(current_table_home_data), HTTP_200_OK
+    
 
 # -------------------- QuestionBank --------------------
-def api_for_questionbank_page():
-    ...
+@app.route("/questionbank/<label>", methods=['GET'])
+def api_for_questionbank_page(label):
+    result = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label=label, random=False, limit=None)
+    return jsonify(result), HTTP_200_OK 
 
 
 # -------------------- Random --------------------
@@ -190,6 +287,91 @@ def is_authorized():
         return jsonify({"message": 'Token invalid'}), HTTP_401_UNAUTHORIZED
     
     return jsonify({"message": 'Token still valid'}), HTTP_200_OK
+
+
+@app.route("/admin/get_imo_data", methods=['GET'])
+def get_imo_data():
+    result = sql_executer.SELECT_ALL_FROM_IMO(db)
+    return jsonify(result[-5:]), HTTP_200_OK
+
+@app.route("/admin/insert_new_data_imo", methods=['POST'])
+def insert_new_data_imo():
+    data = request.json
+    label = data.get('label').strip()
+    try:
+        temp = {
+            "no": data.get('no').strip(),
+            "contest_category": data.get('contest_category').strip(),
+            "contest_name": data.get('contest_name').strip(),
+            "year": int(data.get('year').strip()),
+            "link": data.get('link').strip(),
+            "pdf": data.get('pdf').strip(),
+            "post_rendered": data.get('post_rendered').strip(),
+            "post_canonical": data.get('post_canonical').strip(),
+            "label": None if label == "None" else label,
+        }
+    except:
+        print("ERROR: UNCOMPLETE BODY POST OR TYRING TO INT(year)")
+        return jsonify({'msg': 'UNCOMPLETE BODY POST OR TYRING TO INT(year)', 'status': False}), HTTP_400_BAD_REQUEST
+    
+    data = temp
+    stat = sql_executer.INSERT_INTO_IMO(db, data)
+
+    if stat is True:
+        return jsonify({"msg": "Insert row success", "status": True}), HTTP_200_OK
+    if stat is False:
+        return jsonify({"msg": "Insert row failed", "status": False}), HTTP_406_NOT_ACCEPTABLE
+    
+@app.route("/admin/update_row_imo", methods=['POST'])
+def update_row_imo():
+    data = request.json
+    if type(data.get('year')) == int:
+        year = data.get('year')
+    if type(data.get('year')) == str:
+        year = data.get('year').strip()
+    
+    label = data.get('label').strip()
+    try:
+        temp = {
+            "id_key": data.get('id_key'),  # should be AUTO INT from front-end
+            "no": data.get('no').strip(),
+            "contest_category": data.get('contest_category').strip(),
+            "contest_name": data.get('contest_name').strip(),
+            "year": int(year),
+            "link": data.get('link').strip(),
+            "pdf": data.get('pdf').strip(),
+            "post_rendered": data.get('post_rendered').strip(),
+            "post_canonical": data.get('post_canonical').strip(),
+            "label": None if label == "None" else label,
+        }
+    except:
+        print("ERROR: UNCOMPLETE BODY POST OR TYRING TO INT(year)")
+        return jsonify({'msg': 'UNCOMPLETE BODY POST OR TYRING TO INT(year)', 'status': False}), HTTP_400_BAD_REQUEST
+    
+    data = temp
+    # print(data)
+    stat = sql_executer.UPDATE_ROW_TABLE_IMO(db, id_key=int(data.get('id_key')), updated_data=data)
+    
+    if stat is True:
+        return jsonify({"msg": "Update row success", "status": True}), HTTP_200_OK
+    if stat is False:
+        return jsonify({"msg": "Update row failed", "status": False}), HTTP_406_NOT_ACCEPTABLE
+
+@app.route("/admin/delete_row_imo", methods=['POST'])
+def delete_row_imo():
+    data = request.json
+    try:
+        id_key = data.get('id_key')
+    except:
+        print("Error can't get `id_key` from BODY POST")
+        return jsonify({"msg": "ERROR `id_key` MISSING BODY POST"}), HTTP_400_BAD_REQUEST
+
+    stat = sql_executer.DELETE_FROM_IMO_WHERE_ID_KEY(db, id_key)
+    
+    if stat is True:
+        return jsonify({"msg": "Delete row success", "status": True}), HTTP_200_OK
+    if stat is False:
+        return jsonify({"msg": "Delete row failed", "status": False}), HTTP_406_NOT_ACCEPTABLE
 
 
 # @app.route("/admin/add_new_admin", methods=['GET'])

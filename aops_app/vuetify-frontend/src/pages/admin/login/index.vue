@@ -1,9 +1,22 @@
 <template>
     <div class="d-flex justify-center">
-        <div class="pt-6" style="width: 82%">
-            <h1 class="text-center mb-6">
+        <div class="pt-12" style="width: 82%">
+            <h1 class="text-center mb-3">
                 Log In Admin <span class="mdi mdi-account-arrow-right"></span>
             </h1>
+
+            <!-- success login -->
+            <v-alert
+                class="mx-auto mb-6"
+                max-width="700"
+                elevation="2"
+                closable
+                title="Login success"
+                text="Redirecting to admin page..."
+                type="success"
+                v-model="this.success"
+            >
+            </v-alert>
 
             <!-- Error Wrong Password -->
             <v-alert
@@ -66,7 +79,7 @@
             <!-- Form log in -->
             <v-card
                 class="mx-auto pa-12 pb-8 mb-6"
-                elevation="8"
+                elevation="3"
                 max-width="700"
                 rounded="lg"
             >
@@ -108,13 +121,13 @@
                 <v-btn
                     :loading="this.loading"
                     class="mb-8"
-                    color="blue"
+                    color="cyan-darken-1"
                     size="large"
                     variant="elevated"
                     @click="this.login()"
                     block
                 >
-                    Log In
+                    Log In <span class="mdi mdi-arrow-right"></span>
                 </v-btn>
             </v-card>
         </div>
@@ -173,6 +186,8 @@ export default {
         error_msg_token_invalid_or_exp: false,
         error_beyond_scope: false,
 
+        success: false,
+
         loading: false,
     }),
     methods: {
@@ -191,6 +206,8 @@ export default {
                             username: this.username_input,
                             password: this.password_input,
                         });
+
+                        this.success = true;
                         const response = raw_response.data;
                         localStorage.setItem("token", response.token);
 
