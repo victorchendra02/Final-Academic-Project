@@ -1,14 +1,21 @@
 <template>
-    <v-toolbar border density="compact" color="cyan-lighten-5" app>
+    <v-toolbar border density="comfortable" color="cyan-lighten-5" app>
         <template v-slot:title>
             Admin <span class="mdi mdi-account-check"></span>
         </template>
-        <v-btn append-icon="mdi-exit-run" @click="this.logout()">Logout</v-btn>
+        <v-btn
+            min-width="140px"
+            color="error"
+            variant="flat"
+            append-icon="mdi-exit-run"
+            @click="this.logout()"
+            >Logout</v-btn
+        >
     </v-toolbar>
 
     <div class="d-flex justify-center">
         <div class="mt-5" style="width: 96%">
-            <h1 class="text-center mb-4">CRUD DATABASE</h1>
+            <h1 class="text-center mb-2">CRUD DATABASE</h1>
 
             <!-- Button add item -->
             <div class="d-flex mb-3">
@@ -261,7 +268,8 @@
 
             <!-- Table -->
             <v-data-table
-                class="table-color"
+                class="mb-10 table-color"
+                :loading="this.loading_imo"
                 :items-per-page="this.itemsPerPage_imo"
                 :items-length="totalItems_imo"
                 :headers="this.headers_imo"
@@ -559,6 +567,20 @@
                     </v-card-actions>
                 </v-card>
             </v-dialog>
+
+            <!-- ################################################ -->
+            <!-- Button -->
+            <div class="d-flex mb-3">
+                <h2 class="me-5">Table `admins`</h2>
+                <v-btn
+                    variant="flat"
+                    color="teal"
+                    append-icon="mdi-database-plus-outline"
+                    >Add New</v-btn
+                >
+            </div>
+
+            <h1 class="text-center">COMING SOON</h1>
         </div>
     </div>
 </template>
@@ -689,10 +711,13 @@ export default {
         showDeleteConfirmation_imo: false,
         selectedItemIDKEYToDelete_imo: -Infinity,
         delete_row_success_or_done: false,
+
+        loading_imo: false,
     }),
 
     methods: {
         async initialize() {
+            this.loading_imo = true;
             try {
                 const raw_response = await axios.get("admin/get_imo_data");
                 const response = raw_response.data;
@@ -700,6 +725,8 @@ export default {
                 this.totalItems_imo = response.itemsLength;
             } catch (err) {
                 console.log(err.message);
+            } finally {
+                this.loading_imo = false;
             }
         },
 

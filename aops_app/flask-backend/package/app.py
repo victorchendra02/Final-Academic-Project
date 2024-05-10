@@ -292,7 +292,7 @@ def is_authorized():
 @app.route("/admin/get_imo_data", methods=['GET'])
 def get_imo_data():
     result = sql_executer.SELECT_ALL_FROM_IMO(db)
-    return jsonify(result[-5:]), HTTP_200_OK
+    return jsonify(result), HTTP_200_OK
 
 @app.route("/admin/insert_new_data_imo", methods=['POST'])
 def insert_new_data_imo():
