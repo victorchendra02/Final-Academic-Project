@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex justify-center">
-        <div class="pt-6" style="width: 82%">
+        <div class="pt-8" style="width: 82%">
             <h1 class="mb-1 text-center">
                 Classification <span class="mdi mdi-family-tree"></span>
             </h1>

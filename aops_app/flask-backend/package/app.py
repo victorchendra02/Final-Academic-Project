@@ -149,9 +149,20 @@ def api_for_home_page():
     
 
 # -------------------- QuestionBank --------------------
-@app.route("/questionbank/<label>", methods=['GET'])
-def api_for_questionbank_page(label):
+@app.route("/questionbank_original/<label>", methods=['GET'])
+def api_for_questionbank_page_original(label):
     result = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL(db, label=label, random=False, limit=None)
+    contest_name = sql_executer.SELETC_DISTINCT_CONTEST_NAME_FROM_IMO_BY_LABEL(db, label=label)
+    
+    return jsonify({"problems": result, "unique_contest_name": contest_name}), HTTP_200_OK 
+
+@app.route("/questionbank_specific_contestname/<label>", methods=['GET'])
+def api_for_questionbank_page_specific(label):
+    contest_name = request.args.get('contest_name')
+    contest_name: list = contest_name.split(',')
+    
+    result = sql_executer.SELECT_ALL_FROM_IMO_BY_LABEL_AND_CONTEST_NAME(db, label=label, contest_name=contest_name)
+    
     return jsonify(result), HTTP_200_OK 
 
 

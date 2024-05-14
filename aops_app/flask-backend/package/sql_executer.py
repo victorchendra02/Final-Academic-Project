@@ -120,6 +120,59 @@ def SELECT_DISTINCT_YEAR_FROM_IMO(db: SQLAlchemy, sort: str="DESC") -> list[int]
     result = orient_record(raw_result.fetchall())
     return [i['years'] for i in result]
 
+def SELETC_DISTINCT_CONTEST_NAME_FROM_IMO(db: SQLAlchemy) -> list[str]:
+    sql = """
+        SELECT 
+            DISTINCT(contest_name) AS unique_contest_name
+        FROM 
+            imo
+        ORDER BY
+            `unique_contest_name`
+        ASC;
+    """
+    raw_result = db.session.execute(text(sql))
+    result = orient_record(raw_result.fetchall())
+    return [i['unique_contest_name'] for i in result]
+
+def SELETC_DISTINCT_CONTEST_NAME_FROM_IMO_BY_LABEL(db: SQLAlchemy, label: str) -> list[str]:
+    sql = """
+        SELECT 
+            DISTINCT(contest_name) AS unique_contest_name
+        FROM 
+            imo
+        WHERE 
+            label=:label
+        ORDER BY
+            `unique_contest_name`
+        ASC;
+    """
+    raw_result = db.session.execute(text(sql), {'label': label})
+    result = orient_record(raw_result.fetchall())
+    return [i['unique_contest_name'] for i in result]
+
+def SELECT_ALL_FROM_IMO_BY_LABEL_AND_CONTEST_NAME(db: SQLAlchemy, label: str, contest_name: str | list):
+    if isinstance(contest_name, str):
+        sql = """
+            SELECT *
+            FROM imo
+            WHERE label=:label
+            AND contest_name=:contest_name;
+        """
+        params = {'label': label, 'contest_name': contest_name}
+    elif isinstance(contest_name, list):
+        placeholders = ', '.join([':contest_name_' + str(i) for i in range(len(contest_name))])
+        sql = f"""
+            SELECT *
+            FROM imo
+            WHERE label=:label
+            AND contest_name IN ({placeholders});
+        """
+        params = {'label': label}
+        params.update({f'contest_name_{i}': val for i, val in enumerate(contest_name)})
+
+    result = db.session.execute(text(sql), params)
+    return orient_record(result.fetchall())
+
 def INSERT_INTO_IMO(db: SQLAlchemy, data: dict) -> bool:
     sql = """
         INSERT INTO `imo`(
