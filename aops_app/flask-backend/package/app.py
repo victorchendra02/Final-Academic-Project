@@ -34,7 +34,7 @@ HOME_DATA_LIFETIME = timedelta(days=1)
 DATABASE_NAME = "aopsimol_artofproblemsolving"
 SECRET_KEY = "SMxfWjTMu1bRLS67GseJiGWLuIogM3oVTQ"
 BLACKLIST_TOKEN = set()
-
+AVAILABLE_MODEL = ["Multinomial Naive Bayes", "Support Vector Classification", "BERT-BASE-CASED"]
 
 # http://127.0.0.1:5000/
 
@@ -218,33 +218,75 @@ def get_random():
     return jsonify(result)
 
 
-# -------------------- Classification --------------------
-@app.route("/classify/classification", methods=['GET'])
+# -------------------- Classify --------------------
+@app.route("/classify", methods=['POST'])
 def predict_model_classification():
-    text_problem = request.args.get('problem')
-    
-    tranformed_text = SVCvectorizer.transform(np.array([text_problem]))
-    proba_result = SVCmodel.predict_proba(tranformed_text)[0]
-    result = {
-        'Algebra': proba_result[0], 
-        'Combinatorics': proba_result[1], 
-        'Geometry': proba_result[2], 
-        'Number Theory': proba_result[3]
-        }
-    
-    return jsonify(result)
+    raw_body_post = request.json
 
-@app.route("/classify/classification/generate_example", methods=['GET'])
+    selected_model = raw_body_post.get("classifier_model")
+    text_problem = raw_body_post.get("problems")
+
+    # Regression
+    score: float = 2.82
+    difficulties: str = "Medium"
+    
+    # Classification
+    # Multinomial Naive Bayes
+    if selected_model == AVAILABLE_MODEL[0]:
+        tranformed_text = MNBvectorizer.transform(np.array([text_problem]))
+        proba_result = MNBmodel.predict_proba(tranformed_text)[0]
+        result_classification = {
+            'Algebra': proba_result[0], 
+            'Combinatorics': proba_result[1], 
+            'Geometry': proba_result[2], 
+            'Number Theory': proba_result[3],
+            }
+        result_regression = {
+            'Score': score,
+            'Difficulties': difficulties
+            }
+        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+
+    # Support Vector Classification
+    elif selected_model == AVAILABLE_MODEL[1]:
+        tranformed_text = SVCvectorizer.transform(np.array([text_problem]))
+        proba_result = SVCmodel.predict_proba(tranformed_text)[0]
+        result_classification = {
+            'Algebra': proba_result[0], 
+            'Combinatorics': proba_result[1], 
+            'Geometry': proba_result[2], 
+            'Number Theory': proba_result[3],
+            }
+        result_regression = {
+            'Score': score,
+            'Difficulties': difficulties
+            }
+        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+
+    # BERT-BASE-CASED
+    elif selected_model == AVAILABLE_MODEL[3]:
+        # TO BE CONTINUED
+        result_classification = {
+            'Algebra': proba_result[0], 
+            'Combinatorics': proba_result[1], 
+            'Geometry': proba_result[2], 
+            'Number Theory': proba_result[3],
+            }
+        result_regression = {
+            'Score': score,
+            'Difficulties': difficulties
+            }
+        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+    
+
+@app.route("/classify/generate_example", methods=['GET'])
 def generate_single_random_example_problem_for_classification():
     result = sql_executer.SELECT_ALL_FROM_IMO(db, random=True, limit=1)
     return jsonify(result[0])
 
-
-# -------------------- Regression --------------------
-@app.route("/classify/regression/generate_example", methods=['GET'])
-def generate_single_random_example_problem_for_regression():
-    result = sql_executer.SELECT_ALL_FROM_IMO(db, random=True, limit=1)
-    return jsonify(result[0])
+@app.route("/classify/iniziate", methods=['GET'])
+def classify_page_iniziator():
+    return jsonify(AVAILABLE_MODEL), HTTP_200_OK
 
 
 # -------------------- About --------------------

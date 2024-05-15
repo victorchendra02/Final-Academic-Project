@@ -29,34 +29,13 @@
             ></v-list-item>
 
             <!-- Classify -->
-            <v-list-group value="Classify">
-                <!-- classify dropdown -->
-                <template v-slot:activator="{ props }">
-                    <v-list-item
-                        v-bind="props"
-                        prepend-icon="mdi-shape"
-                        title="Classify"
-                    ></v-list-item>
-                </template>
-
-                <!-- classify/classification -->
-                <v-list-item
-                    color="primary"
-                    prepend-icon="mdi-family-tree"
-                    title="Classification"
-                    value="classification"
-                    to="/classify/classification"
-                ></v-list-item>
-
-                <!-- classify/regression -->
-                <v-list-item
-                    color="primary"
-                    prepend-icon="mdi-chart-line"
-                    title="Regression"
-                    value="regression"
-                    to="/classify/regression"
-                ></v-list-item>
-            </v-list-group>
+            <v-list-item
+                color="primary"
+                prepend-icon="mdi-shape"
+                title="Classify"
+                value="classify"
+                to="/classify"
+            ></v-list-item>
 
             <!-- About -->
             <v-list-item
