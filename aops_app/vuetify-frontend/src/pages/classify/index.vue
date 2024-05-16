@@ -40,7 +40,7 @@
                 <!-- TextArea -->
                 <v-col cols="12" lg="6">
                     <v-textarea
-                        label="Enter math problem to classify"
+                        label="Input math problem to classify"
                         v-model="this.text_area"
                         name="Classification"
                         variant="outlined"
