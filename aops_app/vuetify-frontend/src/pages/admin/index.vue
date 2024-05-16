@@ -1,10 +1,11 @@
 <template>
-    <v-toolbar border density="comfortable" color="cyan-lighten-5" app>
+    <v-toolbar border density="default" color="cyan-darken-1" app>
         <template v-slot:title>
-            Admin <span class="mdi mdi-account-check"></span>
+            <h2>Admin <span class="mdi mdi-account-check"></span></h2>
         </template>
         <v-btn
-            min-width="140px"
+            min-height="40px"
+            min-width="160px"
             color="error"
             variant="flat"
             append-icon="mdi-exit-run"
@@ -269,8 +270,8 @@
             <!-- Table -->
             <v-data-table
                 class="mb-10 table-color"
-                :loading="this.loading_imo"
-                :items-per-page="this.itemsPerPage_imo"
+                :loading="this.loading_4_all_tables"
+                :items-per-page="this.itemsPerPage_4_all"
                 :items-length="totalItems_imo"
                 :headers="this.headers_imo"
                 :items="this.items_imo"
@@ -306,36 +307,13 @@
                         color="deep-purple-lighten-3"
                         density="comfortable"
                         size="small"
-                        @click="this.showdialogLINK_imo = true"
+                        @click="
+                            this.function_showDialog_linkANDpdf_imo(
+                                value,
+                                'link'
+                            )
+                        "
                     ></v-btn>
-                    <v-dialog
-                        max-width="810px"
-                        v-model="this.showdialogLINK_imo"
-                    >
-                        <v-card class="pa-3">
-                            <!-- <v-card-title>Preview link</v-card-title> -->
-                            <v-card-text>{{ value }}</v-card-text>
-                            <v-card-text
-                                ><a
-                                    :href="value"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Click to open link above</a
-                                ></v-card-text
-                            >
-                            <v-card-actions>
-                                <v-spacer></v-spacer>
-                                <v-btn
-                                    min-width="120px"
-                                    append-icon="mdi-close"
-                                    variant="outlined"
-                                    color="red"
-                                    @click="this.showdialogLINK_imo = false"
-                                    >close</v-btn
-                                >
-                            </v-card-actions>
-                        </v-card>
-                    </v-dialog>
                 </template>
                 <!-- pdf -->
                 <template v-slot:item.pdf="{ value }">
@@ -344,36 +322,13 @@
                         color="deep-purple-lighten-3"
                         density="comfortable"
                         size="small"
-                        @click="this.showdialogPDF_imo = true"
+                        @click="
+                            this.function_showDialog_linkANDpdf_imo(
+                                value,
+                                'pdf'
+                            )
+                        "
                     ></v-btn>
-                    <v-dialog
-                        max-width="810px"
-                        v-model="this.showdialogPDF_imo"
-                    >
-                        <v-card class="pa-3">
-                            <!-- <v-card-title>Preview link</v-card-title> -->
-                            <v-card-text>{{ value }}</v-card-text>
-                            <v-card-text
-                                ><a
-                                    :href="value"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Click to open link above</a
-                                ></v-card-text
-                            >
-                            <v-card-actions>
-                                <v-spacer></v-spacer>
-                                <v-btn
-                                    min-width="120px"
-                                    append-icon="mdi-close"
-                                    variant="outlined"
-                                    color="red"
-                                    @click="this.showdialogPDF_imo = false"
-                                    >close</v-btn
-                                >
-                            </v-card-actions>
-                        </v-card>
-                    </v-dialog>
                 </template>
 
                 <!-- action edit -->
@@ -398,6 +353,58 @@
                 </template>
             </v-data-table>
 
+            <!-- DialogShow link -->
+            <v-dialog max-width="810px" v-model="this.showdialogLINK_imo">
+                <v-card class="pa-3">
+                    <!-- <v-card-title>Preview link</v-card-title> -->
+                    <v-card-text>{{ this.tempvalueLINK }}</v-card-text>
+                    <v-card-text
+                        ><a
+                            :href="this.tempvalueLINK"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Click to open link above</a
+                        ></v-card-text
+                    >
+                    <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            min-width="120px"
+                            append-icon="mdi-close"
+                            variant="outlined"
+                            color="red"
+                            @click="this.showdialogLINK_imo = false"
+                            >close</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+            <!-- DialogShow pdf -->
+            <v-dialog max-width="810px" v-model="this.showdialogPDF_imo">
+                <v-card class="pa-3">
+                    <!-- <v-card-title>Preview link</v-card-title> -->
+                    <v-card-text>{{ this.tempvaluePDF }}</v-card-text>
+                    <v-card-text
+                        ><a
+                            :href="this.tempvaluePDF"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Click to open link above</a
+                        ></v-card-text
+                    >
+                    <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            min-width="120px"
+                            append-icon="mdi-close"
+                            variant="outlined"
+                            color="red"
+                            @click="this.showdialogPDF_imo = false"
+                            >close</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
             <!-- Dialog edit row -->
             <v-dialog v-model="showEditDialog_imo" max-width="1100px">
                 <v-card class="pa-3 pb-5">
@@ -534,9 +541,11 @@
                     </v-card-actions>
                 </v-card>
             </v-dialog>
-
             <!-- Dialog delete row -->
-            <v-dialog v-model="showDeleteConfirmation_imo" max-width="500px">
+            <v-dialog
+                v-model="showDeleteDialogConfirmation_imo"
+                max-width="500px"
+            >
                 <v-card class="pa-3 pb-5">
                     <v-card-title>Confirm Delete</v-card-title>
                     <v-card-text
@@ -550,7 +559,7 @@
                             color="red"
                             prepend-icon="mdi-close"
                             variant="outlined"
-                            @click="showDeleteConfirmation_imo = false"
+                            @click="showDeleteDialogConfirmation_imo = false"
                             >Cancel</v-btn
                         >
                         <v-spacer></v-spacer>
@@ -568,19 +577,318 @@
                 </v-card>
             </v-dialog>
 
-            <!-- ################################################ -->
-            <!-- Button -->
+            <!-- ########################################################### -->
+            <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
+
+            <!-- Button add item-->
             <div class="d-flex mb-3">
                 <h2 class="me-5">Table `admins`</h2>
                 <v-btn
                     variant="flat"
                     color="teal"
                     append-icon="mdi-database-plus-outline"
+                    @click="this.function_showAddDialog_admins()"
                     >Add New</v-btn
                 >
             </div>
 
-            <h1 class="text-center">COMING SOON</h1>
+            <!-- Dialog new data ADMINS -->
+            <v-dialog v-model="showAddDialog_admins" max-width="720px">
+                <v-card class="pa-3 pb-5">
+                    <v-card-title>Insert New Data +</v-card-title>
+                    <v-card-text> Add new data to database </v-card-text>
+                    <!-- reset form button -->
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            append-icon="mdi-trash-can-outline"
+                            color="red"
+                            variant="tonal"
+                            @click="this.reset_form_add_new_item_admins()"
+                            >Reset form</v-btn
+                        >
+                    </v-card-actions>
+
+                    <!-- Alert inside form -->
+                    <v-card-text>
+                        <!-- Form not yet complete -->
+                        <v-alert
+                            v-model="
+                                this.form_insert_new_data_is_not_complete_admins
+                            "
+                            title="Form not complete yet!"
+                            text="Please complete the form to insert new data."
+                            type="warning"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Fail insert -->
+                        <v-alert
+                            v-model="this.form_insert_new_data_error_admins"
+                            title="Error occur!"
+                            :text="this.form_insert_new_data_error_msg_admins"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Success insert data -->
+                        <v-alert
+                            v-model="this.is_success_insert_new_data_admins"
+                            class="mx-auto mb-6"
+                            elevation="1"
+                            closable
+                            title="Success"
+                            text="New data has been added!"
+                            type="success"
+                        >
+                        </v-alert>
+                    </v-card-text>
+
+                    <!-- Form -->
+                    <v-card-text>
+                        <v-text-field
+                            id="newAdmin"
+                            v-model="this.newItem_admins.username"
+                            label="username*"
+                            variant="outlined"
+                            prepend-inner-icon="mdi-account-box-outline"
+                            clearable
+                        ></v-text-field>
+
+                        <v-text-field
+                            id="newAdmin"
+                            v-model="this.newItem_admins.password"
+                            label="password*"
+                            variant="outlined"
+                            prepend-inner-icon="mdi-lock-outline"
+                            @click:append-inner="
+                                this.toggle_visiblity_password_newdata_admin =
+                                    !this
+                                        .toggle_visiblity_password_newdata_admin
+                            "
+                            :append-inner-icon="
+                                this.toggle_visiblity_password_newdata_admin
+                                    ? 'mdi-eye-off'
+                                    : 'mdi-eye'
+                            "
+                            :type="
+                                this.toggle_visiblity_password_newdata_admin
+                                    ? 'text'
+                                    : 'password'
+                            "
+                            clearable
+                        ></v-text-field>
+
+                        <v-text-field
+                            v-model="this.newItem_admins.full_name"
+                            label="full_name*"
+                            variant="outlined"
+                            clearable
+                        ></v-text-field>
+
+                        <v-textarea
+                            v-model="this.newItem_admins.description"
+                            label="description*"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+                    </v-card-text>
+
+                    <!-- Button -->
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            min-height="40"
+                            min-width="170"
+                            color="red"
+                            @click="showAddDialog_admins = false"
+                            prepend-icon="mdi-close"
+                            variant="outlined"
+                            >Close</v-btn
+                        >
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            class="me-4"
+                            min-height="40"
+                            min-width="190"
+                            color="teal"
+                            append-icon="mdi-database-plus-outline"
+                            @click="this.addItem_admins()"
+                            variant="flat"
+                            >Add</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+
+            <!-- Alert outisde dialog -->
+            <div class="mb-4">
+                <!-- Form not yet complete -->
+                <v-alert
+                    v-model="this.form_insert_new_data_is_not_complete_admins"
+                    title="Form not complete yet!"
+                    text="Please complete the form to insert new data."
+                    type="warning"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- Fail insert -->
+                <v-alert
+                    v-model="this.form_insert_new_data_error_admins"
+                    title="Error occur!"
+                    :text="this.form_insert_new_data_error_msg_admins"
+                    type="error"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- Success insert data -->
+                <v-alert
+                    v-model="this.is_success_insert_new_data_admins"
+                    class="mx-auto mb-6"
+                    elevation="1"
+                    closable
+                    title="Success"
+                    text="New data has been added!"
+                    type="success"
+                >
+                </v-alert>
+            </div>
+
+            <v-data-table
+                class="mb-10 table-color"
+                :loading="this.loading_4_all_tables"
+                :items-per-page="this.itemsPerPage_4_all"
+                :items-length="totalItems_admins"
+                :headers="this.headers_admins"
+                :items="this.items_admins"
+            >
+                <!-- password -->
+                <template v-slot:item.password="{ value }">
+                    {{ value.slice(0, 48) + "..." }}
+                </template>
+                <!-- is_active -->
+                <template v-slot:item.is_active="{ value }">
+                    <v-chip color="indigo-darken-3" density="compact">{{
+                        value
+                    }}</v-chip>
+                </template>
+            </v-data-table>
+
+            <!-- ########################################################### -->
+            <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
+
+            <!-- Button reset home_data -->
+            <div class="d-flex mb-3">
+                <h2 class="me-5">Table `home_data`</h2>
+                <v-btn
+                    variant="flat"
+                    color="teal"
+                    append-icon="mdi-database-refresh-outline"
+                    @click="this.function_showRegenerateDialog_homedata()"
+                    >Regenerate</v-btn
+                >
+            </div>
+
+            <!-- Dialog regenerate homedata -->
+            <v-dialog
+                v-model="this.showRegenerateDialog_homedata"
+                max-width="500px"
+            >
+                <v-card class="pa-3 pb-5">
+                    <v-card-title>Confirm Regenerate</v-card-title>
+                    <v-card-text
+                        >Are you sure you want to regenerate table
+                        `home_data`?</v-card-text
+                    >
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            min-height="40"
+                            min-width="170"
+                            color="red"
+                            prepend-icon="mdi-close"
+                            variant="outlined"
+                            @click="this.showRegenerateDialog_homedata = false"
+                            >Cancel</v-btn
+                        >
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            class="me-4"
+                            min-height="40"
+                            min-width="190"
+                            color="error"
+                            append-icon="mdi-database-refresh-outline"
+                            variant="flat"
+                            @click="this.regenerate_homedata()"
+                            >Regenerate</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+
+            <!-- Alert outisde dialog -->
+            <div class="mb-4">
+                <!-- Fail regenerate homedata -->
+                <v-alert
+                    v-model="this.is_error_regenerate_homedata"
+                    title="Error occur!"
+                    :text="this.msg_error_response_regenerate_homedata"
+                    type="error"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- Success regenerate homedata -->
+                <v-alert
+                    v-model="this.is_success_regenerate_homedata"
+                    class="mx-auto mb-6"
+                    elevation="1"
+                    closable
+                    title="Success"
+                    :text="this.msg_success_response_regenerate_homedata"
+                    type="success"
+                >
+                </v-alert>
+            </div>
+
+            <v-data-table
+                class="mb-10 table-color"
+                :loading="this.loading_4_all_tables"
+                :items-per-page="this.itemsPerPage_4_all"
+                :items-length="totalItems_homedata"
+                :headers="this.headers_homedata"
+                :items="this.items_homedata"
+            >
+                <template v-slot:item.year="{ value }">
+                    <v-chip color="teal-darken-2" density="compact">{{
+                        value
+                    }}</v-chip>
+                </template>
+                <template v-slot:item.label="{ value }">
+                    <v-chip
+                        :color="this.chips_label_color(value)"
+                        density="compact"
+                        >{{ value }}</v-chip
+                    >
+                </template>
+            </v-data-table>
+
+            <br />
         </div>
     </div>
 </template>
@@ -598,9 +906,9 @@ export default {
             "Combinatorics",
             "Number Theory",
         ],
-        itemsPerPage_imo: 5,
-        totalItems_imo: 0,
+
         items_imo: [],
+        totalItems_imo: 0,
         headers_imo: [
             {
                 title: "id_key",
@@ -691,6 +999,8 @@ export default {
         showAddDialog_imo: false,
         showdialogLINK_imo: false,
         showdialogPDF_imo: false,
+        tempvalueLINK: null,
+        tempvaluePDF: null,
         showEditDialog_imo: false,
         editedItem_imo: {
             id_key: "",
@@ -708,16 +1018,152 @@ export default {
         form_update_edit_is_not_complete_imo: false,
         form_update_or_edit_row_error_imo: false,
         form_update_or_edit_row_error_mgs_imo: "",
-        showDeleteConfirmation_imo: false,
+        showDeleteDialogConfirmation_imo: false,
         selectedItemIDKEYToDelete_imo: -Infinity,
         delete_row_success_or_done: false,
 
-        loading_imo: false,
+        // admins
+        items_admins: [],
+        totalItems_admins: 0,
+        headers_admins: [
+            {
+                title: "id_admin",
+                sortable: true,
+                key: "id_admin",
+                align: "start",
+            },
+            {
+                title: "username",
+                sortable: true,
+                key: "username",
+                align: "start",
+            },
+            {
+                title: "password",
+                sortable: false,
+                key: "password",
+                align: "start",
+            },
+            {
+                title: "full_name",
+                sortable: true,
+                key: "full_name",
+                align: "start",
+            },
+            {
+                title: "created_at",
+                sortable: true,
+                key: "created_at",
+                align: "start",
+            },
+            {
+                title: "is_active",
+                sortable: true,
+                key: "is_active",
+                align: "start",
+            },
+            {
+                title: "description",
+                sortable: true,
+                key: "description",
+                align: "start",
+            },
+        ],
+        newItem_admins: {
+            // id_admin: "",
+            username: "",
+            password: "",
+            full_name: "",
+            // created_at: "",
+            // is_active: "",
+            description: "",
+        },
+        is_success_insert_new_data_admins: false,
+        form_insert_new_data_is_not_complete_admins: false,
+        form_insert_new_data_error_admins: false,
+        form_insert_new_data_error_msg_admins: "",
+        showAddDialog_admins: false,
+        toggle_visiblity_password_newdata_admin: false,
+
+        // homedata
+        showRegenerateDialog_homedata: false,
+        msg_success_response_regenerate_homedata: "",
+        msg_error_response_regenerate_homedata: "",
+        is_success_regenerate_homedata: false,
+        is_error_regenerate_homedata: false,
+        items_homedata: [],
+        totalItems_homedata: 0,
+        headers_homedata: [
+            {
+                title: "id_home_data",
+                sortable: true,
+                key: "id_home_data",
+                align: "start",
+            },
+            {
+                title: "id_key",
+                sortable: true,
+                key: "id_key",
+                align: "start",
+            },
+            {
+                title: "no",
+                sortable: true,
+                key: "no",
+                align: "start",
+            },
+            {
+                title: "contest_name",
+                sortable: true,
+                key: "contest_name",
+                align: "start",
+            },
+            {
+                title: "year",
+                sortable: true,
+                key: "year",
+                align: "start",
+            },
+            {
+                title: "label",
+                sortable: true,
+                key: "label",
+                align: "start",
+            },
+            {
+                title: "day_created",
+                sortable: false,
+                key: "day_created",
+                align: "start",
+            },
+            {
+                title: "created_at",
+                sortable: false,
+                key: "created_at",
+                align: "start",
+            },
+            {
+                title: "expire_day",
+                sortable: false,
+                key: "expire_day",
+                align: "start",
+            },
+            {
+                title: "expire_on",
+                sortable: false,
+                key: "expire_on",
+                align: "start",
+            },
+        ],
+
+        // Universal
+        loading_4_all_tables: false,
+        itemsPerPage_4_all: 5,
     }),
 
     methods: {
         async initialize() {
-            this.loading_imo = true;
+            this.loading_4_all_tables = true;
             try {
                 const raw_response = await axios.get("admin/get_imo_data");
                 const response = raw_response.data;
@@ -726,26 +1172,46 @@ export default {
             } catch (err) {
                 console.log(err.message);
             } finally {
-                this.loading_imo = false;
+                this.loading_4_all_tables = false;
+            }
+
+            this.loading_4_all_tables = true;
+            try {
+                const raw_response = await axios.get("admin/get_admins_data");
+                const response = raw_response.data;
+                this.items_admins = response;
+                this.totalItems_admins = response.itemsLength;
+            } catch (err) {
+                console.log(err.message);
+            } finally {
+                this.loading_4_all_tables = false;
+            }
+
+            this.loading_4_all_tables = true;
+            try {
+                const raw_response = await axios.get("/admin/get_homedata");
+                const response = raw_response.data;
+                this.items_homedata = response;
+                this.totalItems_homedata = response.itemsLength;
+            } catch (err) {
+                console.log(err.message);
+            } finally {
+                this.loading_4_all_tables = false;
             }
         },
 
+        // imo
         chips_label_color(label) {
-            if (label === null || label === "") {
-                return "red-darken-4";
-            }
-            if (label === "Algebra") {
-                return "deep-purple";
-            }
-            if (label === "Combinatorics") {
-                return "brown";
-            }
-            if (label === "Geometry") {
-                return "purple";
-            }
-            if (label === "Number Theory") {
-                return "blue-grey";
-            }
+            const colorMap = {
+                null: "red-darken-4",
+                "": "red-darken-4",
+                Algebra: "indigo-darken-3",
+                Combinatorics: "green-darken-4",
+                Geometry: "grey-darken-4",
+                "Number Theory": "amber-darken-3",
+            };
+
+            return colorMap[label] || "red-darken-4";
         },
         reset_form_add_new_item_imo() {
             this.newItem_imo = {
@@ -765,6 +1231,18 @@ export default {
             this.is_success_insert_new_data_imo = false;
             this.form_insert_new_data_is_not_complete_imo = false;
             this.form_insert_new_data_error_imo = false;
+        },
+        function_showDialog_linkANDpdf_imo(v, indetifier) {
+            if (indetifier === "link") {
+                this.tempvalueLINK = v;
+                this.showdialogLINK_imo = true;
+                return;
+            }
+            if (indetifier === "pdf") {
+                this.tempvaluePDF = v;
+                this.showdialogPDF_imo = true;
+                return;
+            }
         },
         async addItem_imo() {
             this.is_success_insert_new_data_imo = false;
@@ -801,7 +1279,6 @@ export default {
                     error.response.data.msg;
             }
         },
-
         showEditItem_imo(item) {
             this.success_update_or_edit_row_imo = false;
             this.form_update_edit_is_not_complete_imo = false;
@@ -839,11 +1316,10 @@ export default {
                     error.response.data.msg;
             }
         },
-
         confirmDeleteRow_imo(id_key) {
             this.delete_row_success_or_done = false;
             this.selectedItemIDKEYToDelete_imo = id_key;
-            this.showDeleteConfirmation_imo = true;
+            this.showDeleteDialogConfirmation_imo = true;
         },
         async deleteItem() {
             try {
@@ -857,7 +1333,94 @@ export default {
                 console.log("ERROR1:", error.message);
                 console.log("ERROR2:", error.response.data.msg);
             }
-            this.showDeleteConfirmation_imo = false;
+            this.showDeleteDialogConfirmation_imo = false;
+        },
+
+        // admins
+        reset_form_add_new_item_admins() {
+            this.newItem_admins = {
+                // id_admin: "",
+                username: "",
+                password: "",
+                full_name: "",
+                // created_at: "",
+                // is_active: "",
+                description: "",
+            };
+        },
+        function_showAddDialog_admins() {
+            this.showAddDialog_admins = true;
+            this.is_success_insert_new_data_admins = false;
+            this.form_insert_new_data_is_not_complete_admins = false;
+            this.form_insert_new_data_error_admins = false;
+        },
+        async addItem_admins() {
+            this.is_success_insert_new_data_admins = false;
+            this.form_insert_new_data_is_not_complete_admins = false;
+            this.form_insert_new_data_error_admins = false;
+
+            for (let key in this.newItem_admins) {
+                if (
+                    this.newItem_admins[key] === "" ||
+                    this.newItem_admins[key] === null
+                ) {
+                    this.form_insert_new_data_is_not_complete_admins = true;
+                    return;
+                }
+            }
+
+            try {
+                const raw_response = await axios.post(
+                    "admin/add_new_admin",
+                    this.newItem_admins
+                );
+                const response = raw_response.data;
+                console.log("RESPONSE", response.msg);
+
+                this.is_success_insert_new_data_admins = true;
+                this.reset_form_add_new_item_admins();
+
+                this.initialize();
+            } catch (error) {
+                console.log("ERROR1:", error.message);
+                console.log("ERROR2:", error.response.data.msg);
+                this.form_insert_new_data_error_admins = true;
+                this.form_insert_new_data_error_msg_admins =
+                    error.response.data.msg;
+            }
+        },
+
+        // homedata
+        function_showRegenerateDialog_homedata() {
+            this.showRegenerateDialog_homedata = true;
+            this.is_success_regenerate_homedata = false;
+            this.is_error_regenerate_homedata = false;
+        },
+        async regenerate_homedata() {
+            try {
+                const raw_response = await axios.get(
+                    `admin/delete_homedata?eR9j07LCQkEwXkTH=uacibxzt`
+                );
+                const response = raw_response.data;
+
+                try {
+                    const raw_response = await axios.get(`home/home_data`);
+                    const response = raw_response.data;
+
+                    this.msg_success_response_regenerate_homedata =
+                        "Regenerate `home_data` success";
+                    this.is_success_regenerate_homedata = true;
+                } catch (error2) {
+                    console.log("ERROR1:", error2.message);
+                    console.log("ERROR2:", error2.response.data.msg);
+                }
+            } catch (error) {
+                console.log("ERROR1:", error.message);
+                console.log("ERROR2:", error.response.data.msg);
+                this.is_error_regenerate_homedata = true;
+            }
+            this.showRegenerateDialog_homedata = false;
+            this.initialize();
         },
 
         async logout() {
@@ -886,6 +1449,6 @@ export default {
 <style scoped>
 .table-color {
     border-radius: 8px;
-    background-color: #e0f2f1;
+    background-color: #eceff1;
 }
 </style>

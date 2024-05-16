@@ -1,7 +1,16 @@
 <template>
     <div class="d-flex justify-center">
         <div class="pt-8" style="width: 60%">
-            <h2 class="text-center mb-4">Select problem type</h2>
+            <h2 class="mb-1 text-center">Select problem type</h2>
+            <v-row class="mb-2" justify="center">
+                <v-col cols="10">
+                    <p class="text-center text-body-2 text-medium-emphasis">
+                        In school-level mathematical Olympiads, there are only 4
+                        types of problems that are competed. <br />
+                        The 4 types are as follows:
+                    </p>
+                </v-col>
+            </v-row>
 
             <div class="mb-8">
                 <v-row>
@@ -79,6 +88,8 @@
                         </v-card>
                     </v-col>
                 </v-row>
+
+                <br /><br />
             </div>
         </div>
     </div>
@@ -100,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+.v-card:hover {
+    background-color: #ecedf6;
+}
+
 .img-container-css {
     background-size: cover;
     border-radius: 3px;

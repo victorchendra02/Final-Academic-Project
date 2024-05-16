@@ -13,7 +13,7 @@
                         v-model="this.selected_mdoel_name"
                         :items="this.available_model_name"
                         variant="outlined"
-                        density="compact"
+                        density="comfortable"
                         chips
                         clearable
                     ></v-select>
@@ -21,7 +21,7 @@
 
                 <v-col cols="12" lg="2" md="3">
                     <v-btn
-                        min-height="64%"
+                        min-height="67%"
                         size="small"
                         variant="outlined"
                         color="cyan-darken-4"
@@ -70,10 +70,12 @@
             <!-- Button classify -->
             <div class="mb-6 d-flex justify-center">
                 <v-btn
-                    min-width="160px"
+                    size="large"
+                    min-height="48px"
+                    min-width="200px"
                     append-icon="mdi-arrow-right"
                     variant="flat"
-                    color="teal-darken-3"
+                    color="teal-darken-2"
                     @click="this.classify()"
                     :loading="this.loading2"
                 >
@@ -226,15 +228,22 @@
                         <p class="text-center mt-2 mb-8 text-body-2">
                             {{ this.score_result.toFixed(2) }} out of 10
                         </p>
-                        <p
-                            id="scrollToResult"
-                            class="text-center text-medium-emphasis text-body-2"
-                        >
+                        <p class="text-center text-medium-emphasis text-body-2">
                             Result by <strong>MathBERT</strong>
                             <br />
                             *Only <strong>MathBERT</strong> model available at
                             this moment for difficulty classification
                         </p>
+
+                        <div id="scrollToResult" class="text-center">
+                            <a
+                                class="font-italic text-decoration-underline text-medium-emphasis text-caption text-decoration-none"
+                                href="https://arxiv.org/abs/2106.07340"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Learn about MathBERT</a
+                            >
+                        </div>
                     </v-col>
                 </v-row>
             </div>

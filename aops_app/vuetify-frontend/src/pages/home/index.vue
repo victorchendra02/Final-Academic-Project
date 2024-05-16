@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex justify-center">
-        <div class="pt-6" style="width: 65%">
+        <div class="pt-6" style="width: 60%">
             <h1 class="text-center">
                 Welcome <span class="mdi mdi-human-greeting-variant"></span>
             </h1>
@@ -54,8 +54,10 @@
                 </v-card-title>
                 <v-card-subtitle>
                     From
-                    {{ item["contest_name"].toUpperCase() }} | No.
-                    {{ item["no"] }} |
+                    {{
+                        item["contest_name"].toUpperCase().replace(/_/g, " ")
+                    }}
+                    | No. {{ item["no"] }} |
                     {{ item["year"] }}
                 </v-card-subtitle>
 
@@ -97,6 +99,8 @@
                     </div>
                 </v-expand-transition>
             </v-card>
+
+            <br />
         </div>
     </div>
 </template>

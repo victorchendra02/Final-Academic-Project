@@ -283,7 +283,15 @@ def DELETE_FROM_IMO_WHERE_ID_KEY(db: SQLAlchemy, id_key: int) -> bool:
         return False
 
 
-
+def SELECT_ALL_FROM_ADMINS(db: SQLAlchemy):
+    sql = """
+        SELECT *
+        FROM admins;
+    """
+    
+    raw_result = db.session.execute(text(sql))
+    result = orient_record(raw_result.fetchall())
+    return result
 
 def is_username_exist_in_table_admins(db: SQLAlchemy, username: str) -> bool:
     sql = """

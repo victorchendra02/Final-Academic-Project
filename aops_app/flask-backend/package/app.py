@@ -1,5 +1,6 @@
 import random
 import numpy as np
+import requests
 
 # flask
 from flask_cors import CORS
@@ -34,7 +35,7 @@ HOME_DATA_LIFETIME = timedelta(days=1)
 DATABASE_NAME = "aopsimol_artofproblemsolving"
 SECRET_KEY = "SMxfWjTMu1bRLS67GseJiGWLuIogM3oVTQ"
 BLACKLIST_TOKEN = set()
-AVAILABLE_MODEL = ["Multinomial Naive Bayes", "Support Vector Classification", "BERT-BASE-CASED"]
+AVAILABLE_MODEL = ["Multinomial Naive Bayes (MultinomialNB)", "Support Vector Classification (SVC)", "BERT-Base-Cased"]
 
 # http://127.0.0.1:5000/
 
@@ -227,6 +228,8 @@ def predict_model_classification():
     text_problem = raw_body_post.get("problems")
 
     # Regression
+    path = "../../../models/saved_models/regression/MATHBERT"
+    
     score: float = 2.82
     difficulties: str = "Medium"
     
@@ -341,6 +344,10 @@ def is_authorized():
     
     return jsonify({"message": 'Token still valid'}), HTTP_200_OK
 
+@app.route("/admin/get_admins_data", methods=['GET'])
+def get_admins_data():
+    result = sql_executer.SELECT_ALL_FROM_ADMINS(db)
+    return jsonify(result), HTTP_200_OK
 
 @app.route("/admin/get_imo_data", methods=['GET'])
 def get_imo_data():
@@ -426,25 +433,52 @@ def delete_row_imo():
     if stat is False:
         return jsonify({"msg": "Delete row failed", "status": False}), HTTP_406_NOT_ACCEPTABLE
 
-
-# @app.route("/admin/add_new_admin", methods=['GET'])
+@app.route("/admin/add_new_admin", methods=['POST'])
 def add_new_admin():
-    username =  "jacobjeshurunwarouw"
-    password =  generate_password_hash("jacobpassword")
-    full_name =  "Jacob Jeshurun Warouw"
-    description =  "This is the third admin"
+    raw_body_post = request.json
+
+    username = raw_body_post.get("username").replace(" ", "").lower()
+    password = generate_password_hash(raw_body_post.get("password").strip())
+    full_name = raw_body_post.get("full_name").strip()
+    description = raw_body_post.get("description").strip()
+    
+    # username =  "jacobjeshurunwarouw"
+    # password =  generate_password_hash("jacobpassword")
+    # full_name =  "Jacob Jeshurun Warouw"
+    # description =  "This is the third admin"
 
     username_already_exist = sql_executer.is_username_exist_in_table_admins(db, username)
     if username_already_exist:
         print("Username already taken!")
+        return jsonify({"msg": "Username already taken!", "status": False}), HTTP_400_BAD_REQUEST
     else:
         print("Username is UNIQUE!")
         insert_new_admin_success = sql_executer.insert_new_admin_into_table_admins(db, username, password, full_name, description)
         if insert_new_admin_success:
             print("New admin has been added!")
+            return jsonify({"msg": "Insert row success", "status": True}), HTTP_200_OK
         else:
             print("Fail to add new admin!")
+            return jsonify({"msg": "Insert row failed", "status": True}), HTTP_406_NOT_ACCEPTABLE
 
-    return jsonify({"Testing": True})
+@app.route("/admin/delete_homedata", methods=['GET'])
+def delete_homedata():
+    try:
+        secret_parameter = request.args.get("eR9j07LCQkEwXkTH")  # value should be: uacibxzt
+    except:
+        secret_parameter = -99999
+        
+    if secret_parameter != -99999:
+        if secret_parameter == "uacibxzt":
+            status = sql_executer.DELETE_ALL_FROM_HOME_DATA(db)
+            if status is False:
+                return jsonify({"msg": "Fail to delete `home_data` (Error while trying to delete `home_data`)", "status": False}), HTTP_500_INTERNAL_SERVER_ERROR
 
-
+            return jsonify({"msg": "Delete ALL `home_data` success", "status": True}), HTTP_200_OK
+    else:
+        return jsonify({"msg": "Bad request (missing or invalid parameters)", "status": False}), HTTP_400_BAD_REQUEST
+    
+@app.route("/admin/get_homedata", methods=['GET'])
+def get_homedata():
+    result = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
+    return jsonify(result)
