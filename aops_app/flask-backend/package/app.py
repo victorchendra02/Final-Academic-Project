@@ -1,5 +1,11 @@
+# to disable TF warning log  
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import random
 import numpy as np
+import tensorflow as tf
+from transformers import BertTokenizer
 import requests
 
 # flask
@@ -15,6 +21,7 @@ from flask_jwt_extended import JWTManager
 from datetime import timedelta
 from utils import get_current_date
 from utils import get_current_datetime
+from utils import discretize
 
 # database
 from flask_sqlalchemy import SQLAlchemy
@@ -23,6 +30,7 @@ import sql_executer
 # utils
 from utils import load_pkl
 from http_status_code import *
+
 
 """
 Admin
@@ -50,11 +58,15 @@ db = SQLAlchemy(app)
 jwt = JWTManager(app)
 
 
-SVCvectorizer = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/vectorizer.pkl")
-SVCmodel = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/model.pkl")
+# Load model MathBERT
+id_note = "08"
+MathBERTTokenizerpath = f"../../../models/saved_models/regression/{id_note}_tokenizer_MATHBERT"
+custom_objectspath = f"../../../models/saved_models/regression/{id_note}_custom_objects_MATHBERT.pkl"
+MathBERTpath = f"../../../models/saved_models/regression/{id_note}_MATHBERT"
 
-MNBvectorizer = load_pkl("../../../models/saved_models/classification/MultinomialNB/vectorizer.pkl")
-MNBmodel = load_pkl("../../../models/saved_models/classification/MultinomialNB/model.pkl")
+tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
+custom_objects = load_pkl(custom_objectspath)
+MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
 
 
 # -------------------- Home --------------------
@@ -228,16 +240,23 @@ def predict_model_classification():
     text_problem = raw_body_post.get("problems")
 
     # Regression
-    path = "../../../models/saved_models/regression/MATHBERT"
-    
-    score: float = 2.82
-    difficulties: str = "Medium"
+    tokenized_text_problem = tokenizer(text_problem, padding='max_length', max_length=512, truncation=True, return_tensors='tf')
+    raw_regression_result = MathBERT.predict([
+        [tokenized_text_problem['input_ids']], 
+        [tokenized_text_problem['attention_mask']], 
+        [tokenized_text_problem['token_type_ids']]
+    ])
+    score = float(raw_regression_result[0][0])
+    difficulties = discretize(score)
     
     # Classification
     # Multinomial Naive Bayes
     if selected_model == AVAILABLE_MODEL[0]:
-        tranformed_text = MNBvectorizer.transform(np.array([text_problem]))
-        proba_result = MNBmodel.predict_proba(tranformed_text)[0]
+        loaded_MNBvectorizer = load_pkl("../../../models/saved_models/classification/MultinomialNB/vectorizer.pkl")
+        loaded_MNBmodel = load_pkl("../../../models/saved_models/classification/MultinomialNB/model.pkl")
+
+        tranformed_text = loaded_MNBvectorizer.transform(np.array([text_problem]))
+        proba_result = loaded_MNBmodel.predict_proba(tranformed_text)[0]
         result_classification = {
             'Algebra': proba_result[0], 
             'Combinatorics': proba_result[1], 
@@ -246,14 +265,17 @@ def predict_model_classification():
             }
         result_regression = {
             'Score': score,
-            'Difficulties': difficulties
+            'Difficulties': difficulties,
             }
         return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
 
     # Support Vector Classification
     elif selected_model == AVAILABLE_MODEL[1]:
-        tranformed_text = SVCvectorizer.transform(np.array([text_problem]))
-        proba_result = SVCmodel.predict_proba(tranformed_text)[0]
+        loaded_SVCvectorizer = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/vectorizer.pkl")
+        loaded_SVCmodel = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/model.pkl")
+
+        tranformed_text = loaded_SVCvectorizer.transform(np.array([text_problem]))
+        proba_result = loaded_SVCmodel.predict_proba(tranformed_text)[0]
         result_classification = {
             'Algebra': proba_result[0], 
             'Combinatorics': proba_result[1], 
@@ -262,12 +284,14 @@ def predict_model_classification():
             }
         result_regression = {
             'Score': score,
-            'Difficulties': difficulties
+            'Difficulties': difficulties,
             }
         return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
 
     # BERT-BASE-CASED
     elif selected_model == AVAILABLE_MODEL[3]:
+        # loaded_BERT_BASED_CASED = load_pkl("../../../models/saved_models/classification/MultinomialNB/vectorizer.pkl")
+        
         # TO BE CONTINUED
         result_classification = {
             'Algebra': proba_result[0], 
@@ -482,3 +506,6 @@ def delete_homedata():
 def get_homedata():
     result = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
     return jsonify(result)
+
+
+print("############ Flask API ready ############")

@@ -68,7 +68,7 @@
             </v-row>
 
             <!-- Button classify -->
-            <div class="mb-6 d-flex justify-center">
+            <div class="mb-10 d-flex justify-center">
                 <v-btn
                     size="large"
                     min-height="48px"

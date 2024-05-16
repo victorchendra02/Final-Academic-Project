@@ -7,3 +7,8 @@ flask-jwt-extended==4.6.0
 mysqlclient
 pandas
 scikit-learn==1.4.0
+"tensorflow<2.11"
+torch 
+torchvision 
+torchaudio
+transformers==4.24.0
