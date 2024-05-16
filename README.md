@@ -34,7 +34,7 @@ python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU')
 
 pip install -U "tensorflow-text"
 pip install tf-models-official
-conda install transformers -y
+conda install transformers==4.24.0 -y
 ```
 
 ## C. Env PyTorch `aops_pytorch`:
@@ -50,7 +50,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 # If True, then GPU available
 python -c "import torch; print(torch.cuda.is_available())"
 
-conda install transformers -y
+conda install transformers==4.24.0 -y
 ```
 
 ## D. Env `aops_mathbert`:
@@ -66,5 +66,5 @@ pip install tf-models-official
 
 conda install pytorch torchvision torchaudio cpuonly -c pytorch -y
 
-conda install transformers -y
+conda install transformers==4.24.0 -y
 ```
