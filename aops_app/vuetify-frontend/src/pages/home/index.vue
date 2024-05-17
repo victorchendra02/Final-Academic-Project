@@ -54,9 +54,7 @@
                 </v-card-title>
                 <v-card-subtitle>
                     From
-                    {{
-                        item["contest_name"].toUpperCase().replace(/_/g, " ")
-                    }}
+                    {{ item["contest_name"].toUpperCase().replace(/_/g, " ") }}
                     | No. {{ item["no"] }} |
                     {{ item["year"] }}
                 </v-card-subtitle>
@@ -99,8 +97,6 @@
                     </div>
                 </v-expand-transition>
             </v-card>
-
-            <br />
         </div>
     </div>
 </template>
