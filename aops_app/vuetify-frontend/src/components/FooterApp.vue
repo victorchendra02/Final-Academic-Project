@@ -1,11 +1,11 @@
 <template>
-    <v-footer class="bg-teal-darken-1" app>
+    <v-footer app>
         <a
             v-for="item in items"
             :key="item.title"
             :href="item.href"
             :title="item.title"
-            class="text-white d-inline-block mx-2 social-link"
+            class="text-teal-darken-1 d-inline-block mx-2 social-link"
             rel="noopener noreferrer"
             target="_blank"
         >
@@ -22,7 +22,7 @@
         </a>
 
         <div
-            class="text-caption text-white"
+            class="text-caption text-teal-darken-1"
             style="position: absolute; right: 16px"
         >
             &copy; {{ new Date().getFullYear() }}
