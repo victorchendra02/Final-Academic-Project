@@ -8,7 +8,6 @@
                     <v-icon icon="mdi mdi-dice-multiple"></v-icon>
                 </h1>
             </div>
-
             <!-- Form -->
             <div class="py-5">
                 <div class="d-flex justify-space-between">
@@ -26,7 +25,6 @@
                             persistent-hint
                         ></v-select>
                     </div>
-
                     <!-- N: NumberInput -->
                     <div style="width: 200px">
                         <v-number-input
@@ -44,14 +42,13 @@
                             persistent-hint
                         ></v-number-input>
                     </div>
-
                     <!-- ButtonGo -->
                     <div style="width: 200px">
                         <v-btn
                             block
                             append-icon="mdi mdi-dice-multiple"
                             variant="flat"
-                            color="indigo-darken-3"
+                            color="teal-darken-1"
                             @click="this.go_button()"
                             :loading="this.loading"
                         >
@@ -62,11 +59,10 @@
             </div>
 
             <!-- horizontal line -->
-            <hr class="mb-2 mt-0" />
+            <v-divider class="mb-8 border-opacity-75" thickness="2"></v-divider>
             <h3 class="mb-2" v-if="this.result_for">Result for:</h3>
-
             <!-- Main content -->
-            <div>
+            <div class="mb-8" v-if="this.result_for">
                 <v-card
                     v-for="(item, index) in this.result"
                     class="mb-2"
@@ -113,7 +109,7 @@
             </v-btn>
         </template>
     </v-snackbar>
-
+    
     <!-- snackbar invalid label -->
     <v-snackbar v-model="this.invalid_label">
         Please select at least 1 label
@@ -129,8 +125,6 @@
             </v-btn>
         </template>
     </v-snackbar>
-
-    <br /><br /><br /><br /><br />
 </template>
 
 <script setup>
