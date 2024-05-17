@@ -3,7 +3,7 @@
         <v-list density="comfortable" nav>
             <!-- Home -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-home"
                 title="Home"
                 value="home"
@@ -12,7 +12,7 @@
 
             <!-- QuestionBank -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-bank"
                 title="Question Bank"
                 value="questionbank"
@@ -21,7 +21,7 @@
 
             <!-- Random -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-dice-multiple"
                 title="Random"
                 value="random_menu"
@@ -30,7 +30,7 @@
 
             <!-- Classify -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-shape"
                 title="Classify"
                 value="classify"
@@ -39,7 +39,7 @@
 
             <!-- About -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-information"
                 title="About"
                 value="about"
@@ -48,7 +48,7 @@
 
             <!-- Admin -->
             <v-list-item
-                color="primary"
+                color="teal"
                 prepend-icon="mdi-account"
                 title="Admin"
                 value="admin"
