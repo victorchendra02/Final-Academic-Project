@@ -1,1 +1,0 @@
-Let ABCD be a tetrahedron and suppose that M is a point inside it such that angle MAD= angle MBC and angle MDB= angle MCA. Prove that MA cdot MB+MC cdot MD< max(AD cdot BC,AC cdot BD).

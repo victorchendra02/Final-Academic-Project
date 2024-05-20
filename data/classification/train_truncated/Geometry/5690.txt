@@ -1,1 +1,0 @@
-In a triangle ABC , let P be a point on its circumscribed circle (on the arc AC that does not contain B). Let H,H_1,H_2 and H_3 be the orthocenters of triangles ABC, BCP, ACP and ABP, respectively. Let L = PB cap AC and J = HH_2 cap H_1H_3. If M and N are the midpoints of JH and LP, respectively, prove that MN and JL intersect at their midpoint.

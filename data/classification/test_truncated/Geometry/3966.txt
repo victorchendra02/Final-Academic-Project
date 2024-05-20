@@ -1,1 +1,0 @@
-On sides AB and BC of a square ABCD the respective points E and F have been chosen so that BE = BF. Let BN be the altitude in triangle BCE. Prove that angle DNF = 90.

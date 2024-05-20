@@ -1,1 +1,0 @@
-Let {x_n } be a sequence of natural numbers such that (a) 1 = x_1 < x_2 < x_3 < ldots; quad (b) x_{2n+1} leq 2n quad forall n. Prove that, for every natural number k, there exist terms x_r and x_s such that x_r - x_s = k.

@@ -1,1 +1,0 @@
-The sphere inscribed in tetrahedron ABCD touches the sides ABD and DBC at points K and M, respectively. Prove that angle AKB = angle DMC.

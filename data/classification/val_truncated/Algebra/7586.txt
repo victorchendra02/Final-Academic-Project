@@ -1,1 +1,0 @@
-Find all triples (x, y, z) of real positive numbers, which satisfy the system begin{cases} frac{1}{x}+ frac{4}{y}+ frac{9}{z}=3 x + y + z le 12 end{cases}

@@ -1,1 +1,0 @@
-Prove that from a set of ten distinct two-digit numbers, it is always possible to find two disjoint subsets whose members have the same sum.

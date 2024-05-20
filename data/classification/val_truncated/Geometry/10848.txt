@@ -1,1 +1,0 @@
-A line d is given in the plane. Let B in d and A another point, not on d, and such that AB is not perpendicular on d. Let omega be a variable circle touching d at B and letting A outside, and X and Y the points on omega such that AX and AY are tangent to the circle. Prove that the line XY passes through a fixed point. Proposed by F. Bakharev

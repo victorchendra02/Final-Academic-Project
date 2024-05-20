@@ -1,1 +1,0 @@
-The point {P} is outside the circle { Omega}. Two tangent lines, passing from the point {P} touch the circle { Omega} at the points {A} and {B}. The median{AM left(M in BP right)} intersects the circle { Omega} at the point {C} and the line {PC} intersects again the circle { Omega} at the point {D}. Prove that the lines {AD} and {BP} are parallel. (Moldova)

@@ -1,1 +1,0 @@
-Let f(x) be the distance from x to the nearest perfect square. For example, f( pi) = 4 - pi. Let alpha = frac{3 + sqrt{5}}{2} and let m be an integer such that the sequence a_n = f(m ; alpha^n) is bounded. Prove that either m=k^2 or m = 5k^2 for some integer k. Proposed by Rodrigo Sanches Angelo (rsa365), Brazil.

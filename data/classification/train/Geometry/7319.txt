@@ -1,1 +1,0 @@
-Let ABC be an acute triangle with circumcircle omega and circumcenter O. The perpendicular from A to BC intersects BC and omega at D and E, respectively. Let F be a point on the segment AE, such that 2 cdot FD = AE. Let l be the perpendicular to OF through F. Prove that l, the tangent to omega at E, and the line BC are concurrent. Proposed by Stefan Lozanovski, Macedonia

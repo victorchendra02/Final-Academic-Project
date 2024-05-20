@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R}^{+} rightarrow mathbb{R}^{+} such that f(xf(x + y)) = yf(x) + 1holds for all x, y in mathbb{R}^{+}. Proposed by Nikola Velov, North Macedonia

@@ -1,1 +1,0 @@
-Prove that there are at least 666 positive composite numbers with 2006 digits, having a digit equal to 7 and all the rest equal to 1.

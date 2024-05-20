@@ -1,1 +1,0 @@
-Let displaystyle {x, y, z} be positive real numbers such that displaystyle {xyz = 1}. Prove the inequality: displaystyle{ dfrac{1}{x left(ay+b right)}+ dfrac{1}{y left(az+b right)}+ dfrac{1}{z left(ax+b right)} geq 3}if: (A) displaystyle {a = 0, b = 1} (B) displaystyle {a = 1, b = 0} (C) displaystyle {a + b = 1, ; a, b> 0} When the equality holds?

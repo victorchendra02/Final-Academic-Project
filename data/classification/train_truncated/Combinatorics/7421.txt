@@ -1,1 +1,0 @@
-The natural numbers from 1 to 50 are written down on the blackboard. At least how many of them should be deleted, in order that the sum of any two of the remaining numbers is not a prime?

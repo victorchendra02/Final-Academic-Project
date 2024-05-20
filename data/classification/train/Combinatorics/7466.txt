@@ -1,1 +1,0 @@
-In a country with n towns, all the direct flights are of double destinations (back and forth). There are r>2014 rootes between different pairs of towns, that include no more than one intermediate stop (direction of each root matters). Find the minimum possible value of n and the minimum possible r for that value of n.

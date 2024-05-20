@@ -1,1 +1,0 @@
-Real numbers x,y,z are not all equal and satisfy x+ frac{1}{y} = y + frac{1}{z} = z + frac{1}{x}=k. Find all possible values of k.

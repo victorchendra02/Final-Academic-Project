@@ -1,1 +1,0 @@
-Let S be a set of 100 positive integer numbers having the following property: Among every four numbers of S, there is a number which divides each of the other three or there is a number which is equal to the sum of the other three. Prove that the set S contains a number which divides all other 99 numbers of S. Proposed by Tajikistan

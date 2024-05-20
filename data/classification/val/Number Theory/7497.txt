@@ -1,1 +1,0 @@
-Solve in positive integers: frac{1}{x^2}+ frac{y}{xz}+ frac{1}{z^2}= frac{1}{2013} .

@@ -1,1 +1,0 @@
-For any positive real numbers a,b and c, prove: dfrac{1}{a} + dfrac{1}{b} + dfrac{1}{c} geq dfrac{2}{a+b} + dfrac{2}{b+c} + dfrac{2}{c+a} geq dfrac{9}{a+b+c}

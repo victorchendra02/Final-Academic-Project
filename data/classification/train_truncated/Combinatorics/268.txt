@@ -1,1 +1,0 @@
-Prove that sum frac{1}{i_1i_2 ldots i_k} = n is taken over all non-empty subsets left {i_1,i_2, ldots, i_k right } of left {1,2, ldots,n right }. (The k is not fixed, so we are summing over all the 2^n-1 possible nonempty subsets.)

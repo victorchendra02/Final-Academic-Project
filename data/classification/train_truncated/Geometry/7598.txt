@@ -1,1 +1,0 @@
-Let ABC be a triangle, (BC < AB). The line l passing trough the vertices C and orthogonal to the angle bisector BE of angle B, meets BE and the median BD of the side AC at points F and G, respectively. Prove that segment DF bisects the segment EG.

@@ -1,1 +1,0 @@
-The sequence {a_n } of integers is defined by a_1 = 2, a_2 = 7 and - frac {1}{2} < a_{n + 1} - frac {a^2_n}{a_{n - 1}} leq frac {}{}, n geq 2. Prove that a_n is odd for all n > 1.

@@ -1,1 +1,0 @@
-Let x, y, z be positive real numbers. Prove that: frac{x + 2y}{z + 2x + 3y}+ frac{y + 2z}{x + 2y + 3z}+ frac{z + 2x}{y + 2z + 3x} le frac{3}{2}

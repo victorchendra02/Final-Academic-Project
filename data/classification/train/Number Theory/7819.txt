@@ -1,1 +1,0 @@
-Find all pairs of positive integers (x,y) such that x^y = y^{x - y}. Albania

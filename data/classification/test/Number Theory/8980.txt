@@ -1,1 +1,0 @@
-Find all positive integers k for which there exist a, b, and c positive integers such that lvert (a-b)^3+(b-c)^3+(c-a)^3 rvert=3 cdot2^k.

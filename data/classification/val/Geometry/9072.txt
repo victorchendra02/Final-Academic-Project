@@ -1,1 +1,0 @@
-Let A, B, C, D, E, F, G, H, I be nine points in space such that ABCDE, ABFGH, and GFCDI are each regular pentagons with side length 1. Determine the lengths of the sides of triangle EHI.

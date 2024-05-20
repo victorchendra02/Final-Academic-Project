@@ -1,1 +1,0 @@
-Let A,B,C be three points with integer coordinates in the plane and K a circle with radius R passing through A,B,C. Show that AB cdot BC cdot CA ge 2R, and if the centre of K is in the origin of the coordinates, show that AB cdot BC cdot CA ge 4R.

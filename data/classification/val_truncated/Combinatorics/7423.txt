@@ -1,1 +1,0 @@
-A splitting of a planar polygon is a finite set of triangles whose interiors are pairwise disjoint, and whose union is the polygon in question. Given an integer n ge 3, determine the largest integer m such that no planar n-gon splits into less than m triangles.

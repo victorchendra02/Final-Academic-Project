@@ -1,1 +1,0 @@
-Given three infinite arithmetic progressions of natural numbers such that each of the numbers 1,2,3,4,5,6,7 and 8 belongs to at least one of them, prove that the number 1980 also belongs to at least one of them.

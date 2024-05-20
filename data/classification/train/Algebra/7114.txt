@@ -1,1 +1,0 @@
-Let a, b, c, and d be positive real numbers such that abcd = 1. Prove that frac{(a-1)(c+1)}{1+bc+c} + frac{(b-1)(d+1)}{1+cd+d} + frac{(c-1)(a+1)}{1+da+a} + frac{(d-1)(b+1)}{1+ab+b} geq 0. Proposed by Orif Ibrogimov, Uzbekistan.

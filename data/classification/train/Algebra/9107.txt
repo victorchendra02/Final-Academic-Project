@@ -1,1 +1,0 @@
-Let x, y, and z be positive real numbers satisfying x^2+y^2+z^2=1. Prove that x^2yz+xy^2z+xyz^2 le frac{1}{3}.

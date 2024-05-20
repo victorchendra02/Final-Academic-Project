@@ -1,1 +1,0 @@
-Real numbers x,y,z, t satisfy x + y + z +t = 0 and x^2+ y^2+ z^2+t^2 = 1. Prove that - 1 le xy + yz + zt + tx le 0.

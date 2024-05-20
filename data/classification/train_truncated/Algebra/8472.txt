@@ -1,1 +1,0 @@
-Let A be a finite set of positive reals, let B = {x/y mid x,y in A } and let C = {xy mid x,y in A }. Show that |A| cdot|B| le|C|^2. (Proposed by Gerhard Woeginger, Austria)

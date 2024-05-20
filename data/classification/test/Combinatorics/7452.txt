@@ -1,1 +1,0 @@
-2015 points are given in a plane such that from any five points we can choose two points with distance less than 1 unit. Prove that 504 of the given points lie on a unit disc.

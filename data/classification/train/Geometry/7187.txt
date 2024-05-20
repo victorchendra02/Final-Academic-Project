@@ -1,1 +1,0 @@
-An isosceles trapezoid ABCD (AB parallel CD) is given. Points E and F lie on the sides BC and AD, and the points M and N lie on the segment EF such that DF = BE and FM = NE. Let K and L be the foot of perpendicular lines from M and N to AB and CD, respectively. Prove that EKFL is a parallelogram. Proposed by Mahdi Etesamifard

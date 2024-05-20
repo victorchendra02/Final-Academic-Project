@@ -1,1 +1,0 @@
-Let k > 1{} be a real number, n geqslant 3 be an integer, and x_1 geqslant x_2 geqslant cdots geqslant x_n be positive real numbers. Prove that frac{x_1+kx_2}{x_2+x_3}+ frac{x_2+kx_3}{x_3+x_4}+ cdots+ frac{x_n+kx_1}{x_1+x_2} geqslant frac{n(k+1)}{2}.Ilija Jovcheski

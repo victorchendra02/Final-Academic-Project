@@ -1,1 +1,0 @@
-On two sheets of paper are written more than one positive integers. On the first paper n numbers are written and on the second paper m numbers are written. If one number is written on any of the papers then on the first paper is written also the sum of that number and 13, and on the second paper the difference of that number and 23. Calculate the value of frac{m}{n}. .

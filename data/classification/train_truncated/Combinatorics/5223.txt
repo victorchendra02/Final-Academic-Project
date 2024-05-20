@@ -1,1 +1,0 @@
-Given a rectangular table with 2 rows and 100 columns. Dima fills the cells of the first row with numbers 1, 2 or 3. Prove that Alex can fill the cells of the second row with numbers 1, 2, 3 in such a way that the numbers in each column are different and the sum of the numbers in the second row equals 200.

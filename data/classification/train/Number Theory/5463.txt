@@ -1,1 +1,0 @@
-Find all three-digit numbers abc (with a neq 0) such that a^{2}+b^{2}+c^{2} is a divisor of 26.

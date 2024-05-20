@@ -1,1 +1,0 @@
-Let triangle ABC be a triangle, and let S and T be the midpoints of the sides BC and CA, respectively. Suppose M is the midpoint of the segment ST and the circle omega through A, M and T meets the line AB again at N. The tangents of omega at M and N meet at P. Prove that P lies on BC if and only if the triangle ABC is isosceles with apex at A. Proposed by Reza Kumara, Indonesia

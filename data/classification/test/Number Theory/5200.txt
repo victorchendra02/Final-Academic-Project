@@ -1,1 +1,0 @@
-Determine the least positive integer n{} for which the following statement is true: the product of any n{} odd consecutive positive integers is divisible by 45.

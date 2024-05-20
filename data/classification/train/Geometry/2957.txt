@@ -1,1 +1,0 @@
-Given an equilateral triangle ABC of side a in a plane, let M be a point on the circumcircle of the triangle. Prove that the sum s = MA^4 +MB^4 +MC^4 is independent of the position of the point M on the circle, and determine that constant value as a function of a.

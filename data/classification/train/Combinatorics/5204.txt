@@ -1,1 +1,0 @@
-Is it possible to fill a table 1 times n with pairwise distinct integers such that for any k = 1, 2, ldots, n one can find a rectangle 1 times k in which the sum of the numbers equals 0 if a) n= 11; b) n= 12?

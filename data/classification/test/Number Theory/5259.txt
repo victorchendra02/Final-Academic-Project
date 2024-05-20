@@ -1,1 +1,0 @@
-Determine if there exist five consecutive positive integers such that their LCM is a perfect square.

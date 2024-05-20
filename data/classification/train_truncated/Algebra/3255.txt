@@ -1,1 +1,0 @@
-Let M be the circumcenter of a triangle ABC. The line through M perpendicular to CM meets the lines CA and CB at Q and P, respectively. Prove that frac{ overline{CP}}{ overline{CM}} cdot frac{ overline{CQ}}{ overline{CM}} cdot frac{ overline{AB}}{ overline{PQ}}= 2.

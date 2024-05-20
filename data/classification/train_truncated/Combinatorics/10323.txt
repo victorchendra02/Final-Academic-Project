@@ -1,1 +1,0 @@
-Some cells of a 11 times 11 table are filled with pluses. It is known that the total number of pluses in the given table and in any of its 2 times 2 sub-tables is even. Prove that the total number of pluses on the main diagonal of the given table is also even. (2 times 2 sub-table consists of four adjacent cells, four cells around a common vertex).

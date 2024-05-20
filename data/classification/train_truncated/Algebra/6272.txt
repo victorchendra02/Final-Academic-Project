@@ -1,1 +1,0 @@
-Find all such functions f: mathbb{R} to mathbb{R} that for any real x,y the following equation is true. f(f(x)+y)+1=f(x^2+y)+2f(x)+2y

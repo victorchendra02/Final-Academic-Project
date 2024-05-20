@@ -1,1 +1,0 @@
-Trapezium ABCD, where BC||AD, is inscribed in a circle, E is midpoint of the arc AD of this circle not containing point C . Let F be the foot of the perpendicular drawn from E on the line tangent to the circle at the point C . Prove that BC=2CF.

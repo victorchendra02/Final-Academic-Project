@@ -1,1 +1,0 @@
-Prove that there aren't any positive integrer numbers x,y,z such that x^2+y^2=3z^2.

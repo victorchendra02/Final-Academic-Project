@@ -1,1 +1,0 @@
-Let ABC be a triangle with centroid T. Denote by M the midpoint of BC. Let D be a point on the ray opposite to the ray BA such that AB = BD. Similarly, let E be a point on the ray opposite to the ray CA such that AC = CE. The segments T D and T E intersect the side BC in P and Q, respectively. Show that the points P, Q and M split the segment BC into four parts of equal length.

@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R} rightarrow mathbb{R} which satisfy the equality, f(x+f(y))=f(x-f(y))+4xf(y)for any x,y in mathbb{R}.

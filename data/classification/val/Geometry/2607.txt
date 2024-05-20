@@ -1,1 +1,0 @@
-Given a triangle ABC and external points X, Y , and Z such that angle BAZ = angle CAY , angle CBX = angle ABZ, and angle ACY = angle BCX, prove that AX,BY , and CZ are concurrent.

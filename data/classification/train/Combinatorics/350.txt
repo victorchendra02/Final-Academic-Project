@@ -1,1 +1,0 @@
-Prove that for every positive integer m we can find a finite set S of points in the plane, such that given any point A of S, there are exactly m points in S at unit distance from A.

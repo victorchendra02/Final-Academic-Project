@@ -1,1 +1,0 @@
-In a circle of diameter 1 consider 65 points, no three of them collinear. Prove that there exist three among these points which are the vertices of a triangle with area less than or equal to frac{1}{72}.

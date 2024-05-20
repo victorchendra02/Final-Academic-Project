@@ -1,1 +1,0 @@
-The circumference of a circle is arbitrarily divided into four arcs. The midpoints of the arcs are connected by segments. Show that two of these segments are perpendicular.

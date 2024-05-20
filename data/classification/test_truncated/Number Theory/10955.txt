@@ -1,1 +1,0 @@
-Prove that the equation ( sqrt5 +1)^{2x}+ ( sqrt5 -1)^{2x}=2^x(y^2+2) has an infinite number of solutions in natural numbers.

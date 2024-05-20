@@ -1,1 +1,0 @@
-For an acute triangle ABC prove the inequality: sum_{cyclic} frac{m_a^2}{-a^2+b^2+c^2} ge frac{9}{4} where m_a,m_b,m_c are lengths of corresponding medians.

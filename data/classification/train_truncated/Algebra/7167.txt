@@ -1,1 +1,0 @@
-Let r be a real number such that the sequence (a_{n})_{n geq 1} of positive real numbers satisfies the equation a_{1} + a_{2} + cdots + a_{m + 1} leq r a_{m} for each positive integer m. Prove that r geq 4.

@@ -1,1 +1,0 @@
-Let n and z be integers greater than 1 and (n,z)=1. Prove: (a) At least one of the numbers z_i=1+z+z^2+ cdots +z^i, i=0,1, ldots ,n-1, is divisible by n. (b) If (z-1,n)=1, then at least one of the numbers z_i is divisible by n.

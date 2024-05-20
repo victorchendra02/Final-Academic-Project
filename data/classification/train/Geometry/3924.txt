@@ -1,1 +1,0 @@
-A regular heptagon A_1A_2... A_7 is inscribed in circle C. Point P is taken on the shorter arc A_7A_1. Prove that PA_1+PA_3+PA_5+PA_7 = PA_2+PA_4+PA_6.

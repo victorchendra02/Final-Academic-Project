@@ -1,1 +1,0 @@
-Let M be the set of all functions f with the following properties: (i) f is defined for all real numbers and takes only real values. (ii) For all x, y in mathbb R the following equality holds: f(x)f(y) = f(x + y) + f(x - y). (iii) f(0) neq 0. Determine all functions f in M such that (a) f(1)= frac 52, (b) f(1)= sqrt 3.

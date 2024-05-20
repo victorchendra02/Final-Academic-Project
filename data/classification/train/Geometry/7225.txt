@@ -1,1 +1,0 @@
-Find all numbers n geq 4 such that there exists a convex polyhedron with exactly n faces, whose all faces are right-angled triangles. (Note that the angle between any pair of adjacent faces in a convex polyhedron is less than 180^ circ.) Proposed by Hesam Rajabzadeh

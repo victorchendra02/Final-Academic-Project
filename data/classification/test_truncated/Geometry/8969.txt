@@ -1,1 +1,0 @@
-Let S_1 be a semicircle with centre O and diameter AB.A circle C_1 with centre P is drawn, tangent to S_1, and tangent to AB at O. A semicircle S_2 is drawn, with centre Q on AB, tangent to S_1 and to C_1. A circle C_2 with centre R is drawn, internally tangent to S_1 and externally tangent to S_2 and C_1. Prove that OPRQ is a rectangle.

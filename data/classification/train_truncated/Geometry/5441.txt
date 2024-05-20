@@ -1,1 +1,0 @@
-ABC is a triangle, and E and F are points on the segments BC and CA respectively, such that frac{CE}{CB}+ frac{CF}{CA}=1 and angle CEF= angle CAB. Suppose that M is the midpoint of EF and G is the point of intersection between CM and AB. Prove that triangle FEG is similar to triangle ABC.

@@ -1,1 +1,0 @@
-ABCD is quadrilateral inscribed in a circle Gamma .Lines AB and CD intersect at E and linesAD and BC intersect at F. Prove that the circle with diameter EF and circle Gamma are orthogonal.

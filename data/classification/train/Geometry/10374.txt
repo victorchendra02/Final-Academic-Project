@@ -1,1 +1,0 @@
-Let ABC be an equilateral triangle with centre O. A line through C meets the circumcircle of triangle AOB at points D and E. Prove that points A, O and the midpoints of segments BD, BE are concyclic.

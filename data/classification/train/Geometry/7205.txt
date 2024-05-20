@@ -1,1 +1,0 @@
-Let A_1, A_2, . . . , A_{2021} be 2021 points on the plane, no three collinear and angle A_1A_2A_3 + angle A_2A_3A_4 +... + angle A_{2021}A_1A_2 = 360^o,in which by the angle angle A_{i-1}A_iA_{i+1} we mean the one which is less than 180^o (assume that A_{2022} =A_1 and A_0 = A_{2021}). Prove that some of these angles will add up to 90^o. Proposed by Morteza Saghafian - Iran

@@ -1,1 +1,0 @@
-A triangle ABC has acute angles at A and B. Isosceles triangles ACD and BCE with bases AC and BC are constructed externally to triangle ABC such that angle ADC = angle ABC and angle BEC = angle BAC. Let S be the circumcenter of triangle ABC. Prove that the length of the polygonal line DSE equals the perimeter of triangle ABC if and only if angle ACB is right.

@@ -1,1 +1,0 @@
-Let x_1, x_2, cdots , x_n be positive numbers. Prove that frac{x_1^2}{x_1^2+x_2x_3} + frac{x_2^2}{x_2^2+x_3x_4} + cdots + frac{x_{n-1}^2}{x_{n-1}^2+x_nx_1} + frac{x_n^2}{x_n^2+x_1x_2} leq n-1

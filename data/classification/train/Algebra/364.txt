@@ -1,1 +1,0 @@
-Find all triangles whose side lengths are consecutive integers, and one of whose angles is twice another.

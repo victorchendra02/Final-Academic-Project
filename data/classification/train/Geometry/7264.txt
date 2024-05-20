@@ -1,1 +1,0 @@
-P_1,P_2, ldots,P_{100} are 100 points on the plane, no three of them are collinear. For each three points, call their triangle clockwise if the increasing order of them is in clockwise order. Can the number of clockwise triangles be exactly 2017? Proposed by Morteza Saghafian

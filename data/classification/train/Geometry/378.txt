@@ -1,1 +1,0 @@
-Prove that the sum of the distances of the vertices of a regular tetrahedron from the center of its circumscribed sphere is less than the sum of the distances of these vertices from any other point in space.

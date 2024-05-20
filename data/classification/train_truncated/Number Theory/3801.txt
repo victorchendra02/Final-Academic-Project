@@ -1,1 +1,0 @@
-Consider all pairs (a, b) of natural numbers such that the product a^ab^b written in decimal system ends with exactly 98 zeros. Find the pair (a, b) for which the product ab is the smallest.

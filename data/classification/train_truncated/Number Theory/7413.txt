@@ -1,1 +1,0 @@
-Solve in nonnegative integers the equation 5^t + 3^x4^y = z^2.

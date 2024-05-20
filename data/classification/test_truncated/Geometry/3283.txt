@@ -1,1 +1,0 @@
-The diagonals of a convex quadrilateral ABCD intersect at a point O. Find all angles of this quadrilateral if measuredangle OBA=30^{ circ}, measuredangle OCB=45^{ circ}, measuredangle ODC=45^{ circ}, and measuredangle OAD=30^{ circ}.

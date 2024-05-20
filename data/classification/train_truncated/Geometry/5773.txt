@@ -1,1 +1,0 @@
-Given is the triangle ABC, with | AB | + | AC | = 3 cdot | BC | . Let's denote D, E also points that BCDA and CBEA are parallelograms. On the sides AC and AB sides, F and G are selected respectively so that | AF | = | AG | = | BC |. Prove that the lines DF and EG intersect at the line segment BC

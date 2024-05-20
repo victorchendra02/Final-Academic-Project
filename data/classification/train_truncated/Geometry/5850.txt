@@ -1,1 +1,0 @@
-Let ABCD be a parallelogram whose diagonals meet at P. Denote by M the midpoint of AB. Let Q be a point such that QA is tangent to the circumcircle of MAD and QB is tangent to the circumcircle of MBC. Prove that points Q,M,P are collinear. (Patrik Bak, Slovakia)

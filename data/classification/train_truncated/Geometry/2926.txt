@@ -1,1 +1,0 @@
-Let a, b, c denote the lengths of the sides BC,CA,AB, respectively, of a triangle ABC. If P is any point on the circumference of the circle inscribed in the triangle, show that aPA^2+bPB^2+cPC^2 is constant.

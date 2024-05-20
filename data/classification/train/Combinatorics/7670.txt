@@ -1,1 +1,0 @@
-Positive real numbers are arranged in the form: 1 3 6 10 15 ... 2 5 9 14 ... 4 8 13 ... 7 12 ... 11 ... Find the number of the line and column where the number 2002 stays.

@@ -1,1 +1,0 @@
-Let ABC be a triangle with incenter I. The points D and E lie on the segments CA and BC respectively, such that CD = CE. Let F be a point on the segment CD. Prove that the quadrilateral ABEF is circumscribable if and only if the quadrilateral DIEF is cyclic. Proposed by Dorlir Ahmeti, Albania

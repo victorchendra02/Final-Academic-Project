@@ -1,1 +1,0 @@
-We call a positive integer alternating if every two consecutive digits in its decimal representation are of different parity. Find all positive integers n such that n has a multiple which is alternating.

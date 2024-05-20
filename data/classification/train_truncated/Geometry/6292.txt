@@ -1,1 +1,0 @@
-Let triangle ABC a triangle, and D the intersection of the angle bisector of angle BAC and the perpendicular bisector of AC. the line parallel to AC passing by the point B, intersect the line AD at X. the line parallel to CX passing by the point B, intersect AC at Y. E = (AYB) cap BX . prove that C , D and E collinear.

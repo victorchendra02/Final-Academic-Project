@@ -1,1 +1,0 @@
-Let P be a point in the interior of a triangle ABC. The lines AP, BP and CP intersect again the circumcircles of the triangles PBC, PCA and PAB at D, E and F respectively. Prove that P is the orthocenter of the triangle DEF if and only if P is the incenter of the triangle ABC. Proposed by Romania

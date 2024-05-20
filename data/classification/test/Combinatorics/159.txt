@@ -1,1 +1,0 @@
-Let x_1, x_2, ldots, x_n be real numbers satisfying the conditions: left { begin{array}{cccc} |x_1 + x_2 + cdots + x_n | & = & 1 & |x_i| & leq & displaystyle frac {n + 1}{2} & textrm{ for }i = 1, 2, ldots , n. end{array} right. Show that there exists a permutation y_1, y_2, ldots, y_n of x_1, x_2, ldots, x_n such that | y_1 + 2 y_2 + cdots + n y_n | leq frac {n + 1}{2}.

@@ -1,1 +1,0 @@
-Let a,b,c ge 0 and a+b+c= sqrt2. Show that frac1{ sqrt{1+a^2}}+ frac1{ sqrt{1+b^2}}+ frac1{ sqrt{1+c^2}} ge 2+ frac1{ sqrt3} Click to reveal hidden textIn general if a_1, a_2, cdots , a_n ge 0 and sum_{i=1}^n a_i= sqrt2 we have sum_{i=1}^n frac1{ sqrt{1+a_i^2}} ge (n-1)+ frac1{ sqrt3}

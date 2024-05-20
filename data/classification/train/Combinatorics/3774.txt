@@ -1,1 +1,0 @@
-Let A be a set with 2n elements, and let A_1, A_2...,A_m be subsets of Ae ach one with n elements. Find the greatest possible m, such that it is possible to select these m subsets in such a way that the intersection of any 3 of them has at most one element.

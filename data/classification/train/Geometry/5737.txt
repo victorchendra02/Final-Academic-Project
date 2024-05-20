@@ -1,1 +1,0 @@
-Given a regular nonagon A_1A_2A_3A_4A_5A_6A_7A_8A_9 with side length 1. Diagonals A_3A_7 and A_4A_8 intersect at point P. Find the length of segment P A_1.

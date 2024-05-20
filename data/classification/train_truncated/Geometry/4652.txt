@@ -1,1 +1,0 @@
-Let ABCD be a square inscribed in a circle omega and let P be a point on the shorter arc AB of omega. Let CP cap BD = R and DP cap AC = S. Show that triangles ARB and DSR have equal areas.

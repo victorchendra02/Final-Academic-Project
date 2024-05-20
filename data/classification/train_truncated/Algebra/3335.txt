@@ -1,1 +1,0 @@
-Given a polynomial P(x) = ab(a - c)x^3 + (a^3 - a^2c + 2ab^2 - b^2c + abc)x^2 +(2a^2b + b^2c + a^2c + b^3 - abc)x + ab(b + c),where a, b, c neq 0, prove that P(x) is divisible by Q(x) = abx^2 + (a^2 + b^2)x + aband conclude that P(x_0) is divisible by (a + b)^3 for x_0 = (a + b + 1)^n, n in mathbb N.

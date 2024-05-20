@@ -1,1 +1,0 @@
-a) Show that the product of all differences of possible couples of six given positive integers is divisible by 960 b) Show that the product of all differences of possible couples of six given positive integers is divisible by 34560 PS. a) original from Albania b) modified by problem selecting committee

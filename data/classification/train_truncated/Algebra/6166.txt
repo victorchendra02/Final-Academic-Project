@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R} to mathbb{R} such that f left( {yf(x + y) + f(x)} right) = 4x + 2yf(x + y) for all x,y in mathbb{R}. Netherlands (Birgit van Dalen)

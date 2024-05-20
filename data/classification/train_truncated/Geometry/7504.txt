@@ -1,1 +1,0 @@
-Let ABC be an equilateral triangle , and P be a point on the circumcircle of the triangle but distinct from A ,B and C. The lines through P and parallel to BC , CA , AB intersect the lines CA , AB , BC at M , N and Q respectively .Prove that M , N and Q are collinear .

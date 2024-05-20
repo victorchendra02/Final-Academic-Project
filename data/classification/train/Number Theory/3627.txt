@@ -1,1 +1,0 @@
-Prove that every positive integer can be written as a finite sum of distinct integral powers of the golden ratio.

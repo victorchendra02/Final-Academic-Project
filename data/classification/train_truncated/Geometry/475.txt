@@ -1,1 +1,0 @@
-Let ABCD be a parallelogram with AC=BC. A point P is chosen on the extension of ray AB past B. The circumcircle of ACD meets the segment PD again at Q. The circumcircle of triangle APQ meets the segment PC at R. Prove that lines CD,AQ,BR are concurrent.

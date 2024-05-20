@@ -1,1 +1,0 @@
-1. Find N, the smallest positive multiple of 45 such that all of its digits are either 7 or 0. 2. Find M, the smallest positive multiple of 32 such that all of its digits are either 6 or 1. 3. How many elements of the set {1,2,3,...,1441 } have a positive multiple such that all of its digits are either 5 or 2?

@@ -1,1 +1,0 @@
-Prove the inequality: sum_{i < j}{ frac {a_{i}a_{j}}{a_{i} + a_{j}}} leq frac {n}{2(a_{1} + a_{2} + cdots + a_{n})} cdot sum_{i < j}{a_{i}a_{j}} for positive reals a_{1},a_{2}, ldots,a_{n}. Proposed by Dusan Dukic, Serbia

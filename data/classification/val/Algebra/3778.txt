@@ -1,1 +1,0 @@
-For each integer n ge 3 solve in real numbers the system of equations: begin{cases} x_1^3 = x_2 + x_3 + 1 ... x_{n-1}^3 = x_n+ x_1 + 1 x_{n}^3 = x_1+ x_2 + 1 end{cases}

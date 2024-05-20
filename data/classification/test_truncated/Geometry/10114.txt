@@ -1,1 +1,0 @@
-In his triangle ABC Serge made some measurements and informed Ilias about the lengths of median AD and side AC. Based on these data Ilias proved the assertion: angle CAB is obtuse, while angle DAB is acute. Determine a ratio AD/AC and prove Ilias' assertion (for any triangle with such a ratio).

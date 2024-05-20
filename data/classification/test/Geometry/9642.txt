@@ -1,1 +1,0 @@
-The point M , inside vartriangle ABC, satisfies the conditions that angle BMC = 90^o + frac12 angle BAC and that the line AM contains the centre of the circumscribed circle of vartriangle BMC. Prove that M is the centre of the inscribed circle of vartriangle ABC.

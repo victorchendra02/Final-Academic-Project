@@ -1,1 +1,0 @@
-Let n be a natural number. Prove that left lfloor frac{n+2^0}{2^1} right rfloor + left lfloor frac{n+2^1}{2^2} right rfloor + cdots + left lfloor frac{n+2^{n-1}}{2^n} right rfloor =n. RemarkFor any real number x, the number lfloor x rfloor represents the largest integer smaller or equal with x.

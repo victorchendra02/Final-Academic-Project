@@ -1,1 +1,0 @@
-Let ABCDEF be a convex hexagon with angle A= angle D and angle B= angle E . Let K and L be the midpoints of the sides AB and DE respectively. Prove that the sum of the areas of triangles FAK, KCB and CFL is equal to half of the area of the hexagon if and only if frac{BC}{CD}= frac{EF}{FA}.

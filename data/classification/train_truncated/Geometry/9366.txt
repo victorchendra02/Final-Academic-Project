@@ -1,1 +1,0 @@
-In a triangle ABC A_0,B_0 and C_0 are the midpoints of the sides BC,CA and AB.A_1,B_1,C_1 are the midpoints of the broken lines BAC,CAB,ABC.Show that A_0A_1,B_0B_1,C_0C_1 are concurrent.

@@ -1,1 +1,0 @@
-A school has three senior classes of M students each. Every student knows at least frac{3}{4}M people in each of the other two classes. Prove that the school can send M non-intersecting teams to the olympiad so that each team consists of 3 students from different classes who know each other. Proposed by C. Magyar, R. Martin

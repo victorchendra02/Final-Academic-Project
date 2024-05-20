@@ -1,1 +1,0 @@
-Let x, y and k be three positive integers. Prove that there exist a positive integer N and a set of k + 1 positive integers {b_0,b_1, b_2, ... ,b_k }, such that, for every i = 0, 1, ... , k , the b_i-ary expansion of N is a 3-digit palindrome, and the b_0-ary expansion is exactly overline{ mbox{xyx}}. proposed by Bojan Basic, Serbia

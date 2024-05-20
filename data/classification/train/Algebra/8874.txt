@@ -1,1 +1,0 @@
-Find all functions f : mathbb Z to mathbb Z such that (f(x + y))^2 = f(x^2) + f(y^2)for all x, y in mathbb Z.

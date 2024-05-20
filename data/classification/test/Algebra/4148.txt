@@ -1,1 +1,0 @@
-Find all functions f: (0, infty) to (0, infty) such that begin{align*} f(y(f(x))^3 + x) = x^3f(y) + f(x) end{align*}for all x, y>0. Proposed by Jason Prodromidis, Greece

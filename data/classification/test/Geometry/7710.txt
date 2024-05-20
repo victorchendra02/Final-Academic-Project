@@ -1,1 +1,0 @@
-A triangle ABC is given. Find all the pairs of points X,Y so that X is on the sides of the triangle, Y is inside the triangle, and four non-intersecting segments from the set {XY, AX, AY, BX,BY, CX, CY } divide the triangle ABC into four triangles with equal areas.

@@ -1,1 +1,0 @@
-Consider a triangle {ABC} and let {M} be the midpoint of the side {BC.} Suppose { angle MAC= angle ABC} and { angle BAM=105^{ circ}.} Find the measure of { angle ABC}.

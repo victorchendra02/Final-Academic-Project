@@ -1,1 +1,0 @@
-Prove that (2m)!(2n)! is a multiple of m!n!(m+n)! for any non-negative integers m and n.

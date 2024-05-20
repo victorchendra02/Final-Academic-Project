@@ -1,1 +1,0 @@
-If ABCD is a cyclic quadrilateral, then prove that the incenters of the triangles ABC, BCD, CDA, DAB are the vertices of a rectangle.

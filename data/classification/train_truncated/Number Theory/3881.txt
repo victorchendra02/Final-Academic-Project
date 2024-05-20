@@ -1,1 +1,0 @@
-A sequence (a_n)_{n in N} of squares of nonzero integers is such that for each n the difference a_{n+1} - a_n is a prime or the square of a prime. Show that all such sequences are finite and determine the longest sequence.

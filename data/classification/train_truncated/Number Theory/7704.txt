@@ -1,1 +1,0 @@
-Prove that for any integer n one can find integers a and b such that n= left[ a sqrt{2} right]+ left[ b sqrt{3} right]

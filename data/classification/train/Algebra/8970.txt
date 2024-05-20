@@ -1,1 +1,0 @@
-Solve for x in R: sin^3{x}(1+ cot{x})+ cos^3{x}(1+ tan{x})= cos{2x}

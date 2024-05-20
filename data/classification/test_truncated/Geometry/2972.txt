@@ -1,1 +1,0 @@
-For two given triangles A_1A_2A_3 and B_1B_2B_3 with areas Delta_A and Delta_B, respectively, A_iA_k ge B_iB_k, i, k = 1, 2, 3. Prove that Delta_A ge Delta_B if the triangle A_1A_2A_3 is not obtuse-angled.

@@ -1,1 +1,0 @@
-Kolya is told that two of his four coins are fake. He knows that all real coins have the same weight, all fake coins have the same weight, and the weight of a real coin is greater than that of a fake coin. Can Kolya decide whether he indeed has exactly two fake coins by using a balance twice?

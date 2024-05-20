@@ -1,1 +1,0 @@
-A plane has a special point O called the origin. Let P be a set of 2021 points in the plane such that no three points in P lie on a line and no two points in P lie on a line through the origin. A triangle with vertices in P is fat if O is strictly inside the triangle. Find the maximum number of fat triangles.

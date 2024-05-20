@@ -1,1 +1,0 @@
-Find all positive integers n such that the equation y^2 + xy + 3x = n(x^2 + xy + 3y) has at least a solution (x, y) in positive integers.

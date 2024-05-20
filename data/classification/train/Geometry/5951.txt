@@ -1,1 +1,0 @@
-Points K,L,M on the sides AB,BC,CA respectively of a triangle ABC satisfy frac{AK}{KB} = frac{BL}{LC} = frac{CM}{MA}. Show that the triangles ABC and KLM have a common orthocenter if and only if triangle ABC is equilateral.

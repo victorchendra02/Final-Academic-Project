@@ -1,1 +1,0 @@
-Determine all functions f defined in the set of rational numbers and taking their values in the same set such that the equation f(x + y) + f(x - y) = 2f(x) + 2f(y) holds for all rational numbers x and y.

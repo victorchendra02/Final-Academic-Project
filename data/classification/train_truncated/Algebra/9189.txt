@@ -1,1 +1,0 @@
-Let n>1 be a positive integer and mathcal S be the set of n^{ text{th}} roots of unity. Suppose P is an n-variable polynomial with complex coefficients such that for all a_1, ldots,a_n in mathcal S, P(a_1, ldots,a_n)=0 if and only if a_1, ldots,a_n are all different. What is the smallest possible degree of P? Adam Ardeishar and Michael Ren

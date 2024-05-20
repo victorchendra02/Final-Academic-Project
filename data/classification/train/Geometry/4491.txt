@@ -1,1 +1,0 @@
-An acute-angled triangle ABC has altitudes AD, BE and CF. Let Q be an interior point of the segment AD, and let the circumcircles of the triangles QDF and QDE meet the line BC again at points X and Y , respectively. Prove that BX = CY .

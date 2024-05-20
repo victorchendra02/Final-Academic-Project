@@ -1,1 +1,0 @@
-The hypotenuse of a right triangle has length 1. Consider the line passing through the points of tangency of the incircle with the legs of the triangle. The circumcircle of the triangle cuts out a segment of this line. What is the possible length of this segment? Maxim Volchkevich

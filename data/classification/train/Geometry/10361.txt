@@ -1,1 +1,0 @@
-Let ABC be an isosceles triangle. Suppose that points K and L are chosen on lateral sides AB and AC respectively so that AK = CL and angle ALK + angle LKB = 60^o. Prove that KL = BC.

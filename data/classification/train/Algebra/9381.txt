@@ -1,1 +1,0 @@
-Find all f: mathbb{R} to mathbb{R}, such that (x+y)(f(x)-f(y))=(x-y)f(x+y) for all real x,y.

@@ -1,1 +1,0 @@
-Let a_1,a_2,...,a_6 be real numbers such that: a_1 not = 0, a_1a_6 + a_3 + a_4 = 2a_2a_5 mathrm{and} a_1a_3 ge a_2^2 Prove that a_4a_6 le a_5^2. When does equality holds?

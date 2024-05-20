@@ -1,1 +1,0 @@
-Let AB and CD be chords in a circle of center O with A , B , C , D distinct , and with the lines AB and CD meeting at a right angle at point E. Let also M and N be the midpoints of AC and BD respectively . If MN bot OE , prove that AD parallel BC.

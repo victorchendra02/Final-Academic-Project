@@ -1,1 +1,0 @@
-Does there exist a positive integer n such that all its digits (in the decimal system) are greather than 5, while all the digits of n^2 are less than 5?

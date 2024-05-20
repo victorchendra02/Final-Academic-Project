@@ -1,1 +1,0 @@
-All the sides of the convex hexagon ABCDEF are equal. In addition, AD = BE = CF. Prove that a circle can be inscribed into this hexagon. (Boyan Obukhov)

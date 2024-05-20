@@ -1,1 +1,0 @@
-Find all real roots of the equation sqrt{x^2-p}+2 sqrt{x^2-1}=x where p is a real parameter.

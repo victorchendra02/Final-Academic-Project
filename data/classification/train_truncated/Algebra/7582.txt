@@ -1,1 +1,0 @@
-If for the real numbers x, y,z, k the following conditions are valid, x ne y ne z ne x and x^3 +y^3 +k(x^2 +y^2) = y^3 +z^3 +k(y^2 +z^2) = z^3 +x^3 +k(z^2 +x^2) = 2008, find the product xyz.

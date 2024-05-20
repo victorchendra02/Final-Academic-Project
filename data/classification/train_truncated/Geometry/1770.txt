@@ -1,1 +1,0 @@
-(CZS 1) Given a unit cube, find the locus of the centroids of all tetrahedra whose vertices lie on the sides of the cube.

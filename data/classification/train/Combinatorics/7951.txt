@@ -1,1 +1,0 @@
-Let G=(V,E) be a tree graph with n vertices, and let P be a set of n points in the plane with no three points collinear. Is it true that for any choice of graph G and set P, we can embed G in P, i.e., we can find a bijection f:V to P such that when we draw line segment [f(x),f(y)] for all (x,y) in E, no two such segments intersect each other?

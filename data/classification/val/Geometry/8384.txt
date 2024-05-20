@@ -1,1 +1,0 @@
-Let ABCD be a square and let point F be any point on side BC. Let the line perpendicular to DF, that passes through B, intersect line DC at Q. What is value of angle FQC?

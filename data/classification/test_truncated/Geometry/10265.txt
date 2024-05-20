@@ -1,1 +1,0 @@
-P and Q are points on the longest side AB of triangle ABC such that AQ = AC and BP = BC. Prove that the circumcentre of triangle CPQ coincides with the incentre of triangle ABC.

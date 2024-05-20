@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R} rightarrow mathbb{R} such that: bullet f(x)<2 for all x in (0,1); bullet for all real numbers x,y we have: max {f(x+y),f(x-y) }=f(x)+f(y) Proposed by Navid Safaei

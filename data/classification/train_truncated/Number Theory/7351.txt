@@ -1,1 +1,0 @@
-Find all prime numbers p and q such that 1 + frac{p^q - q^p}{p + q}is a prime number. Proposed by Dorlir Ahmeti, Albania

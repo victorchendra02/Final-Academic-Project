@@ -1,1 +1,0 @@
-Prove that for any prime number p there are infinitely many fours (x, y, z, t) pairwise distinct natural numbers such that the number (x^2+p t^2)(y^2+p t^2)(z^2+p t^2) is a perfect square.

@@ -1,1 +1,0 @@
-Let ABCD be a quadrilateral and let O be the point of intersection of diagonals AC and BD. Knowing that the area of triangle AOB is equal to 1, the area of triangle BOC is equal to 2, and the area of triangle COD is equal to 4, calculate the area of triangle AOD and prove that ABCD is a trapezoid.

@@ -1,1 +1,0 @@
-Find the greatest natural number n such there exist natural numbers x_{1}, x_{2}, ldots, x_{n} and natural a_{1}< a_{2}< ldots < a_{n-1} satisfying the following equations for i =1,2, ldots,n-1: x_{1}x_{2} ldots x_{n}= 1980 quad text{and} quad x_{i}+ frac{1980}{x_{i}}= a_{i}.

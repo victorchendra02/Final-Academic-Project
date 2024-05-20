@@ -1,1 +1,0 @@
-Determine all pairs of positive integers (x, y) satisfying the equation p^x - y^3 = 1, where p is a given prime number.

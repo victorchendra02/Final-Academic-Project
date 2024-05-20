@@ -1,1 +1,0 @@
-Find all pairs of positive integers (a,b) such that 8b+1 is a multiple of a and 8a+1 is a multiple of b.

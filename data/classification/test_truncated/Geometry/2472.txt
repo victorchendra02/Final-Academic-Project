@@ -1,1 +1,0 @@
-Let PQ be a line segment of constant length lambda taken on the side BC of a triangle ABC with the order B,P,Q,C, and let the lines through P and Q parallel to the lateral sides meet AC at P_1 and Q_1 and AB at P_2 and Q_2 respectively. Prove that the sum of the areas of the trapezoids PQQ_1P_1 and PQQ_2P_2 is independent of the position of PQ on BC.

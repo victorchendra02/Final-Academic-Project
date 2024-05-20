@@ -1,1 +1,0 @@
-(GDR 2)^{IMO1} Prove that there exist infinitely many natural numbers a with the following property: The number z = n^4 + a is not prime for any natural number n.

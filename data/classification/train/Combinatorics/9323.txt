@@ -1,1 +1,0 @@
-The sequence {a_n } is defined as follows: a_0 = 1 and {a_n} = sum limits_ {k = 1} ^ {[ sqrt n]} {{a_ {n - {k ^ 2 }}}} for n ge 1. Prove that among a_1, a_2, ldots, a_ {10 ^ 6} there are at least 500 even numbers. (Here, [x] is the largest integer not exceeding x .)

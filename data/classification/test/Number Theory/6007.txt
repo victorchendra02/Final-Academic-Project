@@ -1,1 +1,0 @@
-Solve in mathbb{Z}^2 the equation: x^2 left( 1+x^2 right) =-1+21^y. Lucian Petrescu

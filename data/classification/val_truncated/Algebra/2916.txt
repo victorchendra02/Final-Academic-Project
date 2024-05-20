@@ -1,1 +1,0 @@
-Show that frac{20}{60} < sin 20^{ circ} < frac{21}{60}.

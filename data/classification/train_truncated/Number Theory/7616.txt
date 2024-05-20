@@ -1,1 +1,0 @@
-Determine the greatest number with n digits in the decimal representation which is divisible by 429 and has the sum of all digits less than or equal to 11.

@@ -1,1 +1,0 @@
-There are n lamps in a row. Some of which are on. Every minute all the lamps already on go off. Those which were off and were adjacent to exactly one lamp which was on will go on. For which n one can find an initial configuration of lamps which were on, such that at least one lamp will be on at any time?

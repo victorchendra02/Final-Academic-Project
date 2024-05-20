@@ -1,1 +1,0 @@
-A line in the plane of a triangle ABC intersects the sides AB and AC respectively at points X and Y such that BX = CY . Find the locus of the center of the circumcircle of triangle XAY .

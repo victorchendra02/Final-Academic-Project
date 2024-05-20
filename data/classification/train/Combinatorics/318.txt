@@ -1,1 +1,0 @@
-A box whose shape is a parallelepiped can be completely filled with cubes of side 1. If we put in it the maximum possible number of cubes, each of volume 2, with the sides parallel to those of the box, then exactly 40 percent of the volume of the box is occupied. Determine the possible dimensions of the box.

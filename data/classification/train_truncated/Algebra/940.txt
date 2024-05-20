@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R} to mathbb{R} such that f(x+y)+f(x)f(y)=f(xy)+2xy+1 for all real numbers x and y. Proposed by B.J. Venkatachala, India

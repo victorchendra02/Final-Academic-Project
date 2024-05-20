@@ -1,1 +1,0 @@
-Find all solutions (x, y) in mathbb Z^2 of the equation x^3 - y^3 = 2xy + 8.

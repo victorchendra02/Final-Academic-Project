@@ -1,1 +1,0 @@
-Find all functions f: R to R such that: f(x^2)-f(y^2)=(x+y)(f(x)-f(y)), x,y in R

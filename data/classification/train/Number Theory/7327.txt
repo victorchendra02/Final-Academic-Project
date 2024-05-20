@@ -1,1 +1,0 @@
-Given a positive integer n ge 2, we define f(n) to be the sum of all remainders obtained by dividing n by all positive integers less than n. For example dividing 5 with 1, 2, 3 and 4 we have remainders equal to 0, 1, 2 and 1 respectively. Therefore f(5) = 0 + 1 + 2 + 1 = 4. Find all positive integers n ge 3 such that f(n) = f(n - 1) + (n - 2).

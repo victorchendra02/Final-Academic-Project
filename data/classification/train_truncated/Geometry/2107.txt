@@ -1,1 +1,0 @@
-A and B are two points in the plane alpha, and line r passes through points A, B. There are n distinct points P_1, P_2, ldots, P_n in one of the half-plane divided by line r. Prove that there are at least sqrt n distinct values among the distances AP_1, AP_2, ldots, AP_n, BP_1, BP_2, ldots, BP_n.

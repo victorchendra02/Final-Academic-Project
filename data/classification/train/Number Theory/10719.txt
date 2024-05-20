@@ -1,1 +1,0 @@
-The ratio of prime numbers p and q does not exceed 2 (p ne q). Prove that there are two consecutive positive integers such that the largest prime divisor of one of them is p and that of the other is q.

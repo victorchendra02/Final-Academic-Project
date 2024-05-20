@@ -1,1 +1,0 @@
-Let m= frac{-1+ sqrt{17}}{2}. Let the polynomial P(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0 is given, where n is a positive integer, the coefficients a_0,a_1,a_2,...,a_n are positive integers and P(m) =2018 . Prove that the sum a_0+a_1+a_2+...+a_n is divisible by 2 .

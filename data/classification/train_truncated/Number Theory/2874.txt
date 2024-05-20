@@ -1,1 +1,0 @@
-Find all pairs of solutions (x,y): x^3 + x^2y + xy^2 + y^3 = 8(x^2 + xy + y^2 + 1).

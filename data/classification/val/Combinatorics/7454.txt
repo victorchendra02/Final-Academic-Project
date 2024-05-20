@@ -1,1 +1,0 @@
-Let n ge 1 be a positive integer. A square of side length n is divided by lines parallel to each side into n^2 squares of side length 1. Find the number of parallelograms which have vertices among the vertices of the n^2 squares of side length 1, with both sides smaller or equal to 2, and which have tha area equal to 2. (Greece)

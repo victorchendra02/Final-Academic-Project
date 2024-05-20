@@ -1,1 +1,0 @@
-The discriminant of the equation x^2-ax+b=0 is the square of a rational number and a and b are integers. Prove that the roots of the equation are integers.

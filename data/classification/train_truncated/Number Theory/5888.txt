@@ -1,1 +1,0 @@
-For the positive integers a, b, x_1 we construct the sequence of numbers (x_n)_{n=1}^{ infty} such that x_n = ax_{n-1} + b for each n ge 2. Specify the conditions for the given numbers a, b and x_1 which are necessary and sufficient for all indexes m, n to apply the implication m | n Rightarrow x_m | x_n. (Jaromir Simsa)

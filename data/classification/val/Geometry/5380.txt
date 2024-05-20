@@ -1,1 +1,0 @@
-Let ABCD be a trapezoid with bases AB and CD, inscribed in a circle of center O. Let P be the intersection of the lines BC and AD. A circle through O and P intersects the segments BC and AD at interior points F and G, respectively. Show that BF=DG.

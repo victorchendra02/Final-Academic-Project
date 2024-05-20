@@ -1,1 +1,0 @@
-If the real numbers a, b, c, d are such that 0 < a,b,c,d < 1, show that 1 + ab + bc + cd + da + ac + bd > a + b + c + d.

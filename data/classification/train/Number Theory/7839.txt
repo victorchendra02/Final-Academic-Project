@@ -1,1 +1,0 @@
-Let N be the set of those positive integers n for which n mid k^k-1 implies n mid k-1 for every positive integer k. Prove that if n_1,n_2 in N, then their greatest common divisor is also in N.

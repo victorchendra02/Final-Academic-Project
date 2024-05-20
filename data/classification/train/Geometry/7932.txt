@@ -1,1 +1,0 @@
-Let k_1,k_2, ldots,k_5 be five circles in the lane such that k_1 and k_2 are externally tangent to each other at point T, k_3 and k_4 are exetrnally tangent to both k_1 and k_2, k_5 is externally tangent to k_3 and k_4 at points U and V, respectively, and k_5 intersects k_1 at P and Q, like shown in the figure. Prove that frac{PU}{QU} cdot frac{PV}{QV}= frac{PT^2}{QT^2}.

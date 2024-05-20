@@ -1,1 +1,0 @@
-Is it true that every integer is a sum of finite number of cubes of distinct integers?

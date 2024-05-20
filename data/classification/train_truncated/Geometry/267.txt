@@ -1,1 +1,0 @@
-Prove that the sum of the six angles subtended at an interior point of a tetrahedron by its six edges is greater than 540.

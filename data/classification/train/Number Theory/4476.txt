@@ -1,1 +1,0 @@
-Prove that there are no distinct positive integers x and y such that x^{2007} + y! = y^{2007} + x!

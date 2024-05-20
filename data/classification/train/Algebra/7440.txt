@@ -1,1 +1,0 @@
-The positive real x, y, z are such that x^2+y^2+z^2 = 3. Prove that frac{x^2+yz}{x^2+yz +1}+ frac{y^2+zx}{y^2+zx+1}+ frac{z^2+xy}{z^2+xy+1} leq 2

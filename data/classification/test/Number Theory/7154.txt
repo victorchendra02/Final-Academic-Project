@@ -1,1 +1,0 @@
-Solve in positive integers the equation n = varphi(n) + 402 , where varphi(n) is the number of positive integers less than n having no common prime factors with n.

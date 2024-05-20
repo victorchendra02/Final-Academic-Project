@@ -1,1 +1,0 @@
-In a convex quadrilateral ABCD, AB = 10, BC = 14, CD = 11 and DA = 5. Determine the angle between its diagonals.

@@ -1,1 +1,0 @@
-Suppose that ABCD is a convex quadrilateral with no parallel sides. Make a parallelogram on each two consecutive sides. Show that among these 4 new points, there is only one point inside the quadrilateral ABCD. by Morteza Saghafian

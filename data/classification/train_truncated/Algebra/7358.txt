@@ -1,1 +1,0 @@
-Show that for any positive real numbers a, b, c such that a + b + c = ab + bc + ca, the following inequality holds 3 + sqrt[3]{ frac{a^3+1}{2}}+ sqrt[3]{ frac{b^3+1}{2}}+ sqrt[3]{ frac{c^3+1}{2}} leq 2(a+b+c) Proposed by Dorlir Ahmeti, Albania

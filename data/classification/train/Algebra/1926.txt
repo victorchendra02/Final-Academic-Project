@@ -1,1 +1,0 @@
-Let a_1, a_2, ldots, a_n be positive real numbers. Prove the inequality binom n2 sum_{i<j} frac{1}{a_ia_j} geq 4 left( sum_{i<j} frac{1}{a_i+a_j} right)^2

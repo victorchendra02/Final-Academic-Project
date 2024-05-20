@@ -1,1 +1,0 @@
-A circle passing through the midpoint M of the side BC and the vertex A of the triangle ABC intersects the segments AB and AC for the second time in the points P and Q, respectively. Prove that if angle BAC=60^{ circ}, then AP+AQ+PQ<AB+AC+ frac{1}{2} BC.

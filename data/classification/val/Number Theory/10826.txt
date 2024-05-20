@@ -1,1 +1,0 @@
-Is it possible to arrange on a circle all composite positive integers not exceeding 10^6, so that no two neighbouring numbers are coprime? Author: L. Emelyanov Tuymaada 2008, Junior League, First Day, Problem 2.Prove that all composite positive integers not exceeding 10^6 may be arranged on a circle so that no two neighbouring numbers are coprime.

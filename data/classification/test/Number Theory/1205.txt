@@ -1,1 +1,0 @@
-Find all positive integers a and b for which left lfloor frac{a^2}{b} right rfloor + left lfloor frac{b^2}{a} right rfloor = left lfloor frac{a^2 + b^2}{ab} right rfloor + ab.

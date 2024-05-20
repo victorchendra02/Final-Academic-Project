@@ -1,1 +1,0 @@
-Two circles C_1 and C_2 intersect in points A and B. A circle C with center in A intersect C_1 in M and P and C_2 in N and Q so that N and Q are located on different sides wrt MP and AB> AM. Prove that angle MBQ = angle NBP.

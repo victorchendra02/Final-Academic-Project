@@ -1,1 +1,0 @@
-Two circles mathcal{C}_1 and mathcal{C}_2 intersect each other at two distinct points M and N. A common tangent lines touches mathcal{C}_1 at P and mathcal{C}_2 at Q, the line being closer to N than to M. The line PN meets the circle mathcal{C}_2 again at the point R. Prove that the line MQ is a bisector of the angle angle{PMR}.

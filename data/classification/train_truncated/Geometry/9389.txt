@@ -1,1 +1,0 @@
-Let triangle ABC be a triangle with incircle omega(I,r)and circumcircle zeta(O,R).Let l_{a} be the angle bisector of angle BAC.Denote P=l_{a} cap zeta.Let D be the point of tangency omega with [BC].Denote Q=PD cap zeta.Show that PI=QI if PD=r.

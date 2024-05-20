@@ -1,1 +1,0 @@
-A positive integer n is friendly if the difference of each pair of neighbouring digits of n, written in base 10, is exactly 1. For example, 6787 is friendly, but 211 and 901 are not. Find all odd natural numbers m for which there exists a friendly integer divisible by 64m.

@@ -1,1 +1,0 @@
-Consider a convex quadrilateral ABCD with AB=CD and angle BAC=30^{ circ}. If angle ADC=150^{ circ}, prove that angle BCA= angle ACD.

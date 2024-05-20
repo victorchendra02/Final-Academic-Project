@@ -1,1 +1,0 @@
-Prove that a 46-element set of integers contains two distinct doubletons {u, v } and {x,y } such that u + v equiv x + y (mod 2016).

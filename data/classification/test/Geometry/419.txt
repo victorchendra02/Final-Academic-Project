@@ -1,1 +1,0 @@
-An isosceles trapezoid with bases a and c and altitude h is given. a) On the axis of symmetry of this trapezoid, find all points P such that both legs of the trapezoid subtend right angles at P; b) Calculate the distance of p from either base; c) Determine under what conditions such points P actually exist. Discuss various cases that might arise.

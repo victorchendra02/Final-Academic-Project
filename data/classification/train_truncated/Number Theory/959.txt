@@ -1,1 +1,0 @@
-Let a, b, c, d, e, f be positive integers and let S = a+b+c+d+e+f. Suppose that the number S divides abc+def and ab+bc+ca-de-ef-df. Prove that S is composite.

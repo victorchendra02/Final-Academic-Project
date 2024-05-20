@@ -1,1 +1,0 @@
-Let O be a circumcenter of an acute-angled triangle ABC. Consider two circles omega and Omega inscribed in the angle angle BAC in such way that omega is tangent from the outside to the arc BOC of a circle circumscribed about the triangle BOC, and the circle Omega is tangent internally to a circumcircle of triangle ABC. Prove that the radius of Omega is twice the radius omega.

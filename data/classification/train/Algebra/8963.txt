@@ -1,1 +1,0 @@
-If a_1 geq a_2 geq cdots geq a_n geq 0 and a_1+a_2+ cdots+a_n=1, then prove: a_1^2+3a_2^2+5a_3^2+ cdots +(2n-1)a_n^2 leq 1

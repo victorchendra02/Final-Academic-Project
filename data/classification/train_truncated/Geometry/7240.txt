@@ -1,1 +1,0 @@
-Let ABC be a triangle with angle A = 60^ circ. Points E and F are the foot of angle bisectors of vertices B and C respectively. Points P and Q are considered such that quadrilaterals BFPE and CEQF are parallelograms. Prove that angle PAQ > 150^ circ. (Consider the angle PAQ that does not contain side AB of the triangle.) Proposed by Alireza Dadgarnia

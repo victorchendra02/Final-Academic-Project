@@ -1,1 +1,0 @@
-Quadrilateral ABCD is circumscribed about a circle Gamma and K,L,M,N are points of tangency of sides AB,BC,CD,DA with Gamma respectively. Let S equiv KM cap LN. If quadrilateral SKBL is cyclic then show that SNDM is also cyclic.

@@ -1,1 +1,0 @@
-Real numbers a,b,c,d are given. Solve the system of equations (unknowns x,y,z,u) x^{2}-yz-zu-yu=a y^{2}-zu-ux-xz=b z^{2}-ux-xy-yu=c u^{2}-xy-yz-zx=d$

@@ -1,1 +1,0 @@
-Given points A, M, M_1 and rational number lambda neq -1. Construct the triangle ABC, such that M lies on BC and M_1 lies on B_1C_1 (B_1, C_1 are the projections of B, C on AC, AB respectively), and frac{BM}{MC}= frac{B_1M_1}{M_1C_1}= lambda.

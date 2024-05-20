@@ -1,1 +1,0 @@
-A balance and a set of pairwise different weights are given. It is known that for any pair of weights from this set put on the left pan of the balance, one can counterbalance them by one or several of the remaining weights put on the right pan. Find the least possible number of weights in the set.

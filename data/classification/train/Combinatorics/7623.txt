@@ -1,1 +1,0 @@
-We call a tiling of an m times n rectangle with corners (see figure below) "regular" if there is no sub-rectangle which is tiled with corners. Prove that if for some m and n there exists a "regular" tiling of the m times n rectangular then there exists a "regular" tiling also for the 2m times 2n rectangle.

@@ -1,1 +1,0 @@
-boxed{ text{G1}} Let M be interior point of the triangle ABC with

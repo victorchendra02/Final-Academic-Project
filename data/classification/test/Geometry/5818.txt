@@ -1,1 +1,0 @@
-The ABCDE pentagon is inscribed in a circle and AB = BC = CD. Segments AC and BE intersect at K, and Segments AD and CE intersect at point L. Prove that AK = KL.

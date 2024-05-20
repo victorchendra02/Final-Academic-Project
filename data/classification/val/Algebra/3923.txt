@@ -1,1 +1,0 @@
-Show that for n>1 and any positive real numbers k,x_{1},x_{2},...,x_{n} then frac{f(x_{1}-x_{2})}{x_{1}+x_{2}}+ frac{f(x_{2}-x_{3})}{x_{2}+x_{3}}+...+ frac{f(x_{n}-x_{1})}{x_{n}+x_{1}} geq frac{n^2}{2(x_{1}+x_{2}+...+x_{n})} Where f(x)=k^x. When does equality hold.

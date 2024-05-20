@@ -1,1 +1,0 @@
-Let p: mathbb C to mathbb C be a polynomial with degree n and complex coefficients which satisfies x in mathbb R iff p(x) in mathbb R. Show that n=1

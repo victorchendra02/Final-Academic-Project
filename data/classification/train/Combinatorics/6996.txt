@@ -1,1 +1,0 @@
-A positive integer is written on the board. Every minute Maxim adds to the number on the board one of its positive divisors, writes the result on the board and erases the previous number. However, it is forbidden for him to add the same number twice in a row. Prove that he can proceed in such a way that eventually a perfect square will appear on the board.

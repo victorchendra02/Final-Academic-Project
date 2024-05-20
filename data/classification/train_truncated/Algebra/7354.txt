@@ -1,1 +1,0 @@
-Let A and B be two non-empty subsets of X = {1, 2, . . . , 11 } with A cup B = X. Let P_A be the product of all elements of A and let P_B be the product of all elements of B. Find the minimum and maximum possible value of P_A +P_B and find all possible equality cases. Proposed by Greece

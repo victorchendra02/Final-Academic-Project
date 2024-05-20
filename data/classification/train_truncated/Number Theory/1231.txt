@@ -1,1 +1,0 @@
-Find all x,y and z in positive integer: z + y^{2} + x^{3} = xyz and x = gcd(y,z).

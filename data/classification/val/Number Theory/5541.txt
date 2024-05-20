@@ -1,1 +1,0 @@
-Find all triplets of positive integers (x,y,z) such that x^{2}+y^{2}+z^{2}=2011.

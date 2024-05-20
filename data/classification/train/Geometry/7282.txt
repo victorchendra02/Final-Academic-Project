@@ -1,1 +1,0 @@
-Find all positive integers N such that there exists a triangle which can be dissected into N similar quadrilaterals. Proposed by Nikolai Beluhov (Bulgaria) and Morteza Saghafian

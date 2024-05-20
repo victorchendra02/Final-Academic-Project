@@ -1,1 +1,0 @@
-Let ABC an acute triangle with circumcenter O. Points X and Y are chosen such that: angle XAB = angle YCB = 90^ circ angle ABC = angle BXA = angle BYC X and C are in different half-planes with respect to AB Y and A are in different half-planes with respect to BC Prove that O is the midpoint of XY.

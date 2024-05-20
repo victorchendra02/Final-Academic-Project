@@ -1,1 +1,0 @@
-A set S of natural numbers is called good, if for each element x in S, x does not divide the sum of the remaining numbers in S. Find the maximal possible number of elements of a good set which is a subset of the set A = {1,2, 3, ...,63 }.

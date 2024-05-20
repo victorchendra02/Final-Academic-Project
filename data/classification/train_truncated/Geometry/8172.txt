@@ -1,1 +1,0 @@
-Let ABC be a triangle such that angle{ABC} = 2 angle{BCA} and angle{CAB}>90^ circ. Let M be the midpoint of BC. The line perpendicular to AC that passes through C cuts the line AB at point D. Show that angle{AMB} = angle{DMC}.

@@ -1,1 +1,0 @@
-Let ABCD be a rectangle and the circle of center D and radius DA, which cuts the extension of the side AD at point P. Line PC cuts the circle at point Q and the extension of the side AB at point R. Show that QB = BR.

@@ -1,1 +1,0 @@
-Each of 100 stones has a sticker showing its true weight. No two stones weight the same. Mischievous Greg wants to rearrange stickers so that the sum of the numbers on the stickers for any group containing from 1 to 99 stones is different from the true weight of this group. Is it always possible?

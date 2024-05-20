@@ -1,1 +1,0 @@
-Let x, y, z be positive real numbers satisfying x+y+z ge 6. Find, with proof, the minimum value of x^2+y^2+z^2+ frac{x}{y^2+z+1}+ frac{y}{z^2+x+1}+ frac{z}{x^2+y+1}.

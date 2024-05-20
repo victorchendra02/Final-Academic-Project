@@ -1,1 +1,0 @@
-Find all positive integers k such that there exist two positive integers m and n satisfying m(m + k) = n(n + 1).

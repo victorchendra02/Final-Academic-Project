@@ -1,1 +1,0 @@
-Find all pairs (x,y) of real numbers such that |x|+ |y|=1340 and x^{3}+y^{3}+2010xy= 670^{3} .

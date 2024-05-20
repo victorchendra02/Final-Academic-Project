@@ -1,1 +1,0 @@
-Determine the least integer k for which the following story could hold true: In a chess tournament with 24 players, every pair of players plays at least 2 and at most k games against each other. At the end of the tournament, it turns out that every player has played a different number of games.

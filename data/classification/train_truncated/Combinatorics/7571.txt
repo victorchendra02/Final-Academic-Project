@@ -1,1 +1,0 @@
-Determine all pairs of (m, n) such that is possible to tile the table m times n with figure corner as in figure with condition that in that tilling does not exist rectangle (except m times n) regularly covered with figures.

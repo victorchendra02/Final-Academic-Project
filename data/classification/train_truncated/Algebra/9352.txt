@@ -1,1 +1,0 @@
-Prove that for any positive integer n, the arithmetic mean of sqrt[1]{1}, sqrt[2]{2}, sqrt[3]{3}, ldots , sqrt[n]{n} lies in left[ 1,1+ frac{2 sqrt{2}}{ sqrt{n}} right] .

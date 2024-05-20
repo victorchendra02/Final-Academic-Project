@@ -1,1 +1,0 @@
-Find all ordered triplets (p,q,r) of positive integers such that p and q are two (not necessarily distinct) primes, r is even, and p^3+q^2=4r^2+45r+103.

@@ -1,1 +1,0 @@
-1994 girls are seated at a round table. Initially one girl holds n tokens. Each turn a girl who is holding more than one token passes one token to each of her neighbours. a.) Show that if n < 1994, the game must terminate. b.) Show that if n = 1994 it cannot terminate.

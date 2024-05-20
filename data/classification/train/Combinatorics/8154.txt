@@ -1,1 +1,0 @@
-Each square on a n times n board, with n ge 3, is colored with one of 8 colors. For what values of n it can be said that some of these figures included in the board, does it contain two squares of the same color. https://cdn.artofproblemsolving.com/attachments/3/9/6af58460585772f39dd9e8ef1a2d9f37521317.png

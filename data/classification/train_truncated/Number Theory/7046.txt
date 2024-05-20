@@ -1,1 +1,0 @@
-Let k geqslant 2 be an integer, and a,b be real numbers. prove that a-b is an integer divisible by k if and only if for every positive integer n lfloor an rfloor equiv lfloor bn rfloor (mod k) Proposed by Navid Safaei

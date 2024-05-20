@@ -1,1 +1,0 @@
-Let ABC be a triangle with area S and points D,E,F on the sides BC,CA,AB. Perpendiculars at points D,E,F to the BC,CA,AB cut circumcircle of the triangle ABC at points (D_1,D_2), (E_1,E_2), (F_1,F_2). Prove that: |D_1B cdot D_1C - D_2B cdot D_2C| + |E_1A cdot E_1C - E_2A cdot E_2C| + |F_1B cdot F_1A - F_2B cdot F_2A| > 4S

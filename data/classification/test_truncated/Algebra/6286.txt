@@ -1,1 +1,0 @@
-Let P(X) = a_n X^n + a_{n-1} X^{n-1} + cdots + a_1 X + a_0 be a polynomial with real coefficients such that 0 leqslant a_i leqslant a_0 for i = 1, 2, ldots, n. Prove that, if P(X)^2 = b_{2n} X^{2n} + b_{2n-1} X^{2n-1} + cdots + b_{n+1} X^{n+1} + cdots + b_1 X + b_0, then 4 b_{n+1} leqslant P(1)^2.

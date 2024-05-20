@@ -1,1 +1,0 @@
-The altitudes of the acute-angled non-isosceles triangle ABC intersect at the point H . On the segment C_1H , where CC_1 is the altitude of the triangle, the point K is marked. Points L and M are the feet of perpendiculars from point K on straight lines AC and BC , respectively. The lines AM and BL intersect at N . Prove that angle ANK = angle HNL .

@@ -1,1 +1,0 @@
-Suppose, medians m_a and m_b of a triangle are orthogonal. Prove that: (a) The medians of the triangle correspond to the sides of a right-angled triangle. (b) If a,b,c are the side-lengths of the triangle, then, the following inequality holds:5(a^2+b^2-c^2) geq 8ab

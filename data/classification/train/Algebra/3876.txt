@@ -1,1 +1,0 @@
-Show that ( sum_{i=1}^{n}x_iy_iz_i)^2 le ( sum_{i=1}^{n}x_i^3) ( sum_{i=1}^{n}y_i^3) ( sum_{i=1}^{n}z_i^3) for any positive reals x_i, y_i, z_i.

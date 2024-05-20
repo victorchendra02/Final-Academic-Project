@@ -1,1 +1,0 @@
-In a square ABCD with side k, let P and Q in BC and DC respectively, where PC = 3PB and QD = 2QC. Let M be the point of intersection of the lines AQ and PD, determine the area of QMD in function of k

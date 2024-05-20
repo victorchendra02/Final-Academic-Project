@@ -1,1 +1,0 @@
-Find all triples of positive integers x, y, z satisfying frac{1}{x} + frac{1}{y} + frac{1}{z} = frac{4}{5} .

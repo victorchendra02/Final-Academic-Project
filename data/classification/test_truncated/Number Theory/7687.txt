@@ -1,1 +1,0 @@
-Prove that there are are no positive integers x and y such that x^5+y^5+1=(x+2)^5+(y-3)^5. NoteThe restriction x,y are positive isn't necessary.

@@ -1,1 +1,0 @@
-Find the triple of positive integers (x,y,z) with z least possible for which there are positive integers a, b, c, d with the following properties: (i) x^y = a^b = c^d and x > a > c (ii) z = ab = cd (iii) x + y = a + b.

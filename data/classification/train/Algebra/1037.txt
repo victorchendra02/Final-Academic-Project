@@ -1,1 +1,0 @@
-Let P be a cubic polynomial given by P(x)=ax^3+bx^2+cx+d, where a,b,c,d are integers and a ne0. Suppose that xP(x)=yP(y) for infinitely many pairs x,y of integers with x ne y. Prove that the equation P(x)=0 has an integer root.

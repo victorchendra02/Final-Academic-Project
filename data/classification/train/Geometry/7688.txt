@@ -1,1 +1,0 @@
-Prove that no three points with integer coordinates can be the vertices of an equilateral triangle.

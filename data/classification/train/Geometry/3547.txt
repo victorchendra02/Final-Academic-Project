@@ -1,1 +1,0 @@
-Let ABC be a right triangle with angle B=90^{ circ}. Point D lies on the line CB such that B is between D and C. Let E be the midpoint of AD and let F be the seconf intersection point of the circumcircle of triangle ACD and the circumcircle of triangle BDE. Prove that as D varies, the line EF passes through a fixed point.

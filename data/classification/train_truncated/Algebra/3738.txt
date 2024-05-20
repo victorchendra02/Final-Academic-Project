@@ -1,1 +1,0 @@
-Solve the following system of equations in mathbb{R} where all square roots are non-negative: begin{matrix} a - sqrt{1-b^2} + sqrt{1-c^2} = d b - sqrt{1-c^2} + sqrt{1-d^2} = a c - sqrt{1-d^2} + sqrt{1-a^2} = b d - sqrt{1-a^2} + sqrt{1-b^2} = c end{matrix}

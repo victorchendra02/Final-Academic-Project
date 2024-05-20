@@ -1,1 +1,0 @@
-Given a triangle ABC, points K,L,M are the midpoints of the sides BC,CA,AB, and points X,Y,Z are the midpoints of the arcs BC,CA,AB of the circumcircle not containing A,B,C respectively. If R denotes the circumradius and r the inradius of the triangle, show that r+KX+LY+MZ=2R.

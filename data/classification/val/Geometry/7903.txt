@@ -1,1 +1,0 @@
-Two circles are given in the plane, Omega and inside it omega. The center of omega is I. P is a point moving on Omega. The second intersection of the tangents from P to omega and circle Omega are Q and R. The second intersection of circle IQR and lines PI, PQ and PR are J, S and T, respectively. The reflection of point J across line ST is K. Prove that lines PK are concurrent.

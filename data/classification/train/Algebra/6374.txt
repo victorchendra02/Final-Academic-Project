@@ -1,1 +1,0 @@
-Let d > 0 be an arbitrary real number. Consider the set S_{n}(d)= {s= frac{1}{x_{1}}+ frac{1}{x_{2}}+...+ frac{1}{x_{n}}|x_{i} in mathbb{N},s<d }. Prove that S_{n}(d) has a maximum element.

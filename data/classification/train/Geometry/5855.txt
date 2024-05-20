@@ -1,1 +1,0 @@
-Let ABC be an acute triangle. Let P be a point such that PB and PC are tangent to circumcircle of ABC. Let X and Y be variable points on AB and AC, respectively, such that angle XPY = 2 angle BAC and P lies in the interior of triangle AXY. Let Z be the reflection of A across XY. Prove that the circumcircle of XYZ passes through a fixed point. (Dominik Burek, Poland)

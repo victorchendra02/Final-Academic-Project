@@ -1,1 +1,0 @@
-Let ABC be an acute-angled triangle with angle BAC = 60^{ circ} and with incenter I and circumcenter O. Let H be the point diametrically opposite(antipode) to O in the circumcircle of triangle BOC. Prove that IH=BI+IC.

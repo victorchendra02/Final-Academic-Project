@@ -1,1 +1,0 @@
-Prove that forall n > 1, n in mathbb{N} the equation sum^n_{k=1} frac{x^k}{k!} + 1 = 0 has no rational roots.

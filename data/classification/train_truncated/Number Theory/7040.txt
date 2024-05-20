@@ -1,1 +1,0 @@
-Prove that there are infinitely many positive integers a such that a!+(a+2)! mid (a+2 left lfloor sqrt{a} right rfloor)!. Proposed by Navid and the4seasons.

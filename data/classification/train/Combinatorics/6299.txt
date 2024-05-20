@@ -1,1 +1,0 @@
-Evariste has drawn twelve triangles as follows, so that two consecutive triangles share exactly one edge. https://cdn.artofproblemsolving.com/attachments/6/2/50377e7ad5fb1c40e36725e43c7eeb1e3c2849.png Sophie colors every triangle side in red, green or blue. Among the 3^{24} possible colorings, how many have the property that every triangle has one edge of each color?

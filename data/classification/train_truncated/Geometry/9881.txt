@@ -1,1 +1,0 @@
-Points K and L are chosen on the sides AB and BC of the isosceles triangle ABC (AB = BC) so that AK +LC = KL. A line parallel to BC is drawn through midpoint M of the segment KL, intersecting side AC at point N. Find the value of angle KNL.

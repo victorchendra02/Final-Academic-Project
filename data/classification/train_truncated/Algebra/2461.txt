@@ -1,1 +1,0 @@
-Let P,Q,R be polynomials with real coefficients, satisfying P^4+Q^4 = R^2. Prove that there exist real numbers p, q, r and a polynomial S such that P = pS, Q = qS and R = rS^2. VariantsVariants. (1) P^4 + Q^4 = R^4; (2) gcd(P,Q) = 1 ; (3) pm P^4 + Q^4 = R^2 or R^4.

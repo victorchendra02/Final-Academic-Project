@@ -1,1 +1,0 @@
-Let ABCD be a trapezium, AD parallel BC, and let E,F be points on the sidesAB and CD, respectively. The circumcircle of AEF meets AD again at A_1, and the circumcircle of CEF meets BC again at C_1. Prove that A_1C_1,BD,EF are concurrent.

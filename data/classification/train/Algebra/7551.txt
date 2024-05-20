@@ -1,1 +1,0 @@
-Determine all four digit numbers bar{a} bar{b} bar{c} bar{d} such that a(a+b+c+d)(a^{2}+b^{2}+c^{2}+d^{2})(a^{6}+2b^{6}+3c^{6}+4d^{6})= bar{a} bar{b} bar{c} bar{d}

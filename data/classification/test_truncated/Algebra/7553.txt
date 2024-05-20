@@ -1,1 +1,0 @@
-Let a,b,c be real positive numbers such that abc(a+b+c)=3 Prove that (a+b)(b+c)(c+a) geq 8

@@ -1,1 +1,0 @@
-For each positive integer m let t_m be the smallest positive integer not dividing m. Prove that there are infinitely many positive integers which can not be represented in the form m + t_m. (A. Golovanov)

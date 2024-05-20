@@ -1,1 +1,0 @@
-Show that an integer p > 3 is a prime if and only if for every two nonzero integers a,b exactly one of the numbers N_1 = a+b-6ab+ frac{p-1}{6} , N_2 = a+b+6ab+ frac{p-1}{6} is a nonzero integer.

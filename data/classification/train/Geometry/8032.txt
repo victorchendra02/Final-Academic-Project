@@ -1,1 +1,0 @@
-In a convex quadrilateral ABCD, P and Q are points on sides BC and DC such that B hat{A}P = D hat{A}Q. If the line that passes through the orthocenters of triangle ABP and triangle ADQ is perpendicular to AC, prove that the area of these triangles are equals.

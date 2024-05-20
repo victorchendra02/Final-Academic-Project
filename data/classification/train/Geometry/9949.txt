@@ -1,1 +1,0 @@
-Let K be a point on the side BC of the triangle ABC. The incircles of the triangles ABK and ACK touch BC at points M and N, respectively. Show that BM cdot CN>KM cdot KN.

@@ -1,1 +1,0 @@
-Let ABCD be a convex quadrilateral. DA and CB meet at F and AB and DC meet at E. The bisectors of the angles DFC and AED are perpendicular. Prove that these angle bisectors are parallel to the bisectors of the angles between the lines AC and BD.

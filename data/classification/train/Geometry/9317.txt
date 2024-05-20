@@ -1,1 +1,0 @@
-The triangle ABC is inscribed in the circle omega . Points K, L, M are marked on the sides AB, BC, CA , respectively, and CM cdot CL = AM cdot BL . Ray LK intersects line AC at point P . The common chord of the circle omega and the circumscribed circle of the triangle KMP meets the segment AM at the point S . Prove that SK parallel BC .

@@ -1,1 +1,0 @@
-Given convex hexagon ABCDEF with AB parallel DE, BC parallel EF, and CD parallel FA . The distance between the lines AB and DE is equal to the distance between the lines BC and EF and to the distance between the lines CD and FA. Prove that the sum AD+BE+CF does not exceed the perimeter of hexagon ABCDEF.

@@ -1,1 +1,0 @@
-A rectangular building consists of 30 square rooms situated like the cells of a 2 times 15 board. In each room there are three doors, each of which leads to another room (not necessarily different). How many ways are there to distribute the doors between the rooms so that it is possible to get from any room to any other one without leaving the building?

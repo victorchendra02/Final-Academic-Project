@@ -1,1 +1,0 @@
-The sequence of polynomials (a_n) is defined by a_0=0, a_1=x+2 and a_n=a_{n-1}+3a_{n-1}a_{n-2} +a_{n-2} for n>1. (a) Show for all positive integers k,m: if k divides m then a_k divides a_m. (b) Find all positive integers n such that the sum of the roots of polynomial a_n is an integer.

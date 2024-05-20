@@ -1,1 +1,0 @@
-Show that the set of positive integers that cannot be represented as a sum of distinct perfect squares is finite.

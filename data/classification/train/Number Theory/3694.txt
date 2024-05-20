@@ -1,1 +1,0 @@
-Determine all positive integers n for which the equation x^n + (2+x)^n + (2-x)^n = 0 has an integer as a solution.

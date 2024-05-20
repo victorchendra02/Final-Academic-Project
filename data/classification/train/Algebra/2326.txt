@@ -1,1 +1,0 @@
-If a_0 is a positive real number, consider the sequence {a_n } defined by: a_{n+1} = frac{a^2_n - 1}{n+1}, n geq 0. Show that there exist a real number a > 0 such that: i.) for all a_0 geq a, the sequence {a_n } rightarrow infty, ii.) for all a_0 < a, the sequence {a_n } rightarrow 0.

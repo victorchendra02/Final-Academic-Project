@@ -1,1 +1,0 @@
-Find the minimum k>2 for which there are k consecutive integers such that the sum of their squares is a square.

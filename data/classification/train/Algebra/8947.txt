@@ -1,1 +1,0 @@
-Is: 4 sqrt{4-2 sqrt{3}}+ sqrt{97-56 sqrt{3}} an integer?

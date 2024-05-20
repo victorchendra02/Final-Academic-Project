@@ -1,1 +1,0 @@
-Let ABCD be a parallelogram, E the midpoint of AD and F the projection of B on CE. Prove that the triangle ABF is isosceles.

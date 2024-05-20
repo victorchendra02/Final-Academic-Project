@@ -1,1 +1,0 @@
-Given n>4 points in the plane, no three collinear. Prove that there are at least frac{(n-3)(n-4)}{2} convex quadrilaterals with vertices amongst the n points.

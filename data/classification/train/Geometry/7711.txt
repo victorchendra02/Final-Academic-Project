@@ -1,1 +1,0 @@
-A triangle ABC is given. Find all the segments XY that lie inside the triangle such that XY and five of the segments XA,XB, XC, YA,YB,YC divide the triangle ABC into 5 regions with equal areas. Furthermore, prove that all the segments XY have a common point.

@@ -1,1 +1,0 @@
-Two planes, P and Q, intersect along the line p. The point A is given in the plane P, and the point C in the plane Q; neither of these points lies on the straight line p. Construct an isosceles trapezoid ABCD (with AB parallel CD) in which a circle can be inscribed, and with vertices B and D lying in planes P and Q respectively.

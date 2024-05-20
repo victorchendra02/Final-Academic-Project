@@ -1,1 +1,0 @@
-Does there exist points A,B on the curve y=x^3 and on y=x^3+|x|+1 respectively such that distance between A,B is less than frac{1}{100} ?

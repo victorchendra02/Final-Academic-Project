@@ -1,1 +1,0 @@
-Let ABCD be a trapezoid which is not a parallelogram, such that AD is parallel to BC. Let O=BD cap AC and S be the second intersection of the circumcircles of triangles AOB and DOC. Prove that the circumcircles of triangles ASD and BSC are tangent.

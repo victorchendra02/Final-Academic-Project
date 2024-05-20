@@ -1,1 +1,0 @@
-Find all the functions f: mathbb{Z} to mathbb{Z} satisfying the following property: if a, b and c are integers such that a+b+c=0, then f(a)+f(b)+f(c)=a^2+b^2+c^2.

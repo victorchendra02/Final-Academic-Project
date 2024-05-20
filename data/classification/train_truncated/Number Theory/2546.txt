@@ -1,1 +1,0 @@
-Find four positive integers each not exceeding 70000 and each having more than 100 divisors.

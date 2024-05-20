@@ -1,1 +1,0 @@
-Let G be the centroid of triangle ABC, and A' the symmetric of A wrt C. Show that G, B, C, A' are concyclic if and only if GA perp GC.

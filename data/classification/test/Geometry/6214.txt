@@ -1,1 +1,0 @@
-Let ABC be an acute triangle. Denote by H and M the orthocenter of ABC and the midpoint of side BC, respectively. Let Y be a point on AC such that YH is perpendicular to MH and let Q be a point on BH such that QA is perpendicular to AM. Let J be the second point of intersection of MQ and the circle with diameter MY. Prove that HJ is perpendicular to AM. (Steve Dinh)

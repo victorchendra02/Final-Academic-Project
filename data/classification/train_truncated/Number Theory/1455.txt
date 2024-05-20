@@ -1,1 +1,0 @@
-Prove that for every natural number k (k geq 2) there exists an irrational number r such that for every natural number m, [r^m] equiv -1 pmod k . Remark. An easier variant: Find r as a root of a polynomial of second degree with integer coefficients. Proposed by Yugoslavia.

@@ -1,1 +1,0 @@
-Let a,b,c be positive real numbers. Prove the inequality: frac {a^3}{b^2} + frac {b^3}{c^2} + frac {c^3}{a^2} ge frac {a^2}{b} + frac {b^2}{c} + frac {c^2}{a}

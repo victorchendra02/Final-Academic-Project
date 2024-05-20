@@ -1,1 +1,0 @@
-Let x, y, z > 0 with x leq 2, ;y leq 3 ; and x+y+z = 11 Prove that xyz leq 36

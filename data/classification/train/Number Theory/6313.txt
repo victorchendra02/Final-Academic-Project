@@ -1,1 +1,0 @@
-Let (a_i)_{i in mathbb{N}} a sequence of positive integers, such that for any finite, non-empty subset S of mathbb{N}, the integer Pi_{k in S} a_k -1is prime. Prove that the number of a_i's with i in mathbb{N} such that a_i has less than m distincts prime factors is finite.

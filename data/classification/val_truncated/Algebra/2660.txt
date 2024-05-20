@@ -1,1 +1,0 @@
-Find a method by which one can compute the coefficients of P(x) = x^6 + a_1x^5 + cdots+ a_6 from the roots of P(x) = 0 by performing not more than 15 additions and 15 multiplications.

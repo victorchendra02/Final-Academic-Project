@@ -1,1 +1,0 @@
-Find all the integers written as overline{abcd} in decimal representation and overline{dcba} in base 7.

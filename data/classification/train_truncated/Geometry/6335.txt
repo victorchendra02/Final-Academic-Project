@@ -1,1 +1,0 @@
-In triangle ABC, the bisector of angle B meets the opposite side AC at B'. Similarly, the bisector of angle C meets the opposite side AB at C' . Prove that A=60^{ circ} if, and only if, BC'+CB'=BC.

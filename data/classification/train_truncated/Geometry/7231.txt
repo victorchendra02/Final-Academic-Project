@@ -1,1 +1,0 @@
-There is a table in the shape of a 8 times 5 rectangle with four holes on its corners. After shooting a ball from points A, B and C on the shown paths, will the ball fall into any of the holes after 6 reflections? (The ball reflects with the same angle after contacting the table edges.) http://s5.picofile.com/file/8372960750/E01.png Proposed by Hirad Alipanah

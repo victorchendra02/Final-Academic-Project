@@ -1,1 +1,0 @@
-Let n!=ab^2 where a is free from squares. Prove, that for every epsilon>0 for every big enough n it is true, that 2^{(1- epsilon)n}<a<2^{(1+ epsilon)n} M. Ivanov

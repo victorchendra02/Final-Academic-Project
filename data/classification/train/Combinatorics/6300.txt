@@ -1,1 +1,0 @@
-Every point in the plane was colored in red or blue. Prove that one the two following statements is true: bullet there exist two red points at distance 1 from each other; bullet there exist four blue points B_1, B_2, B_3, B_4 such that the points B_i and B_j are at distance |i - j| from each other, for all integers i and j such as 1 le i le 4 and 1 le j le 4.

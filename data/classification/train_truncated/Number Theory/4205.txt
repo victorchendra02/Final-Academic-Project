@@ -1,1 +1,0 @@
-Consider an integer n geq 2 and an odd prime p. Let U be the set of all positive integers (strictly) less than p^n that are not divisible by p, and let N be the number of elements of U. Does there exist permutation a_1,a_2, cdots a_N of the numbers in U such that the sum sum_{k=1}^N a_ka_{k+1},where a_{N+1}=a_1, be divisible by p^{n-1} but not by p^n? Alexander Ivanov , Bulgaria

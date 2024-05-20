@@ -1,1 +1,0 @@
-Let ABC be an acute triangle with altitude overline{AH}, and let P be a variable point such that the angle bisectors k and ell of angle PBC and angle PCB, respectively, meet on overline{AH}. Let k meet overline{AC} at E, ell meet overline{AB} at F, and overline{EF} meet overline{AH} at Q. Prove that as P varies, line PQ passes through a fixed point.

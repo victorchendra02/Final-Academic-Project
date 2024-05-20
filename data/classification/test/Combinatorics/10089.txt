@@ -1,1 +1,0 @@
-Two players in turns color the squares of a 4 times 4 grid, one square at the time. Player loses if after his move a square of 2 times2 is colored completely. Which of the players has the winning strategy, First or Second? (4 points)

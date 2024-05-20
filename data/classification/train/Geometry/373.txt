@@ -1,1 +1,0 @@
-A_0B_0C_0 and A_1B_1C_1 are acute-angled triangles. Describe, and prove, how to construct the triangle ABC with the largest possible area which is circumscribed about A_0B_0C_0 (so BC contains B_0, CA contains B_0, and AB contains C_0) and similar to A_1B_1C_1.

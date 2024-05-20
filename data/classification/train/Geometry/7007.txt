@@ -1,1 +1,0 @@
-In convex pentagon ABCDE points A_1, B_1, C_1, D_1, E_1 are intersections of pairs of diagonals (BD, CE), (CE, DA), (DA, EB), (EB, AC) and (AC, BD) respectively. Prove that if four of quadrilaterals AB_{1}A_{1}B, BC_{1}B_{1}C, CD_{1}C_{1}D, DE_{1}D_{1}E and EA_{1}E_{1}A are cyclic then the fifth one is also cyclic.

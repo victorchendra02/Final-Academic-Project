@@ -1,1 +1,0 @@
-We call two simple polygons P, Q textit{compatible} if there exists a positive integer k such that each of P, Q can be partitioned into k congruent polygons similar to the other one. Prove that for every two even integers m, n geq 4, there are two compatible polygons with m and n sides. (A simple polygon is a polygon that does not intersect itself.) Proposed by Hesam Rajabzadeh

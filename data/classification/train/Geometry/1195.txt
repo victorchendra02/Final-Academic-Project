@@ -1,1 +1,0 @@
-Let O be the circumcenter and H the orthocenter of an acute-angled triangle ABC such that BC>CA. Let F be the foot of the altitude CH of triangle ABC. The perpendicular to the line OF at the point F intersects the line AC at P. Prove that measuredangle FHP= measuredangle BAC.

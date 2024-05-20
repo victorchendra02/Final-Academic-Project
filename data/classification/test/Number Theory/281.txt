@@ -1,1 +1,0 @@
-Prove that if (a,b,c,d) are positive integers such that (a+2^{ frac13}b+2^{ frac23}c)^2=d then d is a perfect square (i.e is the square of a positive integer).

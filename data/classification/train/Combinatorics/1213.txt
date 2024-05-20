@@ -1,1 +1,0 @@
-let V be a finitive set and g and f be two injective surjective functions from Vto V.let T and S be two sets such that they are defined as following" S = {w in V: f(f(w)) = g(g(w)) } T = {w in V: f(g(w)) = g(f(w)) } we know that S cup T = V, prove: for each w in V : f(w) in S if and only if g(w) in S

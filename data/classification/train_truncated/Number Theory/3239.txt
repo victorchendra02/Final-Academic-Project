@@ -1,1 +1,0 @@
-Let x_n=2^{2^{n}}+1 and let m be the least common multiple of x_2, x_3, ldots, x_{1971}. Find the last digit of m.

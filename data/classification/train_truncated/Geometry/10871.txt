@@ -1,1 +1,0 @@
-In a quadrilateral ABCD sides AB and CD are equal, angle A=150^ circ, angle B=44^ circ, angle C=72^ circ. Perpendicular bisector of the segment AD meets the side BC at point P. Find angle APD. Proposed by F. Bakharev

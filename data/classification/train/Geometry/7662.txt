@@ -1,1 +1,0 @@
-Is there is a convex quadrilateral which the diagonals divide into four triangles with areas of distinct primes?

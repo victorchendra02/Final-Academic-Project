@@ -1,1 +1,0 @@
-boxed{ text{A5}} Determine all positive integers a,b such that a^{2}b^{2}+208=4([a,b]+(a,b))^2 where [a,b]-lcm of a,b and (a,b)-gcd of a,b.

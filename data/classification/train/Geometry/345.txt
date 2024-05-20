@@ -1,1 +1,0 @@
-Given four distinct parallel planes, prove that there exists a regular tetrahedron with a vertex on each plane.

@@ -1,1 +1,0 @@
-Find all non-negative integer solutions of the equation 2^a+p^b=n^{p-1}, where p is a prime number. Proposed by Mate Weisz, Cambridge

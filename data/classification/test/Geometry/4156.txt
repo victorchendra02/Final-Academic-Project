@@ -1,1 +1,0 @@
-Let ABC be a triangle with AB > AC with incenter I{}. The internal bisector of the angle BAC intersects the BC at the point D{}. Let M{} the midpoint of the segment AD{}, and let F{} be the second intersection point of MB with the circumcircle of the triangle BIC. Prove that AF is perpendicular to FC.

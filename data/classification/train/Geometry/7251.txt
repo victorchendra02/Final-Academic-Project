@@ -1,1 +1,0 @@
-There are three rectangles in the following figure. The lengths of some segments are shown. Find the length of the segment XY . //cdn.artofproblemsolving.com/images/6/f/f/6ff334abf1755ad7fa792de3941109208965d5f8.png Proposed by Hirad Aalipanah

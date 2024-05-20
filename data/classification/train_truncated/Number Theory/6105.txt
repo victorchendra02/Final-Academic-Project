@@ -1,1 +1,0 @@
-Let mathbb{N}= {1, 2, 3, dots } be the set of all positive integers. Find all functions f : mathbb{N} rightarrow mathbb{N} such that for any positive integers a and b, the following two conditions hold: (1) f(ab) = f(a)f(b), and (2) at least two of the numbers f(a), f(b), and f(a+b) are equal.

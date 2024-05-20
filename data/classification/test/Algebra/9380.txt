@@ -1,1 +1,0 @@
-Suppose {a(n) }_{n=1}^{ infty} is a sequence that: a(n) =a(a(n-1))+a(n-a(n-1)) forall n geq 3 and a(1)=a(2)=1. Prove that for each n geq 1 , a(2n) leq 2a(n).

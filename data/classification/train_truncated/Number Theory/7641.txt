@@ -1,1 +1,0 @@
-Determine all numbers overline{abcd} such that overline{abcd}=11(a+b+c+d)^2.

@@ -1,1 +1,0 @@
-Let ABCD be a cyclic quadrilateral with AB < BC and AD < DC. Let E and F be points on the sides BC and CD, respectively, such that AB = BE and AD = DF. Let further M denote the midpoint of the segment EF. Prove that angle BMD = 90^o.

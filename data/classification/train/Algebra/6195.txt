@@ -1,1 +1,0 @@
-Let mathbb{R^+} denote the set of all positive real numbers. Find all functions f: mathbb{R^+} rightarrow mathbb{R^+} such that xf(x + y) + f(xf(y) + 1) = f(xf(x))for all x, y in mathbb{R^+}. Proposed by Amadej Kristjan Kocbek, Jakob Jurij Snoj

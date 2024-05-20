@@ -1,1 +1,0 @@
-Let ABC be an acute triangle with AB<AC. Let D,E,F be the feet of the altitudes relatives to the vertices A,B,C, respectively. The circumcircle Gamma of AEF cuts the circumcircle of ABC at A and M. Assume that BM is tangent to Gamma. Prove that M, F and D are collinear.

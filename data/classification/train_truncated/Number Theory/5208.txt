@@ -1,1 +1,0 @@
-Let n{} and m be positive integers, n>m>1. Let n{} divided by m have partial quotient q and remainder r (so that n = qm + r, where r in {0,1,...,m-1 }). Let n-1 divided by m have partial quotient q^{'} and remainder r^{'}. a) It appears that q+q^{'} =r +r^{'} = 99. Find all possible values of n{}. b) Prove that if q+q^{'} =r +r^{'}, then 2n is a perfect square.

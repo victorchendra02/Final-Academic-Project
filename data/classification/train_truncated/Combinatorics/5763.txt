@@ -1,1 +1,0 @@
-The teacher gave each of her 37 students 36 pencils in different colors. It turned out that each pair of students received exactly one pencil of the same color. Determine the smallest possible number of different colors of pencils distributed.

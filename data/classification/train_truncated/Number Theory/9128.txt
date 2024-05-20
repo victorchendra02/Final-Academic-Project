@@ -1,1 +1,0 @@
-Let a, b and c be positive integers such that a^2 + b^2 + 1 = c^2 . Prove that [a/2] + [c / 2] is even. Note: [x] is the integer part of x.

@@ -1,1 +1,0 @@
-A slip on an integer n geq 2 is an operation that consists in choosing a prime divisor p of n and replacing n by frac{n+p^2}{p}. Starting with an arbitrary integer n geq 5, we successively apply the slip operation on it. Show that one eventually reaches 5, no matter the slips applied.

@@ -1,1 +1,0 @@
-Show that if a, b, c are the lengths of the sides of a triangle and if 2S = a + b + c, then frac{a^n}{b+c} + frac{b^n}{c+a} + frac{c^n}{a+b} geq left( dfrac 23 right)^{n-2}S^{n-1} quad forall n in mathbb N Proposed by Greece.

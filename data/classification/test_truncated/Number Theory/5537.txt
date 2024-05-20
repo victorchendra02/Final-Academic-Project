@@ -1,1 +1,0 @@
-3. Show that there do not exist positive integers a, b, c and d, pairwise co-prime, such that ab+cd, ac+bd and ad+bc are odd divisors of the number (a+b-c-d)(a-b+c-d)(a-b-c+d).

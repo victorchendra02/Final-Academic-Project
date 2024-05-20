@@ -1,1 +1,0 @@
-Let {ABC} be a triangle with angle BAC={{60}^{{}^ circ }}. Let D and E be the feet of the perpendiculars from {A} to the external angle bisectors of angle ABC and angle ACB, respectively. Let {O} be the circumcenter of the triangle {ABC}. Prove that the circumcircles of the triangles {ADE}and {BOC} are tangent to each other.

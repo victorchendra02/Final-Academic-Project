@@ -1,1 +1,0 @@
-Inside the square {ABCD}, the equilateral triangle vartriangle ABE is constructed. Let {M} be an interior point of the triangle vartriangle ABE such that MB= sqrt{2}, MC= sqrt{6}, MD= sqrt{5} and {ME= sqrt{3}}. Find the area of the square {ABCD}.

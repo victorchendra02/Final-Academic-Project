@@ -1,1 +1,0 @@
-Prove that for all positive integer n, there is a positive integer m that 7^n | 3^m +5^m -1.

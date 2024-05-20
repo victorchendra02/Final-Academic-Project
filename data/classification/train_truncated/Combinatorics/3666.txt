@@ -1,1 +1,0 @@
-Let F be the set of all n-tuples (A_1, ldots, A_n) such that each A_{i} is a subset of {1, 2, ldots, 1998 }. Let |A| denote the number of elements of the set A. Find sum_{(A_1, ldots, A_n) in F} |A_1 cup A_2 cup cdots cup A_n|

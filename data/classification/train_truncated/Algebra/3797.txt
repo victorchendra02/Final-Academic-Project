@@ -1,1 +1,0 @@
-Find all pairs of real numbers (x, y) satisfying the following system of equations 2-x^{3}=y, 2-y^{3}=x.

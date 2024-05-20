@@ -1,1 +1,0 @@
-Let ABCD be a trapezoid with AB parallel CD,AB>CD and angle{A} + angle{B} = 90^ circ. Prove that the distance between the midpoints of the bases is equal to the semidifference of the bases.

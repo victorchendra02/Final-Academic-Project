@@ -1,1 +1,0 @@
-Each entry in an n times n table is either + or -. At each step, one can choose a row or a column and reverse all signs in it. From the initial position, it is possible to obtain the table in which all signs are +. Prove that this can be accomplished in at most n steps.

@@ -1,1 +1,0 @@
-Solve the system of equations: left { begin{aligned} x^4+y^2-xy^3- frac{9}{8}x = 0 y^4+x^2-yx^3- frac{9}{8}y=0 end{aligned} right.

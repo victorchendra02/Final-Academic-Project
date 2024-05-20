@@ -1,1 +1,0 @@
-For which real numbers k > 1 does there exist a bounded set of positive real numbers S with at least 3 elements such that k(a - b) in Sfor all a,b in S with a > b? Remark: A set of positive real numbers S is bounded if there exists a positive real number M such that x < M for all x in S.

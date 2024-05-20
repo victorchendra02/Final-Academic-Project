@@ -1,1 +1,0 @@
-In a billiard with shape of a rectangle ABCD with AB=2013 and AD=1000, a ball is launched along the line of the bisector of angle BAD. Supposing that the ball is reflected on the sides with the same angle at the impact point as the angle shot , examine if it shall ever reach at vertex B.

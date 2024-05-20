@@ -1,1 +1,0 @@
-Solve the equation cos^n{x}- sin^n{x}=1 where n is a natural number.

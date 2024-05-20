@@ -1,1 +1,0 @@
-Let ABC be an isosceles triangle (AB=AC) so that angle A< 2 angle B . Let D,Z points on the extension of height AM so that angle CBD = angle A and angle ZBA = 90^ circ. Let E the orthogonal projection of M on height BF, and let K the orthogonal projection of Z on AE. Prove that angle KDZ = angle KDB = angle KZB.

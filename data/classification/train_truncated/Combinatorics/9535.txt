@@ -1,1 +1,0 @@
-20 football teams take part in a tournament . On the first day all the teams play one match . On the second day all the teams play a further match . Prove that after the second day it is possible to select 10 teams, so that no two of them have yet played each other. ( S . A . Genkin)

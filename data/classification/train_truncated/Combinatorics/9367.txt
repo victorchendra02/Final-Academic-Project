@@ -1,1 +1,0 @@
-Let G be a graph with 2n vertexes and 2n(n-1) edges.If we color some edge to red,then vertexes,which are connected by this edge,must be colored to red too. But not necessary that all edges from the red vertex are red. Prove that it is possible to color some vertexes and edges in G,such that all red vertexes has exactly n red edges.

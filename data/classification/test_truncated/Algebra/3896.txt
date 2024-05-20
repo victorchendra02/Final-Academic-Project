@@ -1,1 +1,0 @@
-A function f: R to R satisfies f (x + 1) = f (x) + 1 for all x. Given a in R, define the sequence (x_n) recursively by x_0 = a and x_{n+1} = f (x_n) for n ge 0. Suppose that, for some positive integer m, the difference x_m - x_0 = k is an integer. Prove that the limit lim_{n to infty} frac{x_n}{n} exists and determine its value.

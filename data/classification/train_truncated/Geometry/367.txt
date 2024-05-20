@@ -1,1 +1,0 @@
-Prove that every tetrahedron has a vertex whose three edges have the right lengths to form a triangle.

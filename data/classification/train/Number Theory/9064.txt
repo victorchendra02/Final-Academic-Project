@@ -1,1 +1,0 @@
-Let d(n) be the sum of positive integers divisors of number n and phi(n) the quantity of integers in the interval [0,n] such that these integers are coprime with n. For instance d(6)=12 and phi(7)=6. Determine if the set of the integers n such that, d(n) cdot phi (n) is a perfect square, is finite or infinite set.

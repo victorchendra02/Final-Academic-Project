@@ -1,1 +1,0 @@
-In trapezoid ABCD with AB || CD, omega_1 and omega_2 are two circles with diameters AD and BC, respectively. Let X and Y be two arbitrary points on omega_1 and omega_2, respectively. Show that the length of segment XY is not more than half the perimeter of ABCD. Proposed by Mahdi Etesami Fard

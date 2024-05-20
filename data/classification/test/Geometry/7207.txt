@@ -1,1 +1,0 @@
-Let ABCD be a parallelogram. Points E, F lie on the sides AB, CD respectively, such that angle EDC = angle FBC and angle ECD = angle FAD. Prove that AB geq 2BC. Proposed by Pouria Mahmoudkhan Shirazi - Iran

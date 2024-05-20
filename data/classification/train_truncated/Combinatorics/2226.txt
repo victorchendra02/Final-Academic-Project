@@ -1,1 +1,0 @@
-There are some boys and girls sitting in an n times n quadratic array. We know the number of girls in every column and row and every line parallel to the diagonals of the array. For which n is this information sufficient to determine the exact positions of the girls in the array? For which seats can we say for sure that a girl sits there or not?

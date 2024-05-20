@@ -1,1 +1,0 @@
-In a triangle ABC with a right angle at C, the angle bisector AL (where L is on segment BC) intersects the altitude CH at point K. The bisector of angle BCH intersects segment AB at point M. Prove that CK=ML

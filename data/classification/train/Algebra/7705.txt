@@ -1,1 +1,0 @@
-Consider a sequence of positive integers x_n such that: ( text{A}) x_{2n+1}=4x_n+2n+2 ( text{B}) x_{3n+ color[rgb]{0.9529,0.0980,0.0118}2}=3x_{n+1}+6x_n for all n ge 0. Prove that ( text{C}) x_{3n-1}=x_{n+2}-2x_{n+1}+10x_n for all n ge 0.

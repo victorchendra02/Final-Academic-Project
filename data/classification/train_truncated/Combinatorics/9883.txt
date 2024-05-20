@@ -1,1 +1,0 @@
-Is it possible to tile 2003 times 2003 board by 1 times 2 dominoes placed horizontally and 1 times 3 rectangles placed vertically?

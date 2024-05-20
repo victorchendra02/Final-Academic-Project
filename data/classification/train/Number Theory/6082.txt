@@ -1,1 +1,0 @@
-Prove that all the positive integer numbers , except for the powers of 2, can be written as the sum of (at least two) consecutive natural numbers .

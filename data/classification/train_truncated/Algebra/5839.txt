@@ -1,1 +1,0 @@
-Find all functions f: mathbb{R^{+}} rightarrow mathbb {R^{+}} such that f(f(x)+ frac{y+1}{f(y)})= frac{1}{f(y)}+x+1 for all x, y>0. Proposed by Dominik Burek, Poland

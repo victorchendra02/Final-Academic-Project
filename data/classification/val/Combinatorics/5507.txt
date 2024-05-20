@@ -1,1 +1,0 @@
-Let n be a positive integer. In how many ways can a 4 times 4n grid be tiled with the following tetromino? [asy] size(4cm); draw((1,0)--(3,0)--(3,1)--(0,1)--(0,0)--(1,0)--(1,2)--(2,2)--(2,0)); [/asy]

@@ -1,1 +1,0 @@
-Let ABCDEFGH be a parallelepiped with AE parallel BF parallel CG parallel DH. Prove the inequality AF + AH + AC leq AB + AD + AE + AG. In what cases does equality hold? Proposed by France.

@@ -1,1 +1,0 @@
-Let w be the circumcircle of non-isosceles acute triangle ABC. Tangent lines to w in A and B intersect at point S. Let M be the midpoint of AB, and H be the orthocenter of triangle ABC. The line HA intersects lines CM and CS at points M_a and S_a, respectively. The points M_b and S_b are defined analogously. Prove that M_aS_b and M_bS_a are the altitudes of triangle M_aM_bH.

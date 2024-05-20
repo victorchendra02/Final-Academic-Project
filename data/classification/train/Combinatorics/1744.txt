@@ -1,1 +1,0 @@
-Natural numbers from 1 to 99 (not necessarily distinct) are written on 99 cards. It is given that the sum of the numbers on any subset of cards (including the set of all cards) is not divisible by 100. Show that all the cards contain the same number.

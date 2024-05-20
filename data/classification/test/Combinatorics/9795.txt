@@ -1,1 +1,0 @@
-On a square board divided into 15 times 15 little squares there are 15 rooks that do not attack each other. Then each rook makes one move like that of a knight. Prove that after this is done a pair of rooks will necessarily attack each other.

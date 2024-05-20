@@ -1,1 +1,0 @@
-Bethan is playing a game on an n times n grid consisting of n^2 cells. A move consists of placing a counter in an unoccupied cell C where the 2n-2 other cells in the same row or column as C contain an even number of counters. After making M moves Bethan realises she cannot make any more moves. Determine the minimum value of M. United Kingdom, Sam Bealing

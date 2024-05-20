@@ -1,1 +1,0 @@
-Let AB be a diameter of a circle; let t_1 and t_2 be the tangents at A and B, respectively; let C be any point other than A on t_1; and let D_1D_2. E_1E_2 be arcs on the circle determined by two lines through C. Prove that the lines AD_1 and AD_2 determine a segment on t_2 equal in length to that of the segment on t_2 determined by AE_1 and AE_2.

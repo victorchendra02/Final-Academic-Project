@@ -1,1 +1,0 @@
-Find all pairs of positive integers (x,y) such that 2^x + 3^y is a perfect square.
