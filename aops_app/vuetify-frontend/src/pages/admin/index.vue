@@ -18,6 +18,10 @@
         <div class="mt-5" style="width: 96%">
             <h1 class="text-center mb-2">CRUD DATABASE</h1>
 
+            <!-- imo -->
+            <!-- ####################################################################### -->
+            <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
+
             <!-- Button add item -->
             <div class="d-flex mb-3">
                 <h2 class="me-5">Table `imo`</h2>
@@ -256,7 +260,7 @@
 
                 <!-- DELETE ALERT -->
                 <v-alert
-                    v-model="this.delete_row_success_or_done"
+                    v-model="this.delete_row_success_or_done_imo"
                     class="mx-auto mb-6"
                     elevation="1"
                     closable
@@ -570,14 +574,15 @@
                             color="error"
                             append-icon="mdi-delete-outline"
                             variant="flat"
-                            @click="this.deleteItem()"
+                            @click="this.deleteItem_imo()"
                             >Delete</v-btn
                         >
                     </v-card-actions>
                 </v-card>
             </v-dialog>
 
-            <!-- ########################################################### -->
+            <!-- admins -->
+            <!-- ####################################################################### -->
             <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
 
             <!-- Button add item-->
@@ -767,6 +772,7 @@
                 </v-alert>
             </div>
 
+            <!-- Table -->
             <v-data-table
                 class="mb-10 table-color"
                 :loading="this.loading_4_all_tables"
@@ -781,13 +787,14 @@
                 </template>
                 <!-- is_active -->
                 <template v-slot:item.is_active="{ value }">
-                    <v-chip color="indigo-darken-3" density="compact">{{
+                    <v-chip color="indigo-darken-2" density="compact">{{
                         value
                     }}</v-chip>
                 </template>
             </v-data-table>
 
-            <!-- ########################################################### -->
+            <!-- home_data -->
+            <!-- ####################################################################### -->
             <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
 
             <!-- Button reset home_data -->
@@ -866,6 +873,7 @@
                 </v-alert>
             </div>
 
+            <!-- Table -->
             <v-data-table
                 class="mb-10 table-color"
                 :loading="this.loading_4_all_tables"
@@ -888,6 +896,462 @@
                 </template>
             </v-data-table>
 
+            <!-- models -->
+            <!-- ####################################################################### -->
+            <v-divider class="mb-8 border-opacity-25" thickness="2"></v-divider>
+
+            <!-- Button add item -->
+            <div class="d-flex mb-3">
+                <h2 class="me-5">Table `models`</h2>
+                <v-btn
+                    variant="flat"
+                    color="teal"
+                    append-icon="mdi-database-plus-outline"
+                    @click="this.function_showAddDialog_models()"
+                    >Add New</v-btn
+                >
+            </div>
+
+            <!-- Dialog new data -->
+            <v-dialog v-model="showAddDialog_models" max-width="720px">
+                <v-card class="pa-3 pb-5">
+                    <v-card-title>Insert New Data +</v-card-title>
+                    <v-card-text> Add new data to database </v-card-text>
+                    <!-- reset form button -->
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            append-icon="mdi-trash-can-outline"
+                            color="red"
+                            variant="tonal"
+                            @click="this.reset_form_add_new_item_models()"
+                            >Reset form</v-btn
+                        >
+                    </v-card-actions>
+
+                    <!-- Alert inside form -->
+                    <v-card-text>
+                        <!-- Form not yet complete -->
+                        <v-alert
+                            v-model="
+                                this.form_insert_new_data_is_not_complete_models
+                            "
+                            title="Form not complete yet!"
+                            text="Please complete the form to insert new data."
+                            type="warning"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Fail insert -->
+                        <v-alert
+                            v-model="this.form_insert_new_data_error_models"
+                            title="Error occur!"
+                            :text="this.form_insert_new_data_error_msg_models"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Success insert data -->
+                        <v-alert
+                            v-model="this.is_success_insert_new_data_models"
+                            class="mx-auto mb-6"
+                            elevation="1"
+                            closable
+                            title="Success"
+                            text="New data has been added!"
+                            type="success"
+                        >
+                        </v-alert>
+                    </v-card-text>
+
+                    <!-- Form -->
+                    <v-card-text>
+                        <v-text-field
+                            model-value="(Auto Increnment)"
+                            label="id_model"
+                            variant="outlined"
+                            disabled
+                        ></v-text-field>
+
+                        <v-select
+                            v-model="this.newItem_models.model_type"
+                            label="model_type*"
+                            :items="['classification', 'regression']"
+                            variant="solo-inverted"
+                            clearable
+                        ></v-select>
+
+                        <v-text-field
+                            v-model="this.newItem_models.model_name"
+                            label="model_name*"
+                            variant="outlined"
+                        ></v-text-field>
+
+                        <v-textarea
+                            v-model="this.newItem_models.model_path"
+                            label="model_path*"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-textarea
+                            v-model="
+                                this.newItem_models.vectorizer_or_tokenizer_path
+                            "
+                            label="vectorizer_or_tokenizer_path*"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-textarea
+                            v-model="this.newItem_models.custom_objects_path"
+                            label="custom_objects_path"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-select
+                            v-model="this.newItem_models.is_active"
+                            label="is_active*"
+                            :items="[0, 1]"
+                            variant="solo-inverted"
+                            clearable
+                        ></v-select>
+                    </v-card-text>
+
+                    <!-- Button -->
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            min-height="40"
+                            min-width="170"
+                            color="red"
+                            @click="showAddDialog_models = false"
+                            prepend-icon="mdi-close"
+                            variant="outlined"
+                            >Close</v-btn
+                        >
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            class="me-4"
+                            min-height="40"
+                            min-width="190"
+                            color="teal"
+                            append-icon="mdi-database-plus-outline"
+                            @click="this.addItem_models()"
+                            variant="flat"
+                            >Add</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+
+            <!-- Alert outside dialog -->
+            <v-card-text>
+                <!-- Form not yet complete -->
+                <v-alert
+                    v-model="this.form_insert_new_data_is_not_complete_models"
+                    title="Form not complete yet!"
+                    text="Please complete the form to insert new data."
+                    type="warning"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- Fail insert -->
+                <v-alert
+                    v-model="this.form_insert_new_data_error_models"
+                    title="Error occur!"
+                    :text="this.form_insert_new_data_error_msg_models"
+                    type="error"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- Success insert data -->
+                <v-alert
+                    v-model="this.is_success_insert_new_data_models"
+                    class="mx-auto mb-6"
+                    elevation="1"
+                    closable
+                    title="Success"
+                    text="New data has been added!"
+                    type="success"
+                >
+                </v-alert>
+
+                <!-- EDIT ALERT -->
+                <!-- success -->
+                <v-alert
+                    v-model="this.success_update_or_edit_row_models"
+                    class="mx-auto mb-6"
+                    elevation="1"
+                    closable
+                    title="Success"
+                    text="Row updated/edited successfully!"
+                    type="success"
+                >
+                </v-alert>
+
+                <!-- Form not yet complete -->
+                <v-alert
+                    v-model="this.form_update_edit_is_not_complete_models"
+                    title="Form not complete yet!"
+                    text="Please complete the form to update row."
+                    type="warning"
+                    border="start"
+                    variant="tonal"
+                    closable
+                >
+                </v-alert>
+
+                <!-- DELETE ALERT -->
+                <v-alert
+                    v-model="this.delete_row_success_or_done_models"
+                    class="mx-auto mb-6"
+                    elevation="1"
+                    closable
+                    title="Success"
+                    text="Row deleted!"
+                    type="success"
+                >
+                </v-alert>
+            </v-card-text>
+
+            <!-- Table -->
+            <v-data-table
+                class="mb-10 table-color"
+                :loading="this.loading_4_all_tables"
+                :items-per-page="this.itemsPerPage_4_all"
+                :items-length="totalItems_models"
+                :headers="this.headers_models"
+                :items="this.items_models"
+            >
+                <template v-slot:item.model_type="{ value }">
+                    <v-chip
+                        :color="
+                            value === 'regression'
+                                ? 'indigo-darken-2'
+                                : value === 'classification'
+                                ? 'teal-darken-2'
+                                : 'black'
+                        "
+                        density="compact"
+                        >{{ value }}</v-chip
+                    >
+                </template>
+
+                <template v-slot:item.custom_objects_path="{ value }">
+                    <v-chip
+                        v-if="value === null || value === ''"
+                        color="red-darken-2"
+                        density="compact"
+                    ></v-chip>
+                    <span v-if="value !== null || value !== ''">{{
+                        value
+                    }}</span>
+                </template>
+                <template v-slot:item.is_active="{ value }">
+                    <v-chip
+                        :color="this.chips_isactive_color(value)"
+                        density="compact"
+                        >{{ value }}</v-chip
+                    >
+                </template>
+
+                <!-- action edit -->
+                <template v-slot:item.action_edit="{ item }">
+                    <v-icon
+                        class="me-2"
+                        size="small"
+                        @click="this.showEditItem_models(item)"
+                    >
+                        mdi-pencil
+                    </v-icon>
+                </template>
+                <!-- action delete -->
+                <template v-slot:item.action_delete="{ item }">
+                    <v-icon
+                        class="me-2"
+                        size="small"
+                        @click="this.confirmDeleteRow_models(item.id_model)"
+                    >
+                        mdi-delete
+                    </v-icon>
+                </template>
+            </v-data-table>
+
+            <!-- Dialog edit row -->
+            <v-dialog v-model="showEditDialog_models" max-width="720px">
+                <v-card class="pa-3 pb-5">
+                    <v-card-title
+                        >Update/Edit Row <span class="mdi mdi-pencil"></span
+                    ></v-card-title>
+                    <v-card-text> Update or edit row to database </v-card-text>
+
+                    <!-- Alert inside form -->
+                    <v-card-text>
+                        <!-- Fail update or edit -->
+                        <v-alert
+                            v-model="this.form_update_or_edit_row_error_models"
+                            title="Error occur!"
+                            :text="
+                                this.form_update_or_edit_row_error_mgs_models
+                            "
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Form not yet complete -->
+                        <v-alert
+                            v-model="
+                                this.form_update_edit_is_not_complete_models
+                            "
+                            title="Form not complete yet!"
+                            text="Please complete the form to update row."
+                            type="warning"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+                    </v-card-text>
+
+                    <!-- form -->
+                    <v-card-text>
+                        <v-text-field
+                            v-model="this.editedItem_models.id_model"
+                            label="id_model"
+                            variant="outlined"
+                            disabled
+                        ></v-text-field>
+
+                        <v-select
+                            v-model="this.editedItem_models.model_type"
+                            label="model_type*"
+                            :items="['classification', 'regression']"
+                            variant="solo-inverted"
+                            clearable
+                        ></v-select>
+
+                        <v-text-field
+                            v-model="this.editedItem_models.model_name"
+                            label="model_name*"
+                            variant="outlined"
+                        ></v-text-field>
+
+                        <v-textarea
+                            v-model="this.editedItem_models.model_path"
+                            label="model_path*"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-textarea
+                            v-model="
+                                this.editedItem_models
+                                    .vectorizer_or_tokenizer_path
+                            "
+                            label="vectorizer_or_tokenizer_path*"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-textarea
+                            v-model="this.editedItem_models.custom_objects_path"
+                            label="custom_objects_path"
+                            variant="outlined"
+                            clearable
+                            auto-grow
+                        ></v-textarea>
+
+                        <v-select
+                            v-model="this.editedItem_models.is_active"
+                            label="is_active*"
+                            :items="[0, 1]"
+                            variant="solo-inverted"
+                            clearable
+                        ></v-select>
+                    </v-card-text>
+
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            min-height="40"
+                            min-width="170"
+                            color="red"
+                            prepend-icon="mdi-close"
+                            variant="outlined"
+                            @click="showEditDialog_models = false"
+                            >Close</v-btn
+                        >
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            class="me-4"
+                            min-height="40"
+                            min-width="190"
+                            color="teal"
+                            append-icon="mdi-pencil-outline"
+                            variant="flat"
+                            @click="this.saveUpdatedOrEditedItem_models()"
+                            >Update</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+            <!-- Dialog delete row -->
+            <v-dialog
+                v-model="showDeleteDialogConfirmation_models"
+                max-width="500px"
+            >
+                <v-card class="pa-3 pb-5">
+                    <v-card-title>Confirm Delete</v-card-title>
+                    <v-card-text
+                        >Are you sure you want to delete this row?</v-card-text
+                    >
+                    <v-card-actions>
+                        <v-btn
+                            class="ms-4"
+                            min-height="40"
+                            min-width="170"
+                            color="red"
+                            prepend-icon="mdi-close"
+                            variant="outlined"
+                            @click="showDeleteDialogConfirmation_models = false"
+                            >Cancel</v-btn
+                        >
+                        <v-spacer></v-spacer>
+                        <v-btn
+                            class="me-4"
+                            min-height="40"
+                            min-width="190"
+                            color="error"
+                            append-icon="mdi-delete-outline"
+                            variant="flat"
+                            @click="this.deleteItem_models()"
+                            >Delete</v-btn
+                        >
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
             <br />
         </div>
     </div>
@@ -1020,7 +1484,7 @@ export default {
         form_update_or_edit_row_error_mgs_imo: "",
         showDeleteDialogConfirmation_imo: false,
         selectedItemIDKEYToDelete_imo: -Infinity,
-        delete_row_success_or_done: false,
+        delete_row_success_or_done_imo: false,
 
         // admins
         items_admins: [],
@@ -1156,6 +1620,105 @@ export default {
             },
         ],
 
+        // models
+        items_models: [],
+        totalItems_models: 0,
+        headers_models: [
+            {
+                title: "id_model",
+                sortable: true,
+                key: "id_model",
+                align: "start",
+            },
+            {
+                title: "model_type",
+                sortable: true,
+                key: "model_type",
+                align: "start",
+            },
+            {
+                title: "model_name",
+                sortable: true,
+                key: "model_name",
+                align: "start",
+            },
+            {
+                title: "model_path",
+                sortable: true,
+                key: "model_path",
+                align: "start",
+            },
+            {
+                title: "vectorizer_or_tokenizer_path",
+                sortable: true,
+                key: "vectorizer_or_tokenizer_path",
+                align: "start",
+            },
+            {
+                title: "custom_objects_path",
+                sortable: true,
+                key: "custom_objects_path",
+                align: "start",
+            },
+            {
+                title: "is_active",
+                sortable: true,
+                key: "is_active",
+                align: "start",
+            },
+            {
+                title: "Actions",
+                sortable: false,
+                key: "actions",
+                align: "center",
+                children: [
+                    {
+                        title: "Edit",
+                        sortable: false,
+                        key: "action_edit",
+                        align: "center",
+                    },
+                    {
+                        title: "Delete",
+                        sortable: false,
+                        key: "action_delete",
+                        align: "center",
+                    },
+                ],
+            },
+        ],
+        newItem_models: {
+            // "id_model": "",
+            model_type: "",
+            model_name: "",
+            model_path: "",
+            vectorizer_or_tokenizer_path: "",
+            custom_objects_path: "",
+            is_active: 0,
+        },
+        is_success_insert_new_data_models: false,
+        form_insert_new_data_is_not_complete_models: false,
+        form_insert_new_data_error_models: false,
+        form_insert_new_data_error_msg_models: "",
+        showAddDialog_models: false,
+        showEditDialog_models: false,
+        editedItem_models: {
+            id_model: "",
+            model_type: "",
+            model_name: "",
+            model_path: "",
+            vectorizer_or_tokenizer_path: "",
+            custom_objects_path: "",
+            is_active: 0,
+        },
+        success_update_or_edit_row_models: false,
+        form_update_edit_is_not_complete_models: false,
+        form_update_or_edit_row_error_models: false,
+        form_update_or_edit_row_error_mgs_models: "",
+        showDeleteDialogConfirmation_models: false,
+        selectedItemIDMODELToDelete_models: -Infinity,
+        delete_row_success_or_done_models: false,
+
         // Universal
         loading_4_all_tables: false,
         itemsPerPage_4_all: 5,
@@ -1198,20 +1761,32 @@ export default {
             } finally {
                 this.loading_4_all_tables = false;
             }
+
+            this.loading_4_all_tables = true;
+            try {
+                const raw_response = await axios.get("/admin/get_models");
+                const response = raw_response.data;
+                this.items_models = response;
+                this.totalItems_models = response.itemsLength;
+            } catch (err) {
+                console.log(err.message);
+            } finally {
+                this.loading_4_all_tables = false;
+            }
         },
 
         // imo
         chips_label_color(label) {
             const colorMap = {
-                null: "red-darken-4",
-                "": "red-darken-4",
-                Algebra: "indigo-darken-3",
+                null: "red-darken-2",
+                "": "red-darken-2",
+                Algebra: "indigo-darken-2",
                 Combinatorics: "green-darken-4",
                 Geometry: "grey-darken-4",
                 "Number Theory": "amber-darken-3",
             };
 
-            return colorMap[label] || "red-darken-4";
+            return colorMap[label] || "red-darken-2";
         },
         reset_form_add_new_item_imo() {
             this.newItem_imo = {
@@ -1317,17 +1892,17 @@ export default {
             }
         },
         confirmDeleteRow_imo(id_key) {
-            this.delete_row_success_or_done = false;
+            this.delete_row_success_or_done_imo = false;
             this.selectedItemIDKEYToDelete_imo = id_key;
             this.showDeleteDialogConfirmation_imo = true;
         },
-        async deleteItem() {
+        async deleteItem_imo() {
             try {
                 const raw_response = await axios.post("admin/delete_row_imo", {
                     id_key: this.selectedItemIDKEYToDelete_imo,
                 });
                 const response = raw_response.data;
-                this.delete_row_success_or_done = true;
+                this.delete_row_success_or_done_imo = true;
                 this.initialize();
             } catch (error) {
                 console.log("ERROR1:", error.message);
@@ -1423,6 +1998,137 @@ export default {
             this.initialize();
         },
 
+        // models
+        reset_form_add_new_item_models() {
+            this.newItem_models = {
+                // "id_model": "",
+                model_type: "",
+                model_name: "",
+                model_path: "",
+                vectorizer_or_tokenizer_path: "",
+                custom_objects_path: "",
+                is_active: 0,
+            };
+        },
+        function_showAddDialog_models() {
+            this.showAddDialog_models = true;
+            this.is_success_insert_new_data_models = false;
+            this.form_insert_new_data_is_not_complete_models = false;
+            this.form_insert_new_data_error_models = false;
+        },
+        async addItem_models() {
+            this.is_success_insert_new_data_models = false;
+            this.form_insert_new_data_is_not_complete_models = false;
+            this.form_insert_new_data_error_models = false;
+
+            for (let key in this.newItem_models) {
+                if (key !== "custom_objects_path") {
+                    if (
+                        this.newItem_models[key] === "" ||
+                        this.newItem_models[key] === null
+                    ) {
+                        this.form_insert_new_data_is_not_complete_models = true;
+                        return;
+                    }
+                }
+            }
+
+            try {
+                const raw_response = await axios.post(
+                    "admin/insert_new_data_models",
+                    this.newItem_models
+                );
+                const response = raw_response.data;
+                console.log("RESPONSE", response.msg);
+
+                this.is_success_insert_new_data_models = true;
+                this.reset_form_add_new_item_models();
+
+                this.initialize();
+            } catch (error) {
+                console.log("ERROR1:", error.message);
+                console.log("ERROR2:", error.response.data.msg);
+                this.form_insert_new_data_error_models = true;
+                this.form_insert_new_data_error_msg_models =
+                    error.response.data.msg;
+            }
+        },
+        showEditItem_models(item) {
+            this.success_update_or_edit_row_models = false;
+            this.form_update_edit_is_not_complete_models = false;
+            this.form_update_or_edit_row_error_models = false;
+            this.editedItem_models = Object.assign(
+                this.editedItem_models,
+                item
+            );
+            this.showEditDialog_models = true;
+        },
+        async saveUpdatedOrEditedItem_models() {
+            for (let key in this.editedItem_models) {
+                if (key !== "custom_objects_path") {
+                    if (
+                        this.editedItem_models[key] === "" ||
+                        this.editedItem_models[key] === null
+                    ) {
+                        this.form_update_edit_is_not_complete_models = true;
+                        return;
+                    }
+                }
+            }
+
+            try {
+                const raw_response = await axios.post(
+                    "admin/update_row_models",
+                    this.editedItem_models
+                );
+                const response = raw_response.data;
+                console.log("RESPONSE", response.msg);
+                this.success_update_or_edit_row_models = true;
+
+                this.showEditDialog_models = false;
+                this.initialize();
+            } catch (error) {
+                console.log("ERROR1:", error.message);
+                console.log("ERROR2:", error.response.data.msg);
+                this.form_update_or_edit_row_error_models = true;
+                this.form_update_or_edit_row_error_mgs_models =
+                    error.response.data.msg;
+            }
+        },
+        confirmDeleteRow_models(id_model) {
+            this.delete_row_success_or_done_models = false;
+            this.selectedItemIDMODELToDelete_models = id_model;
+            this.showDeleteDialogConfirmation_models = true;
+        },
+        async deleteItem_models() {
+            try {
+                const raw_response = await axios.post(
+                    "admin/delete_row_models",
+                    {
+                        id_model: this.selectedItemIDMODELToDelete_models,
+                    }
+                );
+                const response = raw_response.data;
+                this.delete_row_success_or_done_models = true;
+                this.initialize();
+            } catch (error) {
+                console.log("ERROR1:", error.message);
+                console.log("ERROR2:", error.response.data.msg);
+            }
+            this.showDeleteDialogConfirmation_models = false;
+        },
+
+        // universal
+        chips_isactive_color(s) {
+            const colorMap = {
+                null: "red-darken-2",
+                "": "red-darken-2",
+                0: "red-darken-2",
+                1: "teal-darken-2",
+            };
+
+            return colorMap[s] || "red-darken-2";
+        },
         async logout() {
             try {
                 const raw_response = await axios.post("admin/logout");

@@ -22,6 +22,7 @@ from datetime import timedelta
 from utils import get_current_date
 from utils import get_current_datetime
 from utils import discretize
+from time import perf_counter
 
 # database
 from flask_sqlalchemy import SQLAlchemy
@@ -43,7 +44,6 @@ HOME_DATA_LIFETIME = timedelta(days=1)
 DATABASE_NAME = "aopsimol_artofproblemsolving"
 SECRET_KEY = "SMxfWjTMu1bRLS67GseJiGWLuIogM3oVTQ"
 BLACKLIST_TOKEN = set()
-AVAILABLE_MODEL = ["Multinomial Naive Bayes (MultinomialNB)", "Support Vector Classification (SVC)", "BERT-Base-Cased"]
 
 # http://127.0.0.1:5000/
 
@@ -58,16 +58,24 @@ db = SQLAlchemy(app)
 jwt = JWTManager(app)
 
 
-# Load model MathBERT
-id_note = "08"
-MathBERTTokenizerpath = f"../../../models/saved_models/regression/{id_note}_tokenizer_MATHBERT"
-custom_objectspath = f"../../../models/saved_models/regression/{id_note}_custom_objects_MATHBERT.pkl"
-MathBERTpath = f"../../../models/saved_models/regression/{id_note}_MATHBERT"
-
-tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
-custom_objects = load_pkl(custom_objectspath)
-MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
-
+# Load MathBERT
+# """
+# IMPORTANT NOTE: 
+#     if there exist more than 1 ACTIVE regression model (EXPECTING ONLY MATHBERT FOR REGRESSION, 
+#     BUT MAY CONTAIN MANY VERSION OF MATHBERT) it will only take the first occurence of active model in DB
+# """
+# mathbert_table: dict = sql_executer.utils_get_active_regression_model_all_column_from_models(DATABASE_NAME)[0]
+# MathBERTTokenizerpath = mathbert_table['vectorizer_or_tokenizer_path']
+# custom_objectspath = mathbert_table['custom_objects_path']
+# MathBERTpath = mathbert_table['model_path']
+# start = perf_counter()
+# print("Loading MathBERT...")
+# tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
+# custom_objects = load_pkl(custom_objectspath)
+# MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
+# print("DONE!")
+# print("MathBERT loaded!")
+# print(f"{perf_counter()-start:.2f}s\n")
 
 # -------------------- Home --------------------
 @app.route("/home/home_data", methods=['GET'])
@@ -235,76 +243,94 @@ def get_random():
 @app.route("/classify", methods=['POST'])
 def predict_model_classification():
     raw_body_post = request.json
-
     selected_model = raw_body_post.get("classifier_model")
     text_problem = raw_body_post.get("problems")
 
+    # Store
+    result_classification = {
+        'Algebra': 0, 
+        'Combinatorics': 0, 
+        'Geometry': 0, 
+        'Number Theory': 0,
+        }
+    result_regression = {
+        'Score': 0,
+        'Difficulties': None,
+        }
+
     # Regression
-    tokenized_text_problem = tokenizer(text_problem, padding='max_length', max_length=512, truncation=True, return_tensors='tf')
-    raw_regression_result = MathBERT.predict([
-        [tokenized_text_problem['input_ids']], 
-        [tokenized_text_problem['attention_mask']], 
-        [tokenized_text_problem['token_type_ids']]
-    ])
-    score = float(raw_regression_result[0][0])
-    difficulties = discretize(score)
-    
+    """
+    IMPORTANT NOTE: 
+        if there exist more than 1 ACTIVE regression model (EXPECTING ONLY MATHBERT FOR REGRESSION, 
+        BUT MAY CONTAIN MANY VERSION OF MATHBERT) it will only take the first occurence of active model in DB
+    """
+    __ = sql_executer.utils_get_active_regression_model_all_column_from_models(DATABASE_NAME)
+    if len(__) != 0:
+        mathbert_table = __[0]
+        if mathbert_table['is_active'] == 1:
+            MathBERTTokenizerpath = mathbert_table['vectorizer_or_tokenizer_path']
+            custom_objectspath = mathbert_table['custom_objects_path']
+            MathBERTpath = mathbert_table['model_path']
+            start = perf_counter()
+            print("Loading MathBERT...")
+            tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
+            custom_objects = load_pkl(custom_objectspath)
+            MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
+            print("DONE!")
+            print("MathBERT loaded!")
+            print(f"{perf_counter()-start:.2f}s\n")
+
+            tokenized_text_problem = tokenizer(text_problem, padding='max_length', max_length=512, truncation=True, return_tensors='tf')
+            raw_regression_result = MathBERT.predict([
+                [tokenized_text_problem['input_ids']], 
+                [tokenized_text_problem['attention_mask']], 
+                [tokenized_text_problem['token_type_ids']]
+            ])
+            reg_res = float(raw_regression_result[0][0])
+            result_regression['Score'] = reg_res
+            result_regression['Difficulties'] = discretize(reg_res)
+        else:
+            # MathBERT is INACTIVE otherwise result set to None
+            ...
+    else:
+        # No Active regression model otherwise result set to None
+        ...
+
     # Classification
-    # Multinomial Naive Bayes
-    if selected_model == AVAILABLE_MODEL[0]:
-        loaded_MNBvectorizer = load_pkl("../../../models/saved_models/classification/MultinomialNB/vectorizer.pkl")
-        loaded_MNBmodel = load_pkl("../../../models/saved_models/classification/MultinomialNB/model.pkl")
+    AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
+    if selected_model in AVAILABLE_CLASSIFICATION_MODELS:
+        # sklearn model (old school models)
+        try:
+            print("Expecting sklearn model (Classification)...")
+            vpath = sql_executer.SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db, model_name=selected_model)
+            mpath = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
+            
+            loaded_vectorizer = load_pkl(vpath)
+            loaded_model = load_pkl(mpath)
 
-        tranformed_text = loaded_MNBvectorizer.transform(np.array([text_problem]))
-        proba_result = loaded_MNBmodel.predict_proba(tranformed_text)[0]
-        result_classification = {
-            'Algebra': proba_result[0], 
-            'Combinatorics': proba_result[1], 
-            'Geometry': proba_result[2], 
-            'Number Theory': proba_result[3],
-            }
-        result_regression = {
-            'Score': score,
-            'Difficulties': difficulties,
-            }
-        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+            tranformed_text = loaded_vectorizer.transform(np.array([text_problem]))
+            proba_result = loaded_model.predict_proba(tranformed_text)[0]
 
-    # Support Vector Classification
-    elif selected_model == AVAILABLE_MODEL[1]:
-        loaded_SVCvectorizer = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/vectorizer.pkl")
-        loaded_SVCmodel = load_pkl("../../../models/saved_models/classification/SupportVectorMechine/model.pkl")
+            result_classification['Algebra'] = proba_result[0]
+            result_classification['Combinatorics'] = proba_result[1]
+            result_classification['Geometry'] = proba_result[2]
+            result_classification['Number Theory'] = proba_result[3]
+            
+            print(result_regression)
+            return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+        # BERT
+        except:
+            print("Expecting BERT-BASE-CASED (Classification)...")
+            result_classification['Algebra'] = proba_result[0]
+            result_classification['Combinatorics'] = proba_result[1]
+            result_classification['Geometry'] = proba_result[2]
+            result_classification['Number Theory'] = proba_result[3]
 
-        tranformed_text = loaded_SVCvectorizer.transform(np.array([text_problem]))
-        proba_result = loaded_SVCmodel.predict_proba(tranformed_text)[0]
-        result_classification = {
-            'Algebra': proba_result[0], 
-            'Combinatorics': proba_result[1], 
-            'Geometry': proba_result[2], 
-            'Number Theory': proba_result[3],
-            }
-        result_regression = {
-            'Score': score,
-            'Difficulties': difficulties,
-            }
-        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
-
-    # BERT-BASE-CASED
-    elif selected_model == AVAILABLE_MODEL[3]:
-        # loaded_BERT_BASED_CASED = load_pkl("../../../models/saved_models/classification/MultinomialNB/vectorizer.pkl")
-        
-        # TO BE CONTINUED
-        result_classification = {
-            'Algebra': proba_result[0], 
-            'Combinatorics': proba_result[1], 
-            'Geometry': proba_result[2], 
-            'Number Theory': proba_result[3],
-            }
-        result_regression = {
-            'Score': score,
-            'Difficulties': difficulties
-            }
-        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+            return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
     
+    # Select outside defined model OR model is INACTIVE
+    else:
+        return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
 
 @app.route("/classify/generate_example", methods=['GET'])
 def generate_single_random_example_problem_for_classification():
@@ -313,7 +339,8 @@ def generate_single_random_example_problem_for_classification():
 
 @app.route("/classify/iniziate", methods=['GET'])
 def classify_page_iniziator():
-    return jsonify(AVAILABLE_MODEL), HTTP_200_OK
+    AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
+    return jsonify(AVAILABLE_CLASSIFICATION_MODELS), HTTP_200_OK
 
 
 # -------------------- About --------------------
@@ -433,7 +460,6 @@ def update_row_imo():
         return jsonify({'msg': 'UNCOMPLETE BODY POST OR TYRING TO INT(year)', 'status': False}), HTTP_400_BAD_REQUEST
     
     data = temp
-    # print(data)
     stat = sql_executer.UPDATE_ROW_TABLE_IMO(db, id_key=int(data.get('id_key')), updated_data=data)
     
     if stat is True:
@@ -483,7 +509,7 @@ def add_new_admin():
             return jsonify({"msg": "Insert row success", "status": True}), HTTP_200_OK
         else:
             print("Fail to add new admin!")
-            return jsonify({"msg": "Insert row failed", "status": True}), HTTP_406_NOT_ACCEPTABLE
+            return jsonify({"msg": "Insert row failed (make sure username is unique)", "status": True}), HTTP_406_NOT_ACCEPTABLE
 
 @app.route("/admin/delete_homedata", methods=['GET'])
 def delete_homedata():
@@ -508,4 +534,92 @@ def get_homedata():
     return jsonify(result)
 
 
-print("############ Flask API ready ############")
+# -------------------- models --------------------
+@app.route("/admin/get_models", methods=['GET'])
+def get_models():
+    result = sql_executer.SELECT_ALL_FROM_MODELS(db)
+    return jsonify(result)
+
+@app.route("/admin/insert_new_data_models", methods=['POST'])
+def add_new_model():
+    data = request.json
+    
+    try:
+        model_type = data.get('model_type').strip()
+        model_name = data.get('model_name').strip()
+        model_path = data.get('model_path').strip()
+        vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
+        custom_objects_path = data.get('custom_objects_path').strip()
+        is_active = int(data.get('is_active'))
+    except:
+        print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
+        return jsonify({"msg": "ERROR MISSING BODY POST"}), HTTP_400_BAD_REQUEST
+    
+    insert_new_model_sucess = sql_executer.insert_new_mode_into_table_models(
+        db, 
+        model_type,
+        model_name,
+        model_path,
+        vectorizer_or_tokenizer_path,
+        custom_objects_path,
+        is_active,
+    )
+    if insert_new_model_sucess:
+        print("New model has been added!")
+        return jsonify({"msg": "Insert row success", "status": True}), HTTP_200_OK
+    else:
+        print("Fail to add new model!")
+        return jsonify({"msg": "Insert row failed (make sure model_name is unique)", "status": True}), HTTP_406_NOT_ACCEPTABLE
+    
+@app.route("/admin/update_row_models", methods=['POST'])
+def update_row_models():
+    data = request.json
+    
+    try:
+        id_model = data.get('id_model')
+        model_type = data.get('model_type').strip()
+        model_name = data.get('model_name').strip()
+        model_path = data.get('model_path').strip()
+        vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
+        custom_objects_path = data.get('custom_objects_path').strip()
+        is_active = int(data.get('is_active'))
+    except:
+        print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
+        return jsonify({"msg": "ERROR MISSING BODY POST"}), HTTP_400_BAD_REQUEST
+    
+    updated_data = {
+        'id_model': id_model,
+        'model_type': model_type,
+        'model_name': model_name,
+        'model_path': model_path,
+        'vectorizer_or_tokenizer_path': vectorizer_or_tokenizer_path,
+        'custom_objects_path': custom_objects_path,
+        'is_active': is_active,
+    }
+    
+    updated_row_models_success = sql_executer.update_row_table_models(db, id_model, updated_data)
+    if updated_row_models_success:
+        print("New model has been added!")
+        return jsonify({"msg": "Update row success", "status": True}), HTTP_200_OK
+    else:
+        print("Fail to add new model!")
+        return jsonify({"msg": "Update row failed", "status": True}), HTTP_406_NOT_ACCEPTABLE
+    
+@app.route("/admin/delete_row_models", methods=['POST'])
+def delete_row_models():
+    data = request.json
+    
+    try:
+        id_model = data.get('id_model')
+    except:
+        print("Error can't get `id_model` from BODY POST")
+        return jsonify({"msg": "ERROR `id_model` MISSING BODY POST"}), HTTP_400_BAD_REQUEST
+    
+    delete_row_success = sql_executer.delete_row_table_models(db, id_model)
+    if delete_row_success:
+        return jsonify({"msg": "Delete row success", "status": True}), HTTP_200_OK
+    else:
+        return jsonify({"msg": "Delete row failed", "status": False}), HTTP_406_NOT_ACCEPTABLE
+
+
+# print("################# Flask API ready #################")
