@@ -8,13 +8,21 @@
                 <v-col cols="12" md="5">
                     <div class="about-text">
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Libero repellat et, inventore ducimus quos
-                            quidem laboriosam fuga quae facilis placeat corrupti
-                            nisi at. Dicta eveniet tempora perferendis ut
-                            assumenda repellendus error odio voluptas eos est
-                            quod corrupti itaque architecto temporibus,
-                            consequatur ducimus illum!
+                            Hello! My name is Victor, and I am a final year
+                            bachelor student majoring in IT and Big Data
+                            Analytics. My passion for technology and data has
+                            driven me to explore the vast possibilities that lie
+                            within these fields, and I am excited to share my
+                            journey with you. Over the past few years, I have
+                            developed a strong foundation in programming, with
+                            Python being my primary language.
+
+                            <br /><br />
+                            Moreover, I wouldn't have made it this far without
+                            the support of my friends who have also faced the
+                            challenges of these four years at university
+                            alongside me. Their companionship and contributions
+                            have been invaluable to my life.
                         </p>
                     </div>
                 </v-col>
