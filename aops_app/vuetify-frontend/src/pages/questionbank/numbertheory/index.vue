@@ -117,19 +117,21 @@ export default {
     methods: {
         fetchData_original() {
             this.loading = true;
-            axios
-                .get(`questionbank_original/Number Theory`)
-                .then((response) => {
-                    this.items = response.data.problems;
-                    this.unique_contest_name =
-                        response.data.unique_contest_name;
-                    this.totalItems = response.data.problems.length;
-                    this.loading = false;
-                })
-                .catch((error) => {
-                    console.error("Error fetching data:", error);
-                    this.loading = false;
-                });
+            setTimeout(() => {
+                axios
+                    .get(`questionbank_original/Number Theory`)
+                    .then((response) => {
+                        this.items = response.data.problems;
+                        this.unique_contest_name =
+                            response.data.unique_contest_name;
+                        this.totalItems = response.data.problems.length;
+                        this.loading = false;
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching data:", error);
+                        this.loading = false;
+                    });
+            }, 1500);
         },
         fetchData_forspecific_contest_name() {
             this.loading = true;
