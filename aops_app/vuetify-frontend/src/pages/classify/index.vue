@@ -83,7 +83,7 @@
                 </v-btn>
             </div>
 
-            <!-- Classification Result -->
+            <!-- Result -->
             <div
                 class="mb-10 pa-3 border-md rounded-lg"
                 v-if="this.show_classification_result_div === true"
@@ -101,6 +101,7 @@
                     </v-btn>
                 </div>
 
+                <!-- CLASSIFICATION -->
                 <h2 class="text-center">{{ this.highest_proba_key }}</h2>
                 <v-row class="mb-8" no-gutters>
                     <!-- Algebra -->
@@ -196,16 +197,17 @@
                         >
                     </v-col>
                 </v-row>
-
                 <p class="text-center mb-8 text-medium-emphasis text-body-2">
                     Result by <strong>{{ this.selected_mdoel_name }}</strong>
                 </p>
 
+                <!-- HORIZONTAL LINE -->
                 <v-divider
                     class="mb-8 border-opacity-25"
                     thickness="2"
                 ></v-divider>
 
+                <!-- REGRESSION -->
                 <h2 class="mb-2 text-center">
                     {{ this.difficulty_level_result }}
                 </h2>
@@ -228,21 +230,39 @@
                         <p class="text-center mt-2 mb-8 text-body-2">
                             {{ this.score_result.toFixed(2) }} out of 10
                         </p>
-                        <p class="text-center text-medium-emphasis text-body-2">
-                            Result by <strong>MathBERT</strong>
-                            <br />
-                            *Only <strong>MathBERT</strong> model available at
-                            this moment for difficulty classification
-                        </p>
 
                         <div id="scrollToResult" class="text-center">
-                            <a
-                                class="font-italic text-decoration-underline text-medium-emphasis text-caption text-decoration-none"
-                                href="https://arxiv.org/abs/2106.07340"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Learn about MathBERT</a
+                            <!-- If regression model Active -->
+                            <div
+                                v-if="
+                                    this.difficulty_level_result !== 'undefined'
+                                "
                             >
+                                <p class="text-medium-emphasis text-body-2">
+                                    Result by <strong>MathBERT</strong>
+                                    <br />
+                                    *Only <strong>MathBERT</strong> model
+                                    available at this moment for difficulty
+                                    classification
+                                </p>
+                                <a
+                                    class="font-italic text-decoration-underline text-medium-emphasis text-caption text-decoration-none"
+                                    href="https://arxiv.org/abs/2106.07340"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Learn about MathBERT</a
+                                >
+                            </div>
+
+                            <!-- If regression model Inactive -->
+                            <p
+                                v-if="
+                                    this.difficulty_level_result === 'undefined'
+                                "
+                                class="text-medium-emphasis text-body-2"
+                            >
+                                Regression model is undefined or inactive!
+                            </p>
                         </div>
                     </v-col>
                 </v-row>
@@ -332,8 +352,12 @@ export default {
                         }
                     }
 
-                    this.difficulty_level_result =
-                        response.regression.Difficulties;
+                    if (response.regression.Difficulties !== null) {
+                        this.difficulty_level_result =
+                            response.regression.Difficulties;
+                    } else {
+                        this.difficulty_level_result = "undefined";
+                    }
                     this.score_result = response.regression.Score;
 
                     this.show_classification_result_div = true;
