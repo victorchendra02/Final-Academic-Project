@@ -8,8 +8,20 @@ aops_app/flask-backend/package/__pycache__
 
 
 models/saved_models
-# data/classification/train
-# data/classification/test
+
+data/classification/train
+data/classification/train_truncated
+data/classification/test
+data/classification/test_truncated
+data/classification/val
+data/classification/val_truncated
+# data/classification/imo.csv
+data/classification/train.csv
+data/classification/train_truncated.csv
+data/classification/test.csv
+data/classification/test_truncated.csv
+data/classification/val.csv
+data/classification/val_truncated.csv
 
 # aops_app/vuetify-frontend/src/assets/about/about_1.JPG
 # aops_app/vuetify-frontend/src/assets/about/about_2.JPG
