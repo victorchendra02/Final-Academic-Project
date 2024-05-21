@@ -7,3 +7,13 @@ no,task,model,vectorizer,batch_size,epochs,learning_rate,optimizer,trainable,tra
 06,classification,BERTENCASEDL12H768A12,BERT-EN-CASED-PREPROCESSOR,16,5,2e-05,tf.keras.optimizers.Adam,True,320.94,0.4312700,0.8975000,0.9020875,0.8949257,0.8962713
 07,classification,BERTENCASEDL12H768A12,BERT-EN-CASED-PREPROCESSOR,16,6,3e-05,tf.keras.optimizers.Adam,True,395.23,0.4705798,0.8800000,0.8819525,0.8792174,0.8781656
 08,classification,BERTENCASEDL12H768A12,BERT-EN-CASED-PREPROCESSOR,16,4,3e-05,tf.keras.optimizers.Adam,True,266.62,0.3719062,0.8812500,0.8818000,0.8795851,0.8783187
+09,classification,MultinomialNB,TfidfVectorizer,-,-,-,-,-,0.10,0.3701369,0.8825000,0.8808390,0.8799174,0.8801431
+10,classification,MultinomialNB,CountVectorizer,-,-,-,-,-,0.09,0.9790942,0.8662500,0.8647885,0.8650734,0.8646096
+11,classification,SVC,TfidfVectorizer,-,-,-,-,-,5.57,0.3073209,0.8912500,0.8899982,0.8905556,0.8896029
+12,classification,SVC,CountVectorizer,-,-,-,-,-,3.63,0.3819763,0.8725000,0.8721158,0.8710042,0.8709265
+13,classification,RandomForestClassifier,TfidfVectorizer,-,-,-,-,-,6.92,0.4400824,0.8825000,0.8810010,0.8806065,0.8804907
+14,classification,RandomForestClassifier,CountVectorizer,-,-,-,-,-,7.39,0.4291541,0.8975000,0.8965035,0.8955986,0.8955952
+15,classification,KNeighborsClassifier,TfidfVectorizer,-,-,-,-,-,0.09,0.6326991,0.8300000,0.8324388,0.8255944,0.8272960
+16,classification,KNeighborsClassifier,CountVectorizer,-,-,-,-,-,0.10,1.8772733,0.6350000,0.7214516,0.6201617,0.5830908
+17,classification,LogisticRegression,TfidfVectorizer,-,-,-,-,-,0.31,0.3828120,0.8862500,0.8846561,0.8854202,0.8844582
+18,classification,LogisticRegression,CountVectorizer,-,-,-,-,-,0.45,0.3498059,0.8887500,0.8873880,0.8873443,0.8870099
