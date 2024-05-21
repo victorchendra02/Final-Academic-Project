@@ -4,6 +4,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
+map_str_label, map_int_label = \
+    {"Algebra": 0, "Combinatorics": 1, "Geometry": 2, "Number Theory": 3}, \
+    {0: "Algebra", 1: "Combinatorics", 2: "Geometry", 3: "Number Theory"}
+
+
 def create_folder(path):
     try:
         os.makedirs(path)
@@ -136,3 +141,16 @@ def plot_histogram(ax, data, bins=10, title='', xlabel='', ylabel='Frequency'):
     for patch, count in zip(patches, counts):
         ax.text(patch.get_x() + patch.get_width() / 2, patch.get_height() - 0.5, str(int(count)),
                 ha='center', va='top', fontsize=10, color='white', weight='bold')
+
+
+def index_of_highest_value_in_a_list(array: list) -> int:
+    max_value = array[0]  # Start with the first value as a reference
+    max_index = 0
+    
+    for index, value in enumerate(array):
+        if value > max_value:
+            max_value = value
+            max_index = index
+
+    return max_index
+
