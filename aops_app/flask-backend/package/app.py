@@ -5,8 +5,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import random
 import numpy as np
 import tensorflow as tf
+import tensorflow_text as text  # import this to able load saved BERT tfhub model
 from transformers import BertTokenizer
-import requests
+# import requests
 
 # flask
 from flask_cors import CORS
@@ -20,7 +21,7 @@ from flask_jwt_extended import JWTManager
 # time - date
 from datetime import timedelta
 from utils import get_current_date
-from utils import get_current_datetime
+# from utils import get_current_datetime
 from utils import discretize
 from time import perf_counter
 
@@ -299,8 +300,9 @@ def predict_model_classification():
     # Classification
     AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
     if selected_model in AVAILABLE_CLASSIFICATION_MODELS:
+        temp = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
         # sklearn model (old school models)
-        try:
+        if temp.endswith(".pkl"):
             print("Expecting sklearn model (Classification)...")
             vpath = sql_executer.SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db, model_name=selected_model)
             mpath = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
@@ -319,12 +321,15 @@ def predict_model_classification():
             print(result_regression)
             return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
         # BERT
-        except:
+        else:
             print("Expecting BERT-BASE-CASED (Classification)...")
-            result_classification['Algebra'] = proba_result[0]
-            result_classification['Combinatorics'] = proba_result[1]
-            result_classification['Geometry'] = proba_result[2]
-            result_classification['Number Theory'] = proba_result[3]
+            loeaded_bert_classifier = tf.saved_model.load(sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model))
+            proba_result = loeaded_bert_classifier(tf.constant([text_problem])).numpy()[0]
+            
+            result_classification['Algebra'] = float(proba_result[0])
+            result_classification['Combinatorics'] = float(proba_result[1])
+            result_classification['Geometry'] = float(proba_result[2])
+            result_classification['Number Theory'] = float(proba_result[3])
 
             return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
     
@@ -549,7 +554,7 @@ def add_new_model():
         model_name = data.get('model_name').strip()
         model_path = data.get('model_path').strip()
         vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
-        custom_objects_path = data.get('custom_objects_path').strip()
+        custom_objects_path = data.get('custom_objects_path') if data.get('custom_objects_path') == None else data.get('custom_objects_path').strip()
         is_active = int(data.get('is_active'))
     except:
         print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
@@ -581,7 +586,7 @@ def update_row_models():
         model_name = data.get('model_name').strip()
         model_path = data.get('model_path').strip()
         vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
-        custom_objects_path = data.get('custom_objects_path').strip()
+        custom_objects_path = data.get('custom_objects_path') if data.get('custom_objects_path') == None else data.get('custom_objects_path').strip()
         is_active = int(data.get('is_active'))
     except:
         print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
