@@ -10,7 +10,7 @@
                 <v-col cols="12" lg="10" md="9">
                     <v-select
                         label="Select classifier model"
-                        v-model="this.selected_mdoel_name"
+                        v-model="this.selected_model_name"
                         :items="this.available_model_name"
                         variant="outlined"
                         density="comfortable"
@@ -198,7 +198,7 @@
                     </v-col>
                 </v-row>
                 <p class="text-center mb-8 text-medium-emphasis text-body-2">
-                    Result by <strong>{{ this.selected_mdoel_name }}</strong>
+                    Result by <strong>{{ this.selected_model_name }}</strong>
                 </p>
 
                 <!-- HORIZONTAL LINE -->
@@ -232,40 +232,57 @@
                         </p>
 
                         <div id="scrollToResult" class="text-center">
-                            <!-- If regression model Active -->
-                            <div
-                                v-if="
-                                    this.difficulty_level_result !== 'undefined'
-                                "
-                            >
-                                <p class="text-medium-emphasis text-body-2">
-                                    Result by <strong>MathBERT</strong>
-                                    <br />
-                                    *Only <strong>MathBERT</strong> model
-                                    available at this moment for difficulty
-                                    classification
-                                </p>
-                                <a
-                                    class="font-italic text-decoration-underline text-medium-emphasis text-caption text-decoration-none"
-                                    href="https://arxiv.org/abs/2106.07340"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Learn about MathBERT</a
-                                >
-                            </div>
-
-                            <!-- If regression model Inactive -->
-                            <p
-                                v-if="
-                                    this.difficulty_level_result === 'undefined'
-                                "
-                                class="text-medium-emphasis text-body-2"
-                            >
-                                Regression model is undefined or inactive!
+                            <p class="text-medium-emphasis text-body-2">
+                                Result by <strong>MathBERT</strong>
+                                <br />
+                                *Only <strong>MathBERT</strong> model available
+                                at this moment for difficulty classification
                             </p>
+                            <a
+                                class="font-italic text-decoration-underline text-medium-emphasis text-caption text-decoration-none"
+                                href="https://arxiv.org/abs/2106.07340"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Learn about MathBERT</a
+                            >
                         </div>
                     </v-col>
                 </v-row>
+
+                <!-- For Error -->
+                <div class="mb-1">
+                    <!-- Classifier Error model -->
+                    <v-alert
+                        v-if="
+                            this.classification_proba_result['Algebra'] &&
+                            this.classification_proba_result['Combinatorics'] &&
+                            this.classification_proba_result['Geometry'] &&
+                            this.classification_proba_result['Number Theory'] <=
+                                0
+                        "
+                        class="mb-4"
+                        title="Error Classifier Model Not Found!"
+                        type="error"
+                        border="start"
+                        variant="tonal"
+                    >
+                        Check the model or vectorizer path (<span
+                            class="text-decoration-underline"
+                            >{{ this.selected_model_name }}</span
+                        >)
+                    </v-alert>
+
+                    <!-- Regressor Error model -->
+                    <v-alert
+                        v-if="this.difficulty_level_result === 'undefined'"
+                        title="Regressor Model Not Found or Inactive!"
+                        text="Model or vectorizer path can't be found or model being inactivated"
+                        type="warning"
+                        border="start"
+                        variant="tonal"
+                    >
+                    </v-alert>
+                </div>
             </div>
 
             <br />
@@ -302,7 +319,7 @@ export default {
 
         no_model_selected: false,
         available_model_name: [],
-        selected_mdoel_name: null,
+        selected_model_name: null,
     }),
     methods: {
         async generate_example() {
@@ -323,8 +340,8 @@ export default {
 
             // no model selected
             if (
-                this.selected_mdoel_name === null ||
-                this.selected_mdoel_name === ""
+                this.selected_model_name === null ||
+                this.selected_model_name === ""
             ) {
                 this.no_model_selected = true;
                 this.loading2 = false;
@@ -334,7 +351,7 @@ export default {
             if (this.text_area !== null && this.text_area !== "") {
                 try {
                     const raw_response = await axios.post(`classify`, {
-                        classifier_model: this.selected_mdoel_name,
+                        classifier_model: this.selected_model_name,
                         problems: this.text_area,
                     });
                     const response = raw_response.data;
@@ -365,7 +382,6 @@ export default {
                     setTimeout(() => {
                         const element =
                             document.getElementById("scrollToResult");
-                        console.log("AAAA", element);
                         if (element) {
                             element.scrollIntoView({ behavior: "smooth" });
                         }
@@ -407,6 +423,7 @@ export default {
                 .get(`/classify/iniziate`)
                 .then((response) => {
                     this.available_model_name = response.data;
+                    this.available_model_name.sort()
                 })
                 .catch((error) => {
                     console.log(error.message);

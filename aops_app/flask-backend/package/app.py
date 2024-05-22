@@ -249,13 +249,13 @@ def predict_model_classification():
 
     # Store
     result_classification = {
-        'Algebra': 0, 
-        'Combinatorics': 0, 
-        'Geometry': 0, 
-        'Number Theory': 0,
+        'Algebra': -1, 
+        'Combinatorics': -1, 
+        'Geometry': -1, 
+        'Number Theory': -1,
         }
     result_regression = {
-        'Score': 0,
+        'Score': -1,
         'Difficulties': None,
         }
 
@@ -300,38 +300,49 @@ def predict_model_classification():
     # Classification
     AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
     if selected_model in AVAILABLE_CLASSIFICATION_MODELS:
-        temp = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
-        # sklearn model (old school models)
-        if temp.endswith(".pkl"):
+        slctd_model_path = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
+        
+        if slctd_model_path.endswith(".pkl"):
+            # sklearn model (old school models)
             print("Expecting sklearn model (Classification)...")
-            vpath = sql_executer.SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db, model_name=selected_model)
-            mpath = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
-            
-            loaded_vectorizer = load_pkl(vpath)
-            loaded_model = load_pkl(mpath)
+            vpath = sql_executer.SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db, model_name=selected_model);
 
-            tranformed_text = loaded_vectorizer.transform(np.array([text_problem]))
-            proba_result = loaded_model.predict_proba(tranformed_text)[0]
+            try:
+                loaded_vectorizer = load_pkl(vpath)
+                loaded_model = load_pkl(slctd_model_path)
+            except FileNotFoundError:
+                # Vectorizer or Model path is not exist
+                return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK                
+            else:
+                # Vectorizer or Model path exist
+                tranformed_text = loaded_vectorizer.transform(np.array([text_problem]))
+                proba_result = loaded_model.predict_proba(tranformed_text)[0]
 
-            result_classification['Algebra'] = proba_result[0]
-            result_classification['Combinatorics'] = proba_result[1]
-            result_classification['Geometry'] = proba_result[2]
-            result_classification['Number Theory'] = proba_result[3]
-            
-            print(result_regression)
-            return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
-        # BERT
+                result_classification['Algebra'] = proba_result[0]
+                result_classification['Combinatorics'] = proba_result[1]
+                result_classification['Geometry'] = proba_result[2]
+                result_classification['Number Theory'] = proba_result[3]
+                
+                return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
         else:
+            # BERT
             print("Expecting BERT-BASE-CASED (Classification)...")
-            loeaded_bert_classifier = tf.saved_model.load(sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model))
-            proba_result = loeaded_bert_classifier(tf.constant([text_problem])).numpy()[0]
             
-            result_classification['Algebra'] = float(proba_result[0])
-            result_classification['Combinatorics'] = float(proba_result[1])
-            result_classification['Geometry'] = float(proba_result[2])
-            result_classification['Number Theory'] = float(proba_result[3])
+            try: 
+                loeaded_bert_classifier = tf.saved_model.load(slctd_model_path)
+            except OSError:
+                # BERT model path is not exist
+                return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+            else:
+                # BERT model path exist
+                proba_result = loeaded_bert_classifier(tf.constant([text_problem])).numpy()[0]
+                
+                result_classification['Algebra'] = float(proba_result[0])
+                result_classification['Combinatorics'] = float(proba_result[1])
+                result_classification['Geometry'] = float(proba_result[2])
+                result_classification['Number Theory'] = float(proba_result[3])
 
-            return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
+                return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
     
     # Select outside defined model OR model is INACTIVE
     else:
