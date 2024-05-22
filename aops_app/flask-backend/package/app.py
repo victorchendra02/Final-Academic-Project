@@ -4,7 +4,10 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import random
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
+from tensorflow._api.v2.saved_model import load as tf_savedmodel_load
+from tensorflow import constant as tf_constant
+
 import tensorflow_text as text  # import this to able load saved BERT tfhub model
 from transformers import BertTokenizer
 # import requests
@@ -259,7 +262,7 @@ def predict_model_classification():
         'Difficulties': None,
         }
 
-    # Regression
+    # Regression (MATHBERT MODEL ONLY FROM HUGGING FACE)
     """
     IMPORTANT NOTE: 
         if there exist more than 1 ACTIVE regression model (EXPECTING ONLY MATHBERT FOR REGRESSION, 
@@ -268,34 +271,46 @@ def predict_model_classification():
     __ = sql_executer.utils_get_active_regression_model_all_column_from_models(DATABASE_NAME)
     if len(__) != 0:
         mathbert_table = __[0]
-        if mathbert_table['is_active'] == 1:
-            MathBERTTokenizerpath = mathbert_table['vectorizer_or_tokenizer_path']
-            custom_objectspath = mathbert_table['custom_objects_path']
-            MathBERTpath = mathbert_table['model_path']
-            start = perf_counter()
-            print("Loading MathBERT...")
+        
+        MathBERTTokenizerpath = mathbert_table['vectorizer_or_tokenizer_path']
+        MathBERTpath = mathbert_table['model_path']
+        
+        print(f"mbert_path ==> {MathBERTpath}")
+        print(f"tknzr_path ==> {MathBERTTokenizerpath}")
+        
+        # 1. Load tokenizer first
+        print("(1) status  ==> LOADING...      mathbert tokenizer")
+        try:
             tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
-            custom_objects = load_pkl(custom_objectspath)
-            MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
-            print("DONE!")
-            print("MathBERT loaded!")
-            print(f"{perf_counter()-start:.2f}s\n")
-
-            tokenized_text_problem = tokenizer(text_problem, padding='max_length', max_length=512, truncation=True, return_tensors='tf')
-            raw_regression_result = MathBERT.predict([
-                [tokenized_text_problem['input_ids']], 
-                [tokenized_text_problem['attention_mask']], 
-                [tokenized_text_problem['token_type_ids']]
-            ])
-            reg_res = float(raw_regression_result[0][0])
-            result_regression['Score'] = reg_res
-            result_regression['Difficulties'] = discretize(reg_res)
-        else:
-            # MathBERT is INACTIVE otherwise result set to None
+        except:
+            # Error is `HFValidationError` if tokenizer path is incorrect
             ...
-    else:
-        # No Active regression model otherwise result set to None
-        ...
+        # 2. NO ERROR OCCUR ==> Load model
+        else:
+            print("(2) status  ==> SUCCESS LOADING mathbert tokenizer")
+            try:
+                start = perf_counter()
+                MathBERT = tf_savedmodel_load(MathBERTpath)
+            except:
+                # Error should be `OSError` if model path is incorrect
+                ...
+            # 3. NO ERROR OCCUR ==> Predict
+            else:
+                print("(3) status  ==> SUCCESS LOADING mathbert model")
+                tokenized_text_problem = tokenizer(text_problem, padding='max_length', max_length=512, truncation=True, return_tensors='tf')
+                raw_regression_result = MathBERT([
+                    [tokenized_text_problem['input_ids']][0], 
+                    [tokenized_text_problem['attention_mask'][0]], 
+                    [tokenized_text_problem['token_type_ids'][0]]
+                ])
+                reg_res = float(raw_regression_result[0][0])
+                result_regression['Score'] = reg_res
+                result_regression['Difficulties'] = discretize(reg_res)
+                end = perf_counter()
+
+                print("(4) status  ==> REGRESSION DONE!")
+                print(f"TIME TAKEN to load model and do regression: {end-start:.2f}s\n")
+    else: ...  # No Active regression model otherwise result set to default
 
     # Classification
     AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
@@ -327,27 +342,31 @@ def predict_model_classification():
         else:
             # BERT
             print("Expecting BERT-BASE-CASED (Classification)...")
-            
+            print("path is not endswith('.pkl')")
+
             try: 
-                loeaded_bert_classifier = tf.saved_model.load(slctd_model_path)
+                start = perf_counter()
+                loeaded_bert_classifier = tf_savedmodel_load(slctd_model_path)
             except OSError:
                 # BERT model path is not exist
                 return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
             else:
                 # BERT model path exist
-                proba_result = loeaded_bert_classifier(tf.constant([text_problem])).numpy()[0]
+                proba_result = loeaded_bert_classifier(tf_constant([text_problem])).numpy()[0]
                 
                 result_classification['Algebra'] = float(proba_result[0])
                 result_classification['Combinatorics'] = float(proba_result[1])
                 result_classification['Geometry'] = float(proba_result[2])
                 result_classification['Number Theory'] = float(proba_result[3])
+                end = perf_counter()
 
+                print(f"TIME TAKEN to load model and do classification w/ BERT: {end-start:.2f}s\n")
                 return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
     
     # Select outside defined model OR model is INACTIVE
     else:
         return jsonify({'classification': result_classification, 'regression': result_regression}), HTTP_200_OK
-
+        
 @app.route("/classify/generate_example", methods=['GET'])
 def generate_single_random_example_problem_for_classification():
     result = sql_executer.SELECT_ALL_FROM_IMO(db, random=True, limit=1)

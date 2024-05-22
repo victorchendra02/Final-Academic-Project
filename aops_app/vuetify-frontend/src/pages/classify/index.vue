@@ -261,21 +261,21 @@
                                 0
                         "
                         class="mb-4"
-                        title="Error Classifier Model Not Found!"
+                        title="[CLASSIFIER] Model Not Found!"
                         type="error"
                         border="start"
                         variant="tonal"
                     >
-                        Check the model or vectorizer path (<span
-                            class="text-decoration-underline"
-                            >{{ this.selected_model_name }}</span
-                        >)
+                        Model or vectorizer path can't be found -
+                        <span class="text-decoration-underline">{{
+                            this.selected_model_name
+                        }}</span>
                     </v-alert>
 
                     <!-- Regressor Error model -->
                     <v-alert
                         v-if="this.difficulty_level_result === 'undefined'"
-                        title="Regressor Model Not Found or Inactive!"
+                        title="[REGRESSOR] Model Not Found or Inactive!"
                         text="Model or vectorizer path can't be found or model being inactivated"
                         type="warning"
                         border="start"
@@ -423,7 +423,7 @@ export default {
                 .get(`/classify/iniziate`)
                 .then((response) => {
                     this.available_model_name = response.data;
-                    this.available_model_name.sort()
+                    this.available_model_name.sort();
                 })
                 .catch((error) => {
                     console.log(error.message);
