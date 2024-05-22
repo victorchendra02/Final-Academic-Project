@@ -1132,10 +1132,11 @@
             </div>
 
             <!-- Table -->
+            <!-- :items-per-page="this.itemsPerPage_4_all" -->
             <v-data-table
                 class="mb-10 table-color"
                 :loading="this.loading_4_all_tables"
-                :items-per-page="this.itemsPerPage_4_all"
+                :items-per-page="20"
                 :items-length="totalItems_models"
                 :headers="this.headers_models"
                 :items="this.items_models"
