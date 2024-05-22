@@ -195,7 +195,7 @@
                 </v-card>
             </v-dialog>
 
-            <!-- Alert outisde dialog -->
+            <!-- Alert outside dialog -->
             <div class="mb-4">
                 <!-- Form not yet complete -->
                 <v-alert
@@ -733,7 +733,7 @@
                 </v-card>
             </v-dialog>
 
-            <!-- Alert outisde dialog -->
+            <!-- Alert outside dialog -->
             <div class="mb-4">
                 <!-- Form not yet complete -->
                 <v-alert
@@ -846,7 +846,7 @@
                 </v-card>
             </v-dialog>
 
-            <!-- Alert outisde dialog -->
+            <!-- Alert outside dialog -->
             <div class="mb-4">
                 <!-- Fail regenerate homedata -->
                 <v-alert
@@ -1056,7 +1056,7 @@
             </v-dialog>
 
             <!-- Alert outside dialog -->
-            <v-card-text>
+            <div class="mb-4">
                 <!-- Form not yet complete -->
                 <v-alert
                     v-model="this.form_insert_new_data_is_not_complete_models"
@@ -1129,7 +1129,7 @@
                     type="success"
                 >
                 </v-alert>
-            </v-card-text>
+            </div>
 
             <!-- Table -->
             <v-data-table
