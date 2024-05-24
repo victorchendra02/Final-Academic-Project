@@ -1372,15 +1372,7 @@
                             v-model="
                                 this.newItem_models.vectorizer_or_tokenizer_path
                             "
-                            label="vectorizer_or_tokenizer_path*"
-                            variant="outlined"
-                            clearable
-                            auto-grow
-                        ></v-textarea>
-
-                        <v-textarea
-                            v-model="this.newItem_models.custom_objects_path"
-                            label="custom_objects_path"
+                            label="vectorizer_or_tokenizer_path"
                             variant="outlined"
                             clearable
                             auto-grow
@@ -1522,7 +1514,7 @@
                     >
                 </template>
 
-                <template v-slot:item.custom_objects_path="{ value }">
+                <template v-slot:item.vectorizer_or_tokenizer_path="{ value }">
                     <v-chip
                         v-if="value === null || value === ''"
                         color="red-darken-2"
@@ -1532,6 +1524,7 @@
                         value
                     }}</span>
                 </template>
+
                 <template v-slot:item.is_active="{ value }">
                     <v-chip
                         :color="this.chips_isactive_color(value)"
@@ -1637,15 +1630,7 @@
                                 this.editedItem_models
                                     .vectorizer_or_tokenizer_path
                             "
-                            label="vectorizer_or_tokenizer_path*"
-                            variant="outlined"
-                            clearable
-                            auto-grow
-                        ></v-textarea>
-
-                        <v-textarea
-                            v-model="this.editedItem_models.custom_objects_path"
-                            label="custom_objects_path"
+                            label="vectorizer_or_tokenizer_path"
                             variant="outlined"
                             clearable
                             auto-grow
@@ -2052,12 +2037,6 @@ export default {
                 align: "start",
             },
             {
-                title: "custom_objects_path",
-                sortable: true,
-                key: "custom_objects_path",
-                align: "start",
-            },
-            {
                 title: "is_active",
                 sortable: true,
                 key: "is_active",
@@ -2090,7 +2069,6 @@ export default {
             model_name: "",
             model_path: "",
             vectorizer_or_tokenizer_path: "",
-            custom_objects_path: "",
             is_active: 0,
         },
         is_success_insert_new_data_models: false,
@@ -2105,7 +2083,6 @@ export default {
             model_name: "",
             model_path: "",
             vectorizer_or_tokenizer_path: "",
-            custom_objects_path: "",
             is_active: 0,
         },
         success_update_or_edit_row_models: false,
@@ -2720,7 +2697,6 @@ export default {
                 model_name: "",
                 model_path: "",
                 vectorizer_or_tokenizer_path: "",
-                custom_objects_path: "",
                 is_active: 0,
             };
         },
@@ -2736,7 +2712,7 @@ export default {
             this.form_insert_new_data_error_models = false;
 
             for (let key in this.newItem_models) {
-                if (key !== "custom_objects_path") {
+                if (key !== "vectorizer_or_tokenizer_path") {
                     if (
                         this.newItem_models[key] === "" ||
                         this.newItem_models[key] === null
@@ -2779,7 +2755,7 @@ export default {
         },
         async saveUpdatedOrEditedItem_models() {
             for (let key in this.editedItem_models) {
-                if (key !== "custom_objects_path") {
+                if (key !== "vectorizer_or_tokenizer_path") {
                     if (
                         this.editedItem_models[key] === "" ||
                         this.editedItem_models[key] === null

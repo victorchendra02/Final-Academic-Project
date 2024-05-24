@@ -635,19 +635,17 @@ def add_new_model():
         model_name = data.get('model_name').strip()
         model_path = data.get('model_path').strip()
         vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
-        custom_objects_path = data.get('custom_objects_path') if data.get('custom_objects_path') == None else data.get('custom_objects_path').strip()
         is_active = int(data.get('is_active'))
     except:
         print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
         return jsonify({"msg": "ERROR MISSING BODY POST"}), HTTP_400_BAD_REQUEST
     
-    insert_new_model_sucess = sql_executer.insert_new_mode_into_table_models(
+    insert_new_model_sucess = sql_executer.insert_new_model_into_table_models(
         db, 
         model_type,
         model_name,
         model_path,
         vectorizer_or_tokenizer_path,
-        custom_objects_path,
         is_active,
     )
     if insert_new_model_sucess:
@@ -667,7 +665,6 @@ def update_row_models():
         model_name = data.get('model_name').strip()
         model_path = data.get('model_path').strip()
         vectorizer_or_tokenizer_path = data.get('vectorizer_or_tokenizer_path').strip()
-        custom_objects_path = data.get('custom_objects_path') if data.get('custom_objects_path') == None else data.get('custom_objects_path').strip()
         is_active = int(data.get('is_active'))
     except:
         print("Error INCOMPLETE BODY POST or something error trying to get data from BODY POST")
@@ -679,7 +676,6 @@ def update_row_models():
         'model_name': model_name,
         'model_path': model_path,
         'vectorizer_or_tokenizer_path': vectorizer_or_tokenizer_path,
-        'custom_objects_path': custom_objects_path,
         'is_active': is_active,
     }
     

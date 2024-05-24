@@ -473,17 +473,6 @@ def SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db: SQLAlchemy, model_name: 
     raw_result = db.session.execute(text(sql), {"model_name": model_name})
     result = orient_record(raw_result.fetchall())
     return result[0]['_']
-
-def SELECT_CUSTOM_OBJECTS_PATH_PATH_FROM_MODELS(db: SQLAlchemy, model_name: str) -> str:
-    sql = """
-        SELECT custom_objects_path AS _
-        FROM models
-        WHERE 
-            model_name=:model_name;
-    """
-    raw_result = db.session.execute(text(sql), {"model_name": model_name})
-    result = orient_record(raw_result.fetchall())
-    return result[0]['_']
  
 def get_all_active_model_names(db: SQLAlchemy, model_type:None|str=None) -> list[str]:
     if isinstance(model_type, None):
@@ -597,14 +586,13 @@ def INSERT_ROW_TO_TABLE_HOME_DATA(db: SQLAlchemy, data: dict) -> bool:
         return False
 
 
-"""TABLE: home_data"""
-def insert_new_mode_into_table_models(
+"""TABLE: models"""
+def insert_new_model_into_table_models(
     db: SQLAlchemy, 
     model_type:str, 
     model_name:str, 
     model_path:str, 
     vectorizer_or_tokenizer_path:str, 
-    custom_objects_path:str, 
     is_active: int) -> bool:
     
     sql = """
@@ -613,7 +601,6 @@ def insert_new_mode_into_table_models(
             model_name, 
             model_path, 
             vectorizer_or_tokenizer_path,
-            custom_objects_path,
             is_active
         ) 
         VALUES(
@@ -621,7 +608,6 @@ def insert_new_mode_into_table_models(
             :model_name, 
             :model_path, 
             :vectorizer_or_tokenizer_path,
-            :custom_objects_path,
             :is_active
         );
     """
@@ -633,7 +619,6 @@ def insert_new_mode_into_table_models(
                 'model_name': model_name, 
                 'model_path': model_path, 
                 'vectorizer_or_tokenizer_path': vectorizer_or_tokenizer_path, 
-                'custom_objects_path': custom_objects_path, 
                 'is_active': is_active
             })
         return True
@@ -650,7 +635,6 @@ def update_row_table_models(db: SQLAlchemy, id_model: int, updated_data: dict):
             `model_name`=:model_name,
             `model_path`=:model_path,
             `vectorizer_or_tokenizer_path`=:vectorizer_or_tokenizer_path,
-            `custom_objects_path`=:custom_objects_path,
             `is_active`=:is_active
         WHERE
             `models`.`id_model`=:id_model;
@@ -665,7 +649,6 @@ def update_row_table_models(db: SQLAlchemy, id_model: int, updated_data: dict):
                 "model_name": updated_data['model_name'],
                 "model_path": updated_data['model_path'],
                 "vectorizer_or_tokenizer_path": updated_data['vectorizer_or_tokenizer_path'],
-                "custom_objects_path": updated_data['custom_objects_path'],
                 "is_active": updated_data['is_active'],
             }
         )
