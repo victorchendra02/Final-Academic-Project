@@ -24,7 +24,6 @@ from flask_jwt_extended import JWTManager
 # time - date
 from datetime import timedelta
 from utils import get_current_date
-# from utils import get_current_datetime
 from utils import discretize
 from time import perf_counter
 
@@ -61,25 +60,6 @@ CORS(app, resources={r"*": {"origins": "*"}})  # This is to give our "front end 
 db = SQLAlchemy(app)
 jwt = JWTManager(app)
 
-
-# Load MathBERT
-# """
-# IMPORTANT NOTE: 
-#     if there exist more than 1 ACTIVE regression model (EXPECTING ONLY MATHBERT FOR REGRESSION, 
-#     BUT MAY CONTAIN MANY VERSION OF MATHBERT) it will only take the first occurence of active model in DB
-# """
-# mathbert_table: dict = sql_executer.utils_get_active_regression_model_all_column_from_models(DATABASE_NAME)[0]
-# MathBERTTokenizerpath = mathbert_table['vectorizer_or_tokenizer_path']
-# custom_objectspath = mathbert_table['custom_objects_path']
-# MathBERTpath = mathbert_table['model_path']
-# start = perf_counter()
-# print("Loading MathBERT...")
-# tokenizer = BertTokenizer.from_pretrained(MathBERTTokenizerpath, output_hidden_states=True)
-# custom_objects = load_pkl(custom_objectspath)
-# MathBERT = tf.keras.models.load_model(MathBERTpath, custom_objects=custom_objects)
-# print("DONE!")
-# print("MathBERT loaded!")
-# print(f"{perf_counter()-start:.2f}s\n")
 
 # -------------------- Home --------------------
 @app.route("/home/home_data", methods=['GET'])
@@ -568,6 +548,77 @@ def get_homedata():
     result = sql_executer.SELECT_ALL_FROM_HOME_DATA(db)
     return jsonify(result)
 
+@app.route("/admin/get_all_active_classifier_models_name", methods=['GET'])
+def get_all_active_classifier_models_name():
+    AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
+    return jsonify(AVAILABLE_CLASSIFICATION_MODELS), HTTP_200_OK
+
+@app.route("/admin/classify_problem", methods=['POST'])
+def admin_classify():
+    raw_body_post = request.json
+    selected_model = raw_body_post.get("classifier_model")
+    text_problem = raw_body_post.get("problems")
+    
+    result_classification = {
+        'Algebra': -1, 
+        'Combinatorics': -1, 
+        'Geometry': -1, 
+        'Number Theory': -1,
+        }
+
+    AVAILABLE_CLASSIFICATION_MODELS = sql_executer.utils_get_active_model_names_from_models(DATABASE_NAME, "classification")
+    if selected_model in AVAILABLE_CLASSIFICATION_MODELS:
+        slctd_model_path = sql_executer.SELECT_MODEL_PATH_FROM_MODELS(db, model_name=selected_model)
+        if slctd_model_path.endswith(".pkl"):
+            # sklearn model (old school models)
+            print("(ADMIN) Expecting sklearn model (Classification)...")
+            vpath = sql_executer.SELECT_VECTORIZER_OR_TOKENIZER_PATH_FROM_MODELS(db, model_name=selected_model);
+
+            try:
+                loaded_vectorizer = load_pkl(vpath)
+                loaded_model = load_pkl(slctd_model_path)
+            except FileNotFoundError:
+                # Vectorizer or Model path is not exist
+                return jsonify({"msg": f"FileNotFoundError:\nIncorrect model or vectorizer path: `{selected_model}`"}), HTTP_404_NOT_FOUND
+            else:
+                # Vectorizer or Model path exist
+                tranformed_text = loaded_vectorizer.transform(np.array([text_problem]))
+                proba_result = loaded_model.predict_proba(tranformed_text)[0]
+
+                result_classification['Algebra'] = proba_result[0]
+                result_classification['Combinatorics'] = proba_result[1]
+                result_classification['Geometry'] = proba_result[2]
+                result_classification['Number Theory'] = proba_result[3]
+                
+                return jsonify({'classification': result_classification, "label": max(result_classification, key=result_classification.get)}), HTTP_200_OK
+        else:
+            # BERT
+            print("(ADMIN) Expecting BERT-BASE-CASED (Classification)...")
+            print("(ADMIN) path is not endswith('.pkl')")
+
+            try: 
+                start = perf_counter()
+                loeaded_bert_classifier = tf_savedmodel_load(slctd_model_path)
+            except OSError:
+                # BERT model path is not exist
+                return jsonify({"msg": f"OSError:\nIncorrect model path: `{selected_model}`"}), HTTP_404_NOT_FOUND
+            else:
+                # BERT model path exist
+                proba_result = loeaded_bert_classifier(tf_constant([text_problem])).numpy()[0]
+                
+                result_classification['Algebra'] = float(proba_result[0])
+                result_classification['Combinatorics'] = float(proba_result[1])
+                result_classification['Geometry'] = float(proba_result[2])
+                result_classification['Number Theory'] = float(proba_result[3])
+                end = perf_counter()
+                print(f"(ADMIN) TIME TAKEN to load model and do classification w/ BERT: {end-start:.2f}s\n")
+
+                return jsonify({'classification': result_classification, "label": max(result_classification, key=result_classification.get)}), HTTP_200_OK
+    
+    # Select outside defined model OR model is INACTIVE
+    else:
+        return jsonify({"msg": f"Exception:\nSomething error can't be explained: `{selected_model}`"}), HTTP_404_NOT_FOUND
+        
 
 # -------------------- models --------------------
 @app.route("/admin/get_models", methods=['GET'])

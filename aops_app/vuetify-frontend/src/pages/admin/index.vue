@@ -35,7 +35,7 @@
             </div>
 
             <!-- Dialog new data -->
-            <v-dialog v-model="showAddDialog_imo" max-width="1100px">
+            <v-dialog v-model="showAddDialog_imo" max-width="1000px">
                 <v-card class="pa-3 pb-5">
                     <v-card-title>Insert New Data +</v-card-title>
                     <v-card-text> Add new data to database </v-card-text>
@@ -50,47 +50,6 @@
                             >Reset form</v-btn
                         >
                     </v-card-actions>
-
-                    <!-- Alert inside form -->
-                    <v-card-text>
-                        <!-- Form not yet complete -->
-                        <v-alert
-                            v-model="
-                                this.form_insert_new_data_is_not_complete_imo
-                            "
-                            title="Form not complete yet!"
-                            text="Please complete the form to insert new data."
-                            type="warning"
-                            border="start"
-                            variant="tonal"
-                            closable
-                        >
-                        </v-alert>
-
-                        <!-- Fail insert -->
-                        <v-alert
-                            v-model="this.form_insert_new_data_error_imo"
-                            title="Error occur!"
-                            :text="this.form_insert_new_data_error_msg_imo"
-                            type="error"
-                            border="start"
-                            variant="tonal"
-                            closable
-                        >
-                        </v-alert>
-
-                        <!-- Success insert data -->
-                        <v-alert
-                            v-model="this.is_success_insert_new_data_imo"
-                            class="mx-auto mb-6"
-                            elevation="1"
-                            closable
-                            title="Success"
-                            text="New data has been added!"
-                            type="success"
-                        >
-                        </v-alert>
-                    </v-card-text>
 
                     <!-- Form -->
                     <v-card-text>
@@ -159,13 +118,236 @@
                             auto-grow
                         ></v-textarea>
 
+                        <!-- User select Auto or Manual -->
                         <v-select
+                            label="How to label?"
+                            v-model="selected_how_to_label_4_newdata_imo"
+                            :items="array_options_how_to_label_4_newdata_imo"
+                            variant="outlined"
+                        ></v-select>
+
+                        <!-- HORIZONTAL LINE -->
+                        <h2
+                            :class="
+                                selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[0]
+                                    ? 'text-teal-darken-2'
+                                    : 'text-indigo-darken-2'
+                            "
+                            class="mt-2"
+                        >
+                            {{
+                                selected_how_to_label_4_newdata_imo === null
+                                    ? "null"
+                                    : selected_how_to_label_4_newdata_imo
+                            }}
+                            <span
+                                v-if="
+                                    selected_how_to_label_4_newdata_imo ===
+                                    array_options_how_to_label_4_newdata_imo[0]
+                                        ? true
+                                        : false
+                                "
+                                class="mdi-head-cog"
+                            ></span>
+                            <span
+                                v-if="
+                                    selected_how_to_label_4_newdata_imo ===
+                                    array_options_how_to_label_4_newdata_imo[1]
+                                        ? true
+                                        : false
+                                "
+                                class="mdi-creation"
+                            ></span>
+                        </h2>
+                        <v-divider
+                            class="mb-4 border-opacity-25"
+                            thickness="4"
+                            :color="
+                                selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[0]
+                                    ? 'teal-darken-2'
+                                    : 'indigo-darken-2'
+                            "
+                        ></v-divider>
+
+                        <!-- SELECT LABEL -->
+                        <v-select
+                            v-if="
+                                this.selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[0]
+                                    ? true
+                                    : false
+                            "
                             label="label*"
                             v-model="this.newItem_imo.label"
                             :items="this.array_of_labels"
-                            variant="solo-inverted"
-                            clearable
+                            variant="outlined"
+                            color="teal-darken-2"
                         ></v-select>
+
+                        <!-- SELECT MODEL -->
+                        <v-select
+                            v-if="
+                                this.selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            label="Select model to perform auto label"
+                            v-model="this.selected_model_4_newdata_imo"
+                            :items="this.array_options_model_4_newdata_imo"
+                            variant="outlined"
+                            color="indigo-darken-2"
+                        ></v-select>
+
+                        <v-btn
+                            v-if="
+                                this.selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            class="mb-4"
+                            min-height="45"
+                            color="indigo-darken-1"
+                            @click="classify_newdata_imo()"
+                            append-icon="mdi-arrow-right"
+                            elevation="0"
+                            :loading="loading_button_4_newdata_classify_imo"
+                            block
+                            >Check result</v-btn
+                        >
+
+                        <div
+                            v-if="
+                                this.selected_how_to_label_4_newdata_imo ===
+                                array_options_how_to_label_4_newdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            class="pb-4 text-center"
+                        >
+                            <h2>
+                                {{
+                                    this
+                                        .classification_label_result_4_newdata_imo
+                                }}
+                            </h2>
+
+                            Algebra:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_newdata_imo[
+                                        "Algebra"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Combinatorics:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_newdata_imo[
+                                        "Combinatorics"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Geometry:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_newdata_imo[
+                                        "Geometry"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Number Theory:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_newdata_imo[
+                                        "Number Theory"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br /><br />
+
+                            <span class="font-italic">{{
+                                this.selected_fix_model_4_newdata_imo
+                            }}</span>
+
+                            <v-divider
+                                class="mt-5 border-opacity-25"
+                                thickness="4"
+                                color="indigo-darken-2"
+                            ></v-divider>
+                        </div>
+                    </v-card-text>
+
+                    <!-- Alert inside form -->
+                    <v-card-text class="py-0 pb-6">
+                        <!-- Form not yet complete -->
+                        <v-alert
+                            v-model="
+                                this.form_insert_new_data_is_not_complete_imo
+                            "
+                            title="Form not complete yet!"
+                            text="Please complete the form to insert new data."
+                            type="warning"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- post canonical empty nothing to classify alert -->
+                        <v-alert
+                            v-model="
+                                this
+                                    .alert_null_post_canonical_newdata_to_classify_imo
+                            "
+                            title="Nothing to classify!"
+                            type="info"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Fail insert -->
+                        <v-alert
+                            v-model="this.form_insert_new_data_error_imo"
+                            title="Error occur!"
+                            :text="this.form_insert_new_data_error_msg_imo"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Error auto label alert -->
+                        <v-alert
+                            v-model="this.alert_err_msg_4_newdata_imo"
+                            title="Error occur!"
+                            :text="this.catch_err_msg_4_newdata_imo"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Success insert data -->
+                        <v-alert
+                            v-model="this.is_success_insert_new_data_imo"
+                            elevation="1"
+                            closable
+                            title="Success"
+                            text="New data has been added!"
+                            type="success"
+                        >
+                        </v-alert>
                     </v-card-text>
 
                     <!-- Button -->
@@ -189,6 +371,7 @@
                             append-icon="mdi-database-plus-outline"
                             @click="this.addItem_imo()"
                             variant="flat"
+                            :loading="loading_button_4_add_newdata_imo"
                             >Add</v-btn
                         >
                     </v-card-actions>
@@ -410,39 +593,12 @@
                 </v-card>
             </v-dialog>
             <!-- Dialog edit row -->
-            <v-dialog v-model="showEditDialog_imo" max-width="1100px">
+            <v-dialog v-model="showEditDialog_imo" max-width="1000px">
                 <v-card class="pa-3 pb-5">
                     <v-card-title
                         >Update/Edit Row <span class="mdi mdi-pencil"></span
                     ></v-card-title>
                     <v-card-text> Update or edit row to database </v-card-text>
-
-                    <!-- Alert inside form -->
-                    <v-card-text>
-                        <!-- Fail update or edit -->
-                        <v-alert
-                            v-model="this.form_update_or_edit_row_error_imo"
-                            title="Error occur!"
-                            :text="this.form_update_or_edit_row_error_mgs_imo"
-                            type="error"
-                            border="start"
-                            variant="tonal"
-                            closable
-                        >
-                        </v-alert>
-
-                        <!-- Form not yet complete -->
-                        <v-alert
-                            v-model="this.form_update_edit_is_not_complete_imo"
-                            title="Form not complete yet!"
-                            text="Please complete the form to update row."
-                            type="warning"
-                            border="start"
-                            variant="tonal"
-                            closable
-                        >
-                        </v-alert>
-                    </v-card-text>
 
                     <!-- form -->
                     <v-card-text>
@@ -511,13 +667,223 @@
                             auto-grow
                         ></v-textarea>
 
+                        <!-- User select Auto or Manual -->
                         <v-select
+                            label="How to label?"
+                            v-model="selected_how_to_label_4_editdata_imo"
+                            :items="array_options_how_to_label_4_editdata_imo"
+                            variant="outlined"
+                        ></v-select>
+
+                        <!-- HORIZONTAL LINE -->
+                        <h2
+                            :class="
+                                selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[0]
+                                    ? 'text-teal-darken-2'
+                                    : 'text-indigo-darken-2'
+                            "
+                            class="mt-2"
+                        >
+                            {{
+                                selected_how_to_label_4_editdata_imo === null
+                                    ? "null"
+                                    : selected_how_to_label_4_editdata_imo
+                            }}
+                            <span
+                                v-if="
+                                    selected_how_to_label_4_editdata_imo ===
+                                    array_options_how_to_label_4_editdata_imo[0]
+                                        ? true
+                                        : false
+                                "
+                                class="mdi-head-cog"
+                            ></span>
+                            <span
+                                v-if="
+                                    selected_how_to_label_4_editdata_imo ===
+                                    array_options_how_to_label_4_editdata_imo[1]
+                                        ? true
+                                        : false
+                                "
+                                class="mdi-creation"
+                            ></span>
+                        </h2>
+                        <v-divider
+                            class="mb-4 border-opacity-25"
+                            thickness="4"
+                            :color="
+                                selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[0]
+                                    ? 'teal-darken-2'
+                                    : 'indigo-darken-2'
+                            "
+                        ></v-divider>
+
+                        <!-- SELECT LABEL -->
+                        <v-select
+                            v-if="
+                                this.selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[0]
+                                    ? true
+                                    : false
+                            "
                             label="label*"
                             v-model="this.editedItem_imo.label"
                             :items="this.array_of_labels"
-                            variant="underlined"
-                            clearable
+                            variant="outlined"
+                            color="teal-darken-2"
                         ></v-select>
+
+                        <!-- SELECT MODEL -->
+                        <v-select
+                            v-if="
+                                this.selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            label="Select model to perform auto label"
+                            v-model="this.selected_model_4_editdata_imo"
+                            :items="this.array_options_model_4_editdata_imo"
+                            variant="outlined"
+                            color="indigo-darken-2"
+                        ></v-select>
+
+                        <v-btn
+                            v-if="
+                                this.selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            class="mb-4"
+                            min-height="45"
+                            color="indigo-darken-1"
+                            @click="classify_editdata_imo()"
+                            append-icon="mdi-arrow-right"
+                            elevation="0"
+                            :loading="loading_button_4_editdata_classify_imo"
+                            block
+                            >Check result</v-btn
+                        >
+
+                        <div
+                            v-if="
+                                this.selected_how_to_label_4_editdata_imo ===
+                                array_options_how_to_label_4_editdata_imo[1]
+                                    ? true
+                                    : false
+                            "
+                            class="pb-4 text-center"
+                        >
+                            <h2>
+                                {{
+                                    this
+                                        .classification_label_result_4_editdata_imo
+                                }}
+                            </h2>
+
+                            Algebra:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_editdata_imo[
+                                        "Algebra"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Combinatorics:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_editdata_imo[
+                                        "Combinatorics"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Geometry:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_editdata_imo[
+                                        "Geometry"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br />
+                            Number Theory:
+                            {{
+                                (
+                                    this
+                                        .classification_proba_result_4_editdata_imo[
+                                        "Number Theory"
+                                    ] * 100
+                                ).toFixed(2)
+                            }}%<br /><br />
+
+                            <span class="font-italic">{{
+                                this.selected_fix_model_4_editdata_imo
+                            }}</span>
+
+                            <v-divider
+                                class="mt-5 border-opacity-25"
+                                thickness="4"
+                                color="indigo-darken-2"
+                            ></v-divider>
+                        </div>
+                    </v-card-text>
+
+                    <!-- Alert inside form -->
+                    <v-card-text class="py-0 pb-6">
+                        <!-- Fail update or edit -->
+                        <v-alert
+                            v-model="this.form_update_or_edit_row_error_imo"
+                            title="Error occur!"
+                            :text="this.form_update_or_edit_row_error_mgs_imo"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Form not yet complete -->
+                        <v-alert
+                            v-model="this.form_update_edit_is_not_complete_imo"
+                            title="Form not complete yet!"
+                            text="Please complete the form to update row."
+                            type="warning"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- post canonical empty nothing to classify alert -->
+                        <v-alert
+                            v-model="
+                                this
+                                    .alert_null_post_canonical_editdata_to_classify_imo
+                            "
+                            title="Nothing to classify!"
+                            type="info"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
+
+                        <!-- Error auto label alert -->
+                        <v-alert
+                            v-model="this.alert_err_msg_4_editdata_imo"
+                            title="Error occur!"
+                            :text="this.catch_err_msg_4_editdata_imo"
+                            type="error"
+                            border="start"
+                            variant="tonal"
+                            closable
+                        >
+                        </v-alert>
                     </v-card-text>
 
                     <v-card-actions>
@@ -540,6 +906,7 @@
                             append-icon="mdi-pencil-outline"
                             variant="flat"
                             @click="this.saveUpdatedOrEditedItem_imo()"
+                            :loading="loading_button_4_add_editdata_imo"
                             >Update</v-btn
                         >
                     </v-card-actions>
@@ -1486,6 +1853,35 @@ export default {
         showDeleteDialogConfirmation_imo: false,
         selectedItemIDKEYToDelete_imo: -Infinity,
         delete_row_success_or_done_imo: false,
+        // How to label
+        loading_button_4_add_newdata_imo: false,
+        array_options_how_to_label_4_newdata_imo: [], // on --> mounted
+        selected_how_to_label_4_newdata_imo: "", // on --> mounted
+        // Available models
+        array_options_model_4_newdata_imo: [], // on --> async initialize().. API get all active classifier model name
+        selected_model_4_newdata_imo: "", // on --> async initialize()
+        selected_fix_model_4_newdata_imo: "",
+        alert_null_post_canonical_newdata_to_classify_imo: false,
+        loading_button_4_newdata_classify_imo: false,
+        classification_proba_result_4_newdata_imo: {}, // dictionary
+        classification_label_result_4_newdata_imo: "",
+        alert_err_msg_4_newdata_imo: false,
+        catch_err_msg_4_newdata_imo: "",
+
+        // How to label
+        loading_button_4_add_editdata_imo: false,
+        array_options_how_to_label_4_editdata_imo: [], // on --> mounted
+        selected_how_to_label_4_editdata_imo: "", // on --> mounted
+        // Available models
+        array_options_model_4_editdata_imo: [], // on --> async initialize().. API get all active classifier model name
+        selected_model_4_editdata_imo: "", // on --> async initialize()
+        selected_fix_model_4_editdata_imo: "",
+        alert_null_post_canonical_editdata_to_classify_imo: false,
+        loading_button_4_editdata_classify_imo: false,
+        classification_proba_result_4_editdata_imo: {}, // dictionary
+        classification_label_result_4_editdata_imo: "",
+        alert_err_msg_4_editdata_imo: false,
+        catch_err_msg_4_editdata_imo: "",
 
         // admins
         items_admins: [],
@@ -1727,6 +2123,7 @@ export default {
 
     methods: {
         async initialize() {
+            // IMO
             this.loading_4_all_tables = true;
             try {
                 const raw_response = await axios.get("admin/get_imo_data");
@@ -1739,6 +2136,7 @@ export default {
                 this.loading_4_all_tables = false;
             }
 
+            // ADMINS
             this.loading_4_all_tables = true;
             try {
                 const raw_response = await axios.get("admin/get_admins_data");
@@ -1751,6 +2149,7 @@ export default {
                 this.loading_4_all_tables = false;
             }
 
+            // HOME_DATA
             this.loading_4_all_tables = true;
             try {
                 const raw_response = await axios.get("/admin/get_homedata");
@@ -1763,12 +2162,36 @@ export default {
                 this.loading_4_all_tables = false;
             }
 
+            // MODELS
             this.loading_4_all_tables = true;
             try {
                 const raw_response = await axios.get("/admin/get_models");
                 const response = raw_response.data;
                 this.items_models = response;
                 this.totalItems_models = response.itemsLength;
+            } catch (err) {
+                console.log(err.message);
+            } finally {
+                this.loading_4_all_tables = false;
+            }
+
+            // FOR MODEL AUTO LABEL
+            this.loading_4_all_tables = true;
+            try {
+                const raw_response = await axios.get(
+                    "/admin/get_all_active_classifier_models_name"
+                );
+                const response = raw_response.data;
+
+                this.array_options_model_4_newdata_imo = response;
+                this.array_options_model_4_newdata_imo.sort();
+                this.selected_model_4_newdata_imo =
+                    this.array_options_model_4_newdata_imo[1];
+
+                this.array_options_model_4_editdata_imo = response;
+                this.array_options_model_4_editdata_imo.sort();
+                this.selected_model_4_editdata_imo =
+                    this.array_options_model_4_editdata_imo[1];
             } catch (err) {
                 console.log(err.message);
             } finally {
@@ -1807,6 +2230,13 @@ export default {
             this.is_success_insert_new_data_imo = false;
             this.form_insert_new_data_is_not_complete_imo = false;
             this.form_insert_new_data_error_imo = false;
+
+            this.alert_err_msg_4_newdata_imo = false;
+            this.alert_null_post_canonical_newdata_to_classify_imo = false;
+
+            this.selected_fix_model_4_newdata_imo = "";
+            this.classification_proba_result_4_newdata_imo = {};
+            this.classification_label_result_4_newdata_imo = "";
         },
         function_showDialog_linkANDpdf_imo(v, indetifier) {
             if (indetifier === "link") {
@@ -1835,35 +2265,126 @@ export default {
                 }
             }
 
-            try {
-                const raw_response = await axios.post(
-                    "admin/insert_new_data_imo",
-                    this.newItem_imo
-                );
-                const response = raw_response.data;
-                console.log("RESPONSE", response.msg);
+            // it means it equal to MANUAL LABEL
+            if (
+                this.selected_how_to_label_4_newdata_imo ===
+                this.array_options_how_to_label_4_newdata_imo[0]
+            ) {
+                try {
+                    const raw_response = await axios.post(
+                        "admin/insert_new_data_imo",
+                        this.newItem_imo
+                    );
+                    const response = raw_response.data;
+                    console.log("RESPONSE", response.msg);
 
-                this.is_success_insert_new_data_imo = true;
-                this.reset_form_add_new_item_imo();
-
-                this.initialize();
-            } catch (error) {
-                console.log("ERROR1:", error.message);
-                console.log("ERROR2:", error.response.data.msg);
-                this.form_insert_new_data_error_imo = true;
-                this.form_insert_new_data_error_msg_imo =
-                    error.response.data.msg;
+                    this.is_success_insert_new_data_imo = true;
+                    this.reset_form_add_new_item_imo();
+                    this.alert_err_msg_4_newdata_imo = false;
+                } catch (error) {
+                    console.log("ERROR1:", error.message);
+                    console.log("ERROR2:", error.response.data.msg);
+                    this.form_insert_new_data_error_imo = true;
+                    this.form_insert_new_data_error_msg_imo =
+                        error.response.data.msg;
+                }
             }
+            // else mean AUTO LABEL
+            else {
+                // 1. Check if selected model is not null
+                if (
+                    this.selected_model_4_newdata_imo !== null &&
+                    this.selected_model_4_newdata_imo !== ""
+                ) {
+                    if (
+                        this.newItem_imo.post_canonical !== null &&
+                        this.newItem_imo.post_canonical !== ""
+                    ) {
+                        this.loading_button_4_add_newdata_imo = true;
+                        this.loading_button_4_newdata_classify_imo = true;
+
+                        try {
+                            const temp = this.selected_model_4_newdata_imo;
+                            const raw_response = await axios.post(
+                                "admin/classify_problem",
+                                {
+                                    classifier_model:
+                                        this.selected_model_4_newdata_imo,
+                                    problems: this.newItem_imo.post_canonical,
+                                }
+                            );
+                            const response = raw_response.data;
+                            this.selected_fix_model_4_newdata_imo = temp;
+
+                            this.classification_proba_result_4_newdata_imo =
+                                response.classification;
+                            this.classification_label_result_4_newdata_imo =
+                                response.label;
+
+                            try {
+                                this.newItem_imo.label =
+                                    this.classification_label_result_4_newdata_imo;
+                                const raw_response = await axios.post(
+                                    "admin/insert_new_data_imo",
+                                    this.newItem_imo
+                                );
+                                const response = raw_response.data;
+                                console.log("RESPONSE", response.msg);
+
+                                this.is_success_insert_new_data_imo = true;
+                                this.reset_form_add_new_item_imo();
+                                this.alert_err_msg_4_newdata_imo = false;
+                            } catch (error) {
+                                console.log("ERROR1:", error.message);
+                                console.log("ERROR2:", error.response.data.msg);
+                                this.form_insert_new_data_error_imo = true;
+                                this.form_insert_new_data_error_msg_imo =
+                                    error.response.data.msg;
+                            }
+                        } catch (error) {
+                            console.log("ERROR1:", error);
+                            console.log("ERROR2:", error.message);
+                            console.log("ERROR3:", error.response.data.msg);
+
+                            this.alert_err_msg_4_newdata_imo = true;
+                            this.catch_err_msg_4_newdata_imo =
+                                error.response.data.msg;
+                        }
+                    } else {
+                        this.alert_null_post_canonical_newdata_to_classify_imo = true;
+                    }
+                }
+            }
+
+            this.loading_button_4_add_newdata_imo = false;
+            this.loading_button_4_newdata_classify_imo = false;
+            this.initialize();
         },
         showEditItem_imo(item) {
             this.success_update_or_edit_row_imo = false;
             this.form_update_edit_is_not_complete_imo = false;
             this.form_update_or_edit_row_error_imo = false;
             this.editedItem_imo = Object.assign(this.editedItem_imo, item);
+            if (this.editedItem_imo.label === null) {
+                this.editedItem_imo.label = this.array_of_labels[0]; // set to str ==> 'None'
+            }
             this.showEditDialog_imo = true;
+
+            this.alert_err_msg_4_editdata_imo = false;
+            this.alert_null_post_canonical_editdata_to_classify_imo = false;
+
+            this.selected_fix_model_4_editdata_imo = "";
+            this.classification_proba_result_4_editdata_imo = {};
+            this.classification_label_result_4_editdata_imo = "";
         },
         async saveUpdatedOrEditedItem_imo() {
             for (let key in this.editedItem_imo) {
+                if (key === "label") {
+                    if (this.editedItem_imo[key] === null) {
+                        this.editedItem_imo[key] = "None";
+                    }
+                }
+
                 if (
                     this.editedItem_imo[key] === "" ||
                     this.editedItem_imo[key] === null
@@ -1873,24 +2394,101 @@ export default {
                 }
             }
 
-            try {
-                const raw_response = await axios.post(
-                    "admin/update_row_imo",
-                    this.editedItem_imo
-                );
-                const response = raw_response.data;
-                console.log("RESPONSE", response.msg);
-                this.success_update_or_edit_row_imo = true;
-
-                this.showEditDialog_imo = false;
-                this.initialize();
-            } catch (error) {
-                console.log("ERROR1:", error.message);
-                console.log("ERROR2:", error.response.data.msg);
-                this.form_update_or_edit_row_error_imo = true;
-                this.form_update_or_edit_row_error_mgs_imo =
-                    error.response.data.msg;
+            // it means it equal to MANUAL LABEL
+            if (
+                this.selected_how_to_label_4_editdata_imo ===
+                this.array_options_how_to_label_4_editdata_imo[0]
+            ) {
+                try {
+                    const raw_response = await axios.post(
+                        "admin/update_row_imo",
+                        this.editedItem_imo
+                    );
+                    const response = raw_response.data;
+                    console.log("RESPONSE", response.msg);
+                    this.success_update_or_edit_row_imo = true;
+                    this.showEditDialog_imo = false;
+                    this.initialize();
+                } catch (error) {
+                    console.log("ERROR1:", error.message);
+                    console.log("ERROR2:", error.response.data.msg);
+                    this.form_update_or_edit_row_error_imo = true;
+                    this.form_update_or_edit_row_error_mgs_imo =
+                        error.response.data.msg;
+                }
             }
+            // else mean AUTO LABEL
+            else {
+                // 1. Check if selected model is not null
+                if (
+                    this.selected_model_4_editdata_imo !== null &&
+                    this.selected_model_4_editdata_imo !== ""
+                ) {
+                    // 2. Check if post_canonical is not null
+                    if (
+                        this.editedItem_imo.post_canonical !== null &&
+                        this.editedItem_imo.post_canonical !== ""
+                    ) {
+                        this.loading_button_4_add_editdata_imo = true;
+                        this.loading_button_4_editdata_classify_imo = true;
+
+                        try {
+                            const temp = this.selected_model_4_editdata_imo;
+                            const raw_response = await axios.post(
+                                "admin/classify_problem",
+                                {
+                                    classifier_model:
+                                        this.selected_model_4_editdata_imo,
+                                    problems:
+                                        this.editedItem_imo.post_canonical,
+                                }
+                            );
+                            const response = raw_response.data;
+                            this.selected_fix_model_4_editdata_imo = temp;
+
+                            this.classification_proba_result_4_editdata_imo =
+                                response.classification;
+                            this.classification_label_result_4_editdata_imo =
+                                response.label;
+
+                            try {
+                                this.editedItem_imo.label =
+                                    this.classification_label_result_4_editdata_imo;
+                                const raw_response = await axios.post(
+                                    "admin/update_row_imo",
+                                    this.editedItem_imo
+                                );
+                                const response = raw_response.data;
+                                console.log("RESPONSE", response.msg);
+
+                                this.showEditDialog_imo = false;
+                                this.is_success_insert_new_data_imo = true;
+                                this.alert_err_msg_4_editdata_imo = false;
+                            } catch (error) {
+                                console.log("ERROR1:", error.message);
+                                console.log("ERROR2:", error.response.data.msg);
+                                this.form_insert_new_data_error_imo = true;
+                                this.form_insert_new_data_error_msg_imo =
+                                    error.response.data.msg;
+                            }
+                        } catch (error) {
+                            console.log("ERROR1:", error);
+                            console.log("ERROR2:", error.message);
+                            console.log("ERROR3:", error.response.data.msg);
+
+                            this.alert_err_msg_4_editdata_imo = true;
+                            this.catch_err_msg_4_editdata_imo =
+                                error.response.data.msg;
+                        }
+                    } else {
+                        this.alert_null_post_canonical_editdata_to_classify_imo = true;
+                    }
+                }
+            }
+
+            this.loading_button_4_add_editdata_imo = false;
+            this.loading_button_4_editdata_classify_imo = false;
+            this.initialize();
         },
         confirmDeleteRow_imo(id_key) {
             this.delete_row_success_or_done_imo = false;
@@ -1910,6 +2508,121 @@ export default {
                 console.log("ERROR2:", error.response.data.msg);
             }
             this.showDeleteDialogConfirmation_imo = false;
+        },
+        async classify_newdata_imo() {
+            this.classification_proba_result_4_newdata_imo = {};
+            this.alert_err_msg_4_newdata_imo = false;
+            this.selected_fix_model_4_newdata_imo = "";
+            this.classification_label_result_4_newdata_imo = "";
+
+            // 1. Check if how_to_label is chose to automatic
+            if (
+                this.selected_how_to_label_4_newdata_imo ===
+                this.array_options_how_to_label_4_newdata_imo[1]
+            ) {
+                this.loading_button_4_newdata_classify_imo = true;
+
+                // 2. Check if selected model is not null
+                if (
+                    this.selected_model_4_newdata_imo !== null &&
+                    this.selected_model_4_newdata_imo !== ""
+                ) {
+                    // 3. check post_canonical is not null
+                    if (
+                        this.newItem_imo.post_canonical !== null &&
+                        this.newItem_imo.post_canonical !== ""
+                    ) {
+                        try {
+                            const temp = this.selected_model_4_newdata_imo;
+                            const raw_response = await axios.post(
+                                "admin/classify_problem",
+                                {
+                                    classifier_model:
+                                        this.selected_model_4_newdata_imo,
+                                    problems: this.newItem_imo.post_canonical,
+                                }
+                            );
+                            const response = raw_response.data;
+                            this.selected_fix_model_4_newdata_imo = temp;
+
+                            this.classification_proba_result_4_newdata_imo =
+                                response.classification;
+                            this.classification_label_result_4_newdata_imo =
+                                response.label;
+                        } catch (error) {
+                            console.log("ERROR1:", error);
+                            console.log("ERROR2:", error.message);
+                            console.log("ERROR3:", error.response.data.msg);
+
+                            this.alert_err_msg_4_newdata_imo = true;
+                            this.catch_err_msg_4_newdata_imo =
+                                error.response.data.msg;
+                        }
+                    } else {
+                        this.alert_null_post_canonical_newdata_to_classify_imo = true;
+                    }
+                }
+
+                this.loading_button_4_newdata_classify_imo = false;
+            }
+        },
+        async classify_editdata_imo() {
+            this.classification_proba_result_4_editdata_imo = {};
+            this.alert_err_msg_4_editdata_imo = false;
+            this.selected_fix_model_4_editdata_imo = "";
+            this.classification_label_result_4_editdata_imo = "";
+
+            // 1. Check if how_to_label is chose to automatic
+            if (
+                this.selected_how_to_label_4_editdata_imo ===
+                this.array_options_how_to_label_4_editdata_imo[1]
+            ) {
+                this.loading_button_4_editdata_classify_imo = true;
+
+                // 2. Check if selected model is not null
+                if (
+                    this.selected_model_4_editdata_imo !== null &&
+                    this.selected_model_4_editdata_imo !== ""
+                ) {
+                    // 3. check post_canonical is not null
+                    if (
+                        this.editedItem_imo.post_canonical !== null &&
+                        this.editedItem_imo.post_canonical !== ""
+                    ) {
+                        try {
+                            const temp = this.selected_model_4_editdata_imo;
+                            const raw_response = await axios.post(
+                                "admin/classify_problem",
+                                {
+                                    classifier_model:
+                                        this.selected_model_4_editdata_imo,
+                                    problems:
+                                        this.editedItem_imo.post_canonical,
+                                }
+                            );
+                            const response = raw_response.data;
+                            this.selected_fix_model_4_editdata_imo = temp;
+
+                            this.classification_proba_result_4_editdata_imo =
+                                response.classification;
+                            this.classification_label_result_4_editdata_imo =
+                                response.label;
+                        } catch (error) {
+                            console.log("ERROR1:", error);
+                            console.log("ERROR2:", error.message);
+                            console.log("ERROR3:", error.response.data.msg);
+
+                            this.alert_err_msg_4_editdata_imo = true;
+                            this.catch_err_msg_4_editdata_imo =
+                                error.response.data.msg;
+                        }
+                    } else {
+                        this.alert_null_post_canonical_editdata_to_classify_imo = true;
+                    }
+                }
+
+                this.loading_button_4_editdata_classify_imo = false;
+            }
         },
 
         // admins
@@ -2142,7 +2855,30 @@ export default {
         },
     },
 
+    watch: {
+        selected_how_to_label_4_newdata_imo(oldVal, newVal) {
+            this.classification_proba_result_4_newdata_imo = {};
+            this.selected_fix_model_4_newdata_imo = "";
+            this.classification_label_result_4_newdata_imo = "";
+            this.alert_null_post_canonical_newdata_to_classify_imo = false;
+        },
+
+        selected_how_to_label_4_editdata_imo(oldVal, newVal) {
+            this.classification_proba_result_4_editdata_imo = {};
+            this.selected_fix_model_4_editdata_imo = "";
+            this.classification_label_result_4_editdata_imo = "";
+            this.alert_null_post_canonical_editdata_to_classify_imo = false;
+        },
+    },
+
     mounted() {
+        const temp_options = ["Manual Label", "Auto Label"]; // Always set index[0] = Manual
+        this.array_options_how_to_label_4_newdata_imo = temp_options;
+        this.selected_how_to_label_4_newdata_imo = temp_options[0];
+
+        this.array_options_how_to_label_4_editdata_imo = temp_options;
+        this.selected_how_to_label_4_editdata_imo = temp_options[0];
+
         this.initialize();
     },
 
