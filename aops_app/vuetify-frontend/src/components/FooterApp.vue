@@ -19,6 +19,11 @@
                         : 16
                 "
             />
+            <span
+                v-if="item.title === 'Questionnaire'"
+                class="text-caption d-none d-sm-inline-block text-teal-darken-1"
+                >questionnaire link</span
+            >
         </a>
 
         <div
