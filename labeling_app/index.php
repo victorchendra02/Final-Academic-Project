@@ -135,15 +135,22 @@ require "config.php";
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $query = "SELECT 
-            COUNT(*) AS total,
-            SUM(CASE WHEN label='Algebra' THEN 1 ELSE 0 END) AS algebra_count,
-            SUM(CASE WHEN label='Combinatorics' THEN 1 ELSE 0 END) AS combinatorics_count,
-            SUM(CASE WHEN label='Geometry' THEN 1 ELSE 0 END) AS geometry_count,
-            SUM(CASE WHEN label='Number Theory' THEN 1 ELSE 0 END) AS number_theory_count,
-            SUM(CASE WHEN label IS NULL THEN 1 ELSE 0 END) AS null_label_count,
-            SUM(CASE WHEN label IS NOT NULL THEN 1 ELSE 0 END) AS not_null_label_count
-          FROM `imo`";
+        $query = "
+            SELECT 
+                COUNT(*) AS total,
+                SUM(CASE WHEN label='Algebra' THEN 1 ELSE 0 END) AS algebra_count,
+                SUM(CASE WHEN label='Combinatorics' THEN 1 ELSE 0 END) AS combinatorics_count,
+                SUM(CASE WHEN label='Geometry' THEN 1 ELSE 0 END) AS geometry_count,
+                SUM(CASE WHEN label='Number Theory' THEN 1 ELSE 0 END) AS number_theory_count,
+                SUM(CASE WHEN label IS NULL THEN 1 ELSE 0 END) AS null_label_count,
+                SUM(CASE WHEN label IS NOT NULL THEN 1 ELSE 0 END) AS not_null_label_count
+            FROM `imo`
+            WHERE contest_name NOT IN (
+                'imc', 
+                'simon_marais_mathematical_competition'
+            )
+            AND id_key NOT IN (277, 1236, 1237, 1238, 1239, 1240, 1241)
+        ;";
 
         $result = $conn->query($query);
 
@@ -284,6 +291,7 @@ require "config.php";
                         <th scope="col">ID</th>
                         <th scope="col">No</th>
                         <th scope="col">Problem</th>
+                        <th scope="col">Contest name</th>
                         <th scope="col">Year</th>
                         <th scope="col" style="width: 6rem;">Link</th>
                         <th scope="col" style="width: 12rem;">Label</th>
@@ -302,7 +310,35 @@ require "config.php";
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE label IS NULL";
+                    // $sql = "SELECT id_key, no, post_rendered, year, link, label FROM imo WHERE contest_name='imo' AND label IS NULL";
+                    $sql = "
+                        SELECT 
+                            id_key, 
+                            no, 
+                            post_rendered, 
+                            contest_name, 
+                            year, 
+                            link, 
+                            label 
+                        FROM imo 
+                        WHERE contest_name IN (
+                            'lusophon_mathematical_olympiad',
+                            'romanian_masters_of_mathematics_collection',
+                            'imo_shortlist',
+                            'european_mathematical_cup',
+                            'balkan_mo',
+                            'junior_balkan_mo',
+                            'baltic_way',
+                            'imo_longlists'
+                        )
+                        
+                        AND contest_name NOT IN (
+                            'imc', 
+                            'simon_marais_mathematical_competition'
+                        )
+                        AND id_key NOT IN (277, 1236, 1237, 1238, 1239, 1240, 1241)
+                        AND label IS NULL
+                    ;";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -313,7 +349,7 @@ require "config.php";
                         shuffle($rows);
 
                         // Limit the array to the first 20 elements
-                        $selectedRows = array_slice($rows, 0, 20);
+                        $selectedRows = array_slice($rows, 0, 50);
 
                         // Process the selected rows and display them
                         foreach ($selectedRows as $row) {
@@ -321,6 +357,7 @@ require "config.php";
                             echo "<td>" . $row['id_key'] . "</td>";
                             echo "<td class='text-danger'>" . $row['no'] . "</td>";
                             echo "<td>" . $row['post_rendered'] . "</td>";
+                            echo "<td class='text-success' style='font-size: 14px;'>" . $row['contest_name'] . "</td>";
                             echo "<td class='text-success' style='font-size: 14px;'>" . $row['year'] . "</td>";
                             echo "<td><a href='" . $row['link'] . "' target='_blank'>check</a></td>";
                             echo "<td><select class='form-select' name='data_to_parse[" . $row['id_key'] . "]' aria-label='Label selection'>
@@ -333,7 +370,7 @@ require "config.php";
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='6'>No data to label!</td></tr>";
+                        echo "<tr><td colspan='6'>All data has been labeled. Thank you very much 😊</td></tr>";
                     }
 
                     $conn->close();
