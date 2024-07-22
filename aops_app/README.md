@@ -5,7 +5,7 @@
 
 ## A. Initialize
 
-### 1. Flask API
+### 1. Flask API (Python 3.10.2)
 ```bat
 cd flask-backend
 python -m venv env
